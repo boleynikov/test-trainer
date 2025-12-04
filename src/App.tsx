@@ -50,11 +50,11 @@ const App: React.FC = () => {
       <Box sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
 
         {/* Header / Навігаційна панель */}
-        <AppBar position="static" color="transparent" elevation={0} sx={{ bgcolor: 'white', borderBottom: '1px solid #eee' }}>
+        <AppBar position="static" color="inherit" elevation={0} sx={{ borderBottom: 1, borderColor: 'divider' }}>
           <Toolbar>
             <School sx={{ mr: 2, color: 'primary.main' }} />
             <Typography variant="h6" color="text.primary" sx={{ fontWeight: 'bold', flexGrow: 1 }}>
-              PL-400 Exam Trainer
+              Exam Trainer
             </Typography>
 
             <Tooltip title="Завантажити JSON з питаннями">
@@ -79,7 +79,7 @@ const App: React.FC = () => {
         {/* Footer */}
         <Box component="footer" sx={{ py: 3, textAlign: 'center' }}>
           <Typography variant="body2" color="text.secondary">
-            Built for success in Microsoft Certification
+            Built for happy life
           </Typography>
         </Box>
 

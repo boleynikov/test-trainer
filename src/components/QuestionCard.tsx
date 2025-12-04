@@ -62,19 +62,20 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                             <Button
                                 key={option.id}
                                 variant={variant}
-                                color={color}
+                                // color={color}
                                 onClick={() => onOptionSelect(option.id)}
                                 disabled={isAnswered}
                                 fullWidth
                                 endIcon={icon}
-                                sx={{
+                                sx={(theme) => ({
                                     justifyContent: 'flex-start',
                                     textAlign: 'left',
                                     py: 1.5,
                                     textTransform: 'none',
                                     fontSize: '1rem',
-                                    borderColor: isAnswered && variant === 'outlined' ? '#eee' : undefined
-                                }}
+                                    borderColor: isAnswered && variant === 'outlined' ? '#eee' : undefined,
+                                    color: `${theme.palette[color].main} !important`,
+                                })}
                             >
                                 {option.text}
                             </Button>

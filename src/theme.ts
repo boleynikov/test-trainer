@@ -15,6 +15,18 @@ export const getDesignTokens = (mode: Mode) => ({
                 secondary: {
                     main: '#10B981',
                 },
+                error: {
+                    main: '#EF4444', // Red 500
+                    light: '#FEE2E2',
+                    dark: '#B91C1C',
+                    contrastText: '#ffffff',
+                },
+                success: {
+                    main: '#10B981', // Emerald 500
+                    light: '#D1FAE5',
+                    dark: '#047857',
+                    contrastText: '#ffffff',
+                },
                 background: {
                     default: '#F3F4F6',
                     paper: '#FFFFFF',
@@ -33,6 +45,18 @@ export const getDesignTokens = (mode: Mode) => ({
                 },
                 secondary: {
                     main: '#34D399',
+                },
+                error: {
+                    main: '#F87171', // Red 400
+                    light: '#FECACA',
+                    dark: '#991B1B',
+                    contrastText: '#000000',
+                },
+                success: {
+                    main: '#34D399', // Emerald 400
+                    light: '#A7F3D0',
+                    dark: '#064E3B',
+                    contrastText: '#000000',
                 },
                 background: {
                     default: '#121212',
