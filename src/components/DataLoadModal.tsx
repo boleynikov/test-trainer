@@ -24,6 +24,7 @@ export const DataLoadModal: React.FC<DataLoadModalProps> = ({ open, mode, handle
                     const result = e.target?.result;
                     if (typeof result === 'string') {
                         const json = JSON.parse(result);
+                        localStorage.setItem('questions', JSON.stringify(json));
                         console.log("Завантажені питання:", json);
                         alert(`Успішно завантажено ${json.length} питань (див. консоль)`);
                         // Тут ви можете викликати setQuestions(json) або передати дані в ExamSimulator

@@ -1,35 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { Container, Typography } from '@mui/material';
-import { type Question } from './types';
-import { ResultScreen } from './components/ResultScreen';
-import { QuizHeader } from './components/QuizHeader';
+import { Container } from '@mui/material';
+import React, { useEffect, useState } from 'react';
+import { DataLoadModal } from './components/DataLoadModal';
 import { QuestionCard } from './components/QuestionCard';
-
-// --- MOCK DATA ---
-const rawQuestions: Question[] = [
-    {
-        id: 1,
-        text: "Який тип компонента PCF слід використовувати для візуалізації?",
-        correctOptionId: "opt2",
-        options: [
-            { id: "opt1", text: "Standard Component" },
-            { id: "opt2", text: "Dataset Component" }, // Correct
-            { id: "opt3", text: "Field Component" },
-            { id: "opt4", text: "Service Component" }
-        ]
-    },
-    {
-        id: 2,
-        text: "Яка максимальна тривалість Azure Function (Consumption plan)?",
-        correctOptionId: "opt3",
-        options: [
-            { id: "opt1", text: "30 секунд" },
-            { id: "opt2", text: "5 хвилин" },
-            { id: "opt3", text: "10 хвилин" }, // Correct
-            { id: "opt4", text: "60 хвилин" }
-        ]
-    }
-];
+import { QuizHeader } from './components/QuizHeader';
+import { ResultScreen } from './components/ResultScreen';
+import { type Question } from './types';
 
 // --- UTILS ---
 const shuffleArray = <T,>(array: T[]): T[] => {
@@ -48,6 +23,8 @@ const ExamSimulator: React.FC = () => {
     const [currentQIndex, setCurrentQIndex] = useState<number>(0);
     const [score, setScore] = useState<number>(0);
     const [answeredCount, setAnsweredCount] = useState<number>(0);
+    const [isDataLoadModalOpen, setIsDataLoadModalOpen] = useState<boolean>(false);
+
 
     // UI State
     const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
@@ -56,7 +33,13 @@ const ExamSimulator: React.FC = () => {
 
     // Initialize / Reset Logic
     const initializeQuiz = (random: boolean) => {
-        let qList = JSON.parse(JSON.stringify(rawQuestions)); // Deep copy to avoid mutating original
+        const rawQuestions = localStorage.getItem('questions');
+        if (!rawQuestions) {
+            setIsDataLoadModalOpen(true);
+            return;
+        }
+
+        let qList = JSON.parse(rawQuestions); // Deep copy to avoid mutating original
 
         if (random) {
             qList = shuffleArray(qList);
@@ -104,9 +87,24 @@ const ExamSimulator: React.FC = () => {
         }
     };
 
+    const handleCloseDataLoadModal = () => {
+        setIsDataLoadModalOpen(false);
+        initializeQuiz(isRandomMode);
+    };
+
+
     // --- RENDER ---
 
-    if (questions.length === 0) return <Typography>Loading...</Typography>;
+    if (questions.length === 0) {
+        return (
+            <DataLoadModal
+                open={isDataLoadModalOpen}
+                handleClose={handleCloseDataLoadModal}
+                mode="light"
+            />
+        );
+    }
+
 
     if (isFinished) {
         return (
