@@ -6,18 +6,17 @@ export const getDesignTokens = (mode: Mode) => ({
         mode,
         ...(mode === 'light'
             ? {
-                // Палітра для СВІТЛОЇ теми
                 primary: {
-                    main: '#4F46E5', // Indigo
+                    main: '#4F46E5',
                     light: '#818cf8',
                     dark: '#3730a3',
                     contrastText: '#ffffff',
                 },
                 secondary: {
-                    main: '#10B981', // Emerald
+                    main: '#10B981',
                 },
                 background: {
-                    default: '#F3F4F6', // Cool Gray
+                    default: '#F3F4F6',
                     paper: '#FFFFFF',
                 },
                 text: {
@@ -26,9 +25,8 @@ export const getDesignTokens = (mode: Mode) => ({
                 },
             }
             : {
-                // Палітра для ТЕМНОЇ теми
                 primary: {
-                    main: '#818cf8', // Світліший Indigo для кращого контрасту на темному
+                    main: '#818cf8',
                     light: '#a5b4fc',
                     dark: '#3730a3',
                     contrastText: '#ffffff',
@@ -37,8 +35,8 @@ export const getDesignTokens = (mode: Mode) => ({
                     main: '#34D399',
                 },
                 background: {
-                    default: '#121212', // Стандартний темний фон
-                    paper: '#1e1e1e',   // Трохи світліший для карток
+                    default: '#121212',
+                    paper: '#1e1e1e',
                 },
                 text: {
                     primary: '#e0e0e0',
@@ -72,8 +70,7 @@ export const getDesignTokens = (mode: Mode) => ({
         MuiCard: {
             styleOverrides: {
                 root: {
-                    // Тінь змінюється залежно від теми автоматично, але можна налаштувати
-                    backgroundImage: 'none', // Прибираємо дефолтний оверлей у темній темі MUI
+                    backgroundImage: 'none',
                     boxShadow: mode === 'light'
                         ? '0px 4px 20px rgba(0, 0, 0, 0.05)'
                         : '0px 4px 20px rgba(0, 0, 0, 0.3)',
@@ -83,5 +80,13 @@ export const getDesignTokens = (mode: Mode) => ({
                 },
             },
         },
+        MuiDialog: {
+            styleOverrides: {
+                paper: {
+                    borderRadius: 16,
+                    backgroundImage: 'none',
+                }
+            }
+        }
     },
 });

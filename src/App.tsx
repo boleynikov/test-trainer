@@ -5,11 +5,12 @@ import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { School, Brightness4, Brightness7 } from '@mui/icons-material';
+import { School, Brightness4, Brightness7, CloudUpload } from '@mui/icons-material';
 
 import { getDesignTokens, type Mode } from './theme'; // Імпортуємо нашу тему
 import ExamSimulator from './ExamSimulator'; // Ваш основний компонент
-import { IconButton } from '@mui/material';
+import { IconButton, Tooltip } from '@mui/material';
+import { DataLoadModal } from './components/DataLoadModal';
 
 const App: React.FC = () => {
 
@@ -21,6 +22,8 @@ const App: React.FC = () => {
       return 'light' as Mode;
     }
   });
+
+  const [openUpload, setOpenUpload] = useState(false);
 
   const theme = useMemo(() => {
     let themeObj = createTheme(getDesignTokens(mode));
@@ -34,6 +37,9 @@ const App: React.FC = () => {
       return newMode;
     });
   };
+
+  const handleOpenUpload = () => setOpenUpload(true);
+  const handleCloseUpload = () => setOpenUpload(false);
 
   return (
     <ThemeProvider theme={theme}>
@@ -50,9 +56,18 @@ const App: React.FC = () => {
             <Typography variant="h6" color="text.primary" sx={{ fontWeight: 'bold', flexGrow: 1 }}>
               PL-400 Exam Trainer
             </Typography>
-            <IconButton onClick={toggleColorMode} color="inherit">
-              {mode === 'dark' ? <Brightness7 /> : <Brightness4 />}
-            </IconButton>
+
+            <Tooltip title="Завантажити JSON з питаннями">
+              <IconButton onClick={handleOpenUpload} color="inherit" sx={{ mr: 1 }}>
+                <CloudUpload />
+              </IconButton>
+            </Tooltip>
+
+            <Tooltip title="Змінити тему">
+              <IconButton onClick={toggleColorMode} color="inherit">
+                {mode === 'dark' ? <Brightness7 /> : <Brightness4 />}
+              </IconButton>
+            </Tooltip>
           </Toolbar>
         </AppBar>
 
@@ -67,6 +82,12 @@ const App: React.FC = () => {
             Built for success in Microsoft Certification
           </Typography>
         </Box>
+
+        <DataLoadModal
+          open={openUpload}
+          mode={mode}
+          handleClose={handleCloseUpload}
+        />
       </Box>
     </ThemeProvider>
   );
