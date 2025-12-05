@@ -46,6 +46,7 @@ const ExamSimulator: React.FC = () => {
     const [score, setScore] = useState<number>(0);
     const [answeredCount, setAnsweredCount] = useState<number>(0);
     const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
+    const [tempSelectedOptionId, setTempSelectedOptionId] = useState<string | null>(null);
     const [isAnswered, setIsAnswered] = useState<boolean>(false);
     const [isFinished, setIsFinished] = useState<boolean>(false);
 
@@ -73,6 +74,7 @@ const ExamSimulator: React.FC = () => {
             setSelectedOptionId(progress.selectedOptionId);
             setIsAnswered(progress.isAnswered);
             setIsFinished(progress.isFinished);
+            setTempSelectedOptionId(progress.tempSelectedOptionId || null);
             // Set the questions list based on the restored mode
             setQuestions(shuffleQuestionsAndOptions(parsedQuestions, progress.isRandomMode));
         } else {
@@ -95,6 +97,7 @@ const ExamSimulator: React.FC = () => {
                 isAnswered,
                 isFinished,
                 isRandomMode,
+                tempSelectedOptionId,
             };
             localStorage.setItem('examProgress', JSON.stringify(progress));
         }
@@ -105,12 +108,17 @@ const ExamSimulator: React.FC = () => {
 
     const handleOptionSelect = (optionId: string) => {
         if (isAnswered) return;
+        setTempSelectedOptionId(optionId);
+    };
 
-        setSelectedOptionId(optionId);
+    const handleSubmitAnswer = () => {
+        if (!tempSelectedOptionId || isAnswered) return;
+
+        setSelectedOptionId(tempSelectedOptionId);
         setIsAnswered(true);
         setAnsweredCount(prev => prev + 1);
 
-        if (optionId === questions[currentQIndex].correctOptionId) {
+        if (tempSelectedOptionId === questions[currentQIndex].correctOptionId) {
             setScore(prev => prev + 1);
         }
     };
@@ -119,6 +127,7 @@ const ExamSimulator: React.FC = () => {
         if (currentQIndex < questions.length - 1) {
             setCurrentQIndex(prev => prev + 1);
             setSelectedOptionId(null);
+            setTempSelectedOptionId(null);
             setIsAnswered(false);
         }
         else {
@@ -137,6 +146,7 @@ const ExamSimulator: React.FC = () => {
         setScore(0);
         setAnsweredCount(0);
         setSelectedOptionId(null);
+        setTempSelectedOptionId(null);
         setIsAnswered(false);
         setIsFinished(false);
     };
@@ -156,6 +166,7 @@ const ExamSimulator: React.FC = () => {
         setScore(0);
         setAnsweredCount(0);
         setSelectedOptionId(null);
+        setTempSelectedOptionId(null);
         setIsAnswered(false);
         setIsFinished(false);
     };
@@ -177,15 +188,6 @@ const ExamSimulator: React.FC = () => {
         );
     }
 
-    if (isDataLoadModalOpen) {
-        return (
-            <DataLoadModal
-                open={isDataLoadModalOpen}
-                handleClose={handleCloseDataLoadModal}
-                mode="light"
-            />
-        );
-    }
 
     if (isFinished) {
         return (
@@ -211,8 +213,10 @@ const ExamSimulator: React.FC = () => {
             <QuestionCard
                 question={questions[currentQIndex]}
                 selectedOptionId={selectedOptionId}
+                tempSelectedOptionId={tempSelectedOptionId}
                 isAnswered={isAnswered}
                 onOptionSelect={handleOptionSelect}
+                onSubmitAnswer={handleSubmitAnswer}
                 onNext={handleNext}
                 isLastQuestion={currentQIndex === questions.length - 1}
             />

@@ -6,8 +6,10 @@ import { type Question } from '../types';
 interface QuestionCardProps {
     question: Question;
     selectedOptionId: string | null;
+    tempSelectedOptionId: string | null; // New prop for selected option before final submission
     isAnswered: boolean;
     onOptionSelect: (id: string) => void;
+    onSubmitAnswer: () => void; // New prop for submitting the answer
     onNext: () => void;
     isLastQuestion: boolean;
 }
@@ -18,30 +20,40 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     isAnswered,
     onOptionSelect,
     onNext,
-    isLastQuestion
+    isLastQuestion,
+    tempSelectedOptionId,
+    onSubmitAnswer
 }) => {
 
     // Допоміжна функція для визначення кольору кнопки
     const getButtonState = (optionId: string) => {
-        let color: "primary" | "success" | "error" = "primary";
+        let color: "primary" | "success" | "error" | "info" = "primary";
         let variant: "outlined" | "contained" = "outlined";
         let icon = null;
 
         if (isAnswered) {
             if (optionId === question.correctOptionId) {
-                // Це правильна відповідь (завжди зелена)
                 color = "success";
                 variant = "contained";
                 icon = <CheckCircle />;
             } else if (optionId === selectedOptionId) {
-                // Це вибрана нами відповідь, і вона неправильна (бо правильна оброблена вище)
                 color = "error";
                 variant = "contained";
                 icon = <Cancel />;
+            } else {
+                // Other non-selected, non-correct options after answer
+                variant = "outlined";
+                color = "primary";
             }
         } else {
-            // Поки не відповіли - підсвічуємо при наведенні або виборі (якщо потрібно)
-            if (selectedOptionId === optionId) variant = "outlined";
+            // Before answer is submitted
+            if (optionId === tempSelectedOptionId) {
+                color = "info"; // Highlight temporarily selected option
+                variant = "contained";
+            } else {
+                variant = "outlined";
+                color = "primary";
+            }
         }
 
         return { color, variant, icon };
@@ -62,7 +74,6 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                             <Button
                                 key={option.id}
                                 variant={variant}
-                                // color={color}
                                 onClick={() => onOptionSelect(option.id)}
                                 disabled={isAnswered}
                                 fullWidth
@@ -73,7 +84,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                                     py: 1.5,
                                     textTransform: 'none',
                                     fontSize: '1rem',
-                                    borderColor: isAnswered && variant === 'outlined' ? '#eee' : undefined,
+                                    borderColor: isAnswered && variant === 'outlined' ? theme.palette.divider : undefined,
                                     color: `${theme.palette[color].main} !important`,
                                 })}
                             >
@@ -84,14 +95,19 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                 </Stack>
             </CardContent>
 
-            {/* Футер з кнопкою "Далі" з'являється тільки після відповіді */}
-            {isAnswered && (
-                <Box sx={{ p: 2, bgcolor: 'background.default', borderTop: '1px solid #eee', display: 'flex', justifyContent: 'flex-end' }}>
+            {/* Футер з кнопкою "Відповісти" або "Далі" */}
+            <Box sx={{ p: 2, bgcolor: 'background.default', borderTop: '1px solid #eee', display: 'flex', justifyContent: 'flex-end', gap: 2 }}>
+                {!isAnswered && tempSelectedOptionId && (
+                    <Button variant="contained" size="large" onClick={onSubmitAnswer}>
+                        Відповісти
+                    </Button>
+                )}
+                {isAnswered && (
                     <Button variant="contained" size="large" onClick={onNext}>
                         {isLastQuestion ? "Завершити тест" : "Наступне питання"}
                     </Button>
-                </Box>
-            )}
+                )}
+            </Box>
         </Card>
     );
-};
+}

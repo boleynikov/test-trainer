@@ -15,6 +15,9 @@ export const getDesignTokens = (mode: Mode) => ({
                 secondary: {
                     main: '#10B981',
                 },
+                info: {
+                    main: '#FEE2E2',
+                },
                 error: {
                     main: '#EF4444', // Red 500
                     light: '#FEE2E2',
@@ -45,6 +48,9 @@ export const getDesignTokens = (mode: Mode) => ({
                 },
                 secondary: {
                     main: '#34D399',
+                },
+                info: {
+                    main: '#FEE2E2',
                 },
                 error: {
                     main: '#F87171', // Red 400
