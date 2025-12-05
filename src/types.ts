@@ -7,6 +7,8 @@ export type Question = {
     id: number;
     text: string;
     options: AnswerOption[];
-    correctOptionId: string;
+    correctOptionId?: string;
+    correctOptionIds?: string[];
+    isMultiSelect?: boolean;
     explanation?: string; // Опціонально: пояснення чому так
 }

@@ -4,12 +4,12 @@ import { Refresh } from '@mui/icons-material';
 
 interface ResultScreenProps {
     score: number;
-    totalQuestions: number;
+    totalPoints: number;
     onRestart: () => void;
 }
 
-export const ResultScreen: React.FC<ResultScreenProps> = ({ score, totalQuestions, onRestart }) => {
-    const successRate = totalQuestions > 0 ? Math.round((score / totalQuestions) * 100) : 0;
+export const ResultScreen: React.FC<ResultScreenProps> = ({ score, totalPoints, onRestart }) => {
+    const successRate = totalPoints > 0 ? Math.round((score / totalPoints) * 100) : 0;
     const isPassed = successRate >= 70; // Наприклад, поріг 70%
 
     return (
@@ -30,7 +30,7 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({ score, totalQuestion
                     </Box>
 
                     <Typography variant="body1" paragraph>
-                        Правильних відповідей: <strong>{score}</strong> з <strong>{totalQuestions}</strong>
+                        Правильних відповідей: <strong>{score}</strong> з <strong>{totalPoints}</strong>
                     </Typography>
 
                     <Button

@@ -35,6 +35,12 @@ const ExamSimulator: React.FC = () => {
     // Core state
     const [originalQuestions, setOriginalQuestions] = useState<Question[]>([]);
     const [questions, setQuestions] = useState<Question[]>([]); // The shuffled/sorted list in use
+    const totalPoints = questions.reduce((acc, question) => {
+        if (question.isMultiSelect) {
+            return acc + (question.correctOptionIds?.length || 0);
+        }
+        return acc + 1;
+    }, 0);
 
     // Loading/Modal state
     const [isDataLoadModalOpen, setIsDataLoadModalOpen] = useState<boolean>(false);
@@ -44,9 +50,9 @@ const ExamSimulator: React.FC = () => {
     const [isRandomMode, setIsRandomMode] = useState<boolean>(false);
     const [currentQIndex, setCurrentQIndex] = useState<number>(0);
     const [score, setScore] = useState<number>(0);
-    const [answeredCount, setAnsweredCount] = useState<number>(0);
-    const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
-    const [tempSelectedOptionId, setTempSelectedOptionId] = useState<string | null>(null);
+    const [answeredCount, setAnsweredCount] = useState<Question[]>([]);
+    const [selectedOptionIds, setSelectedOptionIds] = useState<string[]>([]);
+    const [tempSelectedOptionIds, setTempSelectedOptionIds] = useState<string[]>([]);
     const [isAnswered, setIsAnswered] = useState<boolean>(false);
     const [isFinished, setIsFinished] = useState<boolean>(false);
 
@@ -71,10 +77,10 @@ const ExamSimulator: React.FC = () => {
             setCurrentQIndex(progress.currentQIndex);
             setScore(progress.score);
             setAnsweredCount(progress.answeredCount);
-            setSelectedOptionId(progress.selectedOptionId);
+            setSelectedOptionIds(progress.selectedOptionIds || []);
             setIsAnswered(progress.isAnswered);
             setIsFinished(progress.isFinished);
-            setTempSelectedOptionId(progress.tempSelectedOptionId || null);
+            setTempSelectedOptionIds(progress.tempSelectedOptionIds || []);
             // Set the questions list based on the restored mode
             setQuestions(shuffleQuestionsAndOptions(parsedQuestions, progress.isRandomMode));
         } else {
@@ -93,41 +99,72 @@ const ExamSimulator: React.FC = () => {
                 currentQIndex,
                 score,
                 answeredCount,
-                selectedOptionId,
+                selectedOptionIds,
                 isAnswered,
                 isFinished,
                 isRandomMode,
-                tempSelectedOptionId,
+                tempSelectedOptionIds,
             };
             localStorage.setItem('examProgress', JSON.stringify(progress));
         }
-    }, [isLoaded, currentQIndex, score, answeredCount, selectedOptionId, isAnswered, isFinished, isRandomMode]);
+    }, [isLoaded, currentQIndex, score, answeredCount, selectedOptionIds, isAnswered, isFinished, isRandomMode, tempSelectedOptionIds]);
 
 
     // --- HANDLERS ---
 
     const handleOptionSelect = (optionId: string) => {
         if (isAnswered) return;
-        setTempSelectedOptionId(optionId);
+
+        const currentQuestion = questions[currentQIndex];
+        if (currentQuestion.isMultiSelect) {
+            // Toggle selection for multiselect
+            setTempSelectedOptionIds(prev =>
+                prev.includes(optionId)
+                    ? prev.filter(id => id !== optionId)
+                    : [...prev, optionId]
+            );
+        } else {
+            // Single select behavior
+            setTempSelectedOptionIds([optionId]);
+        }
     };
 
     const handleSubmitAnswer = () => {
-        if (!tempSelectedOptionId || isAnswered) return;
+        if (tempSelectedOptionIds.length === 0 || isAnswered) return;
 
-        setSelectedOptionId(tempSelectedOptionId);
+        const currentQuestion = questions[currentQIndex];
+
+        setSelectedOptionIds(tempSelectedOptionIds);
         setIsAnswered(true);
-        setAnsweredCount(prev => prev + 1);
+        setAnsweredCount(prev => [...prev, currentQuestion]);
 
-        if (tempSelectedOptionId === questions[currentQIndex].correctOptionId) {
-            setScore(prev => prev + 1);
+
+        // Variable to track how many points to add
+        let pointsToAdd = 0;
+
+        if (currentQuestion.isMultiSelect) {
+            const correctIds = currentQuestion.correctOptionIds || [];
+
+            // Count how many selected IDs exist in the correctIds array
+            pointsToAdd = tempSelectedOptionIds.filter(id => correctIds.includes(id)).length;
+        } else {
+            // Single Select Logic
+            if (tempSelectedOptionIds[0] === currentQuestion.correctOptionId) {
+                pointsToAdd = 1;
+            }
+        }
+
+        // Update Score
+        if (pointsToAdd > 0) {
+            setScore(prev => prev + pointsToAdd);
         }
     };
 
     const handleNext = () => {
         if (currentQIndex < questions.length - 1) {
             setCurrentQIndex(prev => prev + 1);
-            setSelectedOptionId(null);
-            setTempSelectedOptionId(null);
+            setSelectedOptionIds([]);
+            setTempSelectedOptionIds([]);
             setIsAnswered(false);
         }
         else {
@@ -144,9 +181,9 @@ const ExamSimulator: React.FC = () => {
         setQuestions(shuffled);
         setCurrentQIndex(0);
         setScore(0);
-        setAnsweredCount(0);
-        setSelectedOptionId(null);
-        setTempSelectedOptionId(null);
+        setAnsweredCount([]);
+        setSelectedOptionIds([]);
+        setTempSelectedOptionIds([]);
         setIsAnswered(false);
         setIsFinished(false);
     };
@@ -164,9 +201,9 @@ const ExamSimulator: React.FC = () => {
         setQuestions(shuffled);
         setCurrentQIndex(0);
         setScore(0);
-        setAnsweredCount(0);
-        setSelectedOptionId(null);
-        setTempSelectedOptionId(null);
+        setAnsweredCount([]);
+        setSelectedOptionIds([]);
+        setTempSelectedOptionIds([]);
         setIsAnswered(false);
         setIsFinished(false);
     };
@@ -193,7 +230,7 @@ const ExamSimulator: React.FC = () => {
         return (
             <ResultScreen
                 score={score}
-                totalQuestions={questions.length}
+                totalPoints={totalPoints}
                 onRestart={handleRestartQuiz}
             />
         );
@@ -212,8 +249,8 @@ const ExamSimulator: React.FC = () => {
 
             <QuestionCard
                 question={questions[currentQIndex]}
-                selectedOptionId={selectedOptionId}
-                tempSelectedOptionId={tempSelectedOptionId}
+                selectedOptionIds={selectedOptionIds}
+                tempSelectedOptionIds={tempSelectedOptionIds}
                 isAnswered={isAnswered}
                 onOptionSelect={handleOptionSelect}
                 onSubmitAnswer={handleSubmitAnswer}

@@ -1,11 +1,12 @@
 import React from 'react';
 import { Box, Typography, Switch, FormControlLabel, LinearProgress, Chip } from '@mui/material';
+import type { Question } from '../types';
 
 interface QuizHeaderProps {
     currentQuestionIndex: number;
     totalQuestions: number;
     score: number;
-    answeredCount: number;
+    answeredCount: Question[];
     isRandomMode: boolean;
     onToggleRandom: (checked: boolean) => void;
 }
@@ -14,13 +15,20 @@ export const QuizHeader: React.FC<QuizHeaderProps> = ({
     currentQuestionIndex,
     totalQuestions,
     score,
-    answeredCount,
+    answeredCount = [],
     isRandomMode,
     onToggleRandom,
 }) => {
 
-    const successRate = answeredCount > 0
-        ? Math.round((score / answeredCount) * 100)
+    const answeredPoints = answeredCount.reduce((acc, question) => {
+        if (question.isMultiSelect) {
+            return acc + (question.correctOptionIds?.length || 0);
+        }
+        return acc + 1;
+    }, 0);
+
+    const successRate = answeredPoints > 0
+        ? Math.round((score / answeredPoints) * 100)
         : 0;
 
     const progress = totalQuestions > 0

@@ -1,12 +1,12 @@
 import React from 'react';
-import { Card, CardContent, Typography, Button, Stack, Box } from '@mui/material';
+import { Card, CardContent, Typography, Button, Stack, Box, FormControlLabel, Checkbox, Radio } from '@mui/material';
 import { CheckCircle, Cancel } from '@mui/icons-material';
 import { type Question } from '../types';
 
 interface QuestionCardProps {
     question: Question;
-    selectedOptionId: string | null;
-    tempSelectedOptionId: string | null; // New prop for selected option before final submission
+    selectedOptionIds: string[];
+    tempSelectedOptionIds: string[]; // New prop for selected option before final submission
     isAnswered: boolean;
     onOptionSelect: (id: string) => void;
     onSubmitAnswer: () => void; // New prop for submitting the answer
@@ -16,47 +16,85 @@ interface QuestionCardProps {
 
 export const QuestionCard: React.FC<QuestionCardProps> = ({
     question,
-    selectedOptionId,
+    selectedOptionIds,
     isAnswered,
     onOptionSelect,
     onNext,
     isLastQuestion,
-    tempSelectedOptionId,
+    tempSelectedOptionIds,
     onSubmitAnswer
 }) => {
-
-    // Допоміжна функція для визначення кольору кнопки
-    const getButtonState = (optionId: string) => {
-        let color: "primary" | "success" | "error" | "info" = "primary";
-        let variant: "outlined" | "contained" = "outlined";
-        let icon = null;
+    // Допоміжна функція для визначення кольору та стану контрола
+    const getControlState = (optionId: string) => {
+        let color: "primary" | "success" | "error" | "secondary" = "primary";
+        let icon = undefined;
+        let checked = false;
 
         if (isAnswered) {
-            if (optionId === question.correctOptionId) {
+            const isCorrect = question.isMultiSelect
+                ? (question.correctOptionIds || []).includes(optionId)
+                : optionId === question.correctOptionId;
+
+            if (isCorrect) {
                 color = "success";
-                variant = "contained";
                 icon = <CheckCircle />;
-            } else if (optionId === selectedOptionId) {
+            } else if (selectedOptionIds.includes(optionId)) {
                 color = "error";
-                variant = "contained";
                 icon = <Cancel />;
             } else {
-                // Other non-selected, non-correct options after answer
-                variant = "outlined";
-                color = "primary";
+                color = "secondary";
             }
+            checked = selectedOptionIds.includes(optionId) || isCorrect;
         } else {
             // Before answer is submitted
-            if (optionId === tempSelectedOptionId) {
-                color = "info"; // Highlight temporarily selected option
-                variant = "contained";
-            } else {
-                variant = "outlined";
-                color = "primary";
-            }
+            checked = tempSelectedOptionIds.includes(optionId);
+            color = checked ? "primary" : "secondary";
         }
 
-        return { color, variant, icon };
+        return { color, icon, checked };
+    };
+
+    const renderOption = (option: any) => {
+        const { color, icon, checked } = getControlState(option.id);
+        const control = question.isMultiSelect ? (
+            <Checkbox
+                checked={checked}
+                onChange={() => onOptionSelect(option.id)}
+                disabled={isAnswered}
+                color={color}
+                checkedIcon={icon}
+            />
+        ) : (
+            <Radio
+                checked={checked}
+                onChange={() => onOptionSelect(option.id)}
+                disabled={isAnswered}
+                color={color}
+                checkedIcon={icon}
+            />
+        );
+
+        return (
+            <FormControlLabel
+                key={option.id}
+                control={control}
+                label={option.text}
+                sx={(theme) => ({
+                    border: 1,
+                    borderColor: ['success', 'error'].includes(color) ? `${theme.palette[color].main} !important` : 'divider',
+                    borderRadius: 1,
+                    p: 1,
+                    m: 0,
+                    width: '100%',
+                    '& .MuiFormControlLabel-label': {
+                        width: '100%'
+                    },
+                    '& .Mui-disabled': {
+                        color: ['success', 'error'].includes(color) ? `${theme.palette[color].main} !important` : undefined,
+                    }
+                })}
+            />
+        );
     };
 
     return (
@@ -67,37 +105,13 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                 </Typography>
 
                 <Stack spacing={2}>
-                    {question.options.map((option) => {
-                        const { color, variant, icon } = getButtonState(option.id);
-
-                        return (
-                            <Button
-                                key={option.id}
-                                variant={variant}
-                                onClick={() => onOptionSelect(option.id)}
-                                disabled={isAnswered}
-                                fullWidth
-                                endIcon={icon}
-                                sx={(theme) => ({
-                                    justifyContent: 'flex-start',
-                                    textAlign: 'left',
-                                    py: 1.5,
-                                    textTransform: 'none',
-                                    fontSize: '1rem',
-                                    borderColor: isAnswered && variant === 'outlined' ? theme.palette.divider : undefined,
-                                    color: `${theme.palette[color].main} !important`,
-                                })}
-                            >
-                                {option.text}
-                            </Button>
-                        );
-                    })}
+                    {question.options.map(renderOption)}
                 </Stack>
             </CardContent>
 
             {/* Футер з кнопкою "Відповісти" або "Далі" */}
             <Box sx={{ p: 2, bgcolor: 'background.default', borderTop: '1px solid #eee', display: 'flex', justifyContent: 'flex-end', gap: 2 }}>
-                {!isAnswered && tempSelectedOptionId && (
+                {!isAnswered && tempSelectedOptionIds.length > 0 && (
                     <Button variant="contained" size="large" onClick={onSubmitAnswer}>
                         Відповісти
                     </Button>
