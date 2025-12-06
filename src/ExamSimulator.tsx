@@ -5,6 +5,7 @@ import { ResultScreen } from './components/ResultScreen';
 import { QuizHeader } from './components/QuizHeader';
 import { QuestionCard } from './components/QuestionCard';
 import { DataLoadModal } from './components/DataLoadModal';
+import DragAndDropQuestion from './components/DragAndDropQuestion';
 
 // --- UTILS ---
 const shuffleArray = <T,>(array: T[]): T[] => {
@@ -35,10 +36,16 @@ const ExamSimulator: React.FC = () => {
     // Core state
     const [originalQuestions, setOriginalQuestions] = useState<Question[]>([]);
     const [questions, setQuestions] = useState<Question[]>([]); // The shuffled/sorted list in use
+    
     const totalPoints = questions.reduce((acc, question) => {
         if (question.isMultiSelect) {
             return acc + (question.correctOptionIds?.length || 0);
         }
+
+        if (question.correctZoneAnswers && Object.keys(question.correctZoneAnswers).length > 0) {
+            return acc + Object.keys(question.correctZoneAnswers).length;
+        }
+
         return acc + 1;
     }, 0);
 
@@ -50,7 +57,7 @@ const ExamSimulator: React.FC = () => {
     const [isRandomMode, setIsRandomMode] = useState<boolean>(false);
     const [currentQIndex, setCurrentQIndex] = useState<number>(0);
     const [score, setScore] = useState<number>(0);
-    const [answeredCount, setAnsweredCount] = useState<Question[]>([]);
+    const [answeredQuestions, setAnsweredQuestions] = useState<Question[]>([]);
     const [selectedOptionIds, setSelectedOptionIds] = useState<string[]>([]);
     const [tempSelectedOptionIds, setTempSelectedOptionIds] = useState<string[]>([]);
     const [isAnswered, setIsAnswered] = useState<boolean>(false);
@@ -76,7 +83,7 @@ const ExamSimulator: React.FC = () => {
             setIsRandomMode(progress.isRandomMode);
             setCurrentQIndex(progress.currentQIndex);
             setScore(progress.score);
-            setAnsweredCount(progress.answeredCount);
+            setAnsweredQuestions(progress.answeredQuestions);
             setSelectedOptionIds(progress.selectedOptionIds || []);
             setIsAnswered(progress.isAnswered);
             setIsFinished(progress.isFinished);
@@ -98,7 +105,7 @@ const ExamSimulator: React.FC = () => {
             const progress = {
                 currentQIndex,
                 score,
-                answeredCount,
+                answeredQuestions,
                 selectedOptionIds,
                 isAnswered,
                 isFinished,
@@ -107,7 +114,7 @@ const ExamSimulator: React.FC = () => {
             };
             localStorage.setItem('examProgress', JSON.stringify(progress));
         }
-    }, [isLoaded, currentQIndex, score, answeredCount, selectedOptionIds, isAnswered, isFinished, isRandomMode, tempSelectedOptionIds]);
+    }, [isLoaded, currentQIndex, score, answeredQuestions, selectedOptionIds, isAnswered, isFinished, isRandomMode, tempSelectedOptionIds]);
 
 
     // --- HANDLERS ---
@@ -136,7 +143,7 @@ const ExamSimulator: React.FC = () => {
 
         setSelectedOptionIds(tempSelectedOptionIds);
         setIsAnswered(true);
-        setAnsweredCount(prev => [...prev, currentQuestion]);
+        setAnsweredQuestions(prev => [...prev, currentQuestion]);
 
 
         // Variable to track how many points to add
@@ -181,7 +188,7 @@ const ExamSimulator: React.FC = () => {
         setQuestions(shuffled);
         setCurrentQIndex(0);
         setScore(0);
-        setAnsweredCount([]);
+        setAnsweredQuestions([]);
         setSelectedOptionIds([]);
         setTempSelectedOptionIds([]);
         setIsAnswered(false);
@@ -201,11 +208,19 @@ const ExamSimulator: React.FC = () => {
         setQuestions(shuffled);
         setCurrentQIndex(0);
         setScore(0);
-        setAnsweredCount([]);
+        setAnsweredQuestions([]);
         setSelectedOptionIds([]);
         setTempSelectedOptionIds([]);
         setIsAnswered(false);
         setIsFinished(false);
+    };
+
+    const handleSubmitDndAnswer = (pointsEarned: number) => {
+        setIsAnswered(true);
+        setAnsweredQuestions(prev => [...prev, questions[currentQIndex]]);
+        if (pointsEarned > 0) {
+            setScore(prev => prev + pointsEarned);
+        }
     };
 
 
@@ -236,27 +251,38 @@ const ExamSimulator: React.FC = () => {
         );
     }
 
+    const currentQuestion = questions[currentQIndex];
+
     return (
         <Container maxWidth="md" sx={{ mt: 4 }}>
             <QuizHeader
                 currentQuestionIndex={currentQIndex}
                 totalQuestions={questions.length}
                 score={score}
-                answeredCount={answeredCount}
+                answeredQuestions={answeredQuestions}
                 isRandomMode={isRandomMode}
                 onToggleRandom={handleToggleRandom}
             />
 
-            <QuestionCard
-                question={questions[currentQIndex]}
-                selectedOptionIds={selectedOptionIds}
-                tempSelectedOptionIds={tempSelectedOptionIds}
-                isAnswered={isAnswered}
-                onOptionSelect={handleOptionSelect}
-                onSubmitAnswer={handleSubmitAnswer}
-                onNext={handleNext}
-                isLastQuestion={currentQIndex === questions.length - 1}
-            />
+            {currentQuestion.type === 'dnd' || currentQuestion.type === 'dnd-zones' ? (
+                <DragAndDropQuestion
+                    question={currentQuestion}
+                    onSubmitAnswer={handleSubmitDndAnswer}
+                    onNext={handleNext}
+                    isLastQuestion={currentQIndex === questions.length - 1}
+                />
+            ) : (
+                <QuestionCard
+                    question={currentQuestion}
+                    selectedOptionIds={selectedOptionIds}
+                    tempSelectedOptionIds={tempSelectedOptionIds}
+                    isAnswered={isAnswered}
+                    onOptionSelect={handleOptionSelect}
+                    onSubmitAnswer={handleSubmitAnswer}
+                    onNext={handleNext}
+                    isLastQuestion={currentQIndex === questions.length - 1}
+                />
+            )}
         </Container>
     );
 };

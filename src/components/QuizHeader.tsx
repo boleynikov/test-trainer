@@ -6,7 +6,7 @@ interface QuizHeaderProps {
     currentQuestionIndex: number;
     totalQuestions: number;
     score: number;
-    answeredCount: Question[];
+    answeredQuestions: Question[];
     isRandomMode: boolean;
     onToggleRandom: (checked: boolean) => void;
 }
@@ -15,18 +15,23 @@ export const QuizHeader: React.FC<QuizHeaderProps> = ({
     currentQuestionIndex,
     totalQuestions,
     score,
-    answeredCount = [],
+    answeredQuestions = [],
     isRandomMode,
     onToggleRandom,
 }) => {
 
-    const answeredPoints = answeredCount.reduce((acc, question) => {
+    const answeredPoints = answeredQuestions.reduce((acc, question) => {
         if (question.isMultiSelect) {
             return acc + (question.correctOptionIds?.length || 0);
         }
+
+        if (question.correctZoneAnswers && Object.keys(question.correctZoneAnswers).length > 0) {
+            return acc + Object.keys(question.correctZoneAnswers).length;
+        }
+
         return acc + 1;
     }, 0);
-
+    
     const successRate = answeredPoints > 0
         ? Math.round((score / answeredPoints) * 100)
         : 0;

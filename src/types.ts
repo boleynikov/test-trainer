@@ -10,5 +10,10 @@ export type Question = {
     correctOptionId?: string;
     correctOptionIds?: string[];
     isMultiSelect?: boolean;
-    explanation?: string; // Опціонально: пояснення чому так
+    explanation?: string;
+    type?: 'default' | 'dnd' | 'dnd-zones';
+    correctOrder?: string[];
+    dndOptions?: AnswerOption[];
+    zones?: { id: string; title: string }[];
+    correctZoneAnswers?: Record<string, string>;
 }

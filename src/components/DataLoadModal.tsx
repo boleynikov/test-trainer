@@ -69,13 +69,31 @@ export const DataLoadModal: React.FC<DataLoadModalProps> = ({ open, mode, handle
   {
     "correctOptionId": "opt2",
     "id": "1",
-    "text": "Який тип компонента PCF слід використовувати для візуалізації?",
+    "text": "Which PCF component type should be used for visualization?",
     "options": [
       { "id": "opt1", "text": "Standard Component" },
       { "id": "opt2", "text": "Dataset Component" },
-      { "id": "opt3", "text": "Field Component" },
-      { "id": "opt4", "text": "Service Component" }
+      { "id": "opt3", "text": "Field Component" }
     ]
+  },
+  {
+    "id": 2,
+    "text": "Categorize these programming languages",
+    "type": "dnd-zones",
+    "dndOptions": [
+        { "id": "js", "text": "JavaScript" },
+        { "id": "py", "text": "Python" },
+        { "id": "ts", "text": "TypeScript" }
+    ],
+    "zones": [
+        { "id": "client", "title": "Client-Side" },
+        { "id": "server", "title": "Server-Side" }
+    ],
+    "correctZoneAnswers": {
+        "js": "client",
+        "py": "server",
+        "ts": "client"
+    }
   }, ...
 ]`}
                 </Box>
@@ -96,6 +114,7 @@ export const DataLoadModal: React.FC<DataLoadModalProps> = ({ open, mode, handle
                         />
                     </Button>
                 </Box>
+
             </DialogContent>
             <DialogActions sx={{ px: 3, pb: 3 }}>
                 <Button onClick={handleClose} color="inherit">
