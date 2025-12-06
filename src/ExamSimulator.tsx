@@ -36,7 +36,7 @@ const ExamSimulator: React.FC = () => {
     // Core state
     const [originalQuestions, setOriginalQuestions] = useState<Question[]>([]);
     const [questions, setQuestions] = useState<Question[]>([]); // The shuffled/sorted list in use
-    
+
     const totalPoints = questions.reduce((acc, question) => {
         if (question.isMultiSelect) {
             return acc + (question.correctOptionIds?.length || 0);
