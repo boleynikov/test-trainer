@@ -40,7 +40,7 @@ export const DataLoadModal: React.FC<DataLoadModalProps> = ({ open, mode, handle
     };
 
     return (
-        <Dialog open={open} onClose={handleClose} maxWidth="sm" fullWidth>
+        <Dialog open={open} onClose={handleClose} maxWidth="md" fullWidth>
             <DialogTitle sx={{ fontWeight: 'bold' }}>Завантаження питань</DialogTitle>
             <DialogContent>
                 <DialogContentText paragraph>
@@ -63,7 +63,8 @@ export const DataLoadModal: React.FC<DataLoadModalProps> = ({ open, mode, handle
                         overflowX: 'auto',
                         fontSize: '0.85rem',
                         border: 1,
-                        borderColor: 'divider'
+                        borderColor: 'divider',
+                        maxHeight: '500px'
                     }}
                 >
 {`[
