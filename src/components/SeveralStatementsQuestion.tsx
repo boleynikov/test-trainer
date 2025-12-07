@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Card, CardContent, Typography, Button, Box, Select, MenuItem, FormControl, InputLabel, Grid, useTheme } from '@mui/material';
+import { Card, CardContent, Typography, Button, Box, Select, MenuItem, FormControl, Grid, useTheme } from '@mui/material';
 import { CheckCircle, Cancel } from '@mui/icons-material';
-import type { AnswerOption, Question } from '../types';
+import type { Question } from '../types';
 
 interface SeveralStatementsQuestionProps {
     question: Question;
@@ -62,7 +62,7 @@ const SeveralStatementsQuestion: React.FC<SeveralStatementsQuestionProps> = ({ q
         onSubmitAnswer(pointsEarned);
     };
 
-    const getMenuItemStyle = (statementId: string, optionId: string, statementOptions: AnswerOption[]) => {
+    const getMenuItemStyle = (statementId: string, optionId: string) => {
         if (!isAnswered) return {};
 
         const isSelected = selectedStatementAnswers[statementId] === optionId;
@@ -123,7 +123,7 @@ const SeveralStatementsQuestion: React.FC<SeveralStatementsQuestionProps> = ({ q
                                         <MenuItem
                                             key={option.id}
                                             value={option.id}
-                                            sx={getMenuItemStyle(statement.id, option.id, statement.options)}
+                                            sx={getMenuItemStyle(statement.id, option.id)}
                                         >
                                             {option.text}
                                             {isAnswered && question.correctStatementAnswers && question.correctStatementAnswers[statement.id] === option.id && (
