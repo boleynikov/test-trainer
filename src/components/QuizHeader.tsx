@@ -29,6 +29,10 @@ export const QuizHeader: React.FC<QuizHeaderProps> = ({
             return acc + Object.keys(question.correctZoneAnswers).length;
         }
 
+        if (question.type === 'statements-match' && question.statements) {
+            return acc + question.statements.length;
+        }
+
         return acc + 1;
     }, 0);
     

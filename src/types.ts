@@ -11,9 +11,11 @@ export type Question = {
     correctOptionIds?: string[];
     isMultiSelect?: boolean;
     explanation?: string;
-    type?: 'default' | 'dnd' | 'dnd-zones';
+    type?: 'default' | 'dnd' | 'dnd-zones' | 'statements-match';
     correctOrder?: string[];
     dndOptions?: AnswerOption[];
     zones?: { id: string; title: string }[];
     correctZoneAnswers?: Record<string, string>;
+    statements?: { id: string; text: string; options: AnswerOption[] }[];
+    correctStatementAnswers?: Record<string, string>;
 }

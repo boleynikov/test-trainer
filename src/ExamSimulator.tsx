@@ -6,6 +6,7 @@ import { QuizHeader } from './components/QuizHeader';
 import { QuestionCard } from './components/QuestionCard';
 import { DataLoadModal } from './components/DataLoadModal';
 import DragAndDropQuestion from './components/DragAndDropQuestion';
+import SeveralStatementsQuestion from './components/SeveralStatementsQuestion';
 
 // --- UTILS ---
 const shuffleArray = <T,>(array: T[]): T[] => {
@@ -44,6 +45,10 @@ const ExamSimulator: React.FC = () => {
 
         if (question.correctZoneAnswers && Object.keys(question.correctZoneAnswers).length > 0) {
             return acc + Object.keys(question.correctZoneAnswers).length;
+        }
+
+        if (question.type === 'statements-match' && question.statements) {
+            return acc + question.statements.length;
         }
 
         return acc + 1;
@@ -143,27 +148,26 @@ const ExamSimulator: React.FC = () => {
 
         setSelectedOptionIds(tempSelectedOptionIds);
         setIsAnswered(true);
-        setAnsweredQuestions(prev => [...prev, currentQuestion]);
-
 
         // Variable to track how many points to add
         let pointsToAdd = 0;
 
         if (currentQuestion.isMultiSelect) {
             const correctIds = currentQuestion.correctOptionIds || [];
-
-            // Count how many selected IDs exist in the correctIds array
             pointsToAdd = tempSelectedOptionIds.filter(id => correctIds.includes(id)).length;
         } else {
-            // Single Select Logic
             if (tempSelectedOptionIds[0] === currentQuestion.correctOptionId) {
                 pointsToAdd = 1;
             }
         }
+        handleQuestionSubmit(pointsToAdd);
+    };
 
-        // Update Score
-        if (pointsToAdd > 0) {
-            setScore(prev => prev + pointsToAdd);
+    const handleQuestionSubmit = (pointsEarned: number) => {
+        setIsAnswered(true);
+        setAnsweredQuestions(prev => [...prev, questions[currentQIndex]]);
+        if (pointsEarned > 0) {
+            setScore(prev => prev + pointsEarned);
         }
     };
 
@@ -216,11 +220,7 @@ const ExamSimulator: React.FC = () => {
     };
 
     const handleSubmitDndAnswer = (pointsEarned: number) => {
-        setIsAnswered(true);
-        setAnsweredQuestions(prev => [...prev, questions[currentQIndex]]);
-        if (pointsEarned > 0) {
-            setScore(prev => prev + pointsEarned);
-        }
+        handleQuestionSubmit(pointsEarned);
     };
 
 
@@ -268,6 +268,13 @@ const ExamSimulator: React.FC = () => {
                 <DragAndDropQuestion
                     question={currentQuestion}
                     onSubmitAnswer={handleSubmitDndAnswer}
+                    onNext={handleNext}
+                    isLastQuestion={currentQIndex === questions.length - 1}
+                />
+            ) : currentQuestion.type === 'statements-match' ? (
+                <SeveralStatementsQuestion
+                    question={currentQuestion}
+                    onSubmitAnswer={handleQuestionSubmit}
                     onNext={handleNext}
                     isLastQuestion={currentQIndex === questions.length - 1}
                 />

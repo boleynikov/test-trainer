@@ -71,5 +71,125 @@
             "Create a manifest for the skill bot.",
             "Register the skill bot in Power Virtual Agents."
         ]
+    },
+    {
+        "id": 7,
+        "text": "Scenario: You work for a staffing company that helps employees fill temporary jobs. Available temporary jobs are categorized and listed on a secure area of the company's website. The company wants to eliminate manual work that relates to job and candidate management. The company plans to invite employers with available jobs and job candidates to view jobs by sending personalized invitations. The company identifies the following requirements: Human resources team members from the staffing company must be able to access the jobs listing and post available positions. Employers seeking temporary employees must also be able to access the jobs listing and post available positions. Approved job candidates must be notified about new positions for which they are qualified. Approved job candidate must have an option to accept a job assignment directly from a notification. You need to perform a gap analysis against the features and capabilities of the Power Platform. Which features should you implement? To answer, select the appropriate options in the answer area.NOTE: Each correct selection is worth one point.",
+        "type": "statements-match",
+        "statements": [
+            {
+                "id": "statement1",
+                "text": "Create the job listings portal.",
+                "options": [
+                    {
+                        "id": "s1_option1",
+                        "text": "Custom self-service portal for employers and a custom page for job candidates"
+                    },
+                    {
+                        "id": "s1_option2",
+                        "text": "Custom self-service portal for both employers and job candidates"
+                    },
+                    {
+                        "id": "s1_option3",
+                        "text": "Portal for job candidates and a custom self-service portal for employers"
+                    },
+                    {
+                        "id": "s1_option4",
+                        "text": "Portal from blank for job candidates and employers"
+                    }
+                ]
+            },
+            {
+                "id": "statement2",
+                "text": "Create an app that lists available positions.",
+                "options": [
+                    {
+                        "id": "s2_option1",
+                        "text": "Canvas app with push notifications"
+                    },
+                    {
+                        "id": "s2_option2",
+                        "text": "Model-driven app with push notifications"
+                    },
+                    {
+                        "id": "s2_option3",
+                        "text": "Portal app with push notifications"
+                    }
+                ]
+            },
+            {
+                "id": "statement3",
+                "text": "Create the form for employers who are seeking temporary employees.",
+                "options": [
+                    {
+                        "id": "s3_option1",
+                        "text": "Entity form defined on the job custom entity"
+                    },
+                    {
+                        "id": "s3_option2",
+                        "text": "Webform with target set to the job custom entity"
+                    },
+                    {
+                        "id": "s3_option3",
+                        "text": "Web page defined on the job custom entity"
+                    },
+                    {
+                        "id": "s3_option4",
+                        "text": "Web step with target set to the job custom entity"
+                    }
+                ]
+            },
+            {
+                "id": "statement4",
+                "text": "Create invitation parameters for job candidates.",
+                "options": [
+                    {
+                        "id": "s4_option1",
+                        "text": "Configure a value for the Assigned to Account option only."
+                    },
+                    {
+                        "id": "s4_option2",
+                        "text": "Configure a value for the Execute Workflow on Redeeming Contact option only."
+                    },
+                    {
+                        "id": "s4_option3",
+                        "text": "Configure values for Assigned to Account and Execute Workflow on Redeeming Contact."
+                    },
+                    {
+                        "id": "s4_option4",
+                        "text": "Leave both Assigned to Account and Execute Workflow on Redeeming Contact empty."
+                    }
+                ]
+            },
+            {
+                "id": "statement5",
+                "text": "Create invitation parameters for approved job candidates.",
+                "options": [
+                    {
+                        "id": "s5_option1",
+                        "text": "Configure a value for the Assigned to Account option only."
+                    },
+                    {
+                        "id": "s5_option2",
+                        "text": "Configure a value for the Execute Workflow on Redeeming Contact option only."
+                    },
+                    {
+                        "id": "s5_option3",
+                        "text": "Configure values for Assigned to Account and Execute Workflow on Redeeming Contact."
+                    },
+                    {
+                        "id": "s5_option4",
+                        "text": "Leave both Assigned to Account and Execute Workflow on Redeeming Contact empty."
+                    }
+                ]
+            }
+        ],
+        "correctStatementAnswers": {
+            "statement1": "s1_option2",
+            "statement2": "s2_option2",
+            "statement3": "s3_option2",
+            "statement4": "s4_option2",
+            "statement5": "s5_option1"
+        }
     }
 ]
