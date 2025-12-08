@@ -1,5 +1,9 @@
 import React from 'react';
-import { Box, Typography, Switch, FormControlLabel, LinearProgress, Chip } from '@mui/material';
+import {
+    Box, Typography,
+    // Switch, FormControlLabel, 
+    LinearProgress, Chip
+} from '@mui/material';
 import type { Question } from '../types';
 
 interface QuizHeaderProps {
@@ -16,8 +20,8 @@ export const QuizHeader: React.FC<QuizHeaderProps> = ({
     totalQuestions,
     score,
     answeredQuestions = [],
-    isRandomMode,
-    onToggleRandom,
+    // isRandomMode,
+    // onToggleRandom,
 }) => {
 
     const answeredPoints = answeredQuestions.reduce((acc, question) => {
@@ -35,7 +39,7 @@ export const QuizHeader: React.FC<QuizHeaderProps> = ({
 
         return acc + 1;
     }, 0);
-    
+
     const successRate = answeredPoints > 0
         ? Math.round((score / answeredPoints) * 100)
         : 0;
@@ -52,7 +56,7 @@ export const QuizHeader: React.FC<QuizHeaderProps> = ({
                     Питання {currentQuestionIndex + 1} / {totalQuestions}
                 </Typography>
 
-                <FormControlLabel
+                {/* <FormControlLabel
                     control={
                         <Switch
                             checked={isRandomMode}
@@ -61,7 +65,7 @@ export const QuizHeader: React.FC<QuizHeaderProps> = ({
                         />
                     }
                     label="Random Mode"
-                />
+                /> */}
             </Box>
 
             {/* Статистика та Прогрес */}

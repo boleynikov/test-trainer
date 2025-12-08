@@ -1,0 +1,38 @@
+[
+    {
+        "id": 11,
+        "text": "DRAG DROP - Teachers in a school district use Azure skill bots to teach specific classes. Students sign into an online portal to submit completed homework to their teacher for review.\n Students use a Power Virtual Agents chatbot to request help from teachers.\n You need to incorporate the skill bot for each class into the homework bot.\n Which three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.\n Select and Place:",
+        "type": "dnd",
+        "dndOptions": [
+            {
+                "id": "Create a manifest for the skill bot.",
+                "text": "Create a manifest for the skill bot."
+            },
+            {
+                "id": "Register the skill bot in Azure Active Directory.",
+                "text": "Register the skill bot in Azure Active Directory."
+            },
+            {
+                "id": "Register the homework bot in Power Virtual Agents.",
+                "text": "Register the homework bot in Power Virtual Agents."
+            },
+            {
+                "id": "Register the homework bot in Azure Active Directory.",
+                "text": "Register the homework bot in Azure Active Directory."
+            },
+            {
+                "id": "Create a manifest for the homework bot.",
+                "text": "Create a manifest for the homework bot."
+            },
+            {
+                "id": "Register the skill bot in Power Virtual Agents.",
+                "text": "Register the skill bot in Power Virtual Agents."
+            }
+        ],
+        "correctOrder": [
+            "Register the skill bot in Azure Active Directory.",
+            "Create a manifest for the skill bot.",
+            "Register the skill bot in Power Virtual Agents."
+        ]
+    }
+]

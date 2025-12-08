@@ -90,42 +90,53 @@ const DragAndDropQuestion: React.FC<DragAndDropQuestionProps> = ({ question, onS
     };
 
     const handleSubmitAnswer = () => {
-
         setIsAnswered(true);
 
         let pointsEarned = 0;
+        // We use a Map or an object keyed by a unique identifier if possible.
+        // Since we only have option.id, we map that status.
         const newOptionStatus: Record<string, 'correct' | 'incorrect'> = {};
 
         if (question.type === 'dnd-zones') {
             const correctAnswers = question.correctZoneAnswers || {};
+
+            // Iterate through the zones where the user dropped items
             Object.keys(zoneAnswers).forEach(zoneId => {
+                // Iterate through the options dropped in this specific zone
                 zoneAnswers[zoneId].forEach(option => {
-                    if (correctAnswers[option.id] === zoneId) {
+
+                    // FIX: Look up the Expected Option ID using the current Zone ID
+                    const expectedOptionId = correctAnswers[zoneId];
+                    const resultIsArray = Array.isArray(expectedOptionId);
+                    // Compare the Expected Option ID with the Actual Dropped Option ID
+                    if (!resultIsArray ? expectedOptionId === option.id : expectedOptionId.includes(option.id)) {
                         newOptionStatus[option.id] = 'correct';
                         pointsEarned++;
                     } else {
-                        newOptionStatus[option.id] = 'incorrect';
+                        // Only mark as incorrect if it hasn't been marked correct elsewhere
+                        // (handles cases where the same option ID is used multiple times)
+                        if (newOptionStatus[option.id] !== 'correct') {
+                            newOptionStatus[option.id] = 'incorrect';
+                        }
                     }
                 });
-            });
-
-            // Also mark as incorrect any correct options that were not placed.
-            Object.keys(correctAnswers).forEach(optionId => {
-                if (!newOptionStatus[optionId]) {
-                    newOptionStatus[optionId] = 'incorrect';
-                }
             });
 
         } else if (question.type === 'dnd') {
             const placedItems = zoneAnswers['dnd-list'] || [];
             const currentOrder = placedItems.map(option => option.id);
+
+            // Check if the order strictly matches the correctOrder array
             const isCorrectOrder = JSON.stringify(currentOrder) === JSON.stringify(question.correctOrder);
 
             if (isCorrectOrder) {
-                pointsEarned = 1;
-                placedItems.forEach(option => { newOptionStatus[option.id] = 'correct'; });
+                pointsEarned = 1; // Or whatever max points value is
+                placedItems.forEach(option => {
+                    newOptionStatus[option.id] = 'correct';
+                });
             } else {
                 placedItems.forEach((option, index) => {
+                    // Check if the item at this specific index matches the correct answer at this index
                     if (question.correctOrder && question.correctOrder[index] === option.id) {
                         newOptionStatus[option.id] = 'correct';
                     } else {
@@ -145,7 +156,7 @@ const DragAndDropQuestion: React.FC<DragAndDropQuestionProps> = ({ question, onS
             border: '1px solid #ccc',
             borderRadius: '4px',
             backgroundColor: 'white',
-            color: theme.palette.text.primary
+            color: "#000"
         };
 
         if (isAnswered) {
@@ -190,7 +201,7 @@ const DragAndDropQuestion: React.FC<DragAndDropQuestionProps> = ({ question, onS
                             p: 2,
                             border: '1px solid #ccc',
                             borderRadius: '4px',
-                            backgroundColor: snapshot.isDraggingOver ? '#e0e0e0' : theme.palette.background.default,
+                            backgroundColor: snapshot.isDraggingOver ? theme.palette.primary.light : theme.palette.background.default,
                             minHeight: '100px',
                         }}
                     >

@@ -1,0 +1,782 @@
+[
+    {
+        "id": 1,
+        "text": "A company manages capital equipment for an electric utility company. The company has a SQL Server database that contains maintenance records for the equipment. Technicians who service the equipment use the Dynamics 365 Field Service mobile app on tablet devices to view scheduled assignments. Technicians use a canvas app to display the maintenance history for each piece of equipment and update the history. Managers use a Power BI dashboard that displays Dynamics 365 Field Service and real-time maintenance data. Due to increasing demand, managers must be able to work in the field as technicians. You need to design a solution that allows the managers to work from one single screen. What should you do?",
+        "correctOptionId": "d",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Add the maintenance history app to the Field Service Mobile app."
+            },
+            {
+                "id": "b",
+                "text": "B. Add the manager Power BI dashboard to the Field Service mobile app."
+            },
+            {
+                "id": "c",
+                "text": "C. Create a new maintenance canvas app from within the Power BI management dashboard."
+            },
+            {
+                "id": "d",
+                "text": "D. Add the maintenance history app to the Power BI"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "text": "HOTSPOT - You work for a staffing company that helps employees fill temporary jobs. Available temporary jobs are categorized and listed on a secure area of the company's website. The company wants to eliminate manual work that relates to job and candidate management. The company plans to invite employers with available jobs and job candidates to view jobs by sending personalized invitations. The company identifies the following requirements: Human resources team members from the staffing company must be able to access the jobs listing and post available positions. Employers seeking temporary employees must also be able to access the jobs listing and post available positions. Approved job candidates must be notified about new positions for which they are qualified. Approved job candidate must have an option to accept a job assignment directly from a notification. You need to perform a gap analysis against the features and capabilities of the Power Platform. Which features should you implement? To answer, select the appropriate options in the answer area.NOTE: Each correct selection is worth one point.",
+        "type": "statements-match",
+        "statements": [
+            {
+                "id": "statement1",
+                "text": "Create the job listings portal.",
+                "options": [
+                    {
+                        "id": "s1_option1",
+                        "text": "Custom self-service portal for employers and a custom page for job candidates"
+                    },
+                    {
+                        "id": "s1_option2",
+                        "text": "Custom self-service portal for both employers and job candidates"
+                    },
+                    {
+                        "id": "s1_option3",
+                        "text": "Portal for job candidates and a custom self-service portal for employers"
+                    },
+                    {
+                        "id": "s1_option4",
+                        "text": "Portal from blank for job candidates and employers"
+                    }
+                ]
+            },
+            {
+                "id": "statement2",
+                "text": "Create an app that lists available positions.",
+                "options": [
+                    {
+                        "id": "s2_option1",
+                        "text": "Canvas app with push notifications"
+                    },
+                    {
+                        "id": "s2_option2",
+                        "text": "Model-driven app with push notifications"
+                    },
+                    {
+                        "id": "s2_option3",
+                        "text": "Portal app with push notifications"
+                    }
+                ]
+            },
+            {
+                "id": "statement3",
+                "text": "Create the form for employers who are seeking temporary employees.",
+                "options": [
+                    {
+                        "id": "s3_option1",
+                        "text": "Entity form defined on the job custom entity"
+                    },
+                    {
+                        "id": "s3_option2",
+                        "text": "Webform with target set to the job custom entity"
+                    },
+                    {
+                        "id": "s3_option3",
+                        "text": "Web page defined on the job custom entity"
+                    },
+                    {
+                        "id": "s3_option4",
+                        "text": "Web step with target set to the job custom entity"
+                    }
+                ]
+            },
+            {
+                "id": "statement4",
+                "text": "Create invitation parameters for job candidates.",
+                "options": [
+                    {
+                        "id": "s4_option1",
+                        "text": "Configure a value for the Assigned to Account option only."
+                    },
+                    {
+                        "id": "s4_option2",
+                        "text": "Configure a value for the Execute Workflow on Redeeming Contact option only."
+                    },
+                    {
+                        "id": "s4_option3",
+                        "text": "Configure values for Assigned to Account and Execute Workflow on Redeeming Contact."
+                    },
+                    {
+                        "id": "s4_option4",
+                        "text": "Leave both Assigned to Account and Execute Workflow on Redeeming Contact empty."
+                    }
+                ]
+            },
+            {
+                "id": "statement5",
+                "text": "Create invitation parameters for approved job candidates.",
+                "options": [
+                    {
+                        "id": "s5_option1",
+                        "text": "Configure a value for the Assigned to Account option only."
+                    },
+                    {
+                        "id": "s5_option2",
+                        "text": "Configure a value for the Execute Workflow on Redeeming Contact option only."
+                    },
+                    {
+                        "id": "s5_option3",
+                        "text": "Configure values for Assigned to Account and Execute Workflow on Redeeming Contact."
+                    },
+                    {
+                        "id": "s5_option4",
+                        "text": "Leave both Assigned to Account and Execute Workflow on Redeeming Contact empty."
+                    }
+                ]
+            }
+        ],
+        "correctStatementAnswers": {
+            "statement1": "s1_option2",
+            "statement2": "s2_option2",
+            "statement3": "s3_option2",
+            "statement4": "s4_option2",
+            "statement5": "s5_option1"
+        }
+    },
+    {
+        "id": 3,
+        "text": "HOTSPOT - You create a suite of Power Platform-based order management canvas apps for a bakery that has five retail stores. Each store uses a tablet device to manage inventory and process orders. You need to make the following changes to the original order tracking app: When an online order for delivery is received, send the order to the bakery that is located closest to the order destination. When an online order for pickup is received, require store staff to enter an estimated time in an app. Staff must prepare the order and then use the app to notify the customer when the order is ready. Allow the store manager to personalize the company's corporate weekly newsletter and add store-specific specials. You must minimize the amount of custom code and configuration required to implement the solution. What should you use? To answer, select the appropriate options in the answer area. NOTE: Each correct selection is worth one point.",
+        "type": "statements-match",
+        "statements": [
+            {
+                "id": "statement1",
+                "text": "Determine which store is closest to the order destination.",
+                "options": [
+                    {
+                        "id": "s1_option1",
+                        "text": "Power Automate flow"
+                    },
+                    {
+                        "id": "s1_option2",
+                        "text": "Plug-in"
+                    },
+                    {
+                        "id": "s1_option3",
+                        "text": "Logic app"
+                    }
+                ]
+            },
+            {
+                "id": "statement2",
+                "text": "Estimate the time required to prepare an order and notify the customer.",
+                "options": [
+                    {
+                        "id": "s2_option1",
+                        "text": "New screen in an existing order canvas app"
+                    },
+                    {
+                        "id": "s2_option2",
+                        "text": "New canvas app"
+                    },
+                    {
+                        "id": "s2_option3",
+                        "text": "New logic app"
+                    }
+                ]
+            },
+            {
+                "id": "statement3",
+                "text": "Send the newsletter by email to customers.",
+                "options": [
+                    {
+                        "id": "s3_option1",
+                        "text": "Power Automate flow triggered from an email button"
+                    },
+                    {
+                        "id": "s3_option2",
+                        "text": "Power Automate flow triggered manually"
+                    },
+                    {
+                        "id": "s3_option3",
+                        "text": "Power Automate UI flow triggered from an email button"
+                    }
+                ]
+            }
+        ],
+        "correctStatementAnswers": {
+            "statement1": "s1_option1",
+            "statement2": "s2_option1",
+            "statement3": "s3_option1"
+        }
+    },
+    {
+        "id": 4,
+        "text": "A company has an application that provides API access. You plan to connect to the API from a canvas app by using a custom connector. You need to request information from the API developers so that you can create the custom connector. Which two types of files can you use? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+        "correctOptionIds": [
+            "C",
+            "D"
+        ],
+        "isMultiSelect": true,
+        "options": [
+            {
+                "id": "A",
+                "text": "A. YAML"
+            },
+            {
+                "id": "B",
+                "text": "B. WSDL"
+            },
+            {
+                "id": "C",
+                "text": "C. OpenAPI definition"
+            },
+            {
+                "id": "D",
+                "text": "D. Postman collection"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "text": "You plan to create a canvas app to manage large sets of records. Users will filter and sort the data. You must implement delegation in the canvas app to mitigate potential performance issues. You need to recommend data sources for the app. Which two data sources should you recommend? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+        "correctOptionIds": [
+            "A",
+            "B"
+        ],
+        "isMultiSelect": true,
+        "options": [
+            {
+                "id": "A",
+                "text": "A. SQL Server"
+            },
+            {
+                "id": "B",
+                "text": "B. Common Data Service"
+            },
+            {
+                "id": "C",
+                "text": "C. Azure Data Factory D. Azure Table Storage"
+            },
+            {
+                "id": "D",
+                "text": "D. Azure Table Storage"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "text": "HOTSPOT - A client is deploying Dynamics 365 Finance without any third-party add-ons. You need to select the appropriate solutions for the client. What should you select? To answer, select the appropriate options in the answer area. NOTE: Each correct selection is worth one point. Hot Area:",
+        "type": "statements-match",
+        "statements": [
+            {
+                "id": "statement1",
+                "text": "Warehouse employees can use mobile devices to scan barcodes by using Dynamics 365 Finance.",
+                "options": [
+                    {
+                        "id": "s1_option1",
+                        "text": "Out-of-the-box"
+                    },
+                    {
+                        "id": "s1_option2",
+                        "text": "Logic apps"
+                    },
+                    {
+                        "id": "s1_option3",
+                        "text": "Power Automate"
+                    },
+                    {
+                        "id": "s1_option4",
+                        "text": "Common Data Service"
+                    }
+                ]
+            },
+            {
+                "id": "statement2",
+                "text": "The location of field technicians can be communicated with a text message from Dynamics 365 Field Service.",
+                "options": [
+                    {
+                        "id": "s2_option1",
+                        "text": "Common Data Service"
+                    },
+                    {
+                        "id": "s2_option2",
+                        "text": "Workflow"
+                    },
+                    {
+                        "id": "s2_option3",
+                        "text": "Power Automate"
+                    }
+                ]
+            }
+        ],
+        "correctStatementAnswers": {
+            "statement1": "s1_option1",
+            "statement2": "s2_option3"
+        }
+    },
+    {
+        "id": 7,
+        "text": "DRAG DROP - A company uses Microsoft 365. You are developing a model-driven app. The app must meet the following requirements: Use SharePoint Online for document storage. Send emails by using Exchange Online. You need to configure integrations. What should you configure? To answer, drag the appropriate configuration options to the correct requirements. Each configuration option may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content. NOTE: Each correct selection is worth one point. Select and Place:",
+        "type": "dnd-zones",
+        "dndOptions": [
+            {
+                "id": "Server_side",
+                "text": "Server-side synchronization"
+            },
+            {
+                "id": "Server_based",
+                "text": "Server-based integration"
+            },
+            {
+                "id": "Dual-write",
+                "text": "Dual-write"
+            },
+            {
+                "id": "System settings",
+                "text": "System settings"
+            }
+        ],
+        "zones": [
+            {
+                "id": "Email",
+                "title": "Email"
+            },
+            {
+                "id": "Document",
+                "title": "Document storage"
+            }
+        ],
+        "correctZoneAnswers": {
+            "Email": "Server_side",
+            "Document": "Server_based"
+        }
+    },
+    {
+        "id": 8,
+        "text": "A company plans to create an order processing app. When orders are created, the app will perform complex business logic and integrate with several external systems. Orders that have a large number of line items may take up to six minutes to complete. Processing for each order must be completed in one operation to avoid leaving records in an incomplete state. You need to recommend a solution for the company. What should you recommend?",
+        "correctOptionId": "c",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. an asynchronous workflow that uses a custom workflow activity"
+            },
+            {
+                "id": "b",
+                "text": "B. a real-time workflow that uses a custom action"
+            },
+            {
+                "id": "c",
+                "text": "C. a webhook that connects to an Azure Function"
+            },
+            {
+                "id": "d",
+                "text": "D. an asynchronous plug-in"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "text": "HOTSPOT - You work for a not-for-profit agency that manages business processes by using Power Platform custom entities. Volunteer registration and onboarding are manual processes that include multiple related entities. You need to implement a portal solution that replaces the manual processes. Which modules should you use? To answer, select the appropriate options in the answer area. NOTE: Each correct selection is worth one point.",
+        "type": "statements-match",
+        "statements": [
+            {
+                "id": "statement1",
+                "text": "Create a portal by using a portal template",
+                "options": [
+                    {
+                        "id": "s1_option1",
+                        "text": "Starter portal"
+                    },
+                    {
+                        "id": "s1_option2",
+                        "text": "Community portal"
+                    },
+                    {
+                        "id": "s1_option3",
+                        "text": "Customer self-service portal"
+                    }
+                ]
+            },
+            {
+                "id": "statement2",
+                "text": "Manage volunteer registration",
+                "options": [
+                    {
+                        "id": "s2_option1",
+                        "text": "Entity form metadata"
+                    },
+                    {
+                        "id": "s2_option2",
+                        "text": "Webform"
+                    },
+                    {
+                        "id": "s2_option3",
+                        "text": "Webform step"
+                    }
+                ]
+            }
+        ],
+        "correctStatementAnswers": {
+            "statement1": "s1_option3",
+            "statement2": "s2_option2"
+        }
+    },
+    {
+        "id": 10,
+        "text": "You are implementing custom business logic in a Power Apps portal. You need to use Liquid templates to display dynamic content. To which three entities can you include Liquid code? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+        "correctOptionIds": [
+            "A",
+            "B",
+            "C"
+        ],
+        "isMultiSelect": true,
+        "options": [
+            {
+                "id": "A",
+                "text": "A. Content snippet"
+            },
+            {
+                "id": "B",
+                "text": "B. Web page"
+            },
+            {
+                "id": "C",
+                "text": "C. Web template"
+            },
+            {
+                "id": "D",
+                "text": "D. Page template"
+            },
+            {
+                "id": "E",
+                "text": "E. Portal settings"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "text": "DRAG DROP - Teachers in a school district use Azure skill bots to teach specific classes. Students sign into an online portal to submit completed homework to their teacher for review.\n Students use a Power Virtual Agents chatbot to request help from teachers.\n You need to incorporate the skill bot for each class into the homework bot.\n Which three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.\n Select and Place:",
+        "type": "dnd",
+        "dndOptions": [
+            {
+                "id": "Create a manifest for the skill bot.",
+                "text": "Create a manifest for the skill bot."
+            },
+            {
+                "id": "Register the skill bot in Azure Active Directory.",
+                "text": "Register the skill bot in Azure Active Directory."
+            },
+            {
+                "id": "Register the homework bot in Power Virtual Agents.",
+                "text": "Register the homework bot in Power Virtual Agents."
+            },
+            {
+                "id": "Register the homework bot in Azure Active Directory.",
+                "text": "Register the homework bot in Azure Active Directory."
+            },
+            {
+                "id": "Create a manifest for the homework bot.",
+                "text": "Create a manifest for the homework bot."
+            },
+            {
+                "id": "Register the skill bot in Power Virtual Agents.",
+                "text": "Register the skill bot in Power Virtual Agents."
+            }
+        ],
+        "correctOrder": [
+            "Register the skill bot in Azure Active Directory.",
+            "Create a manifest for the skill bot.",
+            "Register the skill bot in Power Virtual Agents."
+        ]
+    },
+    {
+        "id": 12,
+        "text": "A company is migrating from an on-premises Dynamics 365 installation to a Power Platform solution. You are creating plug-ins for the new solution. You need to register the plug-ins. Which isolation mode should you use?",
+        "correctOptionId": "C",
+        "options": [
+            {
+                "id": "A",
+                "text": "A. None"
+            },
+            {
+                "id": "B",
+                "text": "B. Global Assembly Cache (GAC)"
+            },
+            {
+                "id": "C",
+                "text": "C. Sandbox"
+            },
+            {
+                "id": "D",
+                "text": "D. Disk"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "text": "An organization uses a public-facing Power Apps portal. You need to change the layout of a specific web page. What are two possible ways to achieve the goal? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+        "correctOptionIds": [
+            "B",
+            "D"
+        ],
+        "isMultiSelect": true,
+        "options": [
+            {
+                "id": "A",
+                "text": "Select the Portal Management app and then select Edit."
+            },
+            {
+                "id": "B",
+                "text": "B. Select the Portal Management app and then select Play."
+            },
+            {
+                "id": "C",
+                "text": "C. Select the portal app and then select Manage."
+            },
+            {
+                "id": "D",
+                "text": "D. Select the portal app and then select Edit."
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "text": "You are building a custom application in Azure to process resumes for the HR department. The app will monitor submissions of resumes and parse the resumes. You need to parse the resumes and save contact and skills information into the Common Data Service. Which mechanism should you use?",
+        "correctOptionId": "A",
+        "options": [
+            {
+                "id": "A",
+                "text": "A. Power Automate"
+            },
+            {
+                "id": "B",
+                "text": "B. Common Data Service plug-in"
+            },
+            {
+                "id": "C",
+                "text": "C. Web API"
+            },
+            {
+                "id": "D",
+                "text": "D. Custom workflow activity"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "text": "DRAG DROP - You are researching integrations with several external systems. Each integration has different requirements. You need to determine which data sources to use to meet each requirement. What should you use? To answer, drag the appropriate data sources to the correct requirements. Each data source may be used once, more than one, or not at all. You may need to drag the split bar between panes or scroll to view content. NOTE: Each correct selection is worth one point. Select and Place:",
+        "type": "dnd-zones",
+        "dndOptions": [
+            {
+                "id": "ve",
+                "text": "Virtual entity"
+            },
+            {
+                "id": "cc",
+                "text": "Custom connector"
+            },
+            {
+                "id": "cc_1",
+                "text": "Custom connector"
+            }
+        ],
+        "zones": [
+            {
+                "id": "a",
+                "title": "Support records that use an integer as a primary key."
+            },
+            {
+                "id": "b",
+                "title": "Ensure that data can be read and updated."
+            },
+            {
+                "id": "c",
+                "title": "Ensure that data is available to all Microsoft Dataverse clients."
+            }
+        ],
+        "correctZoneAnswers": {
+            "a": [
+                "cc",
+                "cc_1"
+            ],
+            "b": [
+                "cc",
+                "cc_1"
+            ],
+            "c": "ve"
+        }
+    },
+    {
+        "id": 16,
+        "text": "A Power Platform solution includes the following Web API call: GET http://contoso.crm.dynamics.com/api/data/v9.1/RelationshipDefinitions?$select=SchemaName You need to explain what this line of code is doing. What does the code do?",
+        "correctOptionId": "A",
+        "options": [
+            {
+                "id": "A",
+                "text": "A. Retrieve the list of relationships between tables."
+            },
+            {
+                "id": "B",
+                "text": "B. Retrieve a list of tables that are related to each other."
+            },
+            {
+                "id": "C",
+                "text": "C. Retrieve a list of one-to-many relationships with other tables."
+            },
+            {
+                "id": "D",
+                "text": "D. Retrieve a list of tables that have more than one relationship."
+            },
+            {
+                "id": "E",
+                "text": "E. Retrieve a list of many-to-many relationships with other tables."
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "text": "HOTSPOT - You create a Power Automate flow that retrieves data from the Microsoft Dataverse Account table. The flow uses only a subset of Account table data. You need to retrieve the required data. How should you configure the Dataverse List Rows action? To answer, select the appropriate options in the answer area. NOTE: Each correct selection is worth one point.",
+        "type": "statements-match",
+        "statements": [
+            {
+                "id": "statement1",
+                "text": "Full name of the primary contact",
+                "options": [
+                    {
+                        "id": "s1_option1",
+                        "text": "Expand Query = primarycontactid($select=fullname)"
+                    },
+                    {
+                        "id": "s1_option2",
+                        "text": "Select columns = fullname"
+                    },
+                    {
+                        "id": "s1_option3",
+                        "text": "Select columns = primarycontactid, fullname"
+                    },
+                    {
+                        "id": "s1_option4",
+                        "text": "Expand Query = /primarycontactid?$select=fullname"
+                    }
+                ]
+            },
+            {
+                "id": "statement2",
+                "text": "Account with the highest credit limit",
+                "options": [
+                    {
+                        "id": "s2_option1",
+                        "text": "Row count = 1 and Sort By = creditlimit desc"
+                    },
+                    {
+                        "id": "s2_option2",
+                        "text": "Row count = 1 and Sort By = creditlimit asc"
+                    },
+                    {
+                        "id": "s2_option3",
+                        "text": "Expand Query = expand=account($top=1;$select=creditlimit)"
+                    }
+                ]
+            }
+        ],
+        "correctStatementAnswers": {
+            "statement1": "s1_option1",
+            "statement2": "s2_option1"
+        }
+    },
+    {
+        "id": 18,
+        "text": "You are creating a canvas app to retrieve user sign in information from Microsoft Azure Active Directory (Azure AD) when someone searches for information about an end user. You create an Azure Function to retrieve the required information by using JSON. You need to ensure that the application functions correctly. Which two actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point",
+        "correctOptionIds": [
+            "B",
+            "E"
+        ],
+        "isMultiSelect": true,
+        "options": [
+            {
+                "id": "A",
+                "text": "A. Create a Power Automate flow to import data."
+            },
+            {
+                "id": "B",
+                "text": "B. Create a custom connector by using the Azure Function API."
+            },
+            {
+                "id": "C",
+                "text": "C. Use app designer in the Power Platform admin center."
+            },
+            {
+                "id": "D",
+                "text": "D. Use Azure Service Bus."
+            },
+            {
+                "id": "E",
+                "text": "E. Create an API definition for the Azure Function."
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "text": "DRAG DROP A company is configuring Microsoft Power Virtual Agents and Power Automate flows that use model-driven apps. The company has a website that uses Power Pages. You create Power Virtual Agents bot topics. You must configure the following: Use a bot on the website. Create Bot Framework skills. Create a support request from the bot without human interaction. You need to configure the website.",
+        "type": "dnd-zones",
+        "dndOptions": [
+            {
+                "id": "A",
+                "text": "Power Virtual Agents"
+            },
+            {
+                "id": "B",
+                "text": "Power Automate"
+            },
+            {
+                "id": "C",
+                "text": "Power Pages"
+            },
+            {
+                "id": "D",
+                "text": "Power App"
+            }
+        ],
+        "zones": [
+            {
+                "id": "a",
+                "title": "Use a bot on the website."
+            },
+            {
+                "id": "b",
+                "title": "Create Bot Framework skills."
+            },
+            {
+                "id": "c",
+                "title": "Create support request from the bot."
+            }
+        ],
+        "correctZoneAnswers": {
+            "a": "C",
+            "b": "A",
+            "c": "B"
+        }
+    },
+    {
+        "id": 20,
+        "text": "You are configuring a custom connector for a web service. The web service is hosted in two different regions. The web service URL includes a common domain name and a unique sub-domain for each region. The custom connector must allow the region to be entered for additional regions when creating the connection. You need to create a policy template. Which template type should you use?",
+        "correctOptionId": "c",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Set HTTP header"
+            },
+            {
+                "id": "b",
+                "text": "B. Route request"
+            },
+            {
+                "id": "c",
+                "text": "C. Set host URL"
+            },
+            {
+                "id": "d",
+                "text": "D. Set query string parameter"
+            }
+        ]
+    }
+]
