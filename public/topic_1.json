@@ -778,5 +778,511 @@
                 "text": "D. Set query string parameter"
             }
         ]
+    },
+    {
+        "id": 21,
+        "text": "You are a Power Apps maker creating a chat bot for a website. The chat bot must recognize geographic attributes to enable additional functionality. You need to recommend a feature. What should you recommend?",
+        "correctOptionId": "d",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Fallback topic"
+            },
+            {
+                "id": "b",
+                "text": "B. Power Automate Flow"
+            },
+            {
+                "id": "c",
+                "text": "C. Bot Service compliance"
+            },
+            {
+                "id": "d",
+                "text": "D. Slot filling"
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "text": "You develop and deploy a Power Apps solution. The following changes must be made to the solution: - Delete a column of data. - Modify several views. - Add several charts to dashboards. You need to re-deploy the app. What should you do?",
+        "correctOptionId": "B",
+        "options": [
+            {
+                "id": "A",
+                "text": "A. Update the solution."
+            },
+            {
+                "id": "B",
+                "text": "B. Upgrade the solution."
+            },
+            {
+                "id": "C",
+                "text": "C. Create a new solution."
+            },
+            {
+                "id": "D",
+                "text": "D. Patch the solution."
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "text": "You develop a model-driven app. You add the following users as members to the Sales Microsoft Azure Active Directory (Azure AD) security group: User1, User2, and User3. The Sales Azure AD security group is linked to a pre-existing Microsoft Dataverse Azure AD security group team that is associated with the Sales security role. You assign each of the appropriate licenses to each user. User1 is not listed in the Team Members subgrid for the app. User2 and User3 are listed in the subgrid. You need to ensure that User1 can use the model-driven app.",
+        "correctOptionId": "d",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Change the membership of the Sales Azure AD Security group to Dynamic User."
+            },
+            {
+                "id": "b",
+                "text": "B. Change the membership type for User1 to Owner in the Azure AD security group."
+            },
+            {
+                "id": "c",
+                "text": "C. Create an Owner team for the members of the Sales Azure AD group."
+            },
+            {
+                "id": "d",
+                "text": "D. Ask User1 to sign into the model-driven app."
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "text": "DRAG DROP - You are modifying a model-driven app for a bicycle company. The app modifications must meet the following requirements: The order form must include a column that calculates payments based on how many years the customer wants to finance a bicycle. A pop-up box must remind the employee to validate the information entered before saving. You must use out-of-the-box features before customizing the application. What should you do?",
+        "type": "dnd-zones",
+        "dndOptions": [
+            {
+                "id": "Customize the app",
+                "text": "Customize the app"
+            },
+            {
+                "id": "Configure_1",
+                "text": "Configure an out-of-box feature"
+            },
+            {
+                "id": "Configure_2",
+                "text": "Configure an out-of-box feature"
+            },
+            {
+                "id": "Edit XML",
+                "text": "Edit XML"
+            }
+        ],
+        "zones": [
+            {
+                "id": "Payments",
+                "title": "Calculate payments"
+            },
+            {
+                "id": "Pop-up",
+                "title": "A pop-up box must appear"
+            }
+        ],
+        "correctZoneAnswers": {
+            "Payments": [
+                "Configure_1",
+                "Configure_2"
+            ],
+            "Pop-up": [
+                "Configure_1",
+                "Configure_2"
+            ]
+        }
+    },
+    {
+        "id": 25,
+        "text": "Case study -\n\nThis is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.\n\nTo answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.\n\nAt the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.\n\n\nTo start the case study -\nTo display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.\n\n\nBackground -\n\nContoso Pharmaceuticals manufactures and sells drugs to retail and wholesale pharmacies, hospitals, and research facilities.\n\nThe company plans to implement Dynamics 365 Sales and Dynamics 365 Finance.\n\n\nCurrent environment -\n\n• Contoso maintains a Microsoft Excel workbook that lists all drugs they supply.\n• Pharmacies submit order requests through email.\n• All information at customer locations is handwritten by customer representatives.\n• Contoso uses Cerner, which is a medical industry application that uses a proprietary database.\n• Some accounts are referrals from other pharmacies.\n• Every pharmacy has its own Dynamics 365 Sales instance.\n\n\nRequirements -\n\n\nGeneral -\n\nYou must create a model-driven app to meet Contoso’s needs. You must minimize the use of custom code and custom connectors.\n\n\nAccounts -\n\n• Ensure that the names of the pharmacies are synced between the accounting and the customer management systems.\n• Account numbers should be entered automatically into the pharmaceutical system that is in a Cerner database and kept in sync.\n• When the account is entered into the system, extra fields must appear if the referral customer box is selected. If the box is not selected, the extra fields must not appear.\n• A trigger must be created that changes the Priority field to 1 in the Account record 10 days after an Account record is created.\n• A field named Priority_Trigger must be created to trigger the Priority field.\n• A field named Facility type field must be added in order to select whether a customer is a retail pharmacy, wholesale pharmacy, research facility, or hospital.\n\n\nUsers -\n\n• UserA must be able to create and publish Power Apps apps.\n• UserB must be the owner of all the systems and be able to provide permissions and create all new environments.\n• UserC must be able to create apps connected to the systems and update the security roles and entities.\n• Pharmacy representatives must only be able to run the apps and access their own records.\n• Access to the accounting Power Apps app must be restricted to accounting team members.\n• End users must have minimum access to the required systems.\n• Only supervisors must be able to view phone numbers in the Accounts form.\n• Developers must be able to create new apps for all users.\n• Sales users must only have access to their own records.\n\n\nReporting -\n\nPharmacy orders must be displayed in four graphs as follows:\n\n• Annual revenue over $100,000\n• Annual revenues under $100,000\n• Research facilities\n• Hospitals\n\nThe graphs must be interactive, and users must be able to drill down on any dimension.\n\n\nCustomizations -\n\n• Ensure that notifications are sent to the sales team when a lead is added by using Slack.\n• Ensure that leads have a review stage added to the sales process.\n• Doctors must be manually added to a custom entity named Doctor if the doctor is not listed.\n• Refill dates for customer prescriptions should be automatically determined and a notification should be sent to the customer.\n• Fields for the doctor’s name and phone number must be displayed in the customer record.\n• The doctor entered on the customer’s record must be validated against doctors that exist in the system.\n• The new solution will be sold to other pharmacies for use. The application must not allow changes to be made.\n• The solution must be error free so that when it is installed in other environments it does not cause issues.\n\n\nMobile app -\n\n• A custom mobile app must be created to allow salespeople to add or search by pharmacy name.\n• Pharmacy records must be uniquely identified by pharmacy name, address, contact name, and phone number.\n• When a pharmacy is added by using the mobile app, the phone number must be validated to be all digits.\n\n\nYou need to create an application to deploy to other pharmacies. What should you do?",
+        "correctOptionId": "b",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Navigate to Customize the System and export everything to a managed solution."
+            },
+            {
+                "id": "b",
+                "text": "B. Create packages for Package Deployer."
+            },
+            {
+                "id": "c",
+                "text": "C. Create customizations with metadata in Organization Services."
+            },
+            {
+                "id": "d",
+                "text": "D. Write a Web API to move customizations."
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "text": "A company develops a new Microsoft Dataverse plug-in that manages the Update message of an entity. The plug-in logic requires access to the record columns before the operation starts and must compare the columns to post-update values. You need to modify the design of the solution to access the information.",
+        "correctOptionId": "b",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Add the code to the plug-in to read the record from the InputParameters collection."
+            },
+            {
+                "id": "b",
+                "text": "B. Register a pre-image by using the Plug-in Registration Tool. Add the code to the plug-in to read the image from the PreEntityImages collection."
+            },
+            {
+                "id": "c",
+                "text": "C. Register a post-image by using the Plug-in Registration Tool. Add the code to the plug-in to read the image from the PostEntityImages collection."
+            },
+            {
+                "id": "d",
+                "text": "D. Add the code to the plug-in to query the data from Dataverse by using the API call based on the record ID."
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution. Determine whether the solution meets the stated goals. Some question sets might have more than once correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nA company designs data integration with an external system by using virtual tables.\n\nYou need to implement the virtual tables.\n\nSolution: Implement an OData v4 provider as the data source.\n\nDoes the solution meet the goal?",
+        "correctOptionId": "a",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Yes"
+            },
+            {
+                "id": "b",
+                "text": "B. No"
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution. Determine whether the solution meets the stated goals. Some question sets might have more than once correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nA company designs data integration with an external system by using virtual tables.\n\nYou need to implement the virtual tables.\n\nSolution: Assign record ownership to individual users.\n\nDoes the solution meet the goal?",
+        "correctOptionId": "b",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Yes"
+            },
+            {
+                "id": "b",
+                "text": "B. No"
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution. Determine whether the solution meets the stated goals. Some question sets might have more than once correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nA company designs data integration with an external system by using virtual tables.\n\nYou need to implement the virtual tables.\n\nSolution: Use a table that has a GUID as its primary key.\n\nDoes the solution meet the goal?",
+        "correctOptionId": "a",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Yes"
+            },
+            {
+                "id": "b",
+                "text": "B. No"
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "text": "DRAG DROP -\nA company is developing a Microsoft Dataverse plug-in.\n\nThe plug-in must create a follow-up task for a new account.\n\nYou add the code that receives context(IPluginExecutionContext) and service(IOrganizationService).\n\nYou need to create the remaining code to insert the follow-up task.\n\nWhich three code blocks should you use in sequence? To answer, move the appropriate code sequences from the list of sequences to the answer area and arrange in the correct order.",
+        "type": "dnd",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "Entity followuptask = new Entity(\"task\");\nfollowuptask[\"subject\"] = \"Send e-mail to the new customer\";\nfollowuptask[\"regardingobjectid\"] = account;"
+            },
+            {
+                "id": "opt2",
+                "text": "Entity followuptask = new Entity(\"task\");\nfollowuptask[\"subject\"] = \"Send e-mail to the new customer\";\nfollowuptask[\"regardingobjectid\"] = account.ToEntityReference();"
+            },
+            {
+                "id": "opt3",
+                "text": "Entity account = (Entity)context.InputParameters[\"Target\"];"
+            },
+            {
+                "id": "opt4",
+                "text": "service.Create(followuptask);"
+            },
+            {
+                "id": "opt5",
+                "text": "Entity account = (Entity)context.PreEntityImages[\"Target\"];"
+            },
+            {
+                "id": "opt6",
+                "text": "service.Update(followuptask);"
+            }
+        ],
+        "correctOrder": [
+            "opt3",
+            "opt2",
+            "opt4"
+        ]
+    },
+    {
+        "id": 33,
+        "text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution. Determine whether the solution meets the stated goals. Some question sets might have more than once correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nA company designs data integration with an external system by using virtual tables.\n\nYou need to implement the virtual tables.\n\nSolution: Create a calculated column on the virtual table.\n\nDoes the solution meet the goal?",
+        "correctOptionId": "b",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Yes"
+            },
+            {
+                "id": "b",
+                "text": "B. No"
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "text": "A company designs a Microsoft Dataverse Custom API to encapsulate business logic in it.\n\nThe Custom API business logic must be encapsulated in a way that does not allow the business logic behavior to be modified or canceled.\n\nYou need to set the parameter value of the custom API so it cannot be customized.",
+        "correctOptionId": "d",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Execute Privilege Name to prv_SdkMessageProcessingStep"
+            },
+            {
+                "id": "b",
+                "text": "B. Enabled for Workflow to No"
+            },
+            {
+                "id": "c",
+                "text": "C. Binding Type to Entity"
+            },
+            {
+                "id": "d",
+                "text": "D. Custom Processing Step to None"
+            }
+        ]
+    },
+    {
+        "id": 35,
+        "text": "A company has a model-driven app form. Many users use the form.\n\nUsers state that the form takes too long to fully load.\n\nYou need to evaluate the form design to improve loading performance.\n\nWhich three control types can you use? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+        "correctOptionIds": [
+            "B",
+            "C",
+            "D"
+        ],
+        "isMultiSelect": true,
+        "options": [
+            {
+                "id": "A",
+                "text": "A. timeline"
+            },
+            {
+                "id": "B",
+                "text": "B. quick view form"
+            },
+            {
+                "id": "C",
+                "text": "C. iFrame"
+            },
+            {
+                "id": "D",
+                "text": "D. lookup"
+            }
+        ]
+    },
+    {
+        "id": 36,
+        "text": "DRAG DROP\n-\nCase study\n-\nThis is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.\n\nTo answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.\n\nAt the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.\n\nTo start the case study\n-\nTo display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.\n\nBackground\n-\n\nCity Power & Light is an energy and utilities company that has offices in Europe. The company subsidizes home improvements for domestic customers, to improve energy efficiency and to meet environmental commitments. The company also distributes and generates electricity for domestic and commercial customers. The company has 2,000 employees in multiple offices and in work-from-home locations.\n\nCity Power & Light uses a team of schedulers, assessors, field engineers, and customer support agents for home improvements in a program named Get Energy Fit.\n\nCurrent Environment\n-\nGet Energy Fit Program\n-\nCity Power & Light uses the following to manage the Get Energy Fit program:\n\n• The company uses a Microsoft Excel spreadsheet named Planning Hub on Microsoft SharePoint Online to store information about customer appointments, customer details, and customer eligibility in the program.\n• The company records sensitive customer information that includes the document identification numbers and the customer's financial information.\n• The company uses an assessor to verify customer eligibility in the program and to perform a suitability assessment. The assessor completes the suitability assessment by using a paper and clipboard at the customer property and enters the data to the Planning Hub after the assessment is completed. The assessor also uploads photographs to an on-premises document library. The assessor completes the eligibility assessment by using an application written in React.\n• Schedulers use Microsoft Outlook to schedule engineers and assessors for home improvement appointments. About 200 appointments are scheduled daily.\n• Employees for the company submit funding claims on behalf of the customer by uploading evidence and compliance checks information to an application named the Claim Submission Portal.\n\nTechnical Environment\n-\n\n• Schedulers use Windows 11 desktop and laptop computers with the latest version of Microsoft Edge.\n• Assessors use iOS and Android tablet devices.\n• The Claim Submission Portal uses REST-based APIs for all operations and a dedicated testing environment. Authentication to the API is provided by using the following example header key and value pair:\n  o Authentication: 2C8D41431415E429C7FC7A74D8315\n• The company uses Microsoft Azure for hosting multiple applications.\n\n\nRequirements\n-\n\nOverview\n\n\nCity Power & Light plans to implement Microsoft Power Platform to improve the customer experience and increase delivery for the Get Energy Fit program.\n\nBusiness Requirements\n-\n• Only team leaders and senior managers should have access to read personally identifiable information (PII).\n• All development changes must be tested in a separate environment.\n• The company requires out-of-the-box solutions, when possible.\n• Sensitive credentials, such as user passwords and API secrets, must be stored securely.\n• The Claim Submission Portal must allow citizen developers to create automated solutions.\n• Customer and appointment information must be accessible to all applications.\n\nPlanning Hub Application\n\nThe company is planning to replace the Planning Hub spreadsheet with a new application. The new application has the following requirements:\n\n• The application must support a component design that provides rapid changes requested by the schedulers.\n• The data model for the application must capture the following information:\n\n  o Information about customers such as name, address, and other PII.\n  o The data and time for an assessor's or engineer's appointment. Schedulers must be able to view all appointments without filters.\n  o Records the details of the home improvements installed for the customer.\n  o Contains all the information and evidence for submission to the Claim Submission Portal.\n\n• After an assessor uploads the funding application and all evidence after a home improvement has been complete, the company requires that the status of the application is set to Submit and should run the following:\n\n  o Retrieve the details about the customer and the improvement installed.\n  o Send an approval to a senior manager to review and approve in Microsoft Teams.\n  o Upload the information to the API endpoint.\n  o If the upload fails to complete, it should retry after a delay of 30 seconds up to three times. If an error occurs after three times, the application should send an email notification to the application support team.\n  o Must record the status on the funding application.\n\n\nSuitability Assessment Tool\n-\n\nThe company plans to implement a new application named the Suitability Assessment Tool for the assessors. The new application has the following requirements:\n\n• Must integrate with Microsoft Power Platform.\n• Assessors must be able to complete the eligibility assessment by using the Suitability Assessment Tool. The assessors must be able to upload photographs to the on-premises file share.\n• Must be developed by using modular components that can be used by other applications.\n• Must be optimized for use on tablet devices.\n• All changes to the application must be completed in the Suitability Assessment Tool solution.\n\nReporting\n\nThe company has the following requirements for a reporting solution:\n\n• The data source for the reporting solution must support incremental refreshes.\n• The solution must report accurate data if an error occurs.\n\n\nIssues\n-\n\n• A recent audit identified that all users can access the PII in the Planning Hub spreadsheet.\n• After a developer deploys a change to the production environment, a user reports information is loaded incorrectly to the test system when processing a funding application.\n• After deploying a change to the new eligibility assessment tool in the development environment, you observe that the changes do not appear in the development environment.\n• After removing a column from the Planning Hub application and deploying the changes to the production environment, you observe that the column is still present.\n• You deploy the customizations for the data model. Users report that the email address of the user who created the appointment is missing and that searches on the description information do not return any results.\n\nQ36\n\nYou need to design the Planning Hub data model.\n\nWhich four actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+        "type": "dnd",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "Select the Contact table."
+            },
+            {
+                "id": "opt2",
+                "text": "Modify a column."
+            },
+            {
+                "id": "opt3",
+                "text": "Create a column."
+            },
+            {
+                "id": "opt4",
+                "text": "Enable auditing."
+            },
+            {
+                "id": "opt5",
+                "text": "Create a custom table."
+            },
+            {
+                "id": "opt6",
+                "text": "Enable column security."
+            },
+            {
+                "id": "opt7",
+                "text": "Create column security profile."
+            },
+            {
+                "id": "opt8",
+                "text": "Start auditing."
+            }
+        ],
+        "correctOrder": [
+            "opt1",
+            "opt2",
+            "opt6",
+            "opt7"
+        ]
+    },
+    {
+        "id": 37,
+        "text": "Q37\n\nYou need to implement the Suitability Assessment Tool.\n\nWhat should you use?",
+        "correctOptionId": "c",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Power App Component Framework (PCF) control"
+            },
+            {
+                "id": "b",
+                "text": "B. view"
+            },
+            {
+                "id": "c",
+                "text": "C. component library"
+            },
+            {
+                "id": "d",
+                "text": "D. form"
+            }
+        ]
+    },
+    {
+        "id": 38,
+        "text": "Q38\n\nYou need to identify the Azure service to use for the Planning Hub application.\n\nWhich service should you use?",
+        "correctOptionId": "a",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Logic App"
+            },
+            {
+                "id": "b",
+                "text": "B. Service Bus"
+            },
+            {
+                "id": "c",
+                "text": "C. Key Vault"
+            },
+            {
+                "id": "d",
+                "text": "D. Function"
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "text": "DRAG DROP\n\nA company is implementing business logic in a model-driven app. Employees import records from Microsoft Excel to create lead records.\n\nThe company has the following requirements:\n\n- An existing phone number column must be formatted to only display numbers and periods.\n- Three existing columns must be calculated to display the sum based on a percentage.\n- The solution must not use custom development when possible.\n\nYou need to implement the business logic solution.\n\nWhich method should you use? To answer, move the appropriate solutions to the correct requirements. You may use each solution once, more than once, or not at all. You may need to move the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+        "type": "dnd-zones",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "Business rule"
+            },
+            {
+                "id": "opt2",
+                "text": "Formula column"
+            },
+            {
+                "id": "opt3",
+                "text": "Plug-in"
+            }
+        ],
+        "zones": [
+            {
+                "id": "zone1",
+                "title": "Phone number formatting"
+            },
+            {
+                "id": "zone2",
+                "title": "Percentage calculation"
+            }
+        ],
+        "correctZoneAnswers": {
+            "zone1": "opt1",
+            "zone2": "opt2"
+        }
+    },
+    {
+        "id": 40,
+        "text": "You are creating a FetchXML query.\n\nThe query must return data from a table and return filtered data from a related table.\n\nYou need to configure the FetchXML query.\n\nWhich two elements should you use? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+        "correctOptionIds": [
+            "b",
+            "d"
+        ],
+        "isMultiSelect": true,
+        "options": [
+            {
+                "id": "a",
+                "text": "A. attribute"
+            },
+            {
+                "id": "b",
+                "text": "B. link-entity"
+            },
+            {
+                "id": "c",
+                "text": "C. alias"
+            },
+            {
+                "id": "d",
+                "text": "D. condition"
+            }
+        ]
+    },
+    {
+        "id": 41,
+        "text": "You are testing security in a model-driven app. The business unit structure in the environment consists of a top-level business unit with three business units, named BusA, BusB, and BusC, directly under it.\n\nBusA users must be able to view records in only their business unit.\n\nYou observe that BusA users have security roles from BusB and BusC assigned to them. The BusA users can view records in those business units. All security role privileges are set to the Business Unit level.\n\nYou need to correct the problem with record access.\n\nWhich two actions should you perform? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+        "correctOptionIds": [
+            "b",
+            "d"
+        ],
+        "isMultiSelect": true,
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Turn off the feature that controls record ownership across business units."
+            },
+            {
+                "id": "b",
+                "text": "B. Create a security role for BusA users in the parent business unit with privileges set to Business Unit level."
+            },
+            {
+                "id": "c",
+                "text": "C. Move BusA users to the parent business unit. Assign security roles with Parent Child Business Units privileges."
+            },
+            {
+                "id": "d",
+                "text": "D. Ensure security role privileges are set to User level."
+            }
+        ]
+    },
+    {
+        "id": 43,
+        "text": "You are developing a canvas app that connects to Microsoft Dataverse. You add the Accounts table as a data source to the app. You implement a gallery that will display information from the Accounts table.\n\nThe Accounts table is stored and cached locally as a collection named colAccounts. Data in the gallery must always display accounts that have a name value. The gallery uses the following Power Fx formula:\n\n\nFilter(\n Sort(\n colAccounts,\n 'Account Name',\n SortOrder.Descending\n ),\n IsBlank('Account Name') = false\n)\n\n\nYou deploy the app to production.\n\nUsers report that the expected number of Account rows in the app does not appear.\n\nYou need to resolve the user issue.\n\nHow should you modify the Power Fx formula?",
+        "correctOptionId": "c",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Sort(Accounts, 'Account Name', SortOrder.Descending)"
+            },
+            {
+                "id": "b",
+                "text": "B. Sort(colAccounts, 'Account Name', SortOrder.Descending)"
+            },
+            {
+                "id": "c",
+                "text": "C. Filter(Sort(Accounts, 'Account Name', SortOrder.Descending), IsBlank('Account Name') = false)"
+            },
+            {
+                "id": "d",
+                "text": "D. colAccounts"
+            }
+        ]
     }
 ]

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { DragDropContext, Droppable, Draggable, type DropResult } from '@hello-pangea/dnd';
-import { Card, CardContent, Typography, Button, Stack, Box, Grid, useTheme } from '@mui/material';
+import { Card, CardContent, Typography, Button, Stack, Box, Grid, useTheme, type SxProps } from '@mui/material';
 import type { AnswerOption, Question } from '../types';
 
 interface DragAndDropQuestionProps {
@@ -151,12 +151,13 @@ const DragAndDropQuestion: React.FC<DragAndDropQuestionProps> = ({ question, onS
     };
 
     const getBoxStyle = (optionId: string) => {
-        const style = {
+        const style: SxProps = {
             p: 2,
             border: '1px solid #ccc',
             borderRadius: '4px',
             backgroundColor: 'white',
-            color: "#000"
+            color: "#000",
+            overflowWrap: 'break-word',
         };
 
         if (isAnswered) {

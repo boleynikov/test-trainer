@@ -100,7 +100,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     return (
         <Card elevation={3} sx={{ minHeight: '300px', display: 'flex', flexDirection: 'column' }}>
             <CardContent sx={{ flexGrow: 1 }}>
-                <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', mb: 3 }}>
+                <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', mb: 3, whiteSpace: 'pre-line' }}>
                     {question.text}
                 </Typography>
 
