@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Typography } from '@mui/material';
+import { Box, Button, Container, Typography } from '@mui/material';
 import { type Question } from './types';
 import { ResultScreen } from './components/ResultScreen';
 import { QuizHeader } from './components/QuizHeader';
@@ -67,6 +67,8 @@ const ExamSimulator: React.FC = () => {
     const [tempSelectedOptionIds, setTempSelectedOptionIds] = useState<string[]>([]);
     const [isAnswered, setIsAnswered] = useState<boolean>(false);
     const [isFinished, setIsFinished] = useState<boolean>(false);
+    const [showSubmit, setShowSubmit] = useState<boolean>(true); // New state for submit button visibility
+
 
     // --- EFFECTS ---
 
@@ -93,6 +95,7 @@ const ExamSimulator: React.FC = () => {
             setIsAnswered(progress.isAnswered);
             setIsFinished(progress.isFinished);
             setTempSelectedOptionIds(progress.tempSelectedOptionIds || []);
+            setShowSubmit(progress.showSubmit ?? true); // Restore or default to true
             // Set the questions list based on the restored mode
             setQuestions(shuffleQuestionsAndOptions(parsedQuestions, progress.isRandomMode));
         } else {
@@ -116,10 +119,11 @@ const ExamSimulator: React.FC = () => {
                 isFinished,
                 isRandomMode,
                 tempSelectedOptionIds,
+                showSubmit,
             };
             localStorage.setItem('examProgress', JSON.stringify(progress));
         }
-    }, [isLoaded, currentQIndex, score, answeredQuestions, selectedOptionIds, isAnswered, isFinished, isRandomMode, tempSelectedOptionIds]);
+    }, [isLoaded, currentQIndex, score, answeredQuestions, selectedOptionIds, isAnswered, isFinished, isRandomMode, tempSelectedOptionIds, showSubmit]);
 
 
     // --- HANDLERS ---
@@ -148,6 +152,7 @@ const ExamSimulator: React.FC = () => {
 
         setSelectedOptionIds(tempSelectedOptionIds);
         setIsAnswered(true);
+        setShowSubmit(false); // Hide submit button after answering
 
         // Variable to track how many points to add
         let pointsToAdd = 0;
@@ -169,6 +174,7 @@ const ExamSimulator: React.FC = () => {
         if (pointsEarned > 0) {
             setScore(prev => prev + pointsEarned);
         }
+        setShowSubmit(false); // Ensure submit button is hidden after any question submission
     };
 
     const handleNext = () => {
@@ -177,9 +183,20 @@ const ExamSimulator: React.FC = () => {
             setSelectedOptionIds([]);
             setTempSelectedOptionIds([]);
             setIsAnswered(false);
+            setShowSubmit(true); // Show submit button for the new question
         }
         else {
             setIsFinished(true);
+        }
+    };
+
+    const handlePrevious = () => {
+        if (currentQIndex > 0) {
+            setCurrentQIndex(prev => prev - 1);
+            setSelectedOptionIds([]);
+            setTempSelectedOptionIds([]);
+            setIsAnswered(false);
+            setShowSubmit(true); // Show submit button for the previous question
         }
     };
 
@@ -197,6 +214,7 @@ const ExamSimulator: React.FC = () => {
         setTempSelectedOptionIds([]);
         setIsAnswered(false);
         setIsFinished(false);
+        setShowSubmit(true);
     };
 
     const handleCloseDataLoadModal = () => {
@@ -217,10 +235,12 @@ const ExamSimulator: React.FC = () => {
         setTempSelectedOptionIds([]);
         setIsAnswered(false);
         setIsFinished(false);
+        setShowSubmit(true);
     };
 
     const handleSubmitDndAnswer = (pointsEarned: number) => {
         handleQuestionSubmit(pointsEarned);
+        setShowSubmit(false); // Ensure submit button is hidden after any question submission
     };
 
 
@@ -252,6 +272,8 @@ const ExamSimulator: React.FC = () => {
     }
 
     const currentQuestion = questions[currentQIndex];
+    const isFirstQuestion = currentQIndex === 0;
+    const isLastQuestion = currentQIndex === questions.length - 1;
 
     return (
         <Container maxWidth="md" sx={{ mt: 4 }}>
@@ -268,15 +290,13 @@ const ExamSimulator: React.FC = () => {
                 <DragAndDropQuestion
                     question={currentQuestion}
                     onSubmitAnswer={handleSubmitDndAnswer}
-                    onNext={handleNext}
-                    isLastQuestion={currentQIndex === questions.length - 1}
+                    showSubmit={showSubmit}
                 />
             ) : currentQuestion.type === 'statements-match' ? (
                 <SeveralStatementsQuestion
                     question={currentQuestion}
                     onSubmitAnswer={handleQuestionSubmit}
-                    onNext={handleNext}
-                    isLastQuestion={currentQIndex === questions.length - 1}
+                    showSubmit={showSubmit}
                 />
             ) : (
                 <QuestionCard
@@ -286,10 +306,28 @@ const ExamSimulator: React.FC = () => {
                     isAnswered={isAnswered}
                     onOptionSelect={handleOptionSelect}
                     onSubmitAnswer={handleSubmitAnswer}
-                    onNext={handleNext}
-                    isLastQuestion={currentQIndex === questions.length - 1}
+                    showSubmit={showSubmit}
                 />
             )}
+
+            <Box sx={{ mt: 3, display: 'flex', justifyContent: 'space-between', gap: 2 }}>
+                <Button
+                    variant="contained"
+                    size="large"
+                    onClick={handlePrevious}
+                    disabled={isFirstQuestion}
+                >
+                    Попереднє питання
+                </Button>
+                <Button
+                    variant="contained"
+                    size="large"
+                    onClick={handleNext}
+                    disabled={!isAnswered && showSubmit} // Disable next if not answered and submit is visible
+                >
+                    {isLastQuestion ? "Завершити тест" : "Наступне питання"}
+                </Button>
+            </Box>
         </Container>
     );
 };

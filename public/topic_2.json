@@ -1129,5 +1129,354 @@
             "zone1": "opt2",
             "zone2": "opt3"
         }
+    },
+    {
+        "id": 33,
+        "text": "DRAG DROP -\nYou have a Microsoft Power Platform solution that includes canvas apps and Power Automate cloud flows. The canvas apps and flows interact with a third-party content management system (CMS). You store the URL for the CMS version (development or production) in an environment variable. You deploy the solution to a production environment. You observe that the environment variable references the development URL for the CMS. You update the URL value of the variable directly in the production environment.\n\nYou need to assess which environment variable value will be used in the following scenarios.\n\nWhich versions of the environment variable will the solution use? To answer, drag the appropriate environment variable versions to the correct scenarios. Each environment variable version may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+        "type": "dnd-zones",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "Development"
+            },
+            {
+                "id": "opt2_1",
+                "text": "Production"
+            },
+            {
+                "id": "opt2",
+                "text": "Production"
+            }
+        ],
+        "zones": [
+            {
+                "id": "zone1",
+                "title": "Canvas app sessions open during the update."
+            },
+            {
+                "id": "zone2",
+                "title": "Canvas app sessions launched after the update."
+            },
+            {
+                "id": "zone3",
+                "title": "Power Automate flows which have been saved after the update."
+            }
+        ],
+        "correctZoneAnswers": {
+            "zone1": "opt1",
+            "zone2": [
+                "opt2",
+                "opt2_1"
+            ],
+            "zone3": [
+                "opt2",
+                "opt2_1"
+            ]
+        }
+    },
+    {
+        "id": 34,
+        "text": "HOTSPOT -\nYou are developing a canvas app for a healthcare center.\n\nYou need to create custom tables for the solution. You have the following requirements:\n\n| Requirement | Comment |\n|-------------|---------|\n| Store information about doctors. | Store the name, location, license number, and a list of certifications for each doctor that works at the healthcare center. |\n| Store information about prescription medications. | Reference prescription data from an external database. |\n\nYou need to create the tables.\n\nWhich table type should you create? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+        "type": "statements-match",
+        "statements": [
+            {
+                "id": "statement1",
+                "text": "Store information about doctors.",
+                "options": [
+                    {
+                        "id": "s1_option1",
+                        "text": "Virtual"
+                    },
+                    {
+                        "id": "s1_option2",
+                        "text": "Activity"
+                    },
+                    {
+                        "id": "s1_option3",
+                        "text": "Standard"
+                    }
+                ]
+            },
+            {
+                "id": "statement2",
+                "text": "Store information about prescription medications.",
+                "options": [
+                    {
+                        "id": "s2_option1",
+                        "text": "Virtual"
+                    },
+                    {
+                        "id": "s2_option2",
+                        "text": "Activity"
+                    },
+                    {
+                        "id": "s2_option3",
+                        "text": "Standard"
+                    }
+                ]
+            }
+        ],
+        "correctStatementAnswers": {
+            "statement1": "s1_option3",
+            "statement2": "s2_option1"
+        }
+    },
+    {
+        "id": 35,
+        "text": "You are mapping data from an enterprise resource planning (ERP) system to Microsoft Dataverse.\n\nYou must reference the Name and Email from the ERP system during mapping to ensure that records are unique.\n\nYou need to create an alternate key that references the Name and Email columns.\n\nHow should you create the key?",
+        "correctOptionId": "d",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Add a Power Apps command function."
+            },
+            {
+                "id": "b",
+                "text": "B. Use Power Fx."
+            },
+            {
+                "id": "c",
+                "text": "C. Add column to the Account table in Dataverse."
+            },
+            {
+                "id": "d",
+                "text": "D. Create a key in the Account table in Dataverse."
+            }
+        ]
+    },
+    {
+        "id": 36,
+        "text": "You develop a model-driven app to include a form containing several columns. Two groups of users, named Group1 and Group2 will access the form.\n\nA column contains sensitive data that should not be read by Group2. Group1 must be able to access the column.\n\nYou need to prevent Group2 users from viewing the sensitive data.\n\nWhat should you do?",
+        "correctOptionId": "d",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Create a security role for users in Group1 to grant users access to the column."
+            },
+            {
+                "id": "b",
+                "text": "B. Create multiple forms. Assign a form containing the sensitive data to Group1. Assign a form that does not contain the sensitive data to Group2."
+            },
+            {
+                "id": "c",
+                "text": "C. Use JavaScript to set visibility of the column based on the group of the current user."
+            },
+            {
+                "id": "d",
+                "text": "D. Create a field-level security profile for Group1 users to grant the users access to the column."
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "text": "You are developing a Power Apps app to manage records in the Account table in Microsoft Dataverse.\n\nYou must configure a Web API request to retrieve changes from the table.\n\nYou need to configure the preference header for the API request.\n\nWhat should you include in the request header?",
+        "correctOptionId": "c",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. odata.nextLink"
+            },
+            {
+                "id": "b",
+                "text": "B. odata.context"
+            },
+            {
+                "id": "c",
+                "text": "C. odata.deltaLink"
+            }
+        ]
+    },
+    {
+        "id": 40,
+        "text": "You enable change tracking on the Account table in Microsoft Dataverse.\n\nYou plan to use the Organization Service to retrieve the delta data by using C#.\n\nYou need to determine which message to use.\n\nWhat should you use?",
+        "correctOptionId": "c",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. RetrieveAttributeRequest"
+            },
+            {
+                "id": "b",
+                "text": "B. odata.track-changes"
+            },
+            {
+                "id": "c",
+                "text": "C. RetrieveEntityChangesRequest"
+            },
+            {
+                "id": "d",
+                "text": "D. UpdateEntityRequest"
+            },
+            {
+                "id": "e",
+                "text": "E. UpdateRequest"
+            }
+        ]
+    },
+    {
+        "id": 41,
+        "text": "A Microsoft Dataverse database contains two custom tables named TableA and TableB. The tables are configured with the following:\n\n- A one-to-many relationship is configured between TableA and TableB.\n- A lookup to TableA appears on a form in TableB.\n- Both tables are components of an unmanaged solution.\n- Both tables are components in a Power BI report.\n\nYou receive an error when attempting to delete TableA.\n\nYou need to delete the table.\n\nWhat should you do?",
+        "correctOptionId": "d",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Remove TableA from the Power BI report."
+            },
+            {
+                "id": "b",
+                "text": "B. Remove the relationship between TableA and TableB."
+            },
+            {
+                "id": "c",
+                "text": "C. Remove TableA from the unmanaged solution."
+            },
+            {
+                "id": "d",
+                "text": "D. Remove the lookup field to TableA on the TableB form."
+            }
+        ]
+    },
+    {
+        "id": 42,
+        "text": "Q42/43/44\nCase Study -\n\nThis is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.\n\nTo answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.\n\nAt the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.\n\n\nTo start the case study -\nTo display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. When you are ready to answer a question, click the Question button to return to the question.\n\n\nBackground -\n\nProseware, Inc. is an industry leading software company with several thousand employees. The company has had some trouble recruiting talented employees. Top-level candidates interview with the company but go on to work for competitors.\n\nFeedback from candidates show that some offers were not accepted because the interview scheduling process was unpleasant. The company does not have a system to keep track of the candidates that were not selected.\n\n\nCurrent Environment -\n\nThe recruiting process starts when an individual applies for a position on the company website. The individual may have found the position on their own, they may have been officially referred by an employee, or in some cases were contacted directly by a hiring manager and encouraged to apply.\n\nRecruiters schedule an interview with a hiring manager and interviews with two senior team members. Each interview results in feedback about the candidate and a recommendation whether to hire or not.\n\nThe recruiting team manages all information by using a model-driven application.\n\nThe company has the following Microsoft Dataverse tables and columns:\n\n• JobPosting\n- Hiring Manager - lookup to SystemUser\n- Recruiter Assigned - lookup to SystemUser\n• Contact (Job Applicant)\n- Contact identifier\n- First name\n- Last name\n- Time-Zone Offset\n- Person of Interest - Yes/No (default)\n• Application proapplication\n- Contact identifier, Contact - lookup to Contact\n- Job Posting - lookup to JobPosting\n- pro_recruiterassignedid\n• Interview\n- Application - lookup to Application\n- Job Posting - lookup to JobPosting\n- Recommend - Choice (Yes (0), No (1), and null (default) are the available values)\n- Person of Interest - Yes/No, No is the default value\n• Referral\n- Contact - lookup to Contact\n- Referrer - lookup to SystemUser\n- Job Posting - lookup to JobPosting\n• SystemUser\n- Manager - lookup to SystemUser\n- Time-Zone Offset\n• Recruiter\n- Recruiter identifier\n- Recruiter name\n\n\nApplications -\nThere may be multiple applications associated with each job posting. Applications are linked to an employee record if an employee referred the applicant for a position. The same individual can be an applicant for multiple job postings.\n\n\nInterviews -\nEach interview is performed by an employee and is related to a single application.\n\nThe interview scheduling process may force potential candidates to accept interviews at unusual times with the senior team members due to time-zone differences.\n\nRequirements. Interview Scheduling\n\nThe system must provide recruiters with a list of team members and their time-zone information. You must create a Microsoft Power Apps Component Framework (PCF) control for the Job Application form to display a list of senior team members who report directly to a hiring manager.\n\n• The control must display the current time in each team member's local time.\n• The control must be bound so that it minimizes the amount of code that must be written.\n• You must display the list of team members and sort the list to show team members who reside in time zones closest to the applicant's time zone first.\n\nYou must develop a second PCF control that displays the time-zone name and current time on the Job Application form. You must display the data in the candidate’s local time.\n\nRequirements. Historical Information Tracking\n\nYou must create a process to identify individuals as a person of interest that the company should consider hiring. You must assign each individual a score based on their past interactions.\n\n• You must be able to determine the following information about a candidate:\n  - The number of interviews in the past two years and whether team members provided recommendations\n  - The number of hiring manager referrals and employee referrals in the past two years\n  - Whether the individual has any of the 12 designations or certifications that the company considers significant\n• Only a single referral can be made per job application. The system must be able to support multiple referrals for a candidate.\n• The system must track referrals even if an application is not completed.\n\nRequirements. Historical Information Scoring\n\nThe automated process must run weekly to assess all candidates. The process must also run automatically when historical information is updated. You must be able to perform scoring by selecting a command button on the contact form.\n\n• This new command button must only be visible to employees who belong to a security role assigned named Recruiter. The command button must not be visible to anyone unless the contact form is in Update mode.\n• A person of interest is defined as having a score of 15 or more based on the following historical information criteria:\n  - Each interview with a recommendation adds two to the score.\n  - Each interview without a recommendation subtracts two from the score.\n  - Each employee or manager referral adds one to the score.\n  - Each designation or certification adds one to the score.\n• All scoring elements must be recalculated when changes occur. You must assign the score to the Person of interest field.\n• Values representing totals or scores must be stored in their own numeric fields.\n• Plug-ins must be used to keep the Person of Interest field on active interview records associated with the Contact.\n• Plug-ins registered on the update of the Person of interest field must send an email notification when the candidate named in the email is a person of interest. Recruiters must receive the message when the field is updated on the Contact record.\n• Interviewers must get an email notification when the Person of Interest field on the interview record is successfully updated.\n\n\nRequirements. Design Guidelines -\n\nThe following design guidelines must be followed:\n\n• Schema changes must be made using the method requiring the least amount of storage to meet the requirement.\n• Out-of-the-box functionality must be used when possible.\n• Any code required to calculate scores must be able to be run from a single point.\n• Email notifications need to be kept to a minimum.\n\n\nIssues -\n\n• Recruiters report that the command button to score a candidate is not working. You debug the code and observe that the context input parameter is null.\n• The system does not support associating designations and certifications with candidates.\n• The value for the field used by the PCF control to display local time is saved to Microsoft Dataverse each time an active application record is opened.\n• Interviewers report that they do not receive email notifications when interview records are created for an existing person of interest.",
+        "correctOptionId": "b",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Create a new Lookup column on the Contact table."
+            },
+            {
+                "id": "b",
+                "text": "B. Create a new table that has an N:N relationship with the Contact table."
+            },
+            {
+                "id": "c",
+                "text": "C. Create a new table that has an N:1 relationship with the Contact table."
+            },
+            {
+                "id": "d",
+                "text": "D. Create a new Choices column on the Contact table."
+            }
+        ]
+    },
+    {
+        "id": 43,
+        "text": "You need to prevent the field used by the PCF control from updating the record.\n\nWhat are two possible ways to achieve the goal? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+        "correctOptionIds": [
+            "b",
+            "c"
+        ],
+        "isMultiSelect": true,
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Create a business rule to clear the field value."
+            },
+            {
+                "id": "b",
+                "text": "B. Make the field read-only."
+            },
+            {
+                "id": "c",
+                "text": "C. Call the setSubmitMode('never') function on the field."
+            },
+            {
+                "id": "d",
+                "text": "D. Disable existing event handlers on the field."
+            }
+        ]
+    },
+    {
+        "id": 44,
+        "text": "You need to track referrals.\n\nWhat should you do?",
+        "correctOptionId": "a",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Add a referral source field to the Application table."
+            },
+            {
+                "id": "b",
+                "text": "B. Create a new Referral table with required lookup columns to the Contact, SystemUser, and Application tables."
+            },
+            {
+                "id": "c",
+                "text": "C. Add a second lookup column to SystemUser for manager referrals to the Application table."
+            },
+            {
+                "id": "d",
+                "text": "D. Create a new Referral table with required lookup columns to the Contact, SystemUser, and JobPosting tables."
+            }
+        ]
+    },
+    {
+        "id": 45,
+        "text": "You need to assign the minimum environmental security role to the appropriate users.\n\nWhich security roles should you use? To answer, drag the appropriate security roles to the correct users. Each security role may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+        "type": "dnd-zones",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "System Administrator"
+            },
+            {
+                "id": "opt2",
+                "text": "System Customizer"
+            },
+            {
+                "id": "opt3",
+                "text": "Basic User"
+            },
+            {
+                "id": "opt4",
+                "text": "Environment Maker"
+            }
+        ],
+        "zones": [
+            {
+                "id": "zone1",
+                "title": "UserA"
+            },
+            {
+                "id": "zone2",
+                "title": "UserB"
+            },
+            {
+                "id": "zone3",
+                "title": "User C"
+            },
+            {
+                "id": "zone4",
+                "title": "All employees"
+            }
+        ],
+        "correctZoneAnswers": {
+            "zone1": "opt4",
+            "zone2": "opt1",
+            "zone3": "opt2",
+            "zone4": "opt3"
+        }
+    },
+    {
+        "id": 46,
+        "text": "Which component should you add?",
+        "correctOptionId": "c",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. connection"
+            },
+            {
+                "id": "b",
+                "text": "B. service endpoint"
+            },
+            {
+                "id": "c",
+                "text": "C. custom connector"
+            },
+            {
+                "id": "d",
+                "text": "D. Account table"
+            }
+        ]
     }
 ]

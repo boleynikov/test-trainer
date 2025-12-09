@@ -10,8 +10,7 @@ interface QuestionCardProps {
     isAnswered: boolean;
     onOptionSelect: (id: string) => void;
     onSubmitAnswer: () => void; // New prop for submitting the answer
-    onNext: () => void;
-    isLastQuestion: boolean;
+    showSubmit: boolean; // New prop
 }
 
 export const QuestionCard: React.FC<QuestionCardProps> = ({
@@ -19,10 +18,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     selectedOptionIds,
     isAnswered,
     onOptionSelect,
-    onNext,
-    isLastQuestion,
     tempSelectedOptionIds,
-    onSubmitAnswer
+    onSubmitAnswer,
+    showSubmit
 }) => {
     // Допоміжна функція для визначення кольору та стану контрола
     const getControlState = (optionId: string) => {
@@ -109,16 +107,11 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                 </Stack>
             </CardContent>
 
-            {/* Футер з кнопкою "Відповісти" або "Далі" */}
+            {/* Футер з кнопкою "Відповісти" */}
             <Box sx={{ p: 2, bgcolor: 'background.default', borderTop: '1px solid #eee', display: 'flex', justifyContent: 'flex-end', gap: 2 }}>
-                {!isAnswered && tempSelectedOptionIds.length > 0 && (
+                {!isAnswered && showSubmit && tempSelectedOptionIds.length > 0 && (
                     <Button variant="contained" size="large" onClick={onSubmitAnswer}>
                         Відповісти
-                    </Button>
-                )}
-                {isAnswered && (
-                    <Button variant="contained" size="large" onClick={onNext}>
-                        {isLastQuestion ? "Завершити тест" : "Наступне питання"}
                     </Button>
                 )}
             </Box>

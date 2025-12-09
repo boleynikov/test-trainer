@@ -6,11 +6,10 @@ import type { Question } from '../types';
 interface SeveralStatementsQuestionProps {
     question: Question;
     onSubmitAnswer: (pointsEarned: number) => void;
-    onNext: () => void;
-    isLastQuestion: boolean;
+    showSubmit: boolean; // New prop
 }
 
-const SeveralStatementsQuestion: React.FC<SeveralStatementsQuestionProps> = ({ question, onSubmitAnswer, onNext, isLastQuestion }) => {
+const SeveralStatementsQuestion: React.FC<SeveralStatementsQuestionProps> = ({ question, onSubmitAnswer, showSubmit }) => {
     const [selectedStatementAnswers, setSelectedStatementAnswers] = useState<Record<string, string>>({});
     const [isAnswered, setIsAnswered] = useState(false);
     const [statementStatus, setStatementStatus] = useState<Record<string, 'correct' | 'incorrect' | 'unanswered'>>({});
@@ -142,14 +141,9 @@ const SeveralStatementsQuestion: React.FC<SeveralStatementsQuestionProps> = ({ q
             </CardContent>
 
             <Box sx={{ p: 2, bgcolor: 'background.default', borderTop: '1px solid #eee', display: 'flex', justifyContent: 'flex-end', gap: 2 }}>
-                {!isAnswered && allStatementsAnswered && (
+                {!isAnswered && showSubmit && allStatementsAnswered && (
                     <Button variant="contained" size="large" onClick={handleSubmit}>
                         Відповісти
-                    </Button>
-                )}
-                {isAnswered && (
-                    <Button variant="contained" size="large" onClick={onNext}>
-                        {isLastQuestion ? "Завершити тест" : "Наступне питання"}
                     </Button>
                 )}
             </Box>

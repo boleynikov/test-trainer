@@ -6,11 +6,10 @@ import type { AnswerOption, Question } from '../types';
 interface DragAndDropQuestionProps {
     question: Question;
     onSubmitAnswer: (pointsEarned: number) => void;
-    onNext: () => void;
-    isLastQuestion: boolean;
+    showSubmit: boolean; // New prop
 }
 
-const DragAndDropQuestion: React.FC<DragAndDropQuestionProps> = ({ question, onSubmitAnswer, onNext, isLastQuestion }) => {
+const DragAndDropQuestion: React.FC<DragAndDropQuestionProps> = ({ question, onSubmitAnswer, showSubmit }) => {
     const [unassignedOptions, setUnassignedOptions] = useState<AnswerOption[]>([]);
     const [zoneAnswers, setZoneAnswers] = useState<Record<string, AnswerOption[]>>({});
     const [isAnswered, setIsAnswered] = useState(false);
@@ -256,14 +255,9 @@ const DragAndDropQuestion: React.FC<DragAndDropQuestionProps> = ({ question, onS
                     {renderDndContent()}
                 </DragDropContext>
                 <Box sx={{ mt: 3, display: 'flex', justifyContent: 'flex-end' }}>
-                    {!isAnswered && (question.dndOptions?.length !== unassignedOptions.length || Object.values(zoneAnswers).some(arr => arr.length > 0)) && (
+                    {!isAnswered && showSubmit && (
                         <Button onClick={handleSubmitAnswer} variant="contained" size="large">
                             Відповісти
-                        </Button>
-                    )}
-                    {isAnswered && (
-                        <Button onClick={onNext} variant="contained" size="large">
-                            {isLastQuestion ? "Завершити тест" : "Наступне питання"}
                         </Button>
                     )}
                 </Box>
