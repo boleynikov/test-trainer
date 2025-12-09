@@ -1,0 +1,1133 @@
+[
+    {
+        "id": 1,
+        "text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution. Determine whether the solution meets the stated goals. Some question sets might have more than once correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nA university implements Dynamics 365 Sales. Several departments use opportunity records to bid for funding for projects within their own departments. You configure the system to ensure that each department can only work on their own records.\n\nEmployees in multiple departments often need to work together on an opportunity. Employees report that they are not able to see opportunities from other departments.\n\nYou need to ensure that employees from more than one department can work on the same opportunities when necessary.\n\nSolution: Use position hierarchy security and define the two departments as positions.\n\nDoes the solution meet the goal?",
+        "correctOptionId": "b",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Yes"
+            },
+            {
+                "id": "b",
+                "text": "B. No"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution. Determine whether the solution meets the stated goals. Some question sets might have more than once correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nA university implements Dynamics 365 Sales. Several departments use opportunity records to bid for funding for projects within their own departments. You configure the system to ensure that each department can only work on their own records.\n\nEmployees in multiple departments often need to work together on an opportunity. Employees report that they are not able to see opportunities from other departments.\n\nYou need to ensure that employees from more than one department can work on the same opportunities when necessary.\n\nSolution: Create a security role that has organization-level access to opportunities. Give this security role to all members of the two departments who need access.\n\nDoes the solution meet the goal?",
+        "correctOptionId": "b",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Yes"
+            },
+            {
+                "id": "b",
+                "text": "B. No"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution. Determine whether the solution meets the stated goals. Some question sets might have more than once correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nA university implements Dynamics 365 Sales. Several departments use opportunity records to bid for funding for projects within their own departments. You configure the system to ensure that each department can only work on their own records.\n\nEmployees in multiple departments often need to work together on an opportunity. Employees report that they are not able to see opportunities from other departments.\n\nYou need to ensure that employees from more than one department can work on the same opportunities when necessary.\n\nSolution: Use access team templates and give access to members in the two departments.\n\nDoes the solution meet the goal?",
+        "correctOptionId": "a",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Yes"
+            },
+            {
+                "id": "b",
+                "text": "B. No"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "text": "DRAG DROP\n\nAn international organization has a series of client-server applications that manage red light cameras and traffic violations across a wide geographic region. The daily volume of traffic violations is very high and growing.\n\nYou plan to use Microsoft Power Platform apps to manage the following types of data:\n\n- Existing vehicle licensing data must be imported into Microsoft Dataverse and easily queried.\n- Red light camera images must be stored in a repository for later analysis.\n- Information about traffic violations must be stored and related to vehicle details.\n\nYou need to select data storage mechanisms for the new apps.\n\nWhich data storage mechanisms should you use? To answer, drag the appropriate data storage mechanisms to the correct data types. Each storage mechanism may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.\n\nSelect and Place:",
+        "type": "dnd-zones",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "Entity"
+            },
+            {
+                "id": "opt1_1",
+                "text": "Entity"
+            },
+            {
+                "id": "opt2",
+                "text": "Azure Storage Blob"
+            },
+            {
+                "id": "opt3",
+                "text": "Azure Cosmos DB"
+            }
+        ],
+        "zones": [
+            {
+                "id": "zone1",
+                "title": "Vehicle licensing data"
+            },
+            {
+                "id": "zone2",
+                "title": "Red light camera photos"
+            },
+            {
+                "id": "zone3",
+                "title": "Information about traffic violations"
+            }
+        ],
+        "correctZoneAnswers": {
+            "zone1": [
+                "opt1",
+                "opt1_1"
+            ],
+            "zone2": "opt2",
+            "zone3": [
+                "opt1",
+                "opt1_1"
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "text": "A financial institution that has a Dynamics 365 Sales environment requires that the account balance field from the account entity be visible to specific users only.\n\nYou need to set up the field security for the account balance field.\n\nWhich three actions should you perform? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+        "correctOptionIds": [
+            "b",
+            "d",
+            "e"
+        ],
+        "isMultiSelect": true,
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Set the field to Read-Only and then publish the entity"
+            },
+            {
+                "id": "b",
+                "text": "B. Set the field permission Allow Read to Yes and add the users to the members section"
+            },
+            {
+                "id": "c",
+                "text": "C. Create a security role and add the specific users to the role"
+            },
+            {
+                "id": "d",
+                "text": "D. Enable field security and then publish the entity"
+            },
+            {
+                "id": "e",
+                "text": "E. Create a field security profile"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "text": "HOTSPOT -\nAn organization uses Common Data Service.\n\nThe organization's IT helpdesk requires a single-page web application to monitor and manage Data Export Service. The app must access Data Export Service securely. The app must also permit helpdesk users to perform a limited set of functions.\n\nYou need to create a single-page app.\n\nWhich options should you use? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+        "type": "statements-match",
+        "statements": [
+            {
+                "id": "statement1",
+                "text": "Connect to the app securely",
+                "options": [
+                    {
+                        "id": "s1_option1",
+                        "text": "Use the Common Data Service user security role"
+                    },
+                    {
+                        "id": "s1_option2",
+                        "text": "Use the sign-in credentials for Azure SQL Server"
+                    },
+                    {
+                        "id": "s1_option3",
+                        "text": "Use the Environment Maker security role"
+                    },
+                    {
+                        "id": "s1_option4",
+                        "text": "Register the app in Azure Active Directory"
+                    }
+                ]
+            },
+            {
+                "id": "statement2",
+                "text": "Monitor the status of data replication",
+                "options": [
+                    {
+                        "id": "s2_option1",
+                        "text": "Use FetchXML queries"
+                    },
+                    {
+                        "id": "s2_option2",
+                        "text": "Use Profile operations"
+                    },
+                    {
+                        "id": "s2_option3",
+                        "text": "Use Metadata operations"
+                    },
+                    {
+                        "id": "s2_option4",
+                        "text": "Use T-SQL queries"
+                    }
+                ]
+            },
+            {
+                "id": "statement3",
+                "text": "Enable an entity for replication",
+                "options": [
+                    {
+                        "id": "s3_option1",
+                        "text": "Define an alternate key"
+                    },
+                    {
+                        "id": "s3_option2",
+                        "text": "Enable Auditing"
+                    },
+                    {
+                        "id": "s3_option3",
+                        "text": "Enable Change Tracking"
+                    },
+                    {
+                        "id": "s3_option4",
+                        "text": "Set the data provider"
+                    }
+                ]
+            },
+            {
+                "id": "statement4",
+                "text": "Start or stop data replication",
+                "options": [
+                    {
+                        "id": "s4_option1",
+                        "text": "/crm/exporter/metadata/entities"
+                    },
+                    {
+                        "id": "s4_option2",
+                        "text": "/crm/exporter/profiles/validate"
+                    },
+                    {
+                        "id": "s4_option3",
+                        "text": "/crm/exporter/profiles/{id}/test"
+                    },
+                    {
+                        "id": "s4_option4",
+                        "text": "/crm/exporter/profiles/{id}/activatedata"
+                    }
+                ]
+            },
+            {
+                "id": "statement5",
+                "text": "View information on records that fail to sync",
+                "options": [
+                    {
+                        "id": "s5_option1",
+                        "text": "Use Azure Storage Explorer"
+                    },
+                    {
+                        "id": "s5_option2",
+                        "text": "Use FetchXML queries"
+                    },
+                    {
+                        "id": "s5_option3",
+                        "text": "Use Profile operations"
+                    },
+                    {
+                        "id": "s5_option4",
+                        "text": "Use T-SQL queries"
+                    }
+                ]
+            }
+        ],
+        "correctStatementAnswers": {
+            "statement1": "s1_option4",
+            "statement2": "s2_option1",
+            "statement3": "s3_option3",
+            "statement4": "s4_option4",
+            "statement5": "s5_option3"
+        }
+    },
+    {
+        "id": 7,
+        "text": "HOTSPOT -\nA company has a Common Data Service (CDS) environment.\n\nThe following conditions must apply when accounts are reassigned:\n\n- Ownership for completed tasks that are associated with the account must not change.\n- Outstanding tasks must be reassigned to the new owner of the account.\n\nYou need to configure the relationship to meet the requirements.\n\nWhich settings should you use? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+        "type": "statements-match",
+        "statements": [
+            {
+                "id": "statement1",
+                "text": "Relationship Behavior type",
+                "options": [
+                    {
+                        "id": "s1_option1",
+                        "text": "Referential"
+                    },
+                    {
+                        "id": "s1_option2",
+                        "text": "Referential, Restrict Delete"
+                    },
+                    {
+                        "id": "s1_option3",
+                        "text": "Parental"
+                    },
+                    {
+                        "id": "s1_option4",
+                        "text": "Configurable Cascading"
+                    }
+                ]
+            },
+            {
+                "id": "statement2",
+                "text": "Behavior for the assigned action",
+                "options": [
+                    {
+                        "id": "s2_option1",
+                        "text": "Cascade None"
+                    },
+                    {
+                        "id": "s2_option2",
+                        "text": "Cascade All"
+                    },
+                    {
+                        "id": "s2_option3",
+                        "text": "Cascade Active"
+                    },
+                    {
+                        "id": "s2_option4",
+                        "text": "Cascade User-Owned"
+                    }
+                ]
+            }
+        ],
+        "correctStatementAnswers": {
+            "statement1": "s1_option4",
+            "statement2": "s2_option3"
+        }
+    },
+    {
+        "id": 8,
+        "text": "DRAG DROP -\nA company has Common Data Service (CDS) environments for development, test, and production.\n\nYou have a model-driven app that consists of two solutions. The solutions include settings and reference data. You plan to move the solutions, app settings, and reference data from a development environment to a production environment.\n\nYou export each solution from the development environment as a zip file.\n\nYou run the Configuration Manager to export the settings and reference data as zip files.\n\nYou need to prepare the app and its settings for deployment.\n\nWhich four actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.\n\nNOTE: More than one order of answer choices is correct. You will receive credit for any of the correct orders you select.\n\nSelect and Place:",
+        "type": "dnd",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "Add solution and data files to the PkgFolder in the project"
+            },
+            {
+                "id": "opt2",
+                "text": "Build the package"
+            },
+            {
+                "id": "opt3",
+                "text": "Run the Package Deployer tool"
+            },
+            {
+                "id": "opt4",
+                "text": "Define the solution and data files in ImportConfig.xml"
+            },
+            {
+                "id": "opt5",
+                "text": "Run the Solution Packager tool"
+            },
+            {
+                "id": "opt6",
+                "text": "Create a Dynamics 365 Package project in Visual Studio"
+            }
+        ],
+        "correctOrder": [
+            "opt6",
+            "opt1",
+            "opt4",
+            "opt2"
+        ]
+    },
+    {
+        "id": 10,
+        "text": "DRAG DROP -\nA company is creating a new system based on Microsoft Dataverse.\n\nYou need to select the features that meet the company's requirements.\n\nWhich options should you use? To answer, drag the appropriate options to the correct requirements. Each option may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+        "type": "dnd-zones",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "connection"
+            },
+            {
+                "id": "opt2",
+                "text": "one-to-many relationship"
+            },
+            {
+                "id": "opt2_1",
+                "text": "one-to-many relationship"
+            },
+            {
+                "id": "opt3",
+                "text": "many-to-many relationship"
+            },
+            {
+                "id": "opt4",
+                "text": "self-referential relationship"
+            }
+        ],
+        "zones": [
+            {
+                "id": "zone1",
+                "title": "Visualize records as a hierarchy in a model-driven app"
+            },
+            {
+                "id": "zone2",
+                "title": "Records in one entity must be able to reference only a single record in another entity"
+            },
+            {
+                "id": "zone3",
+                "title": "Any record in one entity must be able to be referenced by any record in another entity"
+            }
+        ],
+        "correctZoneAnswers": {
+            "zone1": [
+                "opt2",
+                "opt2_1"
+            ],
+            "zone2": [
+                "opt2",
+                "opt2_1"
+            ],
+            "zone3": "opt3"
+        }
+    },
+    {
+        "id": 11,
+        "text": "HOTSPOT -\nA school district wants to standardize student information and student performance records. Students in the district are assigned to a specific school. Students are evaluated using class records.\n\nWhen students move between schools in the middle of a school year, the student's current class history must be available to the administrators at the new school.\n\nYou need to configure Microsoft Dataverse tables to connect the class history records to their respective class records.\n\nHow should you configure the table? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+        "type": "statements-match",
+        "statements": [
+            {
+                "id": "statement1",
+                "text": "Table ownership for the class record table.",
+                "options": [
+                    {
+                        "id": "s1_option1",
+                        "text": "Organization"
+                    },
+                    {
+                        "id": "s1_option2",
+                        "text": "User"
+                    },
+                    {
+                        "id": "s1_option3",
+                        "text": "User or Team"
+                    },
+                    {
+                        "id": "s1_option4",
+                        "text": "Team"
+                    }
+                ]
+            },
+            {
+                "id": "statement2",
+                "text": "Relationship of the class history table to the student table.",
+                "options": [
+                    {
+                        "id": "s2_option1",
+                        "text": "Many-to-one"
+                    },
+                    {
+                        "id": "s2_option2",
+                        "text": "One-to-many"
+                    },
+                    {
+                        "id": "s2_option3",
+                        "text": "Many-to-many"
+                    }
+                ]
+            },
+            {
+                "id": "statement3",
+                "text": "Behavior of the relationship between the class history table and the student table.",
+                "options": [
+                    {
+                        "id": "s3_option1",
+                        "text": "Parental"
+                    },
+                    {
+                        "id": "s3_option2",
+                        "text": "Referential"
+                    },
+                    {
+                        "id": "s3_option3",
+                        "text": "Custom"
+                    }
+                ]
+            }
+        ],
+        "correctStatementAnswers": {
+            "statement1": "s1_option3",
+            "statement2": "s2_option1",
+            "statement3": "s3_option1"
+        }
+    },
+    {
+        "id": 13,
+        "text": "You are creating a new page for a Power Apps portal.\n\nYou need to display data from Microsoft Dataverse on the page.\n\nWhat should you use?",
+        "correctOptionId": "a",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Liquid"
+            },
+            {
+                "id": "b",
+                "text": "B. CSS"
+            },
+            {
+                "id": "c",
+                "text": "C. iFrame"
+            },
+            {
+                "id": "d",
+                "text": "D. Bootstrap"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "text": "DRAG DROP -\nYou are creating a canvas app for a company. A security role has been created for sales representatives and a second security role has been created for sales managers.\n\nThe canvas app has the following requirements:\n\n- Sales managers must be able to view the records of the salespeople in their business unit.\n- Sales managers must be the only people who can view sales probability data in opportunity records.\n- Sales representatives and new hires assigned to the same territory share access to sales records.\n\nYou need to assign permissions for the app.\n\nWhich security options should you use? To answer, drag the appropriate security options to the correct scenarios. Each security option may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+        "type": "dnd-zones",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "Role-based security"
+            },
+            {
+                "id": "opt2",
+                "text": "Field-level security"
+            },
+            {
+                "id": "opt3",
+                "text": "Record-level security"
+            }
+        ],
+        "zones": [
+            {
+                "id": "zone1",
+                "title": "Sales managers must be able to view the records of the salespeople in their business unit."
+            },
+            {
+                "id": "zone2",
+                "title": "Sales managers must be the only people who can view sales probability data in opportunity records."
+            },
+            {
+                "id": "zone3",
+                "title": "Sales representatives and new hires assigned to the same territory share access to sales records."
+            }
+        ],
+        "correctZoneAnswers": {
+            "zone1": "opt1",
+            "zone2": "opt2",
+            "zone3": "opt3"
+        }
+    },
+    {
+        "id": 16,
+        "text": "DRAG DROP -\nA company is creating a new system based on the Microsoft Dataverse.\n\nYou need to select the Dataverse features that meet the company's requirements.\n\nWhich features should you select? To answer, drag the appropriate features to the correct requirements. Each feature may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+        "type": "dnd-zones",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "Cascade User Owned"
+            },
+            {
+                "id": "opt2",
+                "text": "Referential, Restrict Delete"
+            },
+            {
+                "id": "opt3",
+                "text": "Referential"
+            },
+            {
+                "id": "opt4",
+                "text": "Parental"
+            }
+        ],
+        "zones": [
+            {
+                "id": "zone1",
+                "title": "When a primary record is deleted, the associated referential records must also be deleted."
+            },
+            {
+                "id": "zone2",
+                "title": "When a record is assigned to a user, all referencing active records must also be assigned to that user."
+            },
+            {
+                "id": "zone3",
+                "title": "When a primary record is deleted, the associated record must not be deleted."
+            }
+        ],
+        "correctZoneAnswers": {
+            "zone1": "opt4",
+            "zone2": "opt1",
+            "zone3": "opt3"
+        }
+    },
+    {
+        "id": 17,
+        "text": "DRAG DROP -\nA company implements Dynamics 365 Sales.\n\nOnly sales managers must be able to perform the approval to move high value sales on in the opportunity qualification process. A new field must be created to capture the approval.\n\nYou need to create and secure the new field.\n\nWhich three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+        "type": "dnd",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "Create a new field security profile"
+            },
+            {
+                "id": "opt2",
+                "text": "Enable auditing in the Approval field."
+            },
+            {
+                "id": "opt3",
+                "text": "Create an access team template and define the access rights for the Opportunity entity."
+            },
+            {
+                "id": "opt4",
+                "text": "Enable change tracking for the Opportunity entity."
+            },
+            {
+                "id": "opt5",
+                "text": "Set the field permissions for the new field to enable read, update, and create, and add the sales manager as a member of the field security profile."
+            },
+            {
+                "id": "opt6",
+                "text": "Enable field security in the Approval field."
+            },
+            {
+                "id": "opt7",
+                "text": "Enable the write privilege on the Opportunity for the sales manager security role and grant the sales manager for the team the sales manager security role."
+            }
+        ],
+        "correctOrder": [
+            "opt6",
+            "opt1",
+            "opt5"
+        ]
+    },
+    {
+        "id": 18,
+        "text": "HOTSPOT -\nA company delivers packages to businesses and consumers. A custom entity named Package captures the package details.\n\nYou need to add the following sets of fields to the entity and leverage the built-in operations of the platform:\n\n- A set of fields to represent the package length, width, depth, and weight. The maximum value for any dimension is 100 centimeters.\n- A set of fields for time-sensitive attributes to calculate the efficiency of a delivery. The calculation must be based on a delivery is entered in the system and the value for a custom field named Delivery time.\n\nWhich constructs should you use? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+        "type": "statements-match",
+        "statements": [
+            {
+                "id": "statement1",
+                "text": "Calculate the efficiency of the delivery.",
+                "options": [
+                    {
+                        "id": "s1_option1",
+                        "text": "DIFFINMINUTES(Created On, Modified On)"
+                    },
+                    {
+                        "id": "s1_option2",
+                        "text": "DIFFINMINUTES(Created On, Delivery Time)"
+                    },
+                    {
+                        "id": "s1_option3",
+                        "text": "DIFFINHOURS(Created On, Modified On)"
+                    },
+                    {
+                        "id": "s1_option4",
+                        "text": "DIFFINHOURS(Created On, Delivery Time)"
+                    }
+                ]
+            },
+            {
+                "id": "statement2",
+                "text": "Select the data type for delivery that has additional transformations applied before the data is displayed.",
+                "options": [
+                    {
+                        "id": "s2_option1",
+                        "text": "Autonumber"
+                    },
+                    {
+                        "id": "s2_option2",
+                        "text": "Phone number"
+                    },
+                    {
+                        "id": "s2_option3",
+                        "text": "Customer"
+                    },
+                    {
+                        "id": "s2_option4",
+                        "text": "Currency"
+                    },
+                    {
+                        "id": "s2_option5",
+                        "text": "Duration"
+                    }
+                ]
+            }
+        ],
+        "correctStatementAnswers": {
+            "statement1": "s1_option2",
+            "statement2": "s2_option5"
+        }
+    },
+    {
+        "id": 19,
+        "text": "A financial services company uses the Common Data Service (CDS) to develop solutions. The company uses development and production instances.\n\nYou need to move two solutions from the development instance to the production instance.\n\nWhat are two possible ways to achieve this goal? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+        "correctOptionIds": [
+            "a",
+            "b"
+        ],
+        "isMultiSelect": true,
+        "options": [
+            {
+                "id": "a",
+                "text": "A. In the development instance, make changes to the solutions that are deployed in the production instance, export the solutions as managed solutions, and import the managed solutions into the production instance."
+            },
+            {
+                "id": "b",
+                "text": "B. In the development instance, highlight the solution you want to make changes to, select Clone a Patch, make changes, export the solution, and import the solution into the production instance."
+            },
+            {
+                "id": "c",
+                "text": "C. Export all managed solutions from the development instance and import the solutions into the production instance."
+            },
+            {
+                "id": "d",
+                "text": "D. In the production instance, import solutions with the same version number or higher when updating solutions."
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "text": "DRAG DROP -\nA company uses Common Data Service (CDS) and manages their engineers using a model-driven app.\n\nYou create a new reusable custom component named Component1 by using the Power Apps component framework (PCF).\n\nYou need to package Component1 for deployment into the model-driven app.\n\nWhich three commands should you run in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+        "type": "dnd",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "npm run build"
+            },
+            {
+                "id": "opt2",
+                "text": "pac solution init-publisher-name --publisher prefix "
+            },
+            {
+                "id": "opt3",
+                "text": "msbuild /t:build /restore"
+            },
+            {
+                "id": "opt4",
+                "text": "npm start"
+            },
+            {
+                "id": "opt5",
+                "text": "pac pcf init --namespace --name --template field"
+            },
+            {
+                "id": "opt6",
+                "text": "pac solution add-reference --path "
+            },
+            {
+                "id": "opt7",
+                "text": "npm install"
+            }
+        ],
+        "correctOrder": [
+            "opt2",
+            "opt6",
+            "opt3"
+        ]
+    },
+    {
+        "id": 21,
+        "text": "You are developing a model-driven app. The app uses data from two custom tables. The tables have a parent-child relationship. The parent record form contains a subgrid that displays the child records.\n\nWhen creating a new child record from the parent form, data must automatically populate in the child record form to reduce data input errors.\n\nYou need to implement the solution.\n\nWhat should you do?",
+        "correctOptionId": "b",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Use a Power Automate flow to read data from the parent record and update the child record upon creation."
+            },
+            {
+                "id": "b",
+                "text": "B. Map table columns from the parent record to the child record."
+            },
+            {
+                "id": "c",
+                "text": "C. Create a business rule that sets the default values on the child record fields to values from the parent record."
+            },
+            {
+                "id": "d",
+                "text": "D. Include a quick view form on the child record showing the data from the parent record."
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "text": "DRAG DROP -\nA company has a Common Data Service (CDS) environment.\n\nAll accounts in the system with a relationship type of Customer set must have an account number. A plug-in has been developed.\n\nWhen a Customer is updated with a relationship type, the plug-in sets the account number if not provided by the user.\n\nYou need to register the plug-in.\n\nWhich three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+        "type": "dnd",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "In the Plug-in Registration tool, select Register New Image, change the Image type be a PostImage, and ensure the accountnumber is included as a parameter."
+            },
+            {
+                "id": "opt2",
+                "text": "In the Plug-in Registration tool, select Register New Image, change the Image type be a PreImage, and ensure the accountnumber is included as a parameter."
+            },
+            {
+                "id": "opt3",
+                "text": "In the Plug-in Registration tool, select Register New Step. Set the Message to Update, Primary Entity to Account, and Event Pipeline Stage of PreValidation."
+            },
+            {
+                "id": "opt4",
+                "text": "In the Plug-in Registration tool, select Register New Assembly."
+            },
+            {
+                "id": "opt5",
+                "text": "In the Plug-in Registration tool, select Register New Step. Set the Message to Update, Primary Entity to Account, and Event Pipeline Stage of PreOperation."
+            }
+        ],
+        "correctOrder": [
+            "opt4",
+            "opt5",
+            "opt2"
+        ]
+    },
+    {
+        "id": 23,
+        "text": "You are developing a Power Platform solution for a medical practice. You create a custom table named Doctors to record details about the doctors who work at the medical practice.\n\nYou must be able to attach a PDF copy of a doctor's medical license to the row for each doctor.\n\nYou need to configure the table.\n\nWhat should you do?",
+        "correctOptionId": "b",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Create a Power Automate flow to add attachments."
+            },
+            {
+                "id": "b",
+                "text": "B. Navigate to Table options and enable attachments."
+            },
+            {
+                "id": "c",
+                "text": "C. Navigate to Column options and enable attachments."
+            },
+            {
+                "id": "d",
+                "text": "D. Create relationships between the Doctor table and the Notes table."
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "text": "HOTSPOT -\nYou are creating a package for a Power Platform solution. The package will include custom code and sample data.\n\nThe package must include all files that need to be installed.\n\nYou need to configure the package.\n\nWhich setting should you use? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+        "type": "statements-match",
+        "statements": [
+            {
+                "id": "statement1",
+                "text": "File that you must edit to include custom code.",
+                "options": [
+                    {
+                        "id": "s1_option1",
+                        "text": "PackageTemplate.cs"
+                    },
+                    {
+                        "id": "s1_option2",
+                        "text": "ImportConfig.xml"
+                    },
+                    {
+                        "id": "s1_option3",
+                        "text": "CRMSDKTemplates.vsix"
+                    },
+                    {
+                        "id": "s1_option4",
+                        "text": "ComplexImportDetail.log"
+                    }
+                ]
+            },
+            {
+                "id": "statement2",
+                "text": "File to edit to include sample data.",
+                "options": [
+                    {
+                        "id": "s2_option1",
+                        "text": "CRMSDKTemplates.vsix"
+                    },
+                    {
+                        "id": "s2_option2",
+                        "text": ".zip"
+                    },
+                    {
+                        "id": "s2_option3",
+                        "text": "ImportConfig.xml"
+                    },
+                    {
+                        "id": "s2_option4",
+                        "text": "PackageTemplate.cs"
+                    }
+                ]
+            },
+            {
+                "id": "statement3",
+                "text": "Value for the Copy to Output Directory setting.",
+                "options": [
+                    {
+                        "id": "s3_option1",
+                        "text": "Copy Always"
+                    },
+                    {
+                        "id": "s3_option2",
+                        "text": "Do Not Copy"
+                    },
+                    {
+                        "id": "s3_option3",
+                        "text": "Copy If Newer"
+                    },
+                    {
+                        "id": "s3_option4",
+                        "text": "Empty"
+                    }
+                ]
+            }
+        ],
+        "correctStatementAnswers": {
+            "statement1": "s1_option1",
+            "statement2": "s2_option3",
+            "statement3": "s3_option1"
+        }
+    },
+    {
+        "id": 25,
+        "text": "You plan to populate records in a Microsoft Dataverse entity containing an option set field.\n\nThe source system has the label for the option set but not the corresponding integer value.\n\nYou are using a non .NET programming language.\n\nYou need to find the integer value for the option set.\n\nWhat should you do?",
+        "correctOptionId": "a",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Use Web API and use a PicklistAttributeMetadata request."
+            },
+            {
+                "id": "b",
+                "text": "B. Use the Organization service and execute a RetrieveOptionSetRequest request."
+            },
+            {
+                "id": "c",
+                "text": "C. Use Web API and use an InsertOptionValue action."
+            },
+            {
+                "id": "d",
+                "text": "D. Use the Organization service and execute a RetrieveAttributeRequest request."
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "text": "A travel company has a Common Data Service (CDS) environment.\n\nThe company requires the following:\n\n- Custom entities that track which regions clients have traveled.\n- The dates their clients traveled to these regions.\n\nYou need to create the entities and relationships to meet the requirements.\n\nWhich three actions should you perform? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+        "correctOptionIds": [
+            "d",
+            "f",
+            "h"
+        ],
+        "isMultiSelect": true,
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Create a N:N relationship from Contact to the Region entity."
+            },
+            {
+                "id": "b",
+                "text": "B. Create a 1:N relationship from the ContactRegion intersect entity and Region."
+            },
+            {
+                "id": "c",
+                "text": "C. Create an intersect entity named ContactRegion and create 1:N relationships to Contact and Region."
+            },
+            {
+                "id": "d",
+                "text": "D. On the main form for ContactRegion, add lookup fields for Contact and Region, and a date field for the visit date."
+            },
+            {
+                "id": "e",
+                "text": "E. Create a 1:N relationship from Contact to the Region entity."
+            },
+            {
+                "id": "f",
+                "text": "F. Create the Region entity."
+            },
+            {
+                "id": "g",
+                "text": "G. On the main form for ContactRegion, add a sub-grid to view country information."
+            },
+            {
+                "id": "h",
+                "text": "H. Create an intersect entity named ContactRegion and create N:1 relationships to Contact and Region."
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "text": "HOTSPOT -\nYou are troubleshooting Power Apps solutions.\n\nYou need to determine the cause for the identified issues.\n\nWhat is the root cause for each issue? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+        "type": "statements-match",
+        "statements": [
+            {
+                "id": "statement1",
+                "text": "Solution checker completes a run and reports errors for one solution but completes without errors for a different solution.",
+                "options": [
+                    {
+                        "id": "s1_option1",
+                        "text": "A canvas app in the first solution has errors."
+                    },
+                    {
+                        "id": "s1_option2",
+                        "text": "The Power Apps checker application user is disabled."
+                    }
+                ]
+            },
+            {
+                "id": "statement2",
+                "text": "You encounter an error on line three of a web resource as shown below:",
+                "options": [
+                    {
+                        "id": "s2_option1",
+                        "text": "The code uses the following rule: web-avoid-eval"
+                    },
+                    {
+                        "id": "s2_option2",
+                        "text": "The code uses the following rule: web-remove-debug-script"
+                    },
+                    {
+                        "id": "s2_option3",
+                        "text": "The code uses the following rule: web-avoid-modals"
+                    },
+                    {
+                        "id": "s2_option4",
+                        "text": "The code uses the following rule: web-use-strict-mode"
+                    }
+                ]
+            }
+        ],
+        "correctStatementAnswers": {
+            "statement1": "s1_option1",
+            "statement2": "s2_option4"
+        }
+    },
+    {
+        "id": 28,
+        "text": "A company uses Common Data Service rollup fields to calculate insurance exposure and risk profiles for customers.\n\nUsers report that the system does not update values for the rollup fields when new insurance policies are written.\n\nYou need to recalculate the value of the rollup fields immediately after a policy is created.\n\nWhat should you do?",
+        "correctOptionId": "d",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Create new fields on the customer entity for insurance exposure and risk. Write a workflow process that is triggered when a new policy record is created to calculate the sum of values from policy records."
+            },
+            {
+                "id": "b",
+                "text": "B. Update the Mass Calculate Rollup Field job to trigger when a new policy record is created."
+            },
+            {
+                "id": "c",
+                "text": "C. Change the frequency of the Calculate Rollup Field recurring job from every hour to every five minutes."
+            },
+            {
+                "id": "d",
+                "text": "D. Create a plug-in that uses the CalculateRollupFieldRequest method for the rollup field. Configure a step on the Create event for the policy entity for this plug-in."
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "text": "The communication department for a company plans to add a publicly accessible survey page to the company's public website.\n\nYou must add the new survey page to the company's public website and capture data from the page to a Microsoft Dataverse environment.\n\nExplicit user credentials must not be required to write survey data to Dataverse.\n\nYou need to implement authentication.\n\nWhich authentication mechanism should you implement?",
+        "correctOptionId": "d",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. ADFS"
+            },
+            {
+                "id": "b",
+                "text": "B. Azure AD Conditional Access"
+            },
+            {
+                "id": "c",
+                "text": "C. Azure guest account"
+            },
+            {
+                "id": "d",
+                "text": "D. Client secret"
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "text": "You are a Power App maker.\n\nYou are developing an app in a development environment. You create the following custom forms in the Account entity:\n\n- FormB contains a message that appears in the OnLoad function of the form.\n- FormC contains a message that appears in the OnSave function of the form.\n\nYou add the forms to a solution and export the solution as managed. Importing the managed solution into the test environment produces an error indicating the solution is missing a component.\n\nYou need to identify the issue.\n\nWhat is the cause of the import error?",
+        "correctOptionId": "c",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. The web resources were not added to the form before adding the form to the solution."
+            },
+            {
+                "id": "b",
+                "text": "B. The solution must be exported as an unmanaged solution."
+            },
+            {
+                "id": "c",
+                "text": "C. The web resources were not added to the solution before exporting."
+            },
+            {
+                "id": "d",
+                "text": "D. A copy of the form must be made before adding to the solution."
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "text": "You are developing a model-driven app for a company.\n\nThe app must map child records to a parent record.\n\nYou need to use the column mapping feature to configure the app.\n\nWhich two actions can you perform? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+        "correctOptionIds": [
+            "a",
+            "c"
+        ],
+        "isMultiSelect": true,
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Map the value of a Choices column on the child table to the value of a Choices column on the parent table."
+            },
+            {
+                "id": "b",
+                "text": "B. Map the value of a column on the parent table that uses column values from the child table."
+            },
+            {
+                "id": "c",
+                "text": "C. Map the value of columns on both the child table quick-create and main forms to the value for the same columns on the parent table."
+            },
+            {
+                "id": "d",
+                "text": "D. Map the value of a single line of text column on the child table to the value of a currency column on the parent table."
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "text": "DRAG DROP -\nYou are creating a Power Platform solution for a fitness studio. Members of the studio will use the solution to track their progress towards fitness goals. Personal trainers create programs with different exercises to match a member's fitness level. Members can opt into a program to submit information about their progress with exercises suggested by a trainer.\n\nFitness programs and exercises have specific durations, prices, and dates.\n\nYou need to ensure that members can see all of the exercises that a trainer suggests in their calendars.\n\nWhat should you use? To answer, drag the appropriate options to the data types. Each option may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.",
+        "type": "dnd-zones",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "Standard table with Organization ownership"
+            },
+            {
+                "id": "opt2",
+                "text": "Standard table with User or Team ownership"
+            },
+            {
+                "id": "opt3",
+                "text": "Activity table with User or Team ownership"
+            }
+        ],
+        "zones": [
+            {
+                "id": "zone1",
+                "title": "Fitness program"
+            },
+            {
+                "id": "zone2",
+                "title": "Exercise"
+            }
+        ],
+        "correctZoneAnswers": {
+            "zone1": "opt2",
+            "zone2": "opt3"
+        }
+    }
+]

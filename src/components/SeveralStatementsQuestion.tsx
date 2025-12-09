@@ -97,7 +97,7 @@ const SeveralStatementsQuestion: React.FC<SeveralStatementsQuestionProps> = ({ q
     return (
         <Card elevation={3} sx={{ minHeight: '300px', display: 'flex', flexDirection: 'column' }}>
             <CardContent sx={{ flexGrow: 1 }}>
-                <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', mb: 3 }}>
+                <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', mb: 3, whiteSpace: 'pre-line' }}>
                     {question.text}
                 </Typography>
 
@@ -105,7 +105,7 @@ const SeveralStatementsQuestion: React.FC<SeveralStatementsQuestionProps> = ({ q
                     {question.statements?.map(statement => (
                         <Grid size={{ xs: 12 }} key={statement.id} sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 1 }}>
                             <Box sx={{ width: '40%', p: 1, borderRadius: 1, ...getStatementBoxStyle(statement.id) }}>
-                                <Typography>{statement.text}</Typography>
+                                <Typography sx={{ whiteSpace: 'pre-line' }}>{statement.text}</Typography>
                             </Box>
                             <FormControl sx={{ minWidth: 200, width: '60%' }} size="small" disabled={isAnswered}>
                                 <Select

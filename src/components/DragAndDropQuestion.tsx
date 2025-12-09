@@ -158,6 +158,7 @@ const DragAndDropQuestion: React.FC<DragAndDropQuestionProps> = ({ question, onS
             backgroundColor: 'white',
             color: "#000",
             overflowWrap: 'break-word',
+            whiteSpace: 'pre-line'
         };
 
         if (isAnswered) {
