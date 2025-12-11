@@ -1,0 +1,637 @@
+[
+    {
+        "id": 47,
+        "text": "DRAG DROP -\nYou are creating a canvas app. The canvas app uses a data source in which the data structure consists of three columns named Id, Value1, and Value2. Id will always be unique, whereas Value1 and Value2 may not be.\n\nYou must use Power Fx to perform the following operations:\n\n- Modify Value2 of a single row, knowing the Id and Value1.\n- Delete all rows with a specified Value1.\n\nYou need to create the Power Fx commands.\n\nWhich function should you use? To answer, move the appropriate functions to the correct operations. You may use each function once, more than once, or not at all. You may need to move the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+        "type": "dnd-zones",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "Remove"
+            },
+            {
+                "id": "opt2",
+                "text": "RemoveIf"
+            },
+            {
+                "id": "opt3",
+                "text": "Update"
+            },
+            {
+                "id": "opt4",
+                "text": "UpdateIf"
+            }
+        ],
+        "zones": [
+            {
+                "id": "zone1",
+                "title": "Modify knowing Id and Value1."
+            },
+            {
+                "id": "zone2",
+                "title": "Delete knowing Value1."
+            }
+        ],
+        "correctZoneAnswers": {
+            "zone1": "opt4",
+            "zone2": "opt2"
+        }
+    },
+    {
+        "id": 48,
+        "text": "HOTSPOT -\nYou develop the following code for a console application that performs the data import to Microsoft Dataverse.\n\n\n01 CrmServiceClient service = new CrmServiceClient(connectionString);\n02 \n03 if (!service.IsReady)\n04 {\n05 Console.WriteLine(service.LastCrmError);\n06 Console.ReadLine();\n07 return;\n08 }\n09 \n10 ExecuteMultipleRequest executeMultipleRequest = new ExecuteMultipleRequest()\n11 {\n12 Settings = new ExecuteMultipleSettings()\n13 {\n14 ContinueOnError = false,\n15 ReturnResponses = true\n16 },\n17 Requests = new OrganizationRequestCollection()\n18 };\n19 \n20 executeMultipleRequest.Requests.Add(new CreateRequest()\n21 {\n22 Target = new Entity(\"account\")\n23 {\n24 [\"name\"] = \"Contoso\",\n25 [\"accountnumber\"] = \"ACC-000001\"\n26 },\n27 [\"SuppressDuplicateDetection\"] = false\n28 });\n29 \n30 executeMultipleRequest.Requests.Add(new CreateRequest()\n31 {\n32 Target = new Entity(\"contact\")\n33 {\n34 [\"firstname\"] = \"John\",\n35 [\"lastname\"] = \"Doe\",\n36 }\n37 });\n38 \n39 ExecuteMultipleResponse executeMultipleResponse = (ExecuteMultipleResponse)service.Execute(executeMultipleRequest);\n",
+        "type": "yes-no-statements",
+        "statements": [
+            {
+                "id": "statement1",
+                "text": "When the connection string or credentials are invalid, an error message is sent to the application terminal.",
+                "options": [
+                    {
+                        "id": "yes",
+                        "text": "Yes"
+                    },
+                    {
+                        "id": "no",
+                        "text": "No"
+                    }
+                ]
+            },
+            {
+                "id": "statement2",
+                "text": "When a similar account exists, the account will still be created.",
+                "options": [
+                    {
+                        "id": "yes",
+                        "text": "Yes"
+                    },
+                    {
+                        "id": "no",
+                        "text": "No"
+                    }
+                ]
+            },
+            {
+                "id": "statement3",
+                "text": "A contact record will always be created.",
+                "options": [
+                    {
+                        "id": "yes",
+                        "text": "Yes"
+                    },
+                    {
+                        "id": "no",
+                        "text": "No"
+                    }
+                ]
+            }
+        ],
+        "correctStatementAnswers": {
+            "statement1": "yes",
+            "statement2": "no",
+            "statement3": "no"
+        }
+    },
+    {
+        "id": 49,
+        "text": "A company designs a solution that contains a new real-time workflow. The workflow populates a lookup column that has a default value.\n\nA managed solution is imported to the test environment.\n\nAn error occurs when a test engineer attempts to create a record. The error message states, \"Record is not available.\"\n\nYou need to resolve the error.\n\nWhat should you do?",
+        "correctOptionId": "c",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Add missing lookup table records to the solution."
+            },
+            {
+                "id": "b",
+                "text": "B. Go to the test environment and manually create missing lookup table records."
+            },
+            {
+                "id": "c",
+                "text": "C. Use the Configuration Migration Tool to extract the lookup table data from the development environment and import it to the test environment."
+            }
+        ]
+    },
+    {
+        "id": 50,
+        "text": "Which permissions does a managed identity have on Microsoft Dataverse data?",
+        "correctOptionId": "a",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. permissions assigned to the corresponding application user"
+            },
+            {
+                "id": "b",
+                "text": "B. permissions assigned to the user triggering the Azure resource"
+            },
+            {
+                "id": "c",
+                "text": "C. permissions equivalent to the environment admin role"
+            },
+            {
+                "id": "d",
+                "text": "D. permissions equivalent to the system administrator role"
+            }
+        ]
+    },
+    {
+        "id": 51,
+        "text": "HOTSPOT -\nYou manage two Microsoft Power Platform managed solutions.\n\nYou must update the solutions and import them into an environment that has no customizations.\n\nSolution A\n- Changes the length of the name column to 75\n- Adds the categoryid column at the top of the Account Information section of the Account form\n\nSolution B\n- Changes the length of the name column to 100\n- Adds the territoryid column at the top of the Account Information section of the Account form\n\nSolution A must be imported before Solution B.\n\nYou need to determine what state the components are in after importing the solutions.\n\nWhich effect does each component exhibit? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+        "type": "statements-match",
+        "statements": [
+            {
+                "id": "statement1",
+                "text": "Column",
+                "options": [
+                    {
+                        "id": "s1_option1",
+                        "text": "Length is 75."
+                    },
+                    {
+                        "id": "s1_option2",
+                        "text": "Length is 100."
+                    },
+                    {
+                        "id": "s1_option3",
+                        "text": "Length is unchanged."
+                    }
+                ]
+            },
+            {
+                "id": "statement2",
+                "text": "Form",
+                "options": [
+                    {
+                        "id": "s2_option1",
+                        "text": "Both columns appear in the Account Information section."
+                    },
+                    {
+                        "id": "s2_option2",
+                        "text": "Only the territoryid column appears in the Account Information section."
+                    },
+                    {
+                        "id": "s2_option3",
+                        "text": "Both columns are added to the Conflicts tab."
+                    }
+                ]
+            }
+        ],
+        "correctStatementAnswers": {
+            "statement1": "s1_option2",
+            "statement2": "s2_option1"
+        }
+    },
+    {
+        "id": 52,
+        "text": "DRAG DROP -\nYou manage two Microsoft Power Platform solutions.\n\n- Solution A contains a custom text column named custom_text.\n- Solution B contains a view that references the custom_text column.\n\nBoth solutions in the managed state are installed in the destination environment.\n\nYou need to delete the custom_text column and apply changes in the destination environment.\n\nIn which order should you perform the actions? To answer, move all actions from the list of actions to the answer area and arrange them in the correct orders.\n\nNOTE: More than one order of answer choices is correct. You will receive credit for any of the correct orders you select.",
+        "type": "dnd",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "Export Solution A as managed from the source environment. Import Solution A to the destination environment."
+            },
+            {
+                "id": "opt2",
+                "text": "Export Solution B as managed from the source environment. Import Solution B to the destination environment."
+            },
+            {
+                "id": "opt3",
+                "text": "Delete the custom_text column in the source environment."
+            },
+            {
+                "id": "opt4",
+                "text": "Remove the referenced custom_text column from the Solution B view in the source environment."
+            }
+        ],
+        "correctOrder": [
+            "opt4",
+            "opt2",
+            "opt3",
+            "opt1"
+        ]
+    },
+    {
+        "id": 53,
+        "text": "DRAG DROP -\nA company manages a Microsoft Power Platform solution that includes an account table.\n\nYou enable an Auditing flag in the table and import a managed version of the solution to the production environment.\n\nAfter the import, you observe that the Auditing flag is disabled in the production environment.\n\nYou check solution layering of the Account table. You observe that the First Party solution customization lays on top of the solution.\n\nYou need to enable the Auditing setting.\n\nIn which order should you perform the actions? To answer, move all actions from the list of actions to the answer area and arrange them in the correct order.",
+        "type": "dnd",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "Delete the new solution from the development and production environments."
+            },
+            {
+                "id": "opt2",
+                "text": "With the Account table, export the original solution as managed from the development environment and import it to the production environment by using the Upgrade setting."
+            },
+            {
+                "id": "opt3",
+                "text": "Remove the Account table from the original solution. Export the solution as managed from the development environment and import it to the production environment by using the Upgrade setting."
+            },
+            {
+                "id": "opt4",
+                "text": "Add the Account table and all customizations of this table to the original solution."
+            },
+            {
+                "id": "opt5",
+                "text": "Create a blank solution and move Account table customizations from the original solution to the blank solution. Export the new solution as managed from the development environment and import it to the production environment."
+            }
+        ],
+        "correctOrder": [
+            "opt5",
+            "opt3",
+            "opt1",
+            "opt4",
+            "opt2"
+        ]
+    },
+    {
+        "id": 54,
+        "text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than once correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nA company develops a new custom connector for a Microsoft Entra ID-protected Azure Function that was created as a single tenant app.\n\nThe custom connector must be moved to a production environment. The connector must be visible and accessible only to users in the tenant.\n\nYou need to deploy the custom connector.\n\nSolution: Add the custom connector to a managed solution, export the managed solution, and then import the managed solution into the production environment.\n\nDoes the solution meet the goal?",
+        "correctOptionId": "b",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Yes"
+            },
+            {
+                "id": "b",
+                "text": "B. No"
+            }
+        ]
+    },
+    {
+        "id": 55,
+        "text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than once correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nA company develops a new custom connector for a Microsoft Entra ID-protected Azure Function that was created as a single tenant app.\n\nThe custom connector must be moved to a production environment. The connector must be visible and accessible only to users in the tenant.\n\nYou need to deploy the custom connector.\n\nSolution: Publish the custom connector to AppSource.\n\nDoes the solution meet the goal?",
+        "correctOptionId": "b",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Yes"
+            },
+            {
+                "id": "b",
+                "text": "B. No"
+            }
+        ]
+    },
+    {
+        "id": 56,
+        "text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than once correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nA company develops a new custom connector for a Microsoft Entra ID-protected Azure Function that was created as a single tenant app.\n\nThe custom connector must be moved to a production environment. The connector must be visible and accessible only to users in the tenant.\n\nYou need to deploy the custom connector.\n\nSolution: Use the maker portal to export the custom connector. Then use the maker portal to import the connector into the production environment.\n\nDoes the solution meet the goal?",
+        "correctOptionId": "a",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Yes"
+            },
+            {
+                "id": "b",
+                "text": "B. No"
+            }
+        ]
+    },
+    {
+        "id": 57,
+        "text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than once correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nA company develops a new custom connector for a Microsoft Entra ID-protected Azure Function that was created as a single tenant app.\n\nThe custom connector must be moved to a production environment. The connector must be visible and accessible only to users in the tenant.\n\nYou need to deploy the custom connector.\n\nSolution: Use Postman to export the custom connector. Then use Postman to import the connector into the production environment.\n\nDoes the solution meet the goal?",
+        "correctOptionId": "b",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Yes"
+            },
+            {
+                "id": "b",
+                "text": "B. No"
+            }
+        ]
+    },
+    {
+        "id": 58,
+        "text": "Q58/59/60\nHOTSPOT\n-\n\nCase study\n-\n\nThis is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.\n\nTo answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.\n\nAt the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.\n\n\nTo start the case study\n-\nTo display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.\n\n\nBackground\n-\n\nCity Power & Light is an energy and utilities company that has offices in Europe. The company subsidizes home improvements for domestic customers, to improve energy efficiency and to meet environmental commitments. The company also distributes and generates electricity for domestic and commercial customers. The company has 2,000 employees in multiple offices and in work-from-home locations.\n\nCity Power & Light uses a team of schedulers, assessors, field engineers, and customer support agents for home improvements in a program named Get Energy Fit.\n\n\nCurrent Environment\n-\n\n\nGet Energy Fit Program\n-\n\nCity Power & Light uses the following to manage the Get Energy Fit program:\n\n• The company uses a Microsoft Excel spreadsheet named Planning Hub on Microsoft SharePoint Online to store information about customer appointments, customer details, and customer eligibility in the program.\n• The company records sensitive customer information that includes the document identification numbers and the customer's financial information.\n• The company uses an assessor to verify customer eligibility in the program and to perform a suitability assessment. The assessor completes the suitability assessment by using a paper and clipboard at the customer property and enters the data to the Planning Hub after the assessment is completed. The assessor also uploads photographs to an on-premises document library. The assessor completes the eligibility assessment by using an application written in React.\n• Schedulers use Microsoft Outlook to schedule engineers and assessors for home improvement appointments. About 200 appointments are scheduled daily.\n• Employees for the company submit funding claims on behalf of the customer by uploading evidence and compliance checks information to an application named the Claim Submission Portal.\n\n\nTechnical Environment\n-\n\n• Schedulers use Windows 11 desktop and laptop computers with the latest version of Microsoft Edge.\n• Assessors use iOS and Android tablet devices.\n• The Claim Submission Portal uses REST-based APIs for all operations and a dedicated testing environment. Authentication to the API is provided by using the following example header key and value pair:\n  o Authentication: 2C8D41431415E429C7FC7A74D8315\n• The company uses Microsoft Azure for hosting multiple applications.\n\n\nRequirements\n-\n\n\nOverview\n-\n\nCity Power & Light plans to implement Microsoft Power Platform to improve the customer experience and increase delivery for the Get Energy Fit program.\n\n\nBusiness Requirements\n-\n\n• Only team leaders and senior managers should have access to read personally identifiable information (PII).\n• All development changes must be tested in a separate environment.\n• The company requires out-of-the-box solutions, when possible.\n• Sensitive credentials, such as user passwords and API secrets, must be stored securely.\n• The Claim Submission Portal must allow citizen developers to create automated solutions.\n• Customer and appointment information must be accessible to all applications.\n\n\nPlanning Hub Application\n-\n\nThe company is planning to replace the Planning Hub spreadsheet with a new application. The new application has the following requirements:\n\n• The application must support a component design that provides rapid changes requested by the schedulers.\n• The data model for the application must capture the following information:\n\n  o Information about customers such as name, address, and other PII.\n  o The data and time for an assessor's or engineer's appointment. Schedulers must be able to view all appointments without filters.\n  o Records the details of the home improvements installed for the customer.\n  o Contains all the information and evidence for submission to the Claim Submission Portal.\n\n• After an assessor uploads the funding application and all evidence after a home improvement has been complete, the company requires that the status of the application is set to Submit and should run the following:\n\n  o Retrieve the details about the customer and the improvement installed.\n  o Send an approval to a senior manager to review and approve in Microsoft Teams.\n  o Upload the information to the API endpoint.\n  o If the upload fails to complete, it should retry after a delay of 30 seconds up to three times. If an error occurs after three times, the application should send an email notification to the application support team.\n  o Must record the status on the funding application.\n\n\nSuitability Assessment Tool\n-\n\nThe company plans to implement a new application named the Suitability Assessment Tool for the assessors. The new application has the following requirements:\n\n• Must integrate with Microsoft Power Platform.\n• Assessors must be able to complete the eligibility assessment by using the Suitability Assessment Tool. The assessors must be able to upload photographs to the on-premises file share.\n• Must be developed by using modular components that can be used by other applications.\n• Must be optimized for use on tablet devices.\n• All changes to the application must be completed in the Suitability Assessment Tool solution.\n\n\nReporting\n-\n\nThe company has the following requirements for a reporting solution:\n\n• The data source for the reporting solution must support incremental refreshes.\n• The solution must report accurate data if an error occurs.\n\n\nIssues\n-\n\n• A recent audit identified that all users can access the PII in the Planning Hub spreadsheet.\n• After a developer deploys a change to the production environment, a user reports information is loaded incorrectly to the test system when processing a funding application.\n• After deploying a change to the new eligibility assessment tool in the development environment, you observe that the changes do not appear in the development environment.\n• After removing a column from the Planning Hub application and deploying the changes to the production environment, you observe that the column is still present.\n• You deploy the customizations for the data model. Users report that the email address of the user who created the appointment is missing and that searches on the description information do not return any results.\n\nYou need to deploy the changes and resolve the issue with the Planning Hub application.\n\nWhat should you use? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+        "type": "statements-match",
+        "statements": [
+            {
+                "id": "statement1",
+                "text": "Solution to deploy",
+                "options": [
+                    {
+                        "id": "s1_option1",
+                        "text": "Appointment data"
+                    },
+                    {
+                        "id": "s1_option2",
+                        "text": "Claim submission portal"
+                    },
+                    {
+                        "id": "s1_option3",
+                        "text": "Spreadsheet"
+                    },
+                    {
+                        "id": "s1_option4",
+                        "text": "Suitability Assessment Tool"
+                    }
+                ]
+            },
+            {
+                "id": "statement2",
+                "text": "How to export",
+                "options": [
+                    {
+                        "id": "s2_option1",
+                        "text": "Export the unmanaged solution as managed"
+                    },
+                    {
+                        "id": "s2_option2",
+                        "text": "Export the unmanaged solution as unmanaged"
+                    }
+                ]
+            },
+            {
+                "id": "statement3",
+                "text": "Remove the column after the deployment",
+                "options": [
+                    {
+                        "id": "s3_option1",
+                        "text": "Publish all customizations"
+                    },
+                    {
+                        "id": "s3_option2",
+                        "text": "Stage for Upgrade"
+                    },
+                    {
+                        "id": "s3_option3",
+                        "text": "Update"
+                    },
+                    {
+                        "id": "s3_option4",
+                        "text": "Upgrade"
+                    }
+                ]
+            }
+        ],
+        "correctStatementAnswers": {
+            "statement1": "s1_option2",
+            "statement2": "s2_option1",
+            "statement3": "s3_option4"
+        }
+    },
+    {
+        "id": 59,
+        "text": "You need to resolve the funding application issue.\n\nWhich component should you use?",
+        "correctOptionId": "c",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. secure config"
+            },
+            {
+                "id": "b",
+                "text": "B. unsecure config"
+            },
+            {
+                "id": "c",
+                "text": "C. environment variable"
+            },
+            {
+                "id": "d",
+                "text": "D. settings"
+            }
+        ]
+    },
+    {
+        "id": 61,
+        "text": "You create a custom page that is used as a contextual dialog in a model-driven app.\n\nThe app must be able to receive two contextual parameters by passing a concatenated string. The string must use the pipe (|) symbol with the recordId parameter.\n\nYou need to compose the formulas to extract parameter information.\n\nWhich two formulas should you compose? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+        "correctOptionIds": [
+            "a",
+            "c"
+        ],
+        "isMultiSelect": true,
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Left(Param(\"recordId\"), Find(\"|\", Param(\"recordId\")) - 1)"
+            },
+            {
+                "id": "b",
+                "text": "B. Left(Param(\"recordId\"), Len(Param(\"recordId\")) - Find(\"|\", Param(\"recordId\")))"
+            },
+            {
+                "id": "c",
+                "text": "C. Right(Param(\"recordId\"), Len(Param(\"recordId\")) - Find(\"|\", Param(\"recordId\")))"
+            },
+            {
+                "id": "d",
+                "text": "D. Right(Param(\"recordId\"), Find(\"|\", Param(\"recordId\")) - 1)"
+            }
+        ]
+    },
+    {
+        "id": 62,
+        "text": "DRAG DROP -\nYou are designing an implementation that has complex data requirements.\n\nThe data storage requirements are as follows:\n\n- Query large amounts of unstructured data in Dataverse.\n- Read and update structured data stored outside of Dataverse.\n\nYou need to implement data storage to meet the requirements.\n\nWhich table types should you use? To answer, move the appropriate table types to the correct data storage requirements. You may use each table type once, more than once, or not at all. You may need to move the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+        "type": "dnd-zones",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "Elastic"
+            },
+            {
+                "id": "opt2",
+                "text": "Standard"
+            },
+            {
+                "id": "opt3",
+                "text": "Virtual"
+            }
+        ],
+        "zones": [
+            {
+                "id": "zone1",
+                "title": "Unstructured data inside Dataverse"
+            },
+            {
+                "id": "zone2",
+                "title": "Structured data outside Dataverse"
+            }
+        ],
+        "correctZoneAnswers": {
+            "zone1": "opt1",
+            "zone2": "opt3"
+        }
+    },
+    {
+        "id": 63,
+        "text": "A company deploys managed customizations by using two solutions, SolutionA and SolutionB. The solutions share components with one another.\n\nA developer for SolutionA requires a new development environment. Customizations made in SolutionA must not interfere with customizations made in SolutionB.\n\nYou need to import solutions to prepare the environment.\n\nWhat should you do?",
+        "correctOptionId": "b",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Import SolutionA as managed and SolutionB as unmanaged."
+            },
+            {
+                "id": "b",
+                "text": "B. Import SolutionA and SolutionB as unmanaged."
+            },
+            {
+                "id": "c",
+                "text": "C. Import SolutionA as unmanaged and SolutionB as managed."
+            },
+            {
+                "id": "d",
+                "text": "D. Import SolutionA and SolutionB as managed."
+            }
+        ]
+    },
+    {
+        "id": 64,
+        "text": "DRAG DROP -\nYou work for a consulting company that implements Microsoft Power Platform solutions.\n\nThe company develops the following reusable components:\n\n- A control that customers can install themselves from Microsoft AppSource.\n- A JavaScript web resource that contains common functions developers will add to in the development environments of new projects.\n\nYou need to package the components in separate solutions.\n\nWhich solution type should you use? To answer, move the appropriate solution types to the correct components. You may use each solution type once, more than once, or not at all. You may need to move the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+        "type": "dnd-zones",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "Managed"
+            },
+            {
+                "id": "opt2",
+                "text": "Unmanaged"
+            }
+        ],
+        "zones": [
+            {
+                "id": "zone1",
+                "title": "AppSource control"
+            },
+            {
+                "id": "zone2",
+                "title": "JavaScript web resource"
+            }
+        ],
+        "correctZoneAnswers": {
+            "zone1": "opt1",
+            "zone2": "opt2"
+        }
+    },
+    {
+        "id": 65,
+        "text": "DRAG DROP -\nYou are creating an input control to format telephone numbers for a canvas app.\n\nThe control must be reusable in other canvas apps inside your company. Any updates must be able to be applied without editing the control in each canvas app.\n\nYou need to create the control.\n\nWhich three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+        "type": "dnd",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "Create the control as a canvas app component"
+            },
+            {
+                "id": "opt2",
+                "text": "Create the control on a canvas app screen"
+            },
+            {
+                "id": "opt3",
+                "text": "Create a blank canvas app"
+            },
+            {
+                "id": "opt4",
+                "text": "Publish all customizations"
+            },
+            {
+                "id": "opt5",
+                "text": "Publish the canvas app"
+            }
+        ],
+        "correctOrder": [
+            "opt1",
+            "opt4",
+            "opt3"
+        ]
+    },
+    {
+        "id": 66,
+        "text": "A company employs four Microsoft Power Platform developers. Each developer has an individual development environment. Each development environment is refreshed regularly from source control as a managed layer.\n\nThe developers must implement their changes in isolation within these environments. Development work must be merged into a base solution within a shared sandbox environment.\n\nYou need to ensure work carried out by each developer is deployed into the main solution in the sandbox environment.\n\nWhat should you do?",
+        "correctOptionId": "d",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Copy each development to the shared environment each day."
+            },
+            {
+                "id": "b",
+                "text": "B. Perform all customizations in the shared environment."
+            },
+            {
+                "id": "c",
+                "text": "C. Export each developer's solution as managed."
+            },
+            {
+                "id": "d",
+                "text": "D. Export each developer's solution as unmanaged."
+            }
+        ]
+    },
+    {
+        "id": 67,
+        "text": "DRAG DROP -\nYou are copying a Microsoft Power Platform production environment to another environment for testing.\n\nYou must ensure the environment provides the following capabilities:\n\n- Users require production data available for testing.\n- Processes in the testing environment must not send emails.\n- Copying the environment must not impact production.\n\nYou need to prepare the testing environment.\n\nWhich three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+        "type": "dnd",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "Copy the customizations and schema from the source environment to the target environment."
+            },
+            {
+                "id": "opt2",
+                "text": "Copy everything from the source environment to the target environment."
+            },
+            {
+                "id": "opt3",
+                "text": "Disable administration mode in the target environment."
+            },
+            {
+                "id": "opt4",
+                "text": "Enable administration mode in the target environment."
+            },
+            {
+                "id": "opt5",
+                "text": "Disable components that should not run in the target environment."
+            }
+        ],
+        "correctOrder": [
+            "opt4",
+            "opt1",
+            "opt5"
+        ]
+    },
+    {
+        "id": 68,
+        "text": "DRAG DROP -\nYou are making changes to a solution in a development environment. The solution is deployed as managed to the production environment.\n\nYou observe that changes were made directly in the production environment, which is not in line with the software development lifecycle.\n\nYou apply the changes made in the production environment to your development environment and delete a table column that is no longer required. You add several views to the model-driven app.\n\nYou need to apply all changes in production to mirror development without impacting users.\n\nWhich three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+        "type": "dnd",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "Export the solution from development as managed."
+            },
+            {
+                "id": "opt2",
+                "text": "Import the solution as an update."
+            },
+            {
+                "id": "opt3",
+                "text": "Export the solution from development as unmanaged."
+            },
+            {
+                "id": "opt4",
+                "text": "Import the solution as an upgrade."
+            },
+            {
+                "id": "opt5",
+                "text": "Delete the table column in production."
+            },
+            {
+                "id": "opt6",
+                "text": "Remove the unmanaged layer from the model-driven app in production."
+            },
+            {
+                "id": "opt7",
+                "text": "Publish all customizations in production."
+            }
+        ],
+        "correctOrder": [
+            "opt7",
+            "opt1",
+            "opt4"
+        ]
+    }
+]
