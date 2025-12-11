@@ -122,7 +122,12 @@ const SeveralStatementsQuestion: React.FC<SeveralStatementsQuestionProps> = ({ q
                                         <MenuItem
                                             key={option.id}
                                             value={option.id}
-                                            sx={getMenuItemStyle(statement.id, option.id)}
+                                            sx={{
+                                                maxWidth: '100vw',        // 1. Constraint width
+                                                whiteSpace: 'normal',     // 2. Allow text to wrap to new lines
+                                                wordBreak: 'break-word',  // 3. Force long words to break if necessary
+                                                ...getMenuItemStyle(statement.id, option.id)
+                                            }}
                                         >
                                             {option.text}
                                             {isAnswered && question.correctStatementAnswers && question.correctStatementAnswers[statement.id] === option.id && (
