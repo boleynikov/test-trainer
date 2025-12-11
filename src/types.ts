@@ -11,7 +11,7 @@ export type Question = {
     correctOptionIds?: string[];
     isMultiSelect?: boolean;
     explanation?: string;
-    type?: 'default' | 'dnd' | 'dnd-zones' | 'statements-match';
+    type?: 'default' | 'dnd' | 'dnd-zones' | 'statements-match' | 'yes-no-statements';
     correctOrder?: string[];
     dndOptions?: AnswerOption[];
     zones?: { id: string; title: string }[];

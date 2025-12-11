@@ -7,6 +7,7 @@ import { QuestionCard } from './components/QuestionCard';
 import { DataLoadModal } from './components/DataLoadModal';
 import DragAndDropQuestion from './components/DragAndDropQuestion';
 import SeveralStatementsQuestion from './components/SeveralStatementsQuestion';
+import YesNoStatementQuestion from './components/YesNoStatementQuestion';
 
 // --- UTILS ---
 const shuffleArray = <T,>(array: T[]): T[] => {
@@ -48,6 +49,10 @@ const ExamSimulator: React.FC = () => {
         }
 
         if (question.type === 'statements-match' && question.statements) {
+            return acc + question.statements.length;
+        }
+
+        if (question.type === 'yes-no-statements' && question.statements) {
             return acc + question.statements.length;
         }
 
@@ -294,6 +299,12 @@ const ExamSimulator: React.FC = () => {
                 />
             ) : currentQuestion.type === 'statements-match' ? (
                 <SeveralStatementsQuestion
+                    question={currentQuestion}
+                    onSubmitAnswer={handleQuestionSubmit}
+                    showSubmit={showSubmit}
+                />
+            ) : currentQuestion.type === 'yes-no-statements' ? (
+                <YesNoStatementQuestion
                     question={currentQuestion}
                     onSubmitAnswer={handleQuestionSubmit}
                     showSubmit={showSubmit}

@@ -37,6 +37,10 @@ export const QuizHeader: React.FC<QuizHeaderProps> = ({
             return acc + question.statements.length;
         }
 
+        if (question.type === 'yes-no-statements' && question.statements) {
+            return acc + question.statements.length;
+        }
+
         return acc + 1;
     }, 0);
 
