@@ -1,0 +1,335 @@
+[
+    {
+        "id": 1,
+        "text": "You create a model-driven app. You run Solution checker. The tool displays the following error:\n\nSolution checker fails to export solutions with model-driven app components.\n\nYou need to resolve the issue.\n\nWhat should you do?",
+        "correctOptionId": "b",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Manually export the solution before running Solution checker."
+            },
+            {
+                "id": "b",
+                "text": "B. Assign the Environment Maker security role to the Power Apps Checker application user."
+            },
+            {
+                "id": "c",
+                "text": "C. Assign the System Administrator security role to your user ID."
+            },
+            {
+                "id": "d",
+                "text": "D. Disable the Power Apps Checker application user."
+            },
+            {
+                "id": "e",
+                "text": "E. Assign the Environment Maker security role to your user ID."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "text": "A company uses a model-driven app to record details of laboratory test.\n\nYou are asked to create a custom component that makes it easier to capture multiple values from lab test results on mobile devices.\n\nYou need to create the interface for the dataset in case the mobile devices lose connection to the network.\n\nWhich method should you use?",
+        "correctOptionId": "b",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. SaveData"
+            },
+            {
+                "id": "b",
+                "text": "B. updateView"
+            },
+            {
+                "id": "c",
+                "text": "C. init"
+            },
+            {
+                "id": "d",
+                "text": "D. getClient"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "text": "DRAG DROP -\nTechnicians for a company use a model-driven app on their phones to record information about service visits. Users do not have permissions to the Power Apps maker portal to create or update apps.\n\nTechnicians report issues with the model-driven app. You are unable to reproduce the issues in a development environment.\n\nYou need to provide instructions to the technicians to gather more details about the errors.\n\nWhich four actions should you recommend be performed in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+        "type": "dnd",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "Perform the steps to generate the errors and download the results from Monitor."
+            },
+            {
+                "id": "opt2",
+                "text": "Open the app in a browser on the phone."
+            },
+            {
+                "id": "opt3",
+                "text": "Open the application in a browser on a laptop computer when they return to the office."
+            },
+            {
+                "id": "opt4",
+                "text": "Perform the steps to generate the errors while you monitor the technician's monitor debug session."
+            },
+            {
+                "id": "opt5",
+                "text": "Add the following text to the end of the URL for the app: \"&monitor=true\""
+            },
+            {
+                "id": "opt6",
+                "text": "Open the app on a phone by using Power Apps mobile."
+            }
+        ],
+        "correctOrder": [
+            "opt3",
+            "opt5",
+            "opt6",
+            "opt4"
+        ]
+    },
+    {
+        "id": 5,
+        "text": "You deploy a Power Platform plug-in to a production environment. The plug-in code contains detailed tracing information. You are a member of the Environment Maker security role for the environment.\n\nUsers report unexpected results when they interact with confidential data by using the plug-in. You confirm that the plug-in works without errors in a development environment.\n\nYou need to investigate the root cause of the plug-in errors.\n\nWhat should you do?",
+        "correctOptionId": "b",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Send a PUT request to enable plug-in tracing for the production environment."
+            },
+            {
+                "id": "b",
+                "text": "B. Send a GET request to retrieve the plugintracelogs records."
+            },
+            {
+                "id": "c",
+                "text": "C. Install Plug-in profiler in the production environment by using the Plug-in Registration tool."
+            },
+            {
+                "id": "d",
+                "text": "D. Reproduce and capture the errors, then debug from Visual Studio."
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "text": "DRAG DROP -\nYou are creating a model-driven app.\n\nUsers need to see only the entities in the app navigation that are relevant to their role and their method of accessing the app.\n\nYou need to restrict entities on the sub-areas in the SiteMap.\n\nWhich properties should you use? To answer, drag the appropriate properties to the correct requirements. Each property may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+        "type": "dnd-zones",
+        "dndOptions": [
+            {
+                "id": "opt1",
+                "text": "Client"
+            },
+            {
+                "id": "opt2",
+                "text": "Offline Availability"
+            },
+            {
+                "id": "opt3",
+                "text": "Privileges"
+            },
+            {
+                "id": "opt4",
+                "text": "SKUs"
+            }
+        ],
+        "zones": [
+            {
+                "id": "zone1",
+                "title": "Ensure that the entity is visible only if the user can create records."
+            },
+            {
+                "id": "zone2",
+                "title": "Ensure that the entity is visible only if the user is accessing the app with a web browser."
+            }
+        ],
+        "correctZoneAnswers": {
+            "zone1": "opt3",
+            "zone2": "opt1"
+        }
+    },
+    {
+        "id": 9,
+        "text": "HOTSPOT -\nA company has a development environment and a production environment. The production environment has several third-party managed and unmanaged solutions that made changes to the Contact main form.\n\nYou create a new solution in the development environment. You add the Contact entity and the Contact main form to the solution. You create a custom field on the Contact entity.\n\nWhat happens when you perform these actions in the new solution and import the solution as managed into the production environment?\n\nNOTE: Each correct selection is worth one point.",
+        "type": "statements-match",
+        "statements": [
+            {
+                "id": "statement1",
+                "text": "Add the field to the middle of an existing section in the Contact main form.",
+                "options": [
+                    {
+                        "id": "s1_option1",
+                        "text": "The field is inserted at the start of the existing section."
+                    },
+                    {
+                        "id": "s1_option2",
+                        "text": "The field is inserted in the middle of the existing section."
+                    },
+                    {
+                        "id": "s1_option3",
+                        "text": "The field is appended to the end of the existing section."
+                    },
+                    {
+                        "id": "s1_option4",
+                        "text": "The field is added in a new section."
+                    }
+                ]
+            },
+            {
+                "id": "statement2",
+                "text": "Create a new section in the Contact main form and add the field to the new section.",
+                "options": [
+                    {
+                        "id": "s2_option1",
+                        "text": "The field is inserted at the start of the existing section."
+                    },
+                    {
+                        "id": "s2_option2",
+                        "text": "The field is inserted in the middle of the existing section."
+                    },
+                    {
+                        "id": "s2_option3",
+                        "text": "The field is appended to the end of the existing section."
+                    },
+                    {
+                        "id": "s2_option4",
+                        "text": "The field is added in a new section."
+                    }
+                ]
+            },
+            {
+                "id": "statement3",
+                "text": "Create a new form and add the field to the middle of an existing section.",
+                "options": [
+                    {
+                        "id": "s3_option1",
+                        "text": "The field is inserted at the start of the existing section."
+                    },
+                    {
+                        "id": "s3_option2",
+                        "text": "The field is inserted in the middle of the existing section."
+                    },
+                    {
+                        "id": "s3_option3",
+                        "text": "The field is appended to the end of the existing section."
+                    },
+                    {
+                        "id": "s3_option4",
+                        "text": "The field is added in a new section."
+                    }
+                ]
+            }
+        ],
+        "correctStatementAnswers": {
+            "statement1": "s1_option3",
+            "statement2": "s2_option4",
+            "statement3": "s3_option2"
+        }
+    },
+    {
+        "id": 10,
+        "text": "An organization uses Dynamics 365 Sales. The organization has accounting and customer service departments.\n\nYou must restrict users in customer service from being able to change the value of the balance field on the Contact records. The accounting team must be the only team able to edit this field.\n\nYou need to create the appropriate solution without any customizations.\n\nWhat should you do first?",
+        "correctOptionId": "c",
+        "options": [
+            {
+                "id": "a",
+                "text": "A. Enable field security for the balance field and grant the customer service team read and update permissions."
+            },
+            {
+                "id": "b",
+                "text": "B. Create a customer service form and role and make the balance field read-only."
+            },
+            {
+                "id": "c",
+                "text": "C. Enable field security for the balance field and grant the accounting team read and update permissions."
+            },
+            {
+                "id": "d",
+                "text": "D. Create an accounting form and role and make the balance field read-only."
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "text": "HOTSPOT -\nYou are developing a model-driven app for the purchasing department of an organization. You provision a new test environment and a security role. You select users to test the apps and assign the users to a security group named TestSG.\n\nIf the tests succeed, a manager will perform additional testing in the production environment and then publish the app for the organization's purchasing department.\n\nYou need to ensure that the test and production environments are configured correctly.\n\nWhat should you do? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+        "type": "statements-match",
+        "statements": [
+            {
+                "id": "statement1",
+                "text": "Ensure that only test users can access the test environment.",
+                "options": [
+                    {
+                        "id": "s1_option1",
+                        "text": "Set the test environment security group to TestSG."
+                    },
+                    {
+                        "id": "s1_option2",
+                        "text": "Assign the test users the app security role."
+                    },
+                    {
+                        "id": "s1_option3",
+                        "text": "Set the test environment security group to TestSG and assign test users the app security role."
+                    }
+                ]
+            },
+            {
+                "id": "statement2",
+                "text": "Ensure that only the manager can access the app in production.",
+                "options": [
+                    {
+                        "id": "s2_option1",
+                        "text": "Set the production environment security group to TestSG."
+                    },
+                    {
+                        "id": "s2_option2",
+                        "text": "Assign the manager the app security role."
+                    },
+                    {
+                        "id": "s2_option3",
+                        "text": "Add the manager to the TestSG security group and grant the manager the app security role."
+                    }
+                ]
+            },
+            {
+                "id": "statement3",
+                "text": "Ensure that test users can access the app in production.",
+                "options": [
+                    {
+                        "id": "s3_option1",
+                        "text": "Set the production environment security group to TestSG."
+                    },
+                    {
+                        "id": "s3_option2",
+                        "text": "Assign the test users the app security role."
+                    },
+                    {
+                        "id": "s3_option3",
+                        "text": "Set the production environment security group to TestSG and assign test users the app security role."
+                    }
+                ]
+            },
+            {
+                "id": "statement4",
+                "text": "Ensure that purchasing department users can access the test environment.",
+                "options": [
+                    {
+                        "id": "s4_option1",
+                        "text": "Remove the security group TestSG associated with the test environment."
+                    },
+                    {
+                        "id": "s4_option2",
+                        "text": "Assign all users the app security role."
+                    },
+                    {
+                        "id": "s4_option3",
+                        "text": "Add all users in the department to the TestSG security group."
+                    }
+                ]
+            }
+        ],
+        "correctStatementAnswers": {
+            "statement1": "s1_option1",
+            "statement2": "s2_option2",
+            "statement3": "s3_option2",
+            "statement4": "s4_option3"
+        }
+    }
+]
