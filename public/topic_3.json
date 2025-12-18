@@ -1,335 +1,1673 @@
 [
-    {
-        "id": 1,
-        "text": "You create a model-driven app. You run Solution checker. The tool displays the following error:\n\nSolution checker fails to export solutions with model-driven app components.\n\nYou need to resolve the issue.\n\nWhat should you do?",
-        "correctOptionId": "b",
-        "options": [
-            {
-                "id": "a",
-                "text": "A. Manually export the solution before running Solution checker."
-            },
-            {
-                "id": "b",
-                "text": "B. Assign the Environment Maker security role to the Power Apps Checker application user."
-            },
-            {
-                "id": "c",
-                "text": "C. Assign the System Administrator security role to your user ID."
-            },
-            {
-                "id": "d",
-                "text": "D. Disable the Power Apps Checker application user."
-            },
-            {
-                "id": "e",
-                "text": "E. Assign the Environment Maker security role to your user ID."
-            }
-        ]
-    },
-    {
-        "id": 3,
-        "text": "A company uses a model-driven app to record details of laboratory test.\n\nYou are asked to create a custom component that makes it easier to capture multiple values from lab test results on mobile devices.\n\nYou need to create the interface for the dataset in case the mobile devices lose connection to the network.\n\nWhich method should you use?",
-        "correctOptionId": "b",
-        "options": [
-            {
-                "id": "a",
-                "text": "A. SaveData"
-            },
-            {
-                "id": "b",
-                "text": "B. updateView"
-            },
-            {
-                "id": "c",
-                "text": "C. init"
-            },
-            {
-                "id": "d",
-                "text": "D. getClient"
-            }
-        ]
-    },
-    {
-        "id": 4,
-        "text": "DRAG DROP -\nTechnicians for a company use a model-driven app on their phones to record information about service visits. Users do not have permissions to the Power Apps maker portal to create or update apps.\n\nTechnicians report issues with the model-driven app. You are unable to reproduce the issues in a development environment.\n\nYou need to provide instructions to the technicians to gather more details about the errors.\n\nWhich four actions should you recommend be performed in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
-        "type": "dnd",
-        "dndOptions": [
-            {
-                "id": "opt1",
-                "text": "Perform the steps to generate the errors and download the results from Monitor."
-            },
-            {
-                "id": "opt2",
-                "text": "Open the app in a browser on the phone."
-            },
-            {
-                "id": "opt3",
-                "text": "Open the application in a browser on a laptop computer when they return to the office."
-            },
-            {
-                "id": "opt4",
-                "text": "Perform the steps to generate the errors while you monitor the technician's monitor debug session."
-            },
-            {
-                "id": "opt5",
-                "text": "Add the following text to the end of the URL for the app: \"&monitor=true\""
-            },
-            {
-                "id": "opt6",
-                "text": "Open the app on a phone by using Power Apps mobile."
-            }
-        ],
-        "correctOrder": [
-            "opt3",
-            "opt5",
-            "opt6",
-            "opt4"
-        ]
-    },
-    {
-        "id": 5,
-        "text": "You deploy a Power Platform plug-in to a production environment. The plug-in code contains detailed tracing information. You are a member of the Environment Maker security role for the environment.\n\nUsers report unexpected results when they interact with confidential data by using the plug-in. You confirm that the plug-in works without errors in a development environment.\n\nYou need to investigate the root cause of the plug-in errors.\n\nWhat should you do?",
-        "correctOptionId": "b",
-        "options": [
-            {
-                "id": "a",
-                "text": "A. Send a PUT request to enable plug-in tracing for the production environment."
-            },
-            {
-                "id": "b",
-                "text": "B. Send a GET request to retrieve the plugintracelogs records."
-            },
-            {
-                "id": "c",
-                "text": "C. Install Plug-in profiler in the production environment by using the Plug-in Registration tool."
-            },
-            {
-                "id": "d",
-                "text": "D. Reproduce and capture the errors, then debug from Visual Studio."
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "text": "DRAG DROP -\nYou are creating a model-driven app.\n\nUsers need to see only the entities in the app navigation that are relevant to their role and their method of accessing the app.\n\nYou need to restrict entities on the sub-areas in the SiteMap.\n\nWhich properties should you use? To answer, drag the appropriate properties to the correct requirements. Each property may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
-        "type": "dnd-zones",
-        "dndOptions": [
-            {
-                "id": "opt1",
-                "text": "Client"
-            },
-            {
-                "id": "opt2",
-                "text": "Offline Availability"
-            },
-            {
-                "id": "opt3",
-                "text": "Privileges"
-            },
-            {
-                "id": "opt4",
-                "text": "SKUs"
-            }
-        ],
-        "zones": [
-            {
-                "id": "zone1",
-                "title": "Ensure that the entity is visible only if the user can create records."
-            },
-            {
-                "id": "zone2",
-                "title": "Ensure that the entity is visible only if the user is accessing the app with a web browser."
-            }
-        ],
-        "correctZoneAnswers": {
-            "zone1": "opt3",
-            "zone2": "opt1"
-        }
-    },
-    {
-        "id": 9,
-        "text": "HOTSPOT -\nA company has a development environment and a production environment. The production environment has several third-party managed and unmanaged solutions that made changes to the Contact main form.\n\nYou create a new solution in the development environment. You add the Contact entity and the Contact main form to the solution. You create a custom field on the Contact entity.\n\nWhat happens when you perform these actions in the new solution and import the solution as managed into the production environment?\n\nNOTE: Each correct selection is worth one point.",
-        "type": "statements-match",
-        "statements": [
-            {
-                "id": "statement1",
-                "text": "Add the field to the middle of an existing section in the Contact main form.",
-                "options": [
-                    {
-                        "id": "s1_option1",
-                        "text": "The field is inserted at the start of the existing section."
-                    },
-                    {
-                        "id": "s1_option2",
-                        "text": "The field is inserted in the middle of the existing section."
-                    },
-                    {
-                        "id": "s1_option3",
-                        "text": "The field is appended to the end of the existing section."
-                    },
-                    {
-                        "id": "s1_option4",
-                        "text": "The field is added in a new section."
-                    }
-                ]
-            },
-            {
-                "id": "statement2",
-                "text": "Create a new section in the Contact main form and add the field to the new section.",
-                "options": [
-                    {
-                        "id": "s2_option1",
-                        "text": "The field is inserted at the start of the existing section."
-                    },
-                    {
-                        "id": "s2_option2",
-                        "text": "The field is inserted in the middle of the existing section."
-                    },
-                    {
-                        "id": "s2_option3",
-                        "text": "The field is appended to the end of the existing section."
-                    },
-                    {
-                        "id": "s2_option4",
-                        "text": "The field is added in a new section."
-                    }
-                ]
-            },
-            {
-                "id": "statement3",
-                "text": "Create a new form and add the field to the middle of an existing section.",
-                "options": [
-                    {
-                        "id": "s3_option1",
-                        "text": "The field is inserted at the start of the existing section."
-                    },
-                    {
-                        "id": "s3_option2",
-                        "text": "The field is inserted in the middle of the existing section."
-                    },
-                    {
-                        "id": "s3_option3",
-                        "text": "The field is appended to the end of the existing section."
-                    },
-                    {
-                        "id": "s3_option4",
-                        "text": "The field is added in a new section."
-                    }
-                ]
-            }
-        ],
-        "correctStatementAnswers": {
-            "statement1": "s1_option3",
-            "statement2": "s2_option4",
-            "statement3": "s3_option2"
-        }
-    },
-    {
-        "id": 10,
-        "text": "An organization uses Dynamics 365 Sales. The organization has accounting and customer service departments.\n\nYou must restrict users in customer service from being able to change the value of the balance field on the Contact records. The accounting team must be the only team able to edit this field.\n\nYou need to create the appropriate solution without any customizations.\n\nWhat should you do first?",
-        "correctOptionId": "c",
-        "options": [
-            {
-                "id": "a",
-                "text": "A. Enable field security for the balance field and grant the customer service team read and update permissions."
-            },
-            {
-                "id": "b",
-                "text": "B. Create a customer service form and role and make the balance field read-only."
-            },
-            {
-                "id": "c",
-                "text": "C. Enable field security for the balance field and grant the accounting team read and update permissions."
-            },
-            {
-                "id": "d",
-                "text": "D. Create an accounting form and role and make the balance field read-only."
-            }
-        ]
-    },
-    {
-        "id": 11,
-        "text": "HOTSPOT -\nYou are developing a model-driven app for the purchasing department of an organization. You provision a new test environment and a security role. You select users to test the apps and assign the users to a security group named TestSG.\n\nIf the tests succeed, a manager will perform additional testing in the production environment and then publish the app for the organization's purchasing department.\n\nYou need to ensure that the test and production environments are configured correctly.\n\nWhat should you do? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
-        "type": "statements-match",
-        "statements": [
-            {
-                "id": "statement1",
-                "text": "Ensure that only test users can access the test environment.",
-                "options": [
-                    {
-                        "id": "s1_option1",
-                        "text": "Set the test environment security group to TestSG."
-                    },
-                    {
-                        "id": "s1_option2",
-                        "text": "Assign the test users the app security role."
-                    },
-                    {
-                        "id": "s1_option3",
-                        "text": "Set the test environment security group to TestSG and assign test users the app security role."
-                    }
-                ]
-            },
-            {
-                "id": "statement2",
-                "text": "Ensure that only the manager can access the app in production.",
-                "options": [
-                    {
-                        "id": "s2_option1",
-                        "text": "Set the production environment security group to TestSG."
-                    },
-                    {
-                        "id": "s2_option2",
-                        "text": "Assign the manager the app security role."
-                    },
-                    {
-                        "id": "s2_option3",
-                        "text": "Add the manager to the TestSG security group and grant the manager the app security role."
-                    }
-                ]
-            },
-            {
-                "id": "statement3",
-                "text": "Ensure that test users can access the app in production.",
-                "options": [
-                    {
-                        "id": "s3_option1",
-                        "text": "Set the production environment security group to TestSG."
-                    },
-                    {
-                        "id": "s3_option2",
-                        "text": "Assign the test users the app security role."
-                    },
-                    {
-                        "id": "s3_option3",
-                        "text": "Set the production environment security group to TestSG and assign test users the app security role."
-                    }
-                ]
-            },
-            {
-                "id": "statement4",
-                "text": "Ensure that purchasing department users can access the test environment.",
-                "options": [
-                    {
-                        "id": "s4_option1",
-                        "text": "Remove the security group TestSG associated with the test environment."
-                    },
-                    {
-                        "id": "s4_option2",
-                        "text": "Assign all users the app security role."
-                    },
-                    {
-                        "id": "s4_option3",
-                        "text": "Add all users in the department to the TestSG security group."
-                    }
-                ]
-            }
-        ],
-        "correctStatementAnswers": {
-            "statement1": "s1_option1",
-            "statement2": "s2_option2",
-            "statement3": "s3_option2",
-            "statement4": "s4_option3"
-        }
+  {
+    "id": 1,
+    "text": "You create a model-driven app. You run Solution checker. The tool displays the following error:\n\nSolution checker fails to export solutions with model-driven app components.\n\nYou need to resolve the issue.\n\nWhat should you do?",
+    "correctOptionId": "b",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Manually export the solution before running Solution checker."
+      },
+      {
+        "id": "b",
+        "text": "B. Assign the Environment Maker security role to the Power Apps Checker application user."
+      },
+      {
+        "id": "c",
+        "text": "C. Assign the System Administrator security role to your user ID."
+      },
+      {
+        "id": "d",
+        "text": "D. Disable the Power Apps Checker application user."
+      },
+      {
+        "id": "e",
+        "text": "E. Assign the Environment Maker security role to your user ID."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "text": "A company uses a model-driven app to record details of laboratory test.\n\nYou are asked to create a custom component that makes it easier to capture multiple values from lab test results on mobile devices.\n\nYou need to create the interface for the dataset in case the mobile devices lose connection to the network.\n\nWhich method should you use?",
+    "correctOptionId": "b",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. SaveData"
+      },
+      {
+        "id": "b",
+        "text": "B. updateView"
+      },
+      {
+        "id": "c",
+        "text": "C. init"
+      },
+      {
+        "id": "d",
+        "text": "D. getClient"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "text": "DRAG DROP -\nTechnicians for a company use a model-driven app on their phones to record information about service visits. Users do not have permissions to the Power Apps maker portal to create or update apps.\n\nTechnicians report issues with the model-driven app. You are unable to reproduce the issues in a development environment.\n\nYou need to provide instructions to the technicians to gather more details about the errors.\n\nWhich four actions should you recommend be performed in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+    "type": "dnd",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Perform the steps to generate the errors and download the results from Monitor."
+      },
+      {
+        "id": "opt2",
+        "text": "Open the app in a browser on the phone."
+      },
+      {
+        "id": "opt3",
+        "text": "Open the application in a browser on a laptop computer when they return to the office."
+      },
+      {
+        "id": "opt4",
+        "text": "Perform the steps to generate the errors while you monitor the technician's monitor debug session."
+      },
+      {
+        "id": "opt5",
+        "text": "Add the following text to the end of the URL for the app: \"&monitor=true\""
+      },
+      {
+        "id": "opt6",
+        "text": "Open the app on a phone by using Power Apps mobile."
+      }
+    ],
+    "correctOrder": [
+      "opt3",
+      "opt5",
+      "opt6",
+      "opt4"
+    ]
+  },
+  {
+    "id": 5,
+    "text": "You deploy a Power Platform plug-in to a production environment. The plug-in code contains detailed tracing information. You are a member of the Environment Maker security role for the environment.\n\nUsers report unexpected results when they interact with confidential data by using the plug-in. You confirm that the plug-in works without errors in a development environment.\n\nYou need to investigate the root cause of the plug-in errors.\n\nWhat should you do?",
+    "correctOptionId": "b",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Send a PUT request to enable plug-in tracing for the production environment."
+      },
+      {
+        "id": "b",
+        "text": "B. Send a GET request to retrieve the plugintracelogs records."
+      },
+      {
+        "id": "c",
+        "text": "C. Install Plug-in profiler in the production environment by using the Plug-in Registration tool."
+      },
+      {
+        "id": "d",
+        "text": "D. Reproduce and capture the errors, then debug from Visual Studio."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "text": "DRAG DROP -\nYou are creating a model-driven app.\n\nUsers need to see only the entities in the app navigation that are relevant to their role and their method of accessing the app.\n\nYou need to restrict entities on the sub-areas in the SiteMap.\n\nWhich properties should you use? To answer, drag the appropriate properties to the correct requirements. Each property may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Client"
+      },
+      {
+        "id": "opt2",
+        "text": "Offline Availability"
+      },
+      {
+        "id": "opt3",
+        "text": "Privileges"
+      },
+      {
+        "id": "opt4",
+        "text": "SKUs"
+      }
+    ],
+    "zones": [
+      {
+        "id": "zone1",
+        "title": "Ensure that the entity is visible only if the user can create records."
+      },
+      {
+        "id": "zone2",
+        "title": "Ensure that the entity is visible only if the user is accessing the app with a web browser."
+      }
+    ],
+    "correctZoneAnswers": {
+      "zone1": "opt3",
+      "zone2": "opt1"
     }
+  },
+  {
+    "id": 9,
+    "text": "HOTSPOT -\nA company has a development environment and a production environment. The production environment has several third-party managed and unmanaged solutions that made changes to the Contact main form.\n\nYou create a new solution in the development environment. You add the Contact entity and the Contact main form to the solution. You create a custom field on the Contact entity.\n\nWhat happens when you perform these actions in the new solution and import the solution as managed into the production environment?\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "statement1",
+        "text": "Add the field to the middle of an existing section in the Contact main form.",
+        "options": [
+          {
+            "id": "s1_option1",
+            "text": "The field is inserted at the start of the existing section."
+          },
+          {
+            "id": "s1_option2",
+            "text": "The field is inserted in the middle of the existing section."
+          },
+          {
+            "id": "s1_option3",
+            "text": "The field is appended to the end of the existing section."
+          },
+          {
+            "id": "s1_option4",
+            "text": "The field is added in a new section."
+          }
+        ]
+      },
+      {
+        "id": "statement2",
+        "text": "Create a new section in the Contact main form and add the field to the new section.",
+        "options": [
+          {
+            "id": "s2_option1",
+            "text": "The field is inserted at the start of the existing section."
+          },
+          {
+            "id": "s2_option2",
+            "text": "The field is inserted in the middle of the existing section."
+          },
+          {
+            "id": "s2_option3",
+            "text": "The field is appended to the end of the existing section."
+          },
+          {
+            "id": "s2_option4",
+            "text": "The field is added in a new section."
+          }
+        ]
+      },
+      {
+        "id": "statement3",
+        "text": "Create a new form and add the field to the middle of an existing section.",
+        "options": [
+          {
+            "id": "s3_option1",
+            "text": "The field is inserted at the start of the existing section."
+          },
+          {
+            "id": "s3_option2",
+            "text": "The field is inserted in the middle of the existing section."
+          },
+          {
+            "id": "s3_option3",
+            "text": "The field is appended to the end of the existing section."
+          },
+          {
+            "id": "s3_option4",
+            "text": "The field is added in a new section."
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "statement1": "s1_option3",
+      "statement2": "s2_option4",
+      "statement3": "s3_option2"
+    }
+  },
+  {
+    "id": 10,
+    "text": "An organization uses Dynamics 365 Sales. The organization has accounting and customer service departments.\n\nYou must restrict users in customer service from being able to change the value of the balance field on the Contact records. The accounting team must be the only team able to edit this field.\n\nYou need to create the appropriate solution without any customizations.\n\nWhat should you do first?",
+    "correctOptionId": "c",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Enable field security for the balance field and grant the customer service team read and update permissions."
+      },
+      {
+        "id": "b",
+        "text": "B. Create a customer service form and role and make the balance field read-only."
+      },
+      {
+        "id": "c",
+        "text": "C. Enable field security for the balance field and grant the accounting team read and update permissions."
+      },
+      {
+        "id": "d",
+        "text": "D. Create an accounting form and role and make the balance field read-only."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "text": "HOTSPOT -\nYou are developing a model-driven app for the purchasing department of an organization. You provision a new test environment and a security role. You select users to test the apps and assign the users to a security group named TestSG.\n\nIf the tests succeed, a manager will perform additional testing in the production environment and then publish the app for the organization's purchasing department.\n\nYou need to ensure that the test and production environments are configured correctly.\n\nWhat should you do? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "statement1",
+        "text": "Ensure that only test users can access the test environment.",
+        "options": [
+          {
+            "id": "s1_option1",
+            "text": "Set the test environment security group to TestSG."
+          },
+          {
+            "id": "s1_option2",
+            "text": "Assign the test users the app security role."
+          },
+          {
+            "id": "s1_option3",
+            "text": "Set the test environment security group to TestSG and assign test users the app security role."
+          }
+        ]
+      },
+      {
+        "id": "statement2",
+        "text": "Ensure that only the manager can access the app in production.",
+        "options": [
+          {
+            "id": "s2_option1",
+            "text": "Set the production environment security group to TestSG."
+          },
+          {
+            "id": "s2_option2",
+            "text": "Assign the manager the app security role."
+          },
+          {
+            "id": "s2_option3",
+            "text": "Add the manager to the TestSG security group and grant the manager the app security role."
+          }
+        ]
+      },
+      {
+        "id": "statement3",
+        "text": "Ensure that test users can access the app in production.",
+        "options": [
+          {
+            "id": "s3_option1",
+            "text": "Set the production environment security group to TestSG."
+          },
+          {
+            "id": "s3_option2",
+            "text": "Assign the test users the app security role."
+          },
+          {
+            "id": "s3_option3",
+            "text": "Set the production environment security group to TestSG and assign test users the app security role."
+          }
+        ]
+      },
+      {
+        "id": "statement4",
+        "text": "Ensure that purchasing department users can access the test environment.",
+        "options": [
+          {
+            "id": "s4_option1",
+            "text": "Remove the security group TestSG associated with the test environment."
+          },
+          {
+            "id": "s4_option2",
+            "text": "Assign all users the app security role."
+          },
+          {
+            "id": "s4_option3",
+            "text": "Add all users in the department to the TestSG security group."
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "statement1": "s1_option1",
+      "statement2": "s2_option2",
+      "statement3": "s3_option2",
+      "statement4": "s4_option3"
+    }
+  },
+  {
+    "id": 12,
+    "text": "A travel company plans to track the address of places that their clients visit in an entity named Destination. Client information is captured as contact records. Client records include links to the places that clients visit.\n\nThe company must be able to link multiple rating records to the new address record.\n\nYou find a custom Rating entity that is incomplete.\n\nYou need to expand the Rating entity to include contact, address, and rating information in one place.\n\nWhich three actions should you perform? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": [
+      "d",
+      "e",
+      "f"
+    ],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Create a 1:N relationship between the Contact system entity and the Address system entity named Destination."
+      },
+      {
+        "id": "b",
+        "text": "B. Create a mapping for the Contact >* Rating relationship."
+      },
+      {
+        "id": "c",
+        "text": "C. Create a 1:N relationship between the Address system entity and the Rating entity."
+      },
+      {
+        "id": "d",
+        "text": "D. Create a 1:N relationship between the Contact system entity and the Rating entity."
+      },
+      {
+        "id": "e",
+        "text": "E. Create a mapping for the Destination >* Rating relationship."
+      },
+      {
+        "id": "f",
+        "text": "F. Create a 1:N relationship between the Destination entity and the Rating entity."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "text": "A bank uses a Common Data Service solution to manage clients.\n\nBank representatives perform client credit checks while the client is present. Credit checks may take up to five minutes to complete.\n\nBank policy dictates that the bank representative's app must stay blocked until credit checks are complete.\n\nYou need to display a model-driven app while credit checks run to ask the bank representative and client to wait for the credit check to complete.\n\nWhich function should you use?",
+    "correctOptionId": "d",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Xrm.Navigation.openWebResource(\"prefix.myPoliteMessage.html\")"
+      },
+      {
+        "id": "b",
+        "text": "B. Xrm.Navigation.openAlertDialog(myPoliteMessage)"
+      },
+      {
+        "id": "c",
+        "text": "C. Xrm.Utility.openWebResource(\"prefix_myPoliteMessage.html\")"
+      },
+      {
+        "id": "d",
+        "text": "D. Xrm.Utility.showProgressIndicator(myPoliteMessage)"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "text": "DRAG DROP -\nYou are creating a model-driven app.\n\nUsers need to see only the entities in the app navigation that are relevant to their role and their method of accessing the app.\n\nYou need to restrict entities on the sub-areas in the SiteMap.\n\nWhich properties should you use? To answer, drag the appropriate properties to the correct requirements. Each property may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "statement1",
+        "text": "Ensure that the entity is visible only if the user can create records.",
+        "options": [
+          {
+            "id": "s1_option1",
+            "text": "Client"
+          },
+          {
+            "id": "s1_option2",
+            "text": "Offline Availability"
+          },
+          {
+            "id": "s1_option3",
+            "text": "Privileges"
+          },
+          {
+            "id": "s1_option4",
+            "text": "SKUs"
+          }
+        ]
+      },
+      {
+        "id": "statement2",
+        "text": "Ensure that the entity is not visible if the user is using an on-premises deployment.",
+        "options": [
+          {
+            "id": "s2_option1",
+            "text": "Client"
+          },
+          {
+            "id": "s2_option2",
+            "text": "Offline Availability"
+          },
+          {
+            "id": "s2_option3",
+            "text": "Privileges"
+          },
+          {
+            "id": "s2_option4",
+            "text": "SKUs"
+          }
+        ]
+      },
+      {
+        "id": "statement3",
+        "text": "Ensure that the entity is visible only if the user is accessing the app with a web browser.",
+        "options": [
+          {
+            "id": "s3_option1",
+            "text": "Client"
+          },
+          {
+            "id": "s3_option2",
+            "text": "Offline Availability"
+          },
+          {
+            "id": "s3_option3",
+            "text": "Privileges"
+          },
+          {
+            "id": "s3_option4",
+            "text": "SKUs"
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "statement1": "s1_option3",
+      "statement2": "s2_option4",
+      "statement3": "s3_option1"
+    }
+  },
+  {
+    "id": 16,
+    "text": "HOTSPOT -\nYou are troubleshooting Power Apps solutions.\n\nYou need to determine the cause for the identified issues.\n\nWhat is the root cause for each issue? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "statement1",
+        "text": "Solution checker does not complete a run for one solution but works for a different solution.",
+        "options": [
+          {
+            "id": "s1_option1",
+            "text": "A canvas app in the first solution has errors."
+          },
+          {
+            "id": "s1_option2",
+            "text": "The Power Apps checker application user is disabled."
+          }
+        ]
+      },
+      {
+        "id": "statement2",
+        "text": "You encounter an error on line three of a web resource as shown below:",
+        "options": [
+          {
+            "id": "s2_option1",
+            "text": "The code uses the following rule: web-avoid-eval"
+          },
+          {
+            "id": "s2_option2",
+            "text": "The code uses the following rule: web-remove-debug-script"
+          },
+          {
+            "id": "s2_option3",
+            "text": "The code uses the following rule: web-avoid-modals"
+          },
+          {
+            "id": "s2_option4",
+            "text": "The code uses the following rule: web-use-strict-mode"
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "statement1": "s1_option1",
+      "statement2": "s2_option4"
+    }
+  },
+  {
+    "id": 17,
+    "text": "You create a Power Apps app that integrates with Dynamics 365 Customer Service.\n\nYou update the app and run solution checker on the original solution. You receive an error stating solution checker cannot export the solution.\n\nYou need to determine the primary cause for the issue.\n\nWhat is the primary cause?",
+    "correctOptionId": "a",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. The original solution is locked because there is a dependent patch."
+      },
+      {
+        "id": "b",
+        "text": "B. The solution was not exported before running solution checker."
+      },
+      {
+        "id": "c",
+        "text": "C. The environment is in Administrator mode."
+      },
+      {
+        "id": "d",
+        "text": "D. Solution checker cannot check default solutions."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "text": "HOTSPOT -\nYou are creating a model-driven app to track the time that employees spend on individual projects.\n\nYou need to configure the app according to the company's requirements.\n\nWhich components should you configure? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "statement1",
+        "text": "Ensure that the values stored in the Project Name field are discoverable in Advanced Find.",
+        "options": [
+          {
+            "id": "s1_option1",
+            "text": "Entity"
+          },
+          {
+            "id": "s1_option2",
+            "text": "View"
+          },
+          {
+            "id": "s1_option3",
+            "text": "Connector"
+          }
+        ]
+      },
+      {
+        "id": "statement2",
+        "text": "Display the original estimated duration as estimated start and end dates for the operation during time entry.",
+        "options": [
+          {
+            "id": "s2_option1",
+            "text": "Quick View"
+          },
+          {
+            "id": "s2_option2",
+            "text": "Card"
+          },
+          {
+            "id": "s2_option3",
+            "text": "Quick Create"
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "statement1": "s1_option1",
+      "statement2": "s2_option1"
+    }
+  },
+  {
+    "id": 19,
+    "text": "HOTSPOT -\nYou are developing a Power Platform solution. You plan to add three buttons to a form. The buttons have the following requirements:\n\n| Button   | Requirement                                                                                     |\n|----------|-------------------------------------------------------------------------------------------------|\n| Button1  | Add the current date and time to the form when the button is selected.                             |\n| Button2  | Apply conditional logic to change the form color based on the option selected in the Title field. |\n| Button3  | Ensure that the word Emergency is entered as \"Emergency\".                                         |\n\nYou need to complete each button's action.\n\nWhich commands should you use? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "statement1",
+        "text": "Button1",
+        "options": [
+          {
+            "id": "s1_option1",
+            "text": "Today() only"
+          },
+          {
+            "id": "s1_option2",
+            "text": "Now() only"
+          },
+          {
+            "id": "s1_option3",
+            "text": "Today() or Now()"
+          }
+        ]
+      },
+      {
+        "id": "statement2",
+        "text": "Button2",
+        "options": [
+          {
+            "id": "s2_option1",
+            "text": "Switch() only"
+          },
+          {
+            "id": "s2_option2",
+            "text": "IF() only"
+          },
+          {
+            "id": "s2_option3",
+            "text": "Switch() or IF()"
+          }
+        ]
+      },
+      {
+        "id": "statement3",
+        "text": "Button3",
+        "options": [
+          {
+            "id": "s3_option1",
+            "text": "IsMatch( TextInput1.Text, \"emergency\", Contains )"
+          },
+          {
+            "id": "s3_option2",
+            "text": "IsMatch( TextInput1.Text, \"emergency\", Contains & IgnoreCase )"
+          },
+          {
+            "id": "s3_option3",
+            "text": "IsMatch( TextInput1.Text, \"emergency\", Contains ) or IsMatch( TextInput1.Text, \"emergency\", Contains & IgnoreCase )"
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "statement1": "s1_option2",
+      "statement2": "s2_option3",
+      "statement3": "s3_option2"
+    }
+  },
+  {
+    "id": 20,
+    "text": "HOTSPOT -\nA company imports data from files.\n\nThe following code is created to import the files. (Line numbers are included for reference only.)\n\n```\n1. var transactionrequest = new ExecuteTransactionRequest()\n2. {\n3. Requests = new OrganizationRequestCollection(),\n4. ReturnResponses = true\n5. };\n6. ...\n7. foreach (DataRow dr in Rows)\n8. {\n9. ...\n10. var contact = new Entity(\"contact\");\n11. contact[\"firstname\"] = firstname;\n12. contact[\"lastname\"] = lastname;\n13. var createRequest = new CreateRequest() { Target = contact };\n14. transactionrequest.Requests.Add(createRequest);\n15. }\n16. try\n17. {\n18. var response = (ExecuteTransactionResponse)crmSvc.Execute(transactionrequest);\n19. foreach (var responseItem in response.Responses)\n20. {\n21. var createResponse = (CreateResponse)responseItem;\n22. Console.WriteLine(\"Created: {0}\", createResponse.id.ToString());\n23. }\n24. }\n25. catch (FaultException<Microsoft.Xrm.Sdk.OrganizationServiceFault> ex)\n26. {\n27. Console.WriteLine(\"Error: {0}\", ((ExecuteTransactionFault)(ex.Detail)).FaultedRequestIndex + 1,\n28. ex.Detail.Message);\n29. }\n```\n\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "yes-no-statements",
+    "statements": [
+      {
+        "id": "statement1",
+        "text": "If an error occurs when one of the contacts is created, processing will continue, and the remainder of the contacts will be created.",
+        "options": [
+          {
+            "id": "yes",
+            "text": "Yes"
+          },
+          {
+            "id": "no",
+            "text": "No"
+          }
+        ]
+      },
+      {
+        "id": "statement2",
+        "text": "If you add the code ,ContinueOnError = true at line 5, bad requests will not roll back the transaction.",
+        "options": [
+          {
+            "id": "yes",
+            "text": "Yes"
+          },
+          {
+            "id": "no",
+            "text": "No"
+          }
+        ]
+      },
+      {
+        "id": "statement3",
+        "text": "Requests are processed in the sequence added to transactionrequest.",
+        "options": [
+          {
+            "id": "yes",
+            "text": "Yes"
+          },
+          {
+            "id": "no",
+            "text": "No"
+          }
+        ]
+      },
+      {
+        "id": "statement4",
+        "text": "Lines 19-23 are required for the contacts to be created.",
+        "options": [
+          {
+            "id": "yes",
+            "text": "Yes"
+          },
+          {
+            "id": "no",
+            "text": "No"
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "statement1": "no",
+      "statement2": "no",
+      "statement3": "yes",
+      "statement4": "no"
+    }
+  },
+  {
+    "id": 21,
+    "text": "You have the following code:\n\n```\nXrm.WebApi.createRecord(\"account\", data).then(\n    function success(result) {\n        console.log(\"Success\");\n    },\n    function (error) {\n        console.log(error.message);\n    }\n);\n```\n\nYou have a contact record that uses the GUID 991bf2fd-d40c-4752-9984-26b7c0455b69.\n\nYou need to assign the contact record as the primary contact for an account when you create the account.\n\nWhich two code segments can you use? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": [
+      "a",
+      "b"
+    ],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. var data = { \"name\": \"Contoso account\", \"primarycontactid\": { \"logicalname\": \"contact\", \"id\": \"991bf2fd-d40c-4752-9984-26b7c0455b69\" } };"
+      },
+      {
+        "id": "b",
+        "text": "B. var data = { \"name\": \"Contoso account\", \"primarycontactid@odata.bind\": \"/contacts(991bf2fd-d40c-4752-9984-26b7c0455b69)\" };"
+      },
+      {
+        "id": "c",
+        "text": "C. var data = { \"name\": \"Contoso account\", \"primarycontactid@odata.context\": \"/contacts(991bf2fd-d40c-4752-9984-26b7c0455b69)\" };"
+      },
+      {
+        "id": "d",
+        "text": "D. var data = { \"name\": \"Contoso account\", \"primarycontactid\": \"/contacts(991bf2fd-d40c-4752-9984-26b7c0455b69)\" };"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "text": "DRAG DROP -\nA company has a model-driven app.\n\nA form that validates the date entered requires a custom button. The button must be available only under certain conditions.\n\nYou need to define the CommandDefinition in the RibbonDiffXML to meet the conditions for the button.\n\nWhich elements should you use? To answer, drag the appropriate elements to the correct conditions. Each element may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Enable Rule"
+      },
+      {
+        "id": "opt2",
+        "text": "Display Rule"
+      },
+      {
+        "id": "opt2_1",
+        "text": "Display Rule"
+      },
+      {
+        "id": "opt3",
+        "text": "Action"
+      }
+    ],
+    "zones": [
+      {
+        "id": "zone1",
+        "title": "Make the button appear when the form shows an existing record."
+      },
+      {
+        "id": "zone2",
+        "title": "Make the button appear when the user has Write privilege on the record."
+      },
+      {
+        "id": "zone3",
+        "title": "Prevent the button from being used in Bulk Edit mode."
+      }
+    ],
+    "correctZoneAnswers": {
+      "zone1": [
+        "opt2",
+        "opt2_1"
+      ],
+      "zone2": [
+        "opt2",
+        "opt2_1"
+      ],
+      "zone3": "opt1"
+    }
+  },
+  {
+    "id": 23,
+    "text": "An organization uses Dynamics 365 Sales.\n\nYou plan to use a JavaScript web resources file in the Accounts form. The file has a dependency on two image web resource files and on the custom field new_placeofbirth in the Account entity.\n\nYou need to add the dependencies for the JavaScript file.\n\nWhich three actions should you perform? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": [
+      "a",
+      "b",
+      "e"
+    ],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Open the web resource file, add the two image web resources to the dependency's lists, and then add the custom field new_placeofbirth to the dependency's list."
+      },
+      {
+        "id": "b",
+        "text": "B. From Settings, select Customizations and then select Customize the System."
+      },
+      {
+        "id": "c",
+        "text": "C. In the Account form, select Form Properties, select Non-Event Dependencies, and then add the custom field new_placeofbirth."
+      },
+      {
+        "id": "d",
+        "text": "D. Select Account, select Forms, and then select the Account form."
+      },
+      {
+        "id": "e",
+        "text": "E. From Web Resources, select the JavaScript file for the Account form and then select the JavaScript file."
+      },
+      {
+        "id": "f",
+        "text": "F. In the Account form, select Form Properties and add the primary JavaScript file and the other two images web resources in Form Libraries."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "text": "HOTSPOT -\nYou open a canvas app in edit mode. A warning message displays as shown in the graphic.\n\nThe warning states: \"This app is using a connector for the Common Data Service that will not be supported past Oct 1, 2020\".\n\nUse the drop-down menus to select the answer choice that answers each question based on the information presented in the graphic.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "statement1",
+        "text": "You need to troubleshoot the warning. What should you do?",
+        "options": [
+          {
+            "id": "s1_option1",
+            "text": "Navigate to Solution checker and view results."
+          },
+          {
+            "id": "s1_option2",
+            "text": "Navigate to App checker and expand the Formulas section."
+          },
+          {
+            "id": "s1_option3",
+            "text": "Navigate to Advanced Tools and open the Monitor."
+          },
+          {
+            "id": "s1_option4",
+            "text": "Navigate to Connections and add a new connection."
+          }
+        ]
+      },
+      {
+        "id": "statement2",
+        "text": "Which component should you troubleshoot?",
+        "options": [
+          {
+            "id": "s2_option1",
+            "text": "App"
+          },
+          {
+            "id": "s2_option2",
+            "text": "Screen1"
+          },
+          {
+            "id": "s2_option3",
+            "text": "customHeader_1"
+          },
+          {
+            "id": "s2_option4",
+            "text": "Gallery1"
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "statement1": "s1_option4",
+      "statement2": "s2_option4"
+    }
+  },
+  {
+    "id": 25,
+    "text": "A company implements Dynamics 365 Supply Chain Management.\n\nThe company wants a button to display in the command bar when viewing accounts.\n\nYou need to add the button using the Ribbon Workbench.\n\nIn which three areas can you add a button for the Account entity? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": [
+      "a",
+      "d",
+      "e"
+    ],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. In the home area for Accounts."
+      },
+      {
+        "id": "b",
+        "text": "B. In the main body of a form."
+      },
+      {
+        "id": "c",
+        "text": "C. On the main application window."
+      },
+      {
+        "id": "d",
+        "text": "D. On the associated view of the account."
+      },
+      {
+        "id": "e",
+        "text": "E. On the Account form."
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "text": "An organization uses Dynamics 365 Sales. You plan to add a custom button to the app ribbon.\n\nYou need to ensure that the button displays only when conditions specified by business rules are met.\n\nWhich two code segments can you use? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": [
+      "b",
+      "d"
+    ],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. gridContext.refresh();"
+      },
+      {
+        "id": "b",
+        "text": "B. formContext.ui.refreshRibbon(refreshAll);"
+      },
+      {
+        "id": "c",
+        "text": "C. formContext.data.refresh(save).then(successCallback, errorCallback);"
+      },
+      {
+        "id": "d",
+        "text": "D. formContext.ui.refreshRibbon();"
+      },
+      {
+        "id": "e",
+        "text": "E. formContext.getControl(arg).refresh();"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "text": "HOTSPOT -\nA fine arts school uses a custom canvas application based on the Microsoft Dataverse.\n\nArtists experience errors on their Artist canvas app and delays when switching pages.\n\nYou need to identify the root causes of these issues.\n\nWhich troubleshooting methods should you use? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "statement1",
+        "text": "Artist canvas app has errors",
+        "options": [
+          {
+            "id": "s1_option1",
+            "text": "Power Apps Checker"
+          },
+          {
+            "id": "s1_option2",
+            "text": "Solution Checker"
+          },
+          {
+            "id": "s1_option3",
+            "text": "Site Map validation"
+          }
+        ]
+      },
+      {
+        "id": "statement2",
+        "text": "Application runs slowly",
+        "options": [
+          {
+            "id": "s2_option1",
+            "text": "Power Platform Admin Center"
+          },
+          {
+            "id": "s2_option2",
+            "text": "Service Performance in Power Apps Analytics"
+          },
+          {
+            "id": "s2_option3",
+            "text": "Dynamics 365 Service Health"
+          },
+          {
+            "id": "s2_option4",
+            "text": "Power Apps client session details"
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "statement1": "s1_option1",
+      "statement2": "s2_option2"
+    }
+  },
+  {
+    "id": 28,
+    "text": "You are developing a new Power Platform app.\n\nThe checker fails with an error due to missing security roles.\n\nYou need to add security roles to the Power Apps Checker application user.\n\nWhich two security roles should you add? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": [
+      "b",
+      "d"
+    ],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Global Discover Service Role"
+      },
+      {
+        "id": "b",
+        "text": "B. Export Customizations"
+      },
+      {
+        "id": "c",
+        "text": "C. Environment Maker"
+      },
+      {
+        "id": "d",
+        "text": "D. Solution Checker"
+      },
+      {
+        "id": "e",
+        "text": "E. Resource Manager"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "text": "You are creating a Power Apps app.\n\nThe app must retrieve data from an API that requires two-factor authentication.\n\nYou need to configure authentication.\n\nWhich type of authentication should you implement?",
+    "correctOptionId": "d",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Server-to-server"
+      },
+      {
+        "id": "b",
+        "text": "B. API key-based"
+      },
+      {
+        "id": "c",
+        "text": "C. Basic"
+      },
+      {
+        "id": "d",
+        "text": "D. OAuth"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "text": "You are creating a canvas app that realtors use to identify neighbors for properties that are for sale.\n\nThe OnStart property includes the following code:\n\n```\nClearCollect(collectNeighborList, Filter(NeighborList, Status = 'Active'));\nClearCollect(collectRealtorList, CompanyList);\nClearCollect(collectRegions, RegionList)\n```\n\nThe app is running slower than expected.\n\nYou need to resolve the issue.\n\nWhat should you do?",
+    "correctOptionId": "b",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Replace all instances of the ClearCollect method with the connect method."
+      },
+      {
+        "id": "b",
+        "text": "B. Replace the existing code segment with the following code segment Concurrent(ClearCollect(collectNeighborList, Filter(NeighborList, Status = \"Active\")), ClearCollect(collectRealtorList, CompanyList), ClearCollect(collectRegions, RegionList))"
+      },
+      {
+        "id": "c",
+        "text": "C. Replace the existing code segment with the following code segment: ClearCollect(collectNeighborList, Filter(NeighborList, Status = \"Active\")); Concurrent(ClearCollect(collectRealtorList, CompanyList)); Concurrent(ClearCollect(collectRegions, RegionList))"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "text": "DRAG DROP -\nYou are creating an app that connects to Microsoft Dataverse on a nightly basis. You plan to integrate the app with an external system.\n\nThe application must not authenticate by using a Microsoft Azure Active Directory (Azure AD) user account.\n\nYou need to enable the application to authenticate to Dataverse.\n\nWhich four actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+    "type": "dnd",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Use the Azure AD application id and secret as credentials in the application."
+      },
+      {
+        "id": "opt2",
+        "text": "Use the Dataverse application user username and password as credentials in the application."
+      },
+      {
+        "id": "opt3",
+        "text": "Assign a security role to the application user in Dataverse."
+      },
+      {
+        "id": "opt4",
+        "text": "Register the application in Azure AD with appropriate permissions."
+      },
+      {
+        "id": "opt5",
+        "text": "Create the application user in Dataverse using the Application User form."
+      },
+      {
+        "id": "opt6",
+        "text": "Grant the Dataverse application user the Access Dynamics 365 as organization users permission in Azure AD."
+      }
+    ],
+    "correctOrder": [
+      "opt4",
+      "opt5",
+      "opt3",
+      "opt1"
+    ]
+  },
+  {
+    "id": 32,
+    "text": "DRAG DROP -\nYou are creating a Power Apps Component Framework (PCF) control.\n\nYou test the control by using a local test harness.\n\nYou need to complete testing.\n\nWhich commands should you use? To answer, drag the appropriate commands to the correct functions. Each command may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "start npm start"
+      },
+      {
+        "id": "opt2",
+        "text": "npm start"
+      },
+      {
+        "id": "opt3",
+        "text": "npm start watch"
+      },
+      {
+        "id": "opt4",
+        "text": "npm update"
+      }
+    ],
+    "zones": [
+      {
+        "id": "zone1",
+        "title": "Launch a second npm start window while tests run in the first window."
+      },
+      {
+        "id": "zone2",
+        "title": "Detect changes in index.ts, ControlManifest.Input.xml, and other bundled .ts files during testing without having to restart the test harness."
+      }
+    ],
+    "correctZoneAnswers": {
+      "zone1": "opt1",
+      "zone2": "opt3"
+    }
+  },
+  {
+    "id": 33,
+    "text": "DRAG DROP -\nYou are designing a model-driven app for a company's support desk team.\n\nYou must add a button to the app that creates a reminder task. The button must only display to users if a service case is open for at least seven days.\n\nYou need to define the steps to create the button when App Designer is open.\n\nIn which order should you perform the actions? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.\n\nNOTE: More than one order of answer choices is correct. You will receive credit for any of the correct orders you select.",
+    "type": "dnd",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Add a data source to the component library."
+      },
+      {
+        "id": "opt2",
+        "text": "Create a task by using an OnSelect expression."
+      },
+      {
+        "id": "opt3",
+        "text": "Edit the command bar."
+      },
+      {
+        "id": "opt4",
+        "text": "Add a command button."
+      },
+      {
+        "id": "opt5",
+        "text": "Configure a visibility expression."
+      }
+    ],
+    "correctOrder": [
+      "opt3",
+      "opt4",
+      "opt1",
+      "opt5",
+      "opt2"
+    ]
+  },
+  {
+    "id": 34,
+    "text": "You are developing a model-driven app for a company that sells sporting goods. You add a button to a page that displays information for a product.\n\nThe button must copy information for the selected product and create a record in the data source. You add the following code to the button. (Line numbers are included for reference only.)\n\n```\n01 \n02 Products,\n03 Defaults(Products),\n04 {\n05     Name: Self.Selected.Item.Name,\n06     Description: Self.Selected.Item.Description,\n07     Type: Self.Selected.Item.Type,\n08     Price: Self.Selected.Item.Price\n09 }\n10 \n```\n\nYou need to complete the code.\n\nWhich function should you insert at line 01?",
+    "correctOptionId": "d",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. UpdateContext("
+      },
+      {
+        "id": "b",
+        "text": "B. IsMatch("
+      },
+      {
+        "id": "c",
+        "text": "C. LoadData("
+      },
+      {
+        "id": "d",
+        "text": "D. Patch("
+      },
+      {
+        "id": "e",
+        "text": "E. SaveData("
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "text": "HOTSPOT -\nYou are creating a new model-driven app.\n\nThe app must meet the following requirements:\n\n- Display an image that can be resized without loss in quality.\n- Use a client API function to return language-localized text.\n\nYou need to customize the app by using web resources.\n\nWhich web resource types should you use?\n\nTo answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "statement1",
+        "text": "Display a resized image.",
+        "options": [
+          {
+            "id": "s1_option1",
+            "text": "SVG"
+          },
+          {
+            "id": "s1_option2",
+            "text": "PNG"
+          },
+          {
+            "id": "s1_option3",
+            "text": "ICO"
+          }
+        ]
+      },
+      {
+        "id": "statement2",
+        "text": "Return language-localized text.",
+        "options": [
+          {
+            "id": "s2_option1",
+            "text": "XAP"
+          },
+          {
+            "id": "s2_option2",
+            "text": "XSL"
+          },
+          {
+            "id": "s2_option3",
+            "text": "RESX"
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "statement1": "s1_option1",
+      "statement2": "s2_option3"
+    }
+  },
+  {
+    "id": 36,
+    "text": "You create and deploy a Power Platform solution that includes synchronous plug-ins.\n\nUsers report performance issues with the solution.\n\nYou need to determine whether a plug-in is the cause of the performance issues.\n\nWhich two tools can you use? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": [
+      "a",
+      "e"
+    ],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Tracing"
+      },
+      {
+        "id": "b",
+        "text": "B. Data policies"
+      },
+      {
+        "id": "c",
+        "text": "C. Solution checker"
+      },
+      {
+        "id": "d",
+        "text": "D. ISV Studio"
+      },
+      {
+        "id": "e",
+        "text": "E. Microsoft Dataverse Analytics"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "text": "DRAG DROP -\nYou are creating a model-driven app for users to submit and manage budgets for projects.\n\nYou must create a business process flow to ensure any lead with a budget over $10,000 requires approval by a manager. You must add a custom control that allows users to select the estimated budget cost for a project.\n\nYou need to add the control to the business process flow.\n\nIn which order should you perform the actions? To answer, move all actions from the list of actions to the answer area and arrange them in the correct order.",
+    "type": "dnd",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Paste control description FormXML into the correct stage of the business process flow in the exported solution."
+      },
+      {
+        "id": "opt2",
+        "text": "Export the business process flow and the Lead form as two separate solutions."
+      },
+      {
+        "id": "opt3",
+        "text": "Add a control to the Lead form by using the form designer."
+      },
+      {
+        "id": "opt4",
+        "text": "Import the solution into the system and publish."
+      },
+      {
+        "id": "opt5",
+        "text": "Copy all control description FormXML from the Lead form of the exported solution."
+      }
+    ],
+    "correctOrder": [
+      "opt3",
+      "opt2",
+      "opt5",
+      "opt1",
+      "opt4"
+    ]
+  },
+  {
+    "id": 38,
+    "text": "DRAG DROP -\nThe engineering team in a company uses a SharePoint list to manage critical technical issues that are raised by clients. Other departments do not have access to this list. Departments use their own apps for their own processes.\n\nAll departments must be able to see the total number of client issues at any point in time.\n\nYou need to design a component that can be used in all the departmental apps to display the total number of client issues in bold colors.\n\nWhich four actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Create a connection to the engineering issues list and retrieve the total number of critical issues."
+      },
+      {
+        "id": "opt2",
+        "text": "Create an output parameter and set the value of the parameter to the total number of critical issues."
+      },
+      {
+        "id": "opt3",
+        "text": "Import the counter component in the other apps from the first department app."
+      },
+      {
+        "id": "opt4",
+        "text": "Display the counter output parameter in the department app."
+      },
+      {
+        "id": "opt5",
+        "text": "Create and format a label to display the total number of critical issues."
+      },
+      {
+        "id": "opt6",
+        "text": "Create a new component in the department app."
+      }
+    ],
+    "correctOrder": [
+      "opt1",
+      "opt6",
+      "opt2",
+      "opt5"
+    ]
+  },
+  {
+    "id": 39,
+    "text": "Q39/40\\nDRAG DROP\\n-\\n\\nCase Study\\n-\\n\\nThis is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.\\n\\nTo answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.\\n\\nAt the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.\\n\\n\\nTo start the case study\\n-\\nTo display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. When you are ready to answer a question, click the Question button to return to the question.\\n\\n\\nBackground\\n-\\n\\nProseware, Inc. is an industry leading software company with several thousand employees. The company has had some trouble recruiting talented employees. Top-level candidates interview with the company but go on to work for competitors.\\n\\nFeedback from candidates show that some offers were not accepted because the interview scheduling process was unpleasant. The company does not have a system to keep track of the candidates that were not selected.\\n\\n\\nCurrent Environment\\n-\\n\\nThe recruiting process starts when an individual applies for a position on the company website. The individual may have found the position on their own, they may have been officially referred by an employee, or in some cases were contacted directly by a hiring manager and encouraged to apply.\\n\\nRecruiters schedule an interview with a hiring manager and interviews with two senior team members. Each interview results in feedback about the candidate and a recommendation whether to hire or not.\\n\\nThe recruiting team manages all information by using a model-driven application.\\n\\nThe company has the following Microsoft Dataverse tables and columns:\\n\\n• JobPosting\\n- Hiring Manager - lookup to SystemUser\\n- Recruiter Assigned - lookup to SystemUser\\n• Contact (Job Applicant)\\n- Contact identifier\\n- First name\\n- Last name\\n- Time-Zone Offset\\n- Person of Interest - Yes/No (default)\\n• Application proapplication\\n- Contact identifier, Contact - lookup to Contact\\n- Job Posting - lookup to JobPosting\\n- pro_recruiterassignedid\\n• Interview\\n- Application - lookup to Application\\n- Job Posting - lookup to JobPosting\\n- Recommend - Choice (Yes (0), No (1), and null (default) are the available values)\\n- Person of Interest - Yes/No, No is the default value\\n• Referral\\n- Contact - lookup to Contact\\n- Referrer - lookup to SystemUser\\n- Job Posting - lookup to JobPosting\\n• SystemUser\\n- Manager - lookup to SystemUser\\n- Time-Zone Offset\\n• Recruiter\\n- Recruiter identifier\\n- Recruiter name\\n\\n\\nApplications\\n-\\nThere may be multiple applications associated with each job posting. Applications are linked to an employee record if an employee referred the applicant for a position. The same individual can be an applicant for multiple job postings.\\n\\n\\nInterviews\\n-\\nEach interview is performed by an employee and is related to a single application.\\n\\nThe interview scheduling process may force potential candidates to accept interviews at unusual times with the senior team members due to time-zone differences.\\n\\nRequirements. Interview Scheduling\\n\\nThe system must provide recruiters with a list of team members and their time-zone information. You must create a Microsoft Power Apps Component Framework (PCF) control for the Job Application form to display a list of senior team members who report directly to a hiring manager.\\n\\n• The control must display the current time in each team member's local time.\\n• The control must be bound so that it minimizes the amount of code that must be written.\\n• You must display the list of team members and sort the list to show team members who reside in time zones closest to the applicant's time zone first.\\n\\nYou must develop a second PCF control that displays the time-zone name and current time on the Job Application form. You must display the data in the candidate’s local time.\\n\\nRequirements. Historical Information Tracking\\n\\nYou must create a process to identify individuals as a person of interest that the company should consider hiring. You must assign each individual a score based on their past interactions.\\n\\n• You must be able to determine the following information about a candidate:\\n  - The number of interviews in the past two years and whether team members provided recommendations\\n  - The number of hiring manager referrals and employee referrals in the past two years\\n  - Whether the individual has any of the 12 designations or certifications that the company considers significant\\n• Only a single referral can be made per job application. The system must be able to support multiple referrals for a candidate.\\n• The system must track referrals even if an application is not completed.\\n\\nRequirements. Historical Information Scoring\\n\\nThe automated process must run weekly to assess all candidates. The process must also run automatically when historical information is updated. You must be able to perform scoring by selecting a command button on the contact form.\\n\\n• This new command button must only be visible to employees who belong to a security role assigned named Recruiter. The command button must not be visible to anyone unless the contact form is in Update mode.\\n• A person of interest is defined as having a score of 15 or more based on the following historical information criteria:\\n  - Each interview with a recommendation adds two to the score.\\n  - Each interview without a recommendation subtracts two from the score.\\n  - Each employee or manager referral adds one to the score.\\n  - Each designation or certification adds one to the score.\\n• All scoring elements must be recalculated when changes occur. You must assign the score to the Person of interest field.\\n• Values representing totals or scores must be stored in their own numeric fields.\\n• Plug-ins must be used to keep the Person of Interest field on active interview records associated with the Contact.\\n• Plug-ins registered on the update of the Person of interest field must send an email notification when the candidate named in the email is a person of interest. Recruiters must receive the message when the field is updated on the Contact record.\\n• Interviewers must get an email notification when the Person of Interest field on the interview record is successfully updated.\\n\\nRequirements. Design Guidelines\\n\\nThe following design guidelines must be followed:\\n\\n• Schema changes must be made using the method requiring the least amount of storage to meet the requirement.\\n• Out-of-the-box functionality must be used when possible.\\n• Any code required to calculate scores must be able to be run from a single point.\\n• Email notifications need to be kept to a minimum.\\n\\n\\nIssues\\n-\\n\\n• Recruiters report that the command button to score a candidate is not working. You debug the code and observe that the context input parameter is null.\\n• The system does not support associating designations and certifications with candidates.\\n• The value for the field used by the PCF control to display local time is saved to Microsoft Dataverse each time an active application record is opened.\\n• Interviewers report that they do not receive email notifications when interview records are created for an existing person of interest.\n\n You need to configure the columns to store scores and totals.\\n\\nWhich configurations should you use? To answer, drag the appropriate configurations to the correct columns. Each configuration may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\\n\\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Whole number + code"
+      },
+      {
+        "id": "opt2",
+        "text": "Whole number + rollup"
+      },
+      {
+        "id": "opt3",
+        "text": "Whole number + calculation"
+      }
+    ],
+    "zones": [
+      {
+        "id": "zone1",
+        "title": "Total Score"
+      },
+      {
+        "id": "zone2",
+        "title": "Number of designations and certifications"
+      }
+    ],
+    "correctZoneAnswers": {
+      "zone1": "opt3",
+      "zone2": "opt2"
+    }
+  },
+  {
+    "id": 40,
+    "text": "You create the following Fetch XML query to determine the number of interviews where there are no recommendations for an applicant.\n\n```\n<fetch aggregate='true'>\n  <entity name='pro_interview'>\n    <attribute name='pro_interviewid' alias='recommend_count' aggregate='count' />\n    <filter>\n      <condition attribute='pro_recommend' operator='eq' value='1' />\n    </filter>\n    <link-entity name='pro_application' from='pro_applicationid' to='pro_applicationid' link-type='inner' >\n      <link-entity name='contact' from='contactid' to='pro_contactid' >\n        <filter>\n          <condition attribute='contactid' operator='eq' value='1b315d5d-b436-eb11-a813-000d3a8b6647' />\n        </filter>\n      </link-entity>\n    </link-entity>\n  </entity>\n</fetch>\n```\n\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "yes-no-statements",
+    "statements": [
+      {
+        "id": "statement1",
+        "text": "The query meets the requirements for retrieving the count of interviews without recommendations.",
+        "options": [
+          {
+            "id": "yes",
+            "text": "Yes"
+          },
+          {
+            "id": "no",
+            "text": "No"
+          }
+        ]
+      },
+      {
+        "id": "statement2",
+        "text": "You can modify the query to return counts of interviews with and without recommendations.",
+        "options": [
+          {
+            "id": "yes",
+            "text": "Yes"
+          },
+          {
+            "id": "no",
+            "text": "No"
+          }
+        ]
+      },
+      {
+        "id": "statement3",
+        "text": "The query allows scheduled interviews for job applications when there are no recommendations for the job applicant.",
+        "options": [
+          {
+            "id": "yes",
+            "text": "Yes"
+          },
+          {
+            "id": "no",
+            "text": "No"
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "statement1": "yes",
+      "statement2": "yes",
+      "statement3": "no"
+    }
+  },
+  {
+    "id": 41,
+    "text": "You need to choose a technology to access the Web API.\n\nWhich technology should you select?",
+    "correctOptionId": "c",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Canvas app that uses the custom connector"
+      },
+      {
+        "id": "b",
+        "text": "B. Plug-in that contacts the Web API"
+      },
+      {
+        "id": "c",
+        "text": "C. Power Automate flow that uses the custom connector"
+      },
+      {
+        "id": "d",
+        "text": "D. Webhook that contacts the Web API"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "text": "A company designs a solution for use in an international organization.\n\nThe solution must provide multiple UI languages and currencies.\n\nYou need to move components to include them as part of the solution.\n\nWhich three component types can you move? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": [
+      "b",
+      "c",
+      "d"
+    ],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. available UI languages"
+      },
+      {
+        "id": "b",
+        "text": "B. scheduled power automate flow"
+      },
+      {
+        "id": "c",
+        "text": "C. custom entity"
+      },
+      {
+        "id": "d",
+        "text": "D. modified standard security role"
+      },
+      {
+        "id": "e",
+        "text": "E. Currencies enabled in the environment"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "text": "An organization uses Dynamics 365 Sales. The organization has accounting and customer service departments.\n\nYou must restrict users in customer service from being able to change the value of the balance field on the Contact records. The accounting team must be the only team able to edit this field.\n\nYou need to create the appropriate solution without any customizations.\n\nWhat should you do first?",
+    "correctOptionId": "c",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Enable field security for the balance field and grant the customer service team read and update permissions."
+      },
+      {
+        "id": "b",
+        "text": "B. Create a customer service form and role and a business rule that enables the balance field."
+      },
+      {
+        "id": "c",
+        "text": "C. Enable field security for the balance field and grant the customer service team read permissions."
+      },
+      {
+        "id": "d",
+        "text": "D. Enable field security for the balance field and grant the accounting team read permissions."
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "text": "HOTSPOT -\nYou create a model-driven app.\n\nYou observe that the following issues occur with the app:\n\n- One custom column displays an unexpected value when a new record is created.\n- An error prevents the record from saving.\n\nYou need to use the browser to find the root cause of the issues.\n\nWhich events should you debug? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "statement1",
+        "text": "Unexpected column value",
+        "options": [
+          {
+            "id": "s1_option1",
+            "text": "OnLoad"
+          },
+          {
+            "id": "s1_option2",
+            "text": "OnSelection"
+          },
+          {
+            "id": "s1_option3",
+            "text": "OnReadyStateComplete"
+          }
+        ]
+      },
+      {
+        "id": "statement2",
+        "text": "Error when saving",
+        "options": [
+          {
+            "id": "s2_option1",
+            "text": "PostSave"
+          },
+          {
+            "id": "s2_option2",
+            "text": "OnReadyStateComplete"
+          },
+          {
+            "id": "s2_option3",
+            "text": "OnSave"
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "statement1": "s1_option3",
+      "statement2": "s2_option3"
+    }
+  },
+  {
+    "id": 45,
+    "text": "DRAG DROP -\nYou manage a model-driven app.\n\nThe forms in the app do not work as expected. You must troubleshoot the form issues.\n\nCode unrelated to an event must continue to run as you troubleshoot.\n\nYou need to disable form events to isolate the causes.\n\nWhich URL parameters should you use? To answer, move the appropriate URL parameters to the correct events. You may use each URL parameter once, more than once, or not at all. You may need to move the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "DisableFormHandlers"
+      },
+      {
+        "id": "opt2",
+        "text": "DisableFormLibraries"
+      },
+      {
+        "id": "opt3",
+        "text": "DisableWebResourceControls"
+      }
+    ],
+    "zones": [
+      {
+        "id": "zone1",
+        "title": "Form OnLoad"
+      },
+      {
+        "id": "zone2",
+        "title": "Column OnChange"
+      }
+    ],
+    "correctZoneAnswers": {
+      "zone1": "opt1",
+      "zone2": "opt2"
+    }
+  },
+  {
+    "id": 46,
+    "text": "An organization uses Dynamics 365 Sales. The organization has accounting and customer service departments.\n\nYou must restrict users in customer service from being able to change the value of the balance field on the Contact records. The accounting team must be the only team able to edit this field.\n\nYou need to create the appropriate solution without any customizations.\n\nWhat should you do first?",
+    "correctOptionId": "a",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Enable field security for the balance field and grant the customer service team read permissions."
+      },
+      {
+        "id": "b",
+        "text": "B. Create a customer service form and role and make the balance field read-only."
+      },
+      {
+        "id": "c",
+        "text": "C. Create a customer service form and role and a business rule that enables the balance field."
+      },
+      {
+        "id": "d",
+        "text": "D. Create an accounting form and role and a business rule that enables the balance field."
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "text": "DRAG DROP -\nA company plans to deploy an Azure Function that connects to Dataverse on a defined schedule to bulk-update Account data.\n\nCorporate policy discourages password-based authentication if other viable options exist.\n\nYou need to implement the function app.\n\nWhich three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+    "type": "dnd",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Run pac admin application register."
+      },
+      {
+        "id": "opt2",
+        "text": "Create a Microsoft Entra ID user named IntegrationAccount."
+      },
+      {
+        "id": "opt3",
+        "text": "Set IntegrationAccount access mode to Non-interactive."
+      },
+      {
+        "id": "opt4",
+        "text": "Enable system-assigned managed identity."
+      },
+      {
+        "id": "opt5",
+        "text": "Run pac admin assign-user."
+      },
+      {
+        "id": "opt6",
+        "text": "Set IntegrationAccount access mode to Administrative."
+      },
+      {
+        "id": "opt7",
+        "text": "Create the Azure Functions app."
+      },
+      {
+        "id": "opt8",
+        "text": "Create an app password for IntegrationAccount."
+      }
+    ],
+    "correctOrder": [
+      "opt2",
+      "opt3",
+      "opt5"
+    ]
+  }
 ]
