@@ -250,7 +250,7 @@ const DragAndDropQuestion: React.FC<DragAndDropQuestionProps> = ({ question, onS
     return (
         <Card>
             <CardContent>
-                <Typography variant="h5">{question.text}</Typography>
+                <Typography variant="h5" sx={{ whiteSpace: 'pre-line' }}>{question.text}</Typography>
                 <DragDropContext onDragEnd={onDragEnd}>
                     {renderDndContent()}
                 </DragDropContext>

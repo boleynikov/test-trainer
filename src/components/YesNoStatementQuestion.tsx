@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { Card, CardContent, Typography, Button, Box, Select, MenuItem, FormControl, Grid, useTheme } from '@mui/material';
+import { Card, CardContent, Typography, Button, Box, Radio, FormControlLabel, FormControl, Grid, useTheme, RadioGroup } from '@mui/material';
 import { CheckCircle, Cancel } from '@mui/icons-material';
 import type { Question } from '../types';
 
-interface SeveralStatementsQuestionProps {
+interface YesNoStatementQuestionProps {
     question: Question;
     onSubmitAnswer: (pointsEarned: number) => void;
-    showSubmit: boolean; // New prop
+    showSubmit: boolean;
 }
 
-const SeveralStatementsQuestion: React.FC<SeveralStatementsQuestionProps> = ({ question, onSubmitAnswer, showSubmit }) => {
+const YesNoStatementQuestion: React.FC<YesNoStatementQuestionProps> = ({ question, onSubmitAnswer, showSubmit }) => {
     const [selectedStatementAnswers, setSelectedStatementAnswers] = useState<Record<string, string>>({});
     const [isAnswered, setIsAnswered] = useState(false);
     const [statementStatus, setStatementStatus] = useState<Record<string, 'correct' | 'incorrect' | 'unanswered'>>({});
@@ -26,7 +26,7 @@ const SeveralStatementsQuestion: React.FC<SeveralStatementsQuestionProps> = ({ q
         setStatementStatus({});
     }, [question]);
 
-    const handleSelectChange = (statementId: string, value: string) => {
+    const handleRadioChange = (statementId: string, value: string) => {
         if (isAnswered) return;
         setSelectedStatementAnswers(prev => ({
             ...prev,
@@ -61,20 +61,21 @@ const SeveralStatementsQuestion: React.FC<SeveralStatementsQuestionProps> = ({ q
         onSubmitAnswer(pointsEarned);
     };
 
-    const getMenuItemStyle = (statementId: string, optionId: string) => {
-        if (!isAnswered) return {};
+    const getRadioColor = (statementId: string, optionValue: string) => {
+        if (!isAnswered) return 'primary';
 
-        const isSelected = selectedStatementAnswers[statementId] === optionId;
-        const isCorrectOptionForStatement = question.correctStatementAnswers && question.correctStatementAnswers[statementId] === optionId;
+        const isSelected = selectedStatementAnswers[statementId] === optionValue;
+        const isCorrectOptionForStatement = question.correctStatementAnswers &&
+            question.correctStatementAnswers[statementId] === optionValue;
 
         if (isSelected && isCorrectOptionForStatement) {
-            return { backgroundColor: theme.palette.success.light, color: theme.palette.success.contrastText };
+            return 'success';
         } else if (isSelected && !isCorrectOptionForStatement) {
-            return { backgroundColor: theme.palette.error.light, color: theme.palette.error.contrastText };
+            return 'error';
         } else if (!isSelected && isCorrectOptionForStatement) {
-            return { backgroundColor: theme.palette.success.light, color: theme.palette.success.contrastText };
+            return 'success';
         }
-        return {};
+        return 'primary';
     };
 
     const getStatementBoxStyle = (statementId: string) => {
@@ -82,11 +83,11 @@ const SeveralStatementsQuestion: React.FC<SeveralStatementsQuestionProps> = ({ q
 
         const status = statementStatus[statementId];
         if (status === 'correct') {
-            return { border: `1px solid ${theme.palette.success.main}` };
+            return { border: `1px solid ${theme.palette.success.main}`, backgroundColor: `${theme.palette.success.light}20` }; // Light tint
         } else if (status === 'incorrect') {
-            return { border: `1px solid ${theme.palette.error.main}` };
+            return { border: `1px solid ${theme.palette.error.main}`, backgroundColor: `${theme.palette.error.light}20` }; // Light tint
         } else if (status === 'unanswered') {
-            return { border: `1px solid ${theme.palette.warning.main}` };
+            return { border: `1px solid ${theme.palette.warning.main}`, backgroundColor: `${theme.palette.warning.light}20` }; // Light tint
         }
         return { border: '1px solid #ccc' };
     };
@@ -102,43 +103,38 @@ const SeveralStatementsQuestion: React.FC<SeveralStatementsQuestionProps> = ({ q
 
                 <Grid container spacing={2}>
                     {question.statements?.map(statement => (
-                        <Grid size={{ xs: 12 }} key={statement.id} sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 1 }}>
-                            <Box sx={{ width: '40%', p: 1, borderRadius: 1, ...getStatementBoxStyle(statement.id) }}>
+                        <Grid size={{ xs: 12 }} key={statement.id} sx={{ display: 'flex', alignItems: 'flex-start', gap: 2, mb: 1 }}>
+                            <Box sx={{ width: '50%', p: 1, borderRadius: 1, ...getStatementBoxStyle(statement.id) }}>
                                 <Typography sx={{ whiteSpace: 'pre-line' }}>{statement.text}</Typography>
                             </Box>
-                            <FormControl sx={{ minWidth: 200, width: '60%' }} size="small" disabled={isAnswered}>
-                                <Select
-                                    labelId={`select-label-${statement.id}`}
+
+                            <FormControl disabled={isAnswered} sx={{ width: '50%', display: 'flex', alignItems: 'center' }}>
+                                <RadioGroup
                                     value={selectedStatementAnswers[statement.id]}
-                                    onChange={(e) => handleSelectChange(statement.id, e.target.value as string)}
-                                    sx={{
-                                        '.MuiSelect-select': {
-                                            textWrap: 'auto',
-                                            whiteSpace: 'normal !important',
-                                        }
-                                    }}
+                                    onChange={(e) => handleRadioChange(statement.id, e.target.value)}
+                                    row // Makes radios appear horizontally
                                 >
                                     {statement.options?.map(option => (
-                                        <MenuItem
+                                        <FormControlLabel
                                             key={option.id}
                                             value={option.id}
-                                            sx={{
-                                                maxWidth: '100vw',        // 1. Constraint width
-                                                whiteSpace: 'normal',     // 2. Allow text to wrap to new lines
-                                                wordBreak: 'break-word',  // 3. Force long words to break if necessary
-                                                ...getMenuItemStyle(statement.id, option.id)
-                                            }}
-                                        >
-                                            {option.text}
-                                            {isAnswered && question.correctStatementAnswers && question.correctStatementAnswers[statement.id] === option.id && (
-                                                <CheckCircle sx={{ ml: 1, color: theme.palette.success.main, fontSize: '1rem' }} />
-                                            )}
-                                            {isAnswered && selectedStatementAnswers[statement.id] === option.id && question.correctStatementAnswers && question.correctStatementAnswers[statement.id] !== option.id && (
-                                                <Cancel sx={{ ml: 1, color: theme.palette.error.main, fontSize: '1rem' }} />
-                                            )}
-                                        </MenuItem>
+                                            sx={{ margin: { xs: '0px 4px', md: '0px 32px'} }}
+                                            control={
+                                                <Radio
+                                                    color={getRadioColor(statement.id, option.id)}
+                                                    checkedIcon={isAnswered && question.correctStatementAnswers &&
+                                                        question.correctStatementAnswers[statement.id] === option.id ?
+                                                        <CheckCircle /> : undefined}
+                                                    icon={isAnswered && selectedStatementAnswers[statement.id] === option.id &&
+                                                        question.correctStatementAnswers &&
+                                                        question.correctStatementAnswers[statement.id] !== option.id ?
+                                                        <Cancel /> : undefined}
+                                                />
+                                            }
+                                            label={option.text}
+                                        />
                                     ))}
-                                </Select>
+                                </RadioGroup>
                             </FormControl>
                         </Grid>
                     ))}
@@ -156,4 +152,4 @@ const SeveralStatementsQuestion: React.FC<SeveralStatementsQuestionProps> = ({ q
     );
 };
 
-export default SeveralStatementsQuestion;
+export default YesNoStatementQuestion;
