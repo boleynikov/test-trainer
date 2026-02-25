@@ -1,0 +1,480 @@
+[
+  {
+    "id": 1,
+    "topic": 8,
+    "text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution. Determine whether the solution meets the stated goals. Some question sets might have more than once correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nA university implements Dynamics 365 Sales. Several departments use opportunity records to bid for funding for projects within their own departments. You configure the system to ensure that each department can only work on their own records.\n\nEmployees in multiple departments often need to work together on an opportunity. Employees report that they are not able to see opportunities from other departments.\n\nYou need to ensure that employees from more than one department can work on the same opportunities when necessary.\n\nSolution: Share the individual opportunity that members of one department are working on with all members of the second department, and give those members the appropriate permissions.\n\nDoes the solution meet the goal?",
+    "correctOptionId": "a",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Yes"
+      },
+      {
+        "id": "b",
+        "text": "B. No"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "text": "You need to develop a Power Apps Component Framework (PCF) component for a company.\n\nYou must follow Microsoft's application lifecycle management (ALM) process for code components.\n\nWhich four actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+    "type": "dnd",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Create a code component project"
+      },
+      {
+        "id": "opt2",
+        "text": "Build the code component in release mode"
+      },
+      {
+        "id": "opt3",
+        "text": "Create a solution project and add the code component project as a reference"
+      },
+      {
+        "id": "opt4",
+        "text": "Deploy the component in a testing environment"
+      },
+      {
+        "id": "opt5",
+        "text": "Implement code component logic"
+      }
+    ],
+    "correctOrder": ["opt1", "opt5", "opt3", "opt2"]
+  },
+  {
+    "id": 3,
+    "text": "You create a new canvas app.\n\nYou update a test case and must test the app in a separate browser.\n\nYou need to test the app by using Test Studio.\n\nWhich four actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+    "type": "dnd",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Select a test suite"
+      },
+      {
+        "id": "opt2",
+        "text": "Publish the test"
+      },
+      {
+        "id": "opt3",
+        "text": "Select the OnTestSuiteComplete action"
+      },
+      {
+        "id": "opt4",
+        "text": "Select Copy play link"
+      },
+      {
+        "id": "opt5",
+        "text": "Open a browser and paste the URL for the app into the address bar"
+      },
+      {
+        "id": "opt6",
+        "text": "Send the results from the test to a flow in Power Automate"
+      }
+    ],
+    "correctOrder": ["opt1", "opt4", "opt2", "opt5"]
+  },
+  {
+    "id": 4,
+    "topic": 8,
+    "text": "HOTSPOT -\nYou create a Power Apps component framework component.\n\nYou need to test the component.\n\nWhich option should you use? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "debug_edge",
+        "text": "Debug the component in Microsoft Edge",
+        "options": [
+          {
+            "id": "opt1_1",
+            "text": "F12 and select component"
+          },
+          {
+            "id": "opt1_2",
+            "text": "F7 and select Turn on"
+          },
+          {
+            "id": "opt1_3",
+            "text": "F1 and select topic"
+          },
+          {
+            "id": "opt1_4",
+            "text": "F11"
+          }
+        ]
+      },
+      {
+        "id": "display_props",
+        "text": "Display all the properties and their types or type-groups as defined in the manifest file",
+        "options": [
+          {
+            "id": "opt2_1",
+            "text": "Data Inputs"
+          },
+          {
+            "id": "opt2_2",
+            "text": "Context Inputs"
+          },
+          {
+            "id": "opt2_3",
+            "text": "Outputs"
+          },
+          {
+            "id": "opt2_4",
+            "text": "npm start"
+          }
+        ]
+      },
+      {
+        "id": "test_factors",
+        "text": "Test the code component by using multiple form factors",
+        "options": [
+          {
+            "id": "opt3_1",
+            "text": "Context Inputs"
+          },
+          {
+            "id": "opt3_2",
+            "text": "Outputs"
+          },
+          {
+            "id": "opt3_3",
+            "text": "Data Inputs"
+          },
+          {
+            "id": "opt3_4",
+            "text": "Code component"
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "debug_edge": "opt1_1",
+      "display_props": "opt2_1",
+      "test_factors": "opt3_1"
+    }
+  },
+  {
+    "id": 5,
+    "topic": 8,
+    "text": "You are implementing business logic for a model-driven app form by using multiple JavaScript web resources.\n\nThe business logic, number of JavaScript files, and the columns that the business logic requires are expected to change frequently. Some form fields will not be visible.\n\nOccasionally, non-developers will also make changes to the form.\n\nYou need to prevent columns referenced by the JavaScript from accidentally being removed from the form based.\n\nWhat should you do?",
+    "correctOptionId": "d",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Hide columns that should not be displayed."
+      },
+      {
+        "id": "b",
+        "text": "B. Set all columns as business required."
+      },
+      {
+        "id": "c",
+        "text": "C. Add all columns as non-event dependencies to the form."
+      },
+      {
+        "id": "d",
+        "text": "D. Add columns in each JavaScript file as a dependency."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "topic": 8,
+    "text": "You are creating a model-driven app for Contoso, Ltd. You add a button to the account page. The button must send a text message to the company's account team when a user selects the button.\n\nThe account team reports that they are not receiving messages when users select the button. You are troubleshooting the app by using the following hyperlink:\nhttps://contoso.com.dynamics.com/main.aspx?appid=3b157789-5e5b-ec11-8f8f-002248087922&ribbondebug=true\n\nWhat is the purpose of the hyperlink?",
+    "correctOptionId": "d",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Run Command Checker for all buttons on the page."
+      },
+      {
+        "id": "b",
+        "text": "B. Add the Power Apps Checker button to the page."
+      },
+      {
+        "id": "c",
+        "text": "C. Run Power Apps Checker for all buttons on the page."
+      },
+      {
+        "id": "d",
+        "text": "D. Add the Command Checker button to the page."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "topic": 8,
+    "text": "A company uses Microsoft Dataverse rollup fields to calculate insurance exposure and risk profiles for customers. Users report that the system does not update values for the rollup fields when new insurance policies are written.\n\nYou need to recalculate the value of the rollup fields immediately after a policy is created.\n\nWhat should you do?",
+    "correctOptionId": "d",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Create new calculated fields on the customer entity for insurance exposure and risk. Create a formula to calculate the sum of values from policy records."
+      },
+      {
+        "id": "b",
+        "text": "B. Change the frequency of the Calculate Rollup Field recurring job from every hour to every five minutes."
+      },
+      {
+        "id": "c",
+        "text": "C. Create a plug-in that uses the update method for the rollup fields. Configure a step on the Create event for the policy entity for this plug-in."
+      },
+      {
+        "id": "d",
+        "text": "D. Create a plug-in that uses the CalculateRollupFieldRequest method for the rollup field. Configure a step on the Create event for the policy entity for this plug-in."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "topic": 8,
+    "text": "You are developing a Power Platform app.\n\nThe app must implement a two-way listener to an on-premises system by using Microsoft Azure Service Bus. You create an Azure Service Bus namespace and messaging entity. You must add the shared access policies.\n\nYou need to select the permissions for the messaging entity.\n\nWhich two permissions should you use? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["b", "d"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. System customizer"
+      },
+      {
+        "id": "b",
+        "text": "B. Listen"
+      },
+      {
+        "id": "c",
+        "text": "C. Read"
+      },
+      {
+        "id": "d",
+        "text": "D. Send"
+      },
+      {
+        "id": "e",
+        "text": "E. Manage"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "topic": 8,
+    "text": "DRAG DROP -\nYou are creating a model-driven app for a company. Sales team members will use the app to manage leads. The app will interact with the Microsoft Dataverse Leads table.\n\nYou must configure the app to meet the following requirements:\n1. If the estimated value for a lead is greater than $10,000 the app must:\n- Send an email to a manager.\n- Display a field named Sponsor on the lead form.\n2. If the estimated value for a lead is greater than $100,000 the app must:\n- Send an email to the company's vice president.\n- Display the following message as a notification while the lead record is open: High value customer, handle with care.\n\nYou need to configure the app. The solution must minimize the use of code.\n\nWhich options should you use? To answer, drag the appropriate options to the correct requirements. Each option may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Business rule"
+      },
+      {
+        "id": "opt2",
+        "text": "Power Automate flow"
+      },
+      {
+        "id": "opt3",
+        "text": "Onload script"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Send required emails"
+      },
+      {
+        "id": "req2",
+        "title": "Display the Sponsor field"
+      },
+      {
+        "id": "req3",
+        "title": "Display the notification"
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt2",
+      "req2": "opt1",
+      "req3": "opt3"
+    }
+  },
+  {
+    "id": 10,
+    "topic": 8,
+    "text": "HOTSPOT -\nContoso, Ltd. has a database that stores proprietary stock market information that the company has accumulated over many years.\n\nYou create a RESTful service for the company that exposes specific information about stocks. You must make the service available to the company's brokers. The service must be certified by Microsoft.\n\nYou need to create a custom connector for the service APIs.\n\nHow should you configure the connector? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "connector_owner",
+        "text": "Who owns the connector?",
+        "options": [
+          {
+            "id": "opt1_1",
+            "text": "Contoso, Ltd."
+          },
+          {
+            "id": "opt1_2",
+            "text": "Open source"
+          },
+          {
+            "id": "opt1_3",
+            "text": "Microsoft Corporation"
+          }
+        ]
+      },
+      {
+        "id": "stack_owner_def",
+        "text": "Where is the stackOwner property defined?",
+        "options": [
+          {
+            "id": "opt2_1",
+            "text": "settings.json"
+          },
+          {
+            "id": "opt2_2",
+            "text": "apiProperties.json"
+          },
+          {
+            "id": "opt2_3",
+            "text": "apiDefinition.swagger.json"
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "connector_owner": "opt1_1",
+      "stack_owner_def": "opt2_2"
+    }
+  },
+  {
+    "id": 11,
+    "topic": 8,
+    "text": "You are troubleshooting a new canvas app.\n\nUsers report the app loads slowly. You use the Monitor tool to view various events being performed in the app. Events performed in the app do not have formula details.\n\nYou need to enable formulas to be included with the Monitor tool events.\n\nWhat should you do?",
+    "correctOptionId": "c",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Add the Microsoft Azure Application Insights data source to the canvas app"
+      },
+      {
+        "id": "b",
+        "text": "B. After each event, implement the trace function within the canvas app"
+      },
+      {
+        "id": "c",
+        "text": "C. Turn on the Debug published app setting in the canvas app"
+      },
+      {
+        "id": "d",
+        "text": "D. Validate the Application Insights instrumentation key has been populated in the app object's properties within the canvas app"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "topic": 8,
+    "text": "DRAG DROP -\nYou have several model-driven apps.\n\nYou must ensure that app creators and system administrators can customize the apps. You must follow the principle of least privilege.\n\nYou need to assign the permissions that are needed for app creators and system administrators.\n\nWhich security roles should you assign? To answer, drag the appropriate roles to the correct requirements. Each role may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "System Administrator only"
+      },
+      {
+        "id": "opt1_1",
+        "text": "System Administrator only"
+      },
+      {
+        "id": "opt2",
+        "text": "System Customizer only"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Create customizations in the system"
+      },
+      {
+        "id": "req2",
+        "title": "View all system data entities"
+      },
+      {
+        "id": "req3",
+        "title": "View all data stored in system entities"
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt2",
+      "req2": ["opt1", "opt1_1"],
+      "req3": ["opt1", "opt1_1"]
+    }
+  },
+  {
+    "id": 13,
+    "topic": 8,
+    "text": "DRAG DROP -\nYou are creating a plug-in for a Power Apps app for the human resources department at the company. The app will be used to process new employees and help employees apply for an identification card.\n\nYou have the following requirements:\n- Applications must not be marked as complete if the employee has not completed mandatory drug screening.\n- Add logic that stores the name of the human resources team member that approves an application. This step must be completed before an ID card is created for the applicant.\n- Successful validation and ID card printing.\n\nYou need to configure the event pipeline.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "PreValidation"
+      },
+      {
+        "id": "opt2",
+        "text": "PreOperation"
+      },
+      {
+        "id": "opt3",
+        "text": "PostOperation"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Mandatory drug screening is completed"
+      },
+      {
+        "id": "req2",
+        "title": "The application is reviewed and approved"
+      },
+      {
+        "id": "req3",
+        "title": "The ID card is printed"
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt1",
+      "req2": "opt2",
+      "req3": "opt3"
+    }
+  },
+  {
+    "id": 14,
+    "topic": 8,
+    "text": "You are developing a Power Platform solution. You are modifying a business process flow. You have created a new radial knob for the Total amount value and have added the radial knob to the form.\n\nThe Total amount value must be entered at initiation before moving to the next step.\n\nYou need to configure the business process flow.\n\nWhich four actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+    "type": "dnd",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Create a new solution and add the business process flow and export the solution. Delete the solution after export."
+      },
+      {
+        "id": "opt2",
+        "text": "Open the business process in the Business Process Flow designer and select Activate/Update."
+      },
+      {
+        "id": "opt3",
+        "text": "Add another step to the business process flow."
+      },
+      {
+        "id": "opt4",
+        "text": "Import the solution into Dataverse."
+      },
+      {
+        "id": "opt5",
+        "text": "Delete the business process flow."
+      },
+      {
+        "id": "opt6",
+        "text": "Copy custom control configurations to the business process flow FormXML for the related entity form."
+      }
+    ],
+    "correctOrder": ["opt3", "opt2", "opt6", "opt4"]
+  }
+]

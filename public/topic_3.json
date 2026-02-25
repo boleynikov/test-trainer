@@ -659,22 +659,62 @@
     "statements": [
       {
         "id": "statement1",
-        "text": "If an error occurs when one of the contacts is created, processing will continue, and the remainder of the contacts will be created."
+        "text": "If an error occurs when one of the contacts is created, processing will continue, and the remainder of the contacts will be created.",
+        "options": [
+          {
+            "id": "yes",
+            "text": "Yes"
+          },
+          {
+            "id": "no",
+            "text": "No"
+          }
+        ]
       },
       {
         "id": "statement2",
-        "text": "If you add the code ,ContinueOnError = true at line 5, bad requests will not roll back the transaction."
+        "text": "If you add the code ,ContinueOnError = true at line 5, bad requests will not roll back the transaction.",
+        "options": [
+          {
+            "id": "yes",
+            "text": "Yes"
+          },
+          {
+            "id": "no",
+            "text": "No"
+          }
+        ]
       },
       {
         "id": "statement3",
-        "text": "Requests are processed in the sequence added to transactionrequest."
+        "text": "Requests are processed in the sequence added to transactionrequest.",
+        "options": [
+          {
+            "id": "yes",
+            "text": "Yes"
+          },
+          {
+            "id": "no",
+            "text": "No"
+          }
+        ]
       },
       {
         "id": "statement4",
-        "text": "Lines 19-23 are required for the contacts to be created."
+        "text": "Lines 19-23 are required for the contacts to be created.",
+        "options": [
+          {
+            "id": "yes",
+            "text": "Yes"
+          },
+          {
+            "id": "no",
+            "text": "No"
+          }
+        ]
       }
     ],
-    "correctAnswers": {
+    "correctStatementAnswers": {
       "statement1": "no",
       "statement2": "no",
       "statement3": "yes",
@@ -1358,18 +1398,48 @@
     "statements": [
       {
         "id": "statement1",
-        "text": "The query meets the requirements for retrieving the count of interviews without recommendations."
+        "text": "The query meets the requirements for retrieving the count of interviews without recommendations.",
+        "options": [
+          {
+            "id": "yes",
+            "text": "Yes"
+          },
+          {
+            "id": "no",
+            "text": "No"
+          }
+        ]
       },
       {
         "id": "statement2",
-        "text": "You can modify the query to return counts of interviews with and without recommendations."
+        "text": "You can modify the query to return counts of interviews with and without recommendations.",
+        "options": [
+          {
+            "id": "yes",
+            "text": "Yes"
+          },
+          {
+            "id": "no",
+            "text": "No"
+          }
+        ]
       },
       {
         "id": "statement3",
-        "text": "The query allows scheduled interviews for job applications when there are no recommendations for the job applicant."
+        "text": "The query allows scheduled interviews for job applications when there are no recommendations for the job applicant.",
+        "options": [
+          {
+            "id": "yes",
+            "text": "Yes"
+          },
+          {
+            "id": "no",
+            "text": "No"
+          }
+        ]
       }
     ],
-    "correctAnswers": {
+    "correctStatementAnswers": {
       "statement1": "yes",
       "statement2": "yes",
       "statement3": "no"
