@@ -1,0 +1,2316 @@
+[
+  {
+    "id": 1,
+    "topic": 1,
+    "text": "A company uses two separate unlinked apps to manage sales leads; a Power Apps app and a third-party application.\n\nThe client has the following requirements:\n- Manage all leads by using the Power Apps app.\n- Create a lead in the Power Apps app when a user creates a lead in the third-party application.\n- Update leads in the Power Apps app when a user updates a lead in the third-party application.\n- Connect to the third-party application by using an API.\n\nYou need to recommend strategies to integrate the Power Apps app and the third-party application.\n\nWhich three options can you use to achieve the goal? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["b", "d", "e"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Dual-write"
+      },
+      {
+        "id": "b",
+        "text": "B. Custom connector"
+      },
+      {
+        "id": "c",
+        "text": "C. Dataflow"
+      },
+      {
+        "id": "d",
+        "text": "D. Power Automate cloud flow"
+      },
+      {
+        "id": "e",
+        "text": "E. Dataverse connector"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "topic": 1,
+    "text": "You are designing a business continuity strategy for a client who has a Microsoft Power Platform solution. The client works with critical data where any data loss creates a high risk.\n\nYou need to document the retry process for the stakeholders.\n\nWhich four actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+    "type": "dnd",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "If the second call is successful, the application continues normally."
+      },
+      {
+        "id": "opt2",
+        "text": "The application makes a service call to the datacenter."
+      },
+      {
+        "id": "opt3",
+        "text": "The application receives an exception after attempting the service call."
+      },
+      {
+        "id": "opt4",
+        "text": "The application automatically tries the call again."
+      },
+      {
+        "id": "opt5",
+        "text": "The application redirects calls to an on-premises server."
+      }
+    ],
+    "correctOrder": ["opt2", "opt3", "opt4", "opt1"]
+  },
+  {
+    "id": 3,
+    "topic": 1,
+    "text": "A large company experiences high staff turnover rates. As a result, the company must add or remove multiple system user accounts daily.\n\nYou need to recommend a security concept which will facilitate complex security profiles to entities for large groups of users across the Power Apps and Dynamics 365 applications.\n\nWhat should you recommend?",
+    "correctOptionId": "d",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Hierarchy security"
+      },
+      {
+        "id": "b",
+        "text": "B. Field-level security"
+      },
+      {
+        "id": "c",
+        "text": "C. User access management"
+      },
+      {
+        "id": "d",
+        "text": "D. Team privileges"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "topic": 1,
+    "text": "HOTSPOT -\nYou are designing a Power Platform solution for a company that provides in-home appliance maintenance. When a customer schedules a service appointment, a dispatcher assigns one technician for a specific time and location.\n\nThe solution must capture information about the technician assigned to each appointment and the list of tools that the technician must bring to the appointment.\n\nYou need to recommend the data type for the captured information.\n\nWhich data type should you use? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "technician_assignment",
+        "text": "Capture information about the technician assigned to each service appointment.",
+        "options": [
+          {
+            "id": "opt1_1",
+            "text": "Choice"
+          },
+          {
+            "id": "opt1_2",
+            "text": "Choices"
+          },
+          {
+            "id": "opt1_3",
+            "text": "Customer"
+          },
+          {
+            "id": "opt1_4",
+            "text": "Lookup"
+          }
+        ]
+      },
+      {
+        "id": "tool_selection",
+        "text": "Select the tools that the technician must bring to an appointment.",
+        "options": [
+          {
+            "id": "opt2_1",
+            "text": "Choices"
+          },
+          {
+            "id": "opt2_2",
+            "text": "Customer"
+          },
+          {
+            "id": "opt2_3",
+            "text": "Lookup"
+          },
+          {
+            "id": "opt2_4",
+            "text": "Text"
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "technician_assignment": "opt1_4",
+      "tool_selection": "opt2_1"
+    }
+  },
+  {
+    "id": 5,
+    "topic": 1,
+    "text": "HOTSPOT -\nAn animal welfare organization wants to track the movement of wolf packs in a region. Cameras at specific locations capture images when motion is detected within the camera sensor range. Staff upload the images manually to a shared drive and then analyze the images.\n\nThe organization wants to automate image capture and analysis. The organization has the following requirements:\n- Save captured images in an appropriate location.\n- Analyze saved images by using an image recognition process.\n- Display data in real-time dashboards.\n\nYou need to recommend the correct technology for the requirements.\n\nWhat should you recommend? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "save_images",
+        "text": "Save captured images in an appropriate location.",
+        "options": [
+          {
+            "id": "opt1_1",
+            "text": "Business process flow"
+          },
+          {
+            "id": "opt1_2",
+            "text": "Desktop flow"
+          },
+          {
+            "id": "opt1_3",
+            "text": "Instant cloud flow"
+          },
+          {
+            "id": "opt1_4",
+            "text": "Automated cloud flow"
+          }
+        ]
+      },
+      {
+        "id": "analyze_images",
+        "text": "Analyze saved images by using an image recognition process.",
+        "options": [
+          {
+            "id": "opt2_1",
+            "text": "Instant cloud flow and AI Builder"
+          },
+          {
+            "id": "opt2_2",
+            "text": "Automated cloud flow and AI Builder"
+          },
+          {
+            "id": "opt2_3",
+            "text": "Desktop flow and AI Builder"
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "save_images": "opt1_4",
+      "analyze_images": "opt2_3"
+    }
+  },
+  {
+    "id": 6,
+    "topic": 1,
+    "text": "You are designing a Power Platform solution.\n\nThe company wants its development team to adopt the construction of repeatable components for its implementation team to reuse on different entities and forms.\n\nYou need to recommend a technology that meets these requirements.\n\nWhich technology would you recommend the developers adopt to assist the implementation team?",
+    "correctOptionId": "b",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. JavaScript"
+      },
+      {
+        "id": "b",
+        "text": "B. Power Apps Component Framework control"
+      },
+      {
+        "id": "c",
+        "text": "C. Web resource"
+      },
+      {
+        "id": "d",
+        "text": "D. Canvas app"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "topic": 1,
+    "text": "A company uses manual processes to track interactions with customers. The company wants to use Power Platform to improve productivity.\n\nThe company has the following requirements:\n- Provide customers with an online portal where they can submit and review cases.\n- Ensure that customers can chat online with a customer service representative at any time.\n- Route chats to customer service representatives based on skill and availability.\n\nYou need to recommend a solution to the company.\n\nWhich three components should you recommend? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "b", "e"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Dynamics 365 Virtual Agents chatbots"
+      },
+      {
+        "id": "b",
+        "text": "B. Customer self-service portal"
+      },
+      {
+        "id": "c",
+        "text": "C. Dynamics 365 Field Service"
+      },
+      {
+        "id": "d",
+        "text": "D. Business process flows"
+      },
+      {
+        "id": "e",
+        "text": "E. Omnichannel for Customer Service"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "topic": 1,
+    "text": "A client uses Dynamics 365 Sales, Power BI datasets, and Power BI dataflows. The Dynamics 365 Sales implementation has security roles that restrict data export. You need to ensure that data has the same restrictions in Power BI as it does in Dynamics 365 Sales.\n\nYou need to design the security to avoid sensitive data from being seen.\n\nWhich two actions should you recommend? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "d"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Use Microsoft Dataverse restrictions before setting up the Power BI reports."
+      },
+      {
+        "id": "b",
+        "text": "B. Limit the role in Dynamics 365 Sales to only data allowed so it cannot be exported to Microsoft Excel."
+      },
+      {
+        "id": "c",
+        "text": "C. Limit the role and ensure that exporting to Microsoft Excel is not allowed in both Dynamics 365 Sales and Power BI."
+      },
+      {
+        "id": "d",
+        "text": "D. Share Power BI dashboards only with users who are supported to see this data."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "topic": 1,
+    "text": "DRAG DROP -\nYou need to recommend methods for assigning security to each group of users.\n\nThe customer provides the following requirements:\n- Customers need the ability to submit a case through an online portal.\n- Portal must handle 75 concurrent users submitting cases.\n- Service data must be retained for at least six years.\n\nYou need to determine which requirements are functional or non-functional.\n\nWhich requirements are functional or non-functional? To answer, drag the appropriate types to the correct requirements. Each type may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Functional"
+      },
+      {
+        "id": "opt2",
+        "text": "Non-functional"
+      },
+      {
+        "id": "opt2_1",
+        "text": "Non-functional"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Customers need the ability to submit a case through an online portal."
+      },
+      {
+        "id": "req2",
+        "title": "Portal must handle 75 current users submitting cases."
+      },
+      {
+        "id": "req3",
+        "title": "Service data must be retained for at least six years."
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt1",
+      "req2": ["opt2", "opt2_1"],
+      "req3": ["opt2", "opt2_1"]
+    }
+  },
+  {
+    "id": 10,
+    "topic": 1,
+    "text": "You are a Power Platform consultant for an internet support company.\n\nThe company lacks a budget to buy third-party ISVs or add-ons.\n\nThe company requires a new system that achieves the following:\n- All support issues must come in by email, need to be logged, and assigned to the support group.\n- Accounts must synchronize with the parent company Oracle database.\n- Reports must be sent to the executives on a weekly basis.\n- No custom code will be used in the system.\n\nYou need to recommend the components that should be configured.\n\nWhich two components should you recommend? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["b", "c"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Power Virtual Agents"
+      },
+      {
+        "id": "b",
+        "text": "B. Microsoft Dataverse"
+      },
+      {
+        "id": "c",
+        "text": "C. server-side synchronization"
+      },
+      {
+        "id": "d",
+        "text": "D. Microsoft Customer Voice"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "topic": 1,
+    "text": "DRAG DROP -\nYou are performing a requirements analysis for a customer.\n\nThe customer provides the following requirements:\n- Power Platform storage capacity must remain under 100 percent.\n- Customer service representatives must be sent an email when they are assigned a case.\n- Help desk technicians must be shown an error message when they try to delete a task row.\n- The plug-in pass rate must remain over 99 percent for the production environment.\n\nYou need determine if the requirements are functional or non-functional.\n\nWhich requirement type should you use? To answer, drag the appropriate requirement types to the correct requirements. Each requirement type may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Functional"
+      },
+      {
+        "id": "opt1_1",
+        "text": "Functional"
+      },
+      {
+        "id": "opt2",
+        "text": "Non-functional"
+      },
+      {
+        "id": "opt2_1",
+        "text": "Non-functional"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Power Platform storage capacity must remain under 100 percent."
+      },
+      {
+        "id": "req2",
+        "title": "Customer Service representatives must be sent an email when they are assigned a case."
+      },
+      {
+        "id": "req3",
+        "title": "Help desk technicians must be shown an error message when they try to delete a task row."
+      },
+      {
+        "id": "req4",
+        "title": "The plug-in pass rate must remain over 99 percent for the production environment."
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": ["opt2", "opt2_1"],
+      "req2": ["opt1", "opt1_1"],
+      "req3": ["opt1", "opt1_1"],
+      "req4": ["opt2", "opt2_1"]
+    }
+  },
+  {
+    "id": 12,
+    "topic": 1,
+    "text": "A company has a website that contains a form named Contact Us. Data from completed forms is saved to a shared document. An office administrator periodically reviews the document. The office administrator sends new submissions to another employee who creates contacts or updates existing contacts.\n\nYou need to recommend a solution to automate the process.\n\nWhat should you do?",
+    "correctOptionId": "d",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Excel Online Connector"
+      },
+      {
+        "id": "b",
+        "text": "B. Dynamics 365 Customer Insights"
+      },
+      {
+        "id": "c",
+        "text": "C. Dynamics 365 Customer Service"
+      },
+      {
+        "id": "d",
+        "text": "D. Dynamics 365 Marketing"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "topic": 1,
+    "text": "HOTSPOT -\nYou need to design a Power Platform solution that meets the following requirements:\nCapture data from a row during deletion to be used in an automated process.\n\n- Use AI to process forms and automate data entry from paper-based forms.\n\nWhich requirements can be met by using out-of-the-box Power Platform components?\n\nInstructions: For each of the following statements, select Yes if the statement is true. Otherwise, select No.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "yes-no-statements",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Capture data from a row during deletion to be used in an automated process.",
+        "options": [
+          { "id": "yes", "text": "Yes" },
+          { "id": "no", "text": "No" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Use AI to process forms and automate data entry from paper-based forms.",
+        "options": [
+          { "id": "yes", "text": "Yes" },
+          { "id": "no", "text": "No" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "yes",
+      "st2": "yes"
+    }
+  },
+  {
+    "id": 14,
+    "topic": 1,
+    "text": "A company has a custom web-based API that is hosted on Azure. You design a Microsoft Power Platform solution to provide the company additional capabilities.\n\nYou need to integrate the Microsoft Power Platform solution with the API.\n\nWhat should you recommend?",
+    "correctOptionId": "b",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Connection reference"
+      },
+      {
+        "id": "b",
+        "text": "B. Custom connector"
+      },
+      {
+        "id": "c",
+        "text": "C. Desktop flow"
+      },
+      {
+        "id": "d",
+        "text": "D. Data gateway"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "topic": 1,
+    "text": "You are designing a self-service portal for a company. The portal must meet the following requirements:\n- Customers must be able to submit and review cases.\n- Customers must be able to chat with service representatives in near real time.\n- Allow service representatives to select cases from queues and use knowledge articles to resolve customer concerns.\n\nYou need to recommend solutions for the company that do not require custom development.\n\nWhich three apps or services should you recommend? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["b", "c", "e"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Dynamics 365 Field Service"
+      },
+      {
+        "id": "b",
+        "text": "B. Dynamics 365 Customer Service"
+      },
+      {
+        "id": "c",
+        "text": "C. Omnichannel for Customer Service"
+      },
+      {
+        "id": "d",
+        "text": "D. Customer Insights"
+      },
+      {
+        "id": "e",
+        "text": "E. Customer self-service portal"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "topic": 1,
+    "text": "HOTSPOT -\nA multinational organization uses a single Power Platform environment. The instance hosts multiple customizations for different users in different regions. Users in some regions complain about slow load time of the customizations.\n\nYou need to architect a solution based on the main requirement.\n\nWhat should you recommend? To answer, select the appropriate option in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "goal1",
+        "text": "Divisions actively collaborate on customers.",
+        "options": [
+          {
+            "id": "opt1_1",
+            "text": "Single instance; use Microsoft Azure Traffic Manager where needed"
+          },
+          {
+            "id": "opt1_2",
+            "text": "Multi-tenant with one Power Platform environment in each region"
+          },
+          {
+            "id": "opt1_3",
+            "text": "Multiple instances in different regions; Power BI for reporting"
+          },
+          {
+            "id": "opt1_4",
+            "text": "Single multi-geo instance"
+          }
+        ]
+      },
+      {
+        "id": "goal2",
+        "text": "Regions have separate customers but use the same functionality and need global reporting.",
+        "options": [
+          {
+            "id": "opt2_1",
+            "text": "Multiple instances in different regions with data replication"
+          },
+          {
+            "id": "opt2_2",
+            "text": "Multi-tenant with one Power Platform environment in each region"
+          },
+          {
+            "id": "opt2_3",
+            "text": "Multiple instances in different regions; Power BI for reporting"
+          },
+          {
+            "id": "opt2_4",
+            "text": "Single multi-geo instance"
+          }
+        ]
+      },
+      {
+        "id": "goal3",
+        "text": "Regions have separate functionality and customers but need global reporting on data.",
+        "options": [
+          {
+            "id": "opt3_1",
+            "text": "Single instance; use Microsoft Azure Traffic Manager"
+          },
+          {
+            "id": "opt3_2",
+            "text": "Multi-tenant with one Power Platform environment in each region"
+          },
+          {
+            "id": "opt3_3",
+            "text": "Multiple instances in different regions; Power BI for reporting"
+          },
+          {
+            "id": "opt3_4",
+            "text": "Single multi-geo instance"
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "goal1": "opt1_4",
+      "goal2": "opt2_3",
+      "goal3": "opt3_1"
+    }
+  },
+  {
+    "id": 17,
+    "topic": 1,
+    "text": "HOTSPOT -\nA company reports the following issues with an existing data management system.\n- Users cannot search for specific records by using a user-friendly ID or record identifier.\n- Users occasionally enter data into fields that is not required.\n- The record form displays all fields. Many of the fields are not used.\n\nYou need to ensure that the Power Platform solution will ensure data quality can be properly maintained.\n\nWhich component should you use? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Ensure that users can search for specific records by using a unique identifier.",
+        "options": [
+          {
+            "id": "opt1_1",
+            "text": "Business rule"
+          },
+          {
+            "id": "opt1_2",
+            "text": "Autonumber column"
+          },
+          {
+            "id": "opt1_3",
+            "text": "Business process flow"
+          },
+          {
+            "id": "opt1_4",
+            "text": "Duplicate detection rule"
+          }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "You must prevent data entry into columns that do not require entry.",
+        "options": [
+          {
+            "id": "opt2_1",
+            "text": "Business rule"
+          },
+          {
+            "id": "opt2_2",
+            "text": "Real time workflow"
+          },
+          {
+            "id": "opt2_3",
+            "text": "Business process flow"
+          },
+          {
+            "id": "opt2_4",
+            "text": "Duplicate detection rule"
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_2",
+      "st2": "opt2_1"
+    }
+  },
+  {
+    "id": 18,
+    "topic": 1,
+    "text": "DRAG DROP -\nA new customer asks you to design a solution for a Power Apps app that uses Microsoft Dataverse. The customer wants to keep the service process simple and save on both licensing and development time.\n\nYou need to recommend solutions for the customer.\n\nWhat should you recommend? To answer, drag the appropriate setting to the correct drop targets. Each source may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Canvas app"
+      },
+      {
+        "id": "opt2",
+        "text": "Model-driven app"
+      },
+      {
+        "id": "opt3",
+        "text": "Dynamics 365 Customer Service"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Show the app in Microsoft Outlook."
+      },
+      {
+        "id": "req2",
+        "title": "Use Universal Resource Scheduling."
+      },
+      {
+        "id": "req3",
+        "title": "Take notes on a mobile phone and record GPS coordinates automatically."
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt2",
+      "req2": "opt3",
+      "req3": "opt1"
+    }
+  },
+  {
+    "id": 19,
+    "topic": 1,
+    "text": "DRAG DROP -\nYou are reviewing a list of business requirements submitted by a plumbing company.\n\nThe company has the following requirements:\n- Send articles to technicians to allow technicians to help customers resolve issues.\n- Track work progress and inspections at customer sites.\n- Schedule technicians for service appointments.\n\nYou need to recommend solutions to meet the customer's requirements.\n\nWhat should you recommend? To answer, drag the appropriate solutions to the correct business requirements. Each solution may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Dynamics 365 Field Service"
+      },
+      {
+        "id": "opt1_1",
+        "text": "Dynamics 365 Field Service"
+      },
+      {
+        "id": "opt1_2",
+        "text": "Dynamics 365 Field Service"
+      },
+      {
+        "id": "opt2",
+        "text": "Dynamics 365 Customer Voice"
+      },
+      {
+        "id": "opt3",
+        "text": "Dynamics 365 Customer Insights"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Send articles to technicians to allow technicians to help customers resolve issues."
+      },
+      {
+        "id": "req2",
+        "title": "Track work progress and inspections at customer sites."
+      },
+      {
+        "id": "req3",
+        "title": "Schedule technicians for service appointments."
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": ["opt1", "opt1_1", "opt1_2"],
+      "req2": ["opt1", "opt1_1", "opt1_2"],
+      "req3": ["opt1", "opt1_1", "opt1_2"]
+    }
+  },
+  {
+    "id": 20,
+    "topic": 1,
+    "text": "You are designing a Power Platform solution.\n\nThe company wants its development team to create an interactive slider visualization to indicate and filter timeframe data that can be used across all of its apps that can be styled and manipulated by using code.\n\nYou need to recommend a technology that meets these requirements.\n\nWhich technology would you recommend the developers adopt to assist the implementation team?",
+    "correctOptionId": "b",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Web resource"
+      },
+      {
+        "id": "b",
+        "text": "B. Power Apps Component Framework control"
+      },
+      {
+        "id": "c",
+        "text": "C. JavaScript"
+      },
+      {
+        "id": "d",
+        "text": "D. Canvas app"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "topic": 1,
+    "text": "You are designing a Power Platform solution for a company. The company issues each employee a tablet device.\n\nThe company wants to simplify the opportunity management processes and automate when possible. The company identifies the following requirements:\n- Users must have a visual guide to know which data to enter in each step of the opportunity management process.\n- The system must automatically assign the opportunity to a manager for approval once all data is entered.\n- The system must notify an assignee each time an opportunity is assigned to them by using push notifications.\n- When a user selects a push notification, the associated opportunity must display.\n\nYou need to recommend the Power Platform components that will meet their requirements.\n\nWhich three Power Platform components should you recommend? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "b", "e"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Business process flows"
+      },
+      {
+        "id": "b",
+        "text": "B. Power Apps mobile apps"
+      },
+      {
+        "id": "c",
+        "text": "C. Power Virtual Agents chatbots"
+      },
+      {
+        "id": "d",
+        "text": "D. Power Automate desktop flows"
+      },
+      {
+        "id": "e",
+        "text": "E. Power Automate cloud flows"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "topic": 1,
+    "text": "A company is struggling to gather insights from won and lost opportunities.\nUsers must be able to access the company's solution from mobile and desktop devices. The solution must meet the following requirements:\n- Track opportunities and reasons for the win or loss of opportunities in the context of other related data.\n- Display data to users as charts and tables and provide drill-through capabilities.\n\nYou need to recommend a Power Platform tool to help the client visualize the data.\nWhich two technologies should you recommend? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "d"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Power BI"
+      },
+      {
+        "id": "b",
+        "text": "B. Power Automate"
+      },
+      {
+        "id": "c",
+        "text": "C. Power Virtual Agents"
+      },
+      {
+        "id": "d",
+        "text": "D. Power Apps"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "topic": 1,
+    "text": "You are designing a Power Platform solution.\n\nYou need to identify the non-functional requirements for the organization.\n\nWhich three non-functional requirements should you identify? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["b", "d", "e"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. business rules to identify top customers"
+      },
+      {
+        "id": "b",
+        "text": "B. customer maintenance procedures"
+      },
+      {
+        "id": "c",
+        "text": "C. usability of business process flows"
+      },
+      {
+        "id": "d",
+        "text": "D. time-to-load forms"
+      },
+      {
+        "id": "e",
+        "text": "E. solution regulatory compliance"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "topic": 1,
+    "text": "You are designing a Microsoft Power Platform solution to help a company manage sales leads.\n\nThe solution has the following requirements:\n- Ensure that users follow a predefined sales process regardless of the device that employees use to access the app.\n- Respond to sales events by using organization-defined best practices.\n\nYou need to recommend a component for the app.\n\nWhat should you recommend?",
+    "correctOptionId": "b",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Power Automate cloud flow"
+      },
+      {
+        "id": "b",
+        "text": "B. Business process flow"
+      },
+      {
+        "id": "c",
+        "text": "C. Power Automate desktop flow"
+      },
+      {
+        "id": "d",
+        "text": "D. Playbook"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "topic": 1,
+    "text": "HOTSPOT -\nA company has an on-premises data warehouse and analytics solution. The data warehouse consists of multiple multi-dimensional data cubes representing over five years of operational data. The data warehouse consolidates and normalizes data that is sourced from 20 different systems.\n\nThe company plans to replace the existing solution with a Microsoft Power Platform solution that connects to the data warehouse. The company wants to provide analytical information to executives in a Microsoft Teams channel to support business planning.\n\nThe new solution must meet these requirements:\n- Support the current data warehouse.\n- The solution must support drill-through capabilities into the data.\n- Retain at least seven years of historical data.\n\nYou need to recommend a solution.\n\nWhat should you recommend? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "storage_normalization",
+        "text": "Data storage and normalization.",
+        "options": [
+          {
+            "id": "opt1_1",
+            "text": "Data Gateway"
+          },
+          {
+            "id": "opt1_2",
+            "text": "Azure Data Lake"
+          },
+          {
+            "id": "opt1_3",
+            "text": "Dataverse for Teams"
+          },
+          {
+            "id": "opt1_4",
+            "text": "Azure Analysis Services"
+          }
+        ]
+      },
+      {
+        "id": "teams_visibility",
+        "text": "Visibility to key operational metrics from various Teams channels.",
+        "options": [
+          {
+            "id": "opt2_1",
+            "text": "Power BI"
+          },
+          {
+            "id": "opt2_2",
+            "text": "AI Builder"
+          },
+          {
+            "id": "opt2_3",
+            "text": "Teams adaptive cards"
+          },
+          {
+            "id": "opt2_4",
+            "text": "Microsoft Teams integration object"
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "storage_normalization": "opt1_1",
+      "teams_visibility": "opt2_1"
+    }
+  },
+  {
+    "id": 26,
+    "topic": 1,
+    "text": "A company provides professional development certifications to technologies around the world. The company uses multiple call centers to support customers. The company plans to implement Dynamics 365 Customer Service.\n\nThe company must increase productivity for call center employees. The solution must meet the following requirements:\n- Handle multiple customer interactions at once.\n- Ensure that users can access information from several business applications.\n- Interact with customers by using the following channels: chat, phone calls, emails, and online reviews.\n- Implement all functionality in a single interface.\n\nYou need to recommend a solution that meets the requirements of the company.\n\nWhat should you recommend?",
+    "correctOptionId": "a",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Omnichannel for Customer Service"
+      },
+      {
+        "id": "b",
+        "text": "B. Live Assist for Microsoft Dynamics 365 Powered by CafeX"
+      },
+      {
+        "id": "c",
+        "text": "C. LinkedIn connector"
+      },
+      {
+        "id": "d",
+        "text": "D. Unified Service Desk"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "topic": 1,
+    "text": "HOTSPOT -\nYou are designing a Microsoft Power Platform solution for a company.\n\nWhich components should you recommend? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "status_restriction",
+        "text": "Allow users to change the status of a record only if a custom column named Reason is populated.",
+        "options": [
+          {
+            "id": "opt1_1",
+            "text": "Business rule"
+          },
+          {
+            "id": "opt1_2",
+            "text": "Power Automate flow"
+          },
+          {
+            "id": "opt1_3",
+            "text": "Asynchronous plug-in"
+          },
+          {
+            "id": "opt1_4",
+            "text": "Background workflow"
+          }
+        ]
+      },
+      {
+        "id": "opportunity_update",
+        "text": "Prompt users to update each opportunity product record when an opportunity is won or lost.",
+        "options": [
+          {
+            "id": "opt2_1",
+            "text": "JavaScript code"
+          },
+          {
+            "id": "opt2_2",
+            "text": "Real-time workflow"
+          },
+          {
+            "id": "opt2_3",
+            "text": "Power Automate flow"
+          },
+          {
+            "id": "opt2_4",
+            "text": "Asynchronous plug-in"
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "status_restriction": "opt1_1",
+      "opportunity_update": "opt2_3"
+    }
+  },
+  {
+    "id": 28,
+    "topic": 1,
+    "text": "An organization plans to implement a solution to deliver the complete sales process for its sales teams. The organization does NOT have any physical barcode scanners.\nTo meet the organization business requirements, the proposed solution must include the following capabilities:\n- Create and qualify leads to contacts\n- Generate quotes and convert quotes to orders\n- Scan product barcodes as part of the order generation process\n\nYou need to recommend a solution to help the organization achieve its business requirements.\n\nWhat should you recommend?",
+    "correctOptionId": "a",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Dynamics 365 mobile app and a Power Apps canvas app"
+      },
+      {
+        "id": "b",
+        "text": "B. Dynamics 365 for Phones only"
+      },
+      {
+        "id": "c",
+        "text": "C. Dynamics 365 Customer Service and Dynamics 365 Sales"
+      },
+      {
+        "id": "d",
+        "text": "D. Unified Service Desk"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "topic": 1,
+    "text": "You are creating a scope of work document for a solution. You have the following requirements:\n- Track support cases, first response time, and resolution time.\n- Include a chat-like interface that allows managers to check the status of cases with minimal manual searching.\n- Allow cases to have multiple different priority levels.\n\nYou need to include the required Dynamics 365 and Microsoft Power Platform components.\n\nWhich two components should you include? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "b"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Dynamics 365 Customer Service"
+      },
+      {
+        "id": "b",
+        "text": "B. Power Virtual Agents"
+      },
+      {
+        "id": "c",
+        "text": "C. Power BI"
+      },
+      {
+        "id": "d",
+        "text": "D. Dynamics 365 Customer Voice"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "topic": 1,
+    "text": "A car dealership has a custom financing table. You are working with a developer to add a button to a ribbon that displays a hidden section of a form when specific criteria are met.\n\nYou need to recommend tools and technologies for the developer.\n\nWhich two tools or technologies should you recommend? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["b", "c"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Write a business rule."
+      },
+      {
+        "id": "b",
+        "text": "B. Write a JavaScript code."
+      },
+      {
+        "id": "c",
+        "text": "C. Use the Ribbon Workbench."
+      },
+      {
+        "id": "d",
+        "text": "D. Use the form editor."
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "topic": 1,
+    "text": "HOTSPOT -\nYou are designing a model-driven app that provides marketing, sales, and service operations to a company.\n\nThe app must integrate with the following systems and data sources:\n- A third-party marketing system for lead generation and website submissions.\n- A Microsoft Excel Online file that contains manufacturing data on relevant products.\n- A separate Microsoft Dataverse environment.\n\nYou need to recommend Power Automate connectors for the app.\n\nWhich connectors should you recommend? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Third-party marketing system",
+        "options": [
+          { "id": "opt1_1", "text": "Power BI connector" },
+          { "id": "opt1_2", "text": "Sharepoint connector" },
+          { "id": "opt1_3", "text": "Custom connectoor" },
+          { "id": "opt1_4", "text": "Microsoft Forms connector" }
+        ]
+      },
+
+      {
+        "id": "st2",
+        "text": "Microsoft Dataverse environment",
+        "options": [
+          { "id": "opt2_1", "text": "Sharepoint" },
+          { "id": "opt2_2", "text": "Azure Data Factory" },
+          { "id": "opt2_3", "text": "Microsoft Dataverse" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_3",
+      "st2": "opt2_3"
+    }
+  },
+  {
+    "id": 32,
+    "topic": 1,
+    "text": "You are designing a solution for a national vehicle repair company. You have the following requirements:\n- Customers must search for vehicle issues by using natural language expressions.\n- Customers must contact a customer service agent as required.\n\nYou need to recommend a solution.\n\nWhich two features should you include? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "b"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Power Apps portal"
+      },
+      {
+        "id": "b",
+        "text": "B. Power Virtual Agents"
+      },
+      {
+        "id": "c",
+        "text": "C. Customer Insights"
+      },
+      {
+        "id": "d",
+        "text": "D. Business process flow"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "topic": 1,
+    "text": "You are implementing a solution that includes applications which perform high-volume Microsoft Dataverse operations.\n\nThe applications must not experience a loss of functionality or loss of performance due to service protection API limits.\n\nYou need to evaluate metrics for the service protection API limits.\n\nWhich three metrics should you evaluate? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["c", "d", "e"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Amount of API calls made within plug-in code."
+      },
+      {
+        "id": "b",
+        "text": "B. Number of API requests per web server."
+      },
+      {
+        "id": "c",
+        "text": "C. Amount of execution time that can be used for each connection."
+      },
+      {
+        "id": "d",
+        "text": "D. Number of concurrent connections per user account."
+      },
+      {
+        "id": "e",
+        "text": "E. Number of API requests per connection."
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "topic": 1,
+    "text": "DRAG DROP -\nA client plans to implement Microsoft Power Platform solutions.\n\nThe client identifies the following requirements for handling opportunities:\n- Users must follow the same set of steps each time they process opportunities.\n- For opportunities with values greater than $20,000, a follow-up date and second contact field must appear on the form.\n- An error message must display if a follow-up date is not within seven days of the opportunity creation date.\n\nYou need to recommend tools to meet the client requirements.\n\nWhat should you recommend? To answer, drag the appropriate tools to the correct requirement. Each tool may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Business Rule"
+      },
+      {
+        "id": "opt2",
+        "text": "Workflows"
+      },
+      {
+        "id": "opt3",
+        "text": "Business process flow"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Users must follow the same set of steps each time they process opportunities."
+      },
+      {
+        "id": "req2",
+        "title": "For opportunities with values greater than $20,000, a follow-up date and second contact field must appear on the form."
+      },
+      {
+        "id": "req3",
+        "title": "An error message must display if a follow-up date is not within seven days of the opportunity creation date."
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt3",
+      "req2": "opt1",
+      "req3": "opt2"
+    }
+  },
+  {
+    "id": 35,
+    "topic": 1,
+    "text": "HOTSPOT -\nYou are a Microsoft Power Platform architect designing integrations for a project.\n\nYou have the following integration requirements:\n- Post requests to a system that is not always available and limited in its ability to process high volumes of messages.\n- Allow peer-to-peer communication between on-premises services and cloud-based model-driven Microsoft Power Platform apps.\n- Stream large volumes of data from the company's website to a live Power BI dashboard.\n- Support enterprise-level integrations with Dynamics 365 that can be billed on a consumption basis.\n\nYou need to use an Azure service for the integration requirements.\n\nWhich Azure services should you use? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Post requests to a system that is not always available and limited in its ability to process high volumes of messages.",
+        "options": [
+          { "id": "opt1_1", "text": "Azure Service Bus" },
+          { "id": "opt1_2", "text": "Azure Notification Hub" },
+          { "id": "opt1_3", "text": "Azure Active Directory" },
+          { "id": "opt1_4", "text": "Azure ExpressRoute" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Allow peer-to-peer communication between on-premises services and cloud-based model-driven Microsoft Power Platform apps.",
+        "options": [
+          { "id": "opt2_1", "text": "Azure Relay" },
+          { "id": "opt2_2", "text": "Azure SQL" },
+          { "id": "opt2_3", "text": "Azure Cognitive Services" },
+          { "id": "opt2_4", "text": "Azure API Management" }
+        ]
+      },
+      {
+        "id": "st3",
+        "text": "Stream large volumes of data from the company's website to a live Power BI dashboard.",
+        "options": [
+          { "id": "opt3_1", "text": "Azure Event Hubs" },
+          { "id": "opt3_2", "text": "Azure Service Bus" },
+          { "id": "opt3_3", "text": "Azure SQL" }
+        ]
+      },
+      {
+        "id": "st4",
+        "text": "Support enterprise-level integrations with Dynamics 365 that can be billed on a consumption basis.",
+        "options": [
+          { "id": "opt4_1", "text": "Azure Logic Apps" },
+          { "id": "opt4_2", "text": "Azure Functions" },
+          { "id": "opt4_3", "text": "Azure Service Bus" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_1",
+      "st2": "opt2_1",
+      "st3": "opt3_1",
+      "st4": "opt4_2"
+    }
+  },
+  {
+    "id": 36,
+    "topic": 1,
+    "text": "DRAG DROP -\nYou are a Microsoft Power Platform architect reviewing requirements for an offline shopping app.\n\nYou need to identify requirement types for the app.\n\nHow should you categorize the requirements? To answer, drag the appropriate types to the correct requirements. Each type may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Functional"
+      },
+      {
+        "id": "opt2",
+        "text": "Non-functional"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "The app must automatically send a confirmation email to a customer when they place an order."
+      },
+      {
+        "id": "req2",
+        "title": "Credit card numbers must be encrypted."
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt1",
+      "req2": "opt2"
+    }
+  },
+  {
+    "id": 37,
+    "topic": 1,
+    "text": "You are designing a Microsoft Power Platform solution.\n\nThe solution requires Microsoft Power Platform components and custom coding.\n\nYou need to describe the benefits of using Microsoft AppSource.\n\nWhich are three benefits of AppSource? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "b", "e"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. App uptime of at least 99.9 percent"
+      },
+      {
+        "id": "b",
+        "text": "B. Azure Active Directory federated single sign-on (AAD federated SSO)"
+      },
+      {
+        "id": "c",
+        "text": "C. Microsoft standardized license agreement and privacy policy"
+      },
+      {
+        "id": "d",
+        "text": "D. Reduced coding efforts because anyone can publish in AppSource"
+      },
+      {
+        "id": "e",
+        "text": "E. Free trial before committing to any additional costs"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "topic": 1,
+    "text": "DRAG DROP -\nYou are a Microsoft Power Platform solution architect capturing requirements for a national retail chain project.\n\nThe project has the following requirements:\n- Retail employees must use the application on a company-provided tablet device.\n- The app must store data offline.\n- Environment capacity must be monitored to ensure usage stays within 80 percent of available capacity.\n- Apps are shared with security group teams for users to access.\n\nYou need to identify the project's functional and non-functional requirements.\n\nHow should you categorize the requirements? To answer, drag the appropriate categories to the correct requirements. Each category may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Functional"
+      },
+      {
+        "id": "opt1_1",
+        "text": "Functional"
+      },
+      {
+        "id": "opt2",
+        "text": "Non-functional"
+      },
+      {
+        "id": "opt2_1",
+        "text": "Non-functional"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Retail employees must use the application on a company-provided tablet device."
+      },
+      {
+        "id": "req2",
+        "title": "The app must store data offline."
+      },
+      {
+        "id": "req3",
+        "title": "Environment capacity must be monitored to ensure usage stays within 80 percent of available capacity."
+      },
+      {
+        "id": "req4",
+        "title": "Apps are shared with security group teams for users to access."
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": ["opt1", "opt1_1"],
+      "req2": ["opt1", "opt1_1"],
+      "req3": ["opt2", "opt2_1"],
+      "req4": ["opt2", "opt2_1"]
+    }
+  },
+  {
+    "id": 39,
+    "topic": 1,
+    "text": "You are assessing the capabilities of a project for a customer in the education sector.\n\nThe solution must meet the following requirements:\n- Include curriculum and student management capabilities.\n- Conform to on-going Microsoft platform upgrades.\n- Minimize custom coding and configuration.\n\nYou need to recommend a solution.\n\nWhat should you recommend?",
+    "correctOptionId": "d",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Microsoft Power Platform admin center"
+      },
+      {
+        "id": "b",
+        "text": "B. Microsoft 365 admin center"
+      },
+      {
+        "id": "c",
+        "text": "C. Power Apps portal"
+      },
+      {
+        "id": "d",
+        "text": "D. AppSource"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "topic": 1,
+    "text": "HOTSPOT -\nYou are a Microsoft Power Platform architect gathering solution requirements for a customer. Management uses three different systems to locate asset inventory and contract details.\n\nManagement must view inventory with the ability to select assets and view additional details. Sales representatives have issues locating assets based on specific features in a timely manner when working with customers.\n\nYou need to prioritize the requirements.\n\nWhich priority should you use? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Enable sales representatives to locate assets in less time",
+        "options": [
+          { "id": "opt1_1", "text": "Time Consumer" },
+          { "id": "opt1_2", "text": "Non-functional" },
+          { "id": "opt1_3", "text": "Functional" },
+          { "id": "opt1_4", "text": "Quick Win" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Enable management to view inventory and asset details",
+        "options": [
+          { "id": "opt2_1", "text": "Big Investment" },
+          { "id": "opt2_2", "text": "Non-functional" },
+          { "id": "opt2_3", "text": "Budget" },
+          { "id": "opt2_4", "text": "Functional" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_2",
+      "st2": "opt2_4"
+    }
+  },
+  {
+    "id": 41,
+    "topic": 1,
+    "text": "DRAG DROP -\nYou are a Microsoft Power Platform architect.\n\nYou have identified several project risks.\n\nYou need to categorize potential risks that are specific to your customer.\n\nHow should you categorize the risks? To answer, drag the appropriate categories to the correct risks. Each category may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Resource risk"
+      },
+      {
+        "id": "opt2",
+        "text": "Business risk"
+      },
+      {
+        "id": "opt3",
+        "text": "External risk"
+      },
+      {
+        "id": "opt4",
+        "text": "Security risk"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "The project requires integration to custom-built on-premises systems that store business-sensitive data."
+      },
+      {
+        "id": "req2",
+        "title": "The organization is currently making significant go-to-market strategy adjustments."
+      },
+      {
+        "id": "req3",
+        "title": "The customer has a limited budget in relation to the project requirements."
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt4",
+      "req2": "opt2",
+      "req3": "opt1"
+    }
+  },
+  {
+    "id": 42,
+    "topic": 1,
+    "text": "You are designing a Microsoft Power Platform solution that will include multiple applications.\n\nYou have the following requirements:\n- Support agents managing cases.\n- Project managers reviewing and updating their projects.\n- Stock managers managing warehouses.\n- New site visitors self-registering.\n- Employees tracking time entries.\n\nWhich three requirements can you meet by implementing role-based applications? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["b", "c", "e"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. New site visitors self-registering."
+      },
+      {
+        "id": "b",
+        "text": "B. Support agents managing cases."
+      },
+      {
+        "id": "c",
+        "text": "C. Stock managers managing warehouses."
+      },
+      {
+        "id": "d",
+        "text": "D. Staff tracking time entries."
+      },
+      {
+        "id": "e",
+        "text": "E. Project managers reviewing and updating their projects."
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "topic": 1,
+    "text": "DRAG DROP -\nYou are a Microsoft Power Platform architect reviewing requirements for an online shopping app.\n\nYou need to identify requirement types for the app.\n\nHow should you categorize the requirements? To answer, drag the appropriate types to the correct requirements. Each type may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Functional"
+      },
+      {
+        "id": "opt2",
+        "text": "Non-functional"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "The app must automatically send a confirmation email to a customer when they place an order."
+      },
+      {
+        "id": "req2",
+        "title": "Credit card numbers must be encrypted."
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt1",
+      "req2": "opt2"
+    }
+  },
+  {
+    "id": 44,
+    "topic": 1,
+    "text": "HOTSPOT -\nA legal services organization uses Microsoft SharePoint for case management and documentation. The organization plans to migrate its case data and manual processes to the Microsoft Power Platform and Microsoft Dataverse. Case data is confidential and is disclosed only to the employees assigned to a case.\n\nThe organization has the following requirements:\n- Lawyers must manage their assigned legal cases and case documentation in one app.\n- Paralegals must be able see a lawyer's case details only when invited by the case lawyer.\n- Paralegals retain access to the case documentation by using the existing SharePoint permissions.\n\nYou need to identify which components will satisfy the requirements without any custom development.\n\nWhich components should you use? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Lawyer app",
+        "options": [
+          { "id": "opt1_1", "text": "Canvas app" },
+          { "id": "opt1_2", "text": "Model-driven app" },
+          {
+            "id": "opt1_3",
+            "text": "Microsoft Teams channel app for lawyers only"
+          },
+          {
+            "id": "opt1_4",
+            "text": "Microsoft Teams channel app shared with lawyers and paralegals"
+          }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Paralegal app",
+        "options": [
+          { "id": "opt2_1", "text": "Canvas app" },
+          { "id": "opt2_2", "text": "Custom page" },
+          { "id": "opt2_3", "text": "SharePoint app" },
+          { "id": "opt2_4", "text": "Microsoft Teams channel app" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_2",
+      "st2": "opt2_4"
+    }
+  },
+  {
+    "id": 45,
+    "topic": 1,
+    "text": "DRAG DROP -\nA company plans to integrate Microsoft Power Platform with existing systems, including Microsoft Dynamics 365 Omnichannel for Customer Service.\n\nYou need to recommend a solution for each requirement.\n\nWhich components should you recommend for the requirements? To answer, drag the appropriate solutions to the correct requirements. Each solution may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Microsoft Power Virtual Agent"
+      },
+      {
+        "id": "opt2",
+        "text": "Custom pages"
+      },
+      {
+        "id": "opt3",
+        "text": "Custom API"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Display information about the contact in the Omnichannel app."
+      },
+      {
+        "id": "req2",
+        "title": "Ensure only tables needed are exposed for integration purposes."
+      },
+      {
+        "id": "req3",
+        "title": "Display data hierarchy from other systems within Dynamics 365 without saving the data within Microsoft Dataverse."
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt1",
+      "req2": "opt3",
+      "req3": "opt2"
+    }
+  },
+  {
+    "id": 46,
+    "topic": 1,
+    "text": "HOTSPOT -\nYou are performing a fit gap requirements analysis.\n\nYou need to select Microsoft Power Platform components to satisfy the requirements.\n\nWhich components should you use? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Coordinate long-term end-to-end delivery of financial counseling services to farmers.",
+        "options": [
+          { "id": "opt1_1", "text": "Model-driven app" },
+          { "id": "opt1_2", "text": "Power Virtual Agents" },
+          { "id": "opt1_3", "text": "Dynamics 365 Customer Voice" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Manage project accounting and recognize revenue compliant with international financial reporting standards.",
+        "options": [
+          { "id": "opt2_1", "text": "Dynamics 365 Project Operations" },
+          { "id": "opt2_2", "text": "Dynamics 365 Field Service" },
+          { "id": "opt2_3", "text": "Dynamics 365 Finance" }
+        ]
+      },
+      {
+        "id": "st3",
+        "text": "Notify users of their overdue tasks on a daily basis.",
+        "options": [
+          { "id": "opt3_1", "text": "Power Automate" },
+          { "id": "opt3_2", "text": "Power Virtual Agents" },
+          { "id": "opt3_3", "text": "AppSource" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_2",
+      "st2": "opt2_3",
+      "st3": "opt3_1"
+    }
+  },
+  {
+    "id": 47,
+    "topic": 1,
+    "text": "A company has an expense approval process that allows expenses to be submitted in multiple currencies.\n\nAn accountant converts the expense amount to USD as part of the approval process.\n\nYou need to automate the conversion by using the RESTful API.\n\nWhat should you do?",
+    "correctOptionId": "a",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Create a desktop flow. Use an Invoke web service action to get the currency conversion rate."
+      },
+      {
+        "id": "b",
+        "text": "B. Create a desktop flow. Use an Azure action to get the currency conversion rate."
+      },
+      {
+        "id": "c",
+        "text": "C. Create a cloud flow. Use the Microsoft Graph API to get the currency conversion rate."
+      },
+      {
+        "id": "d",
+        "text": "D. Create a cloud flow and a custom connector. Install a data gateway. Use the custom connector to get the currency conversion rate by using the data gateway."
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "topic": 1,
+    "text": "A company plans to use Microsoft Power Platform. The company gathers business requirements about data.\n\nYou need to identify the functional requirements.\n\nWhich two requirements about data should you gather? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "b"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Delete in bulk after seven years."
+      },
+      {
+        "id": "b",
+        "text": "B. Go through a specified approval process."
+      },
+      {
+        "id": "c",
+        "text": "C. Remain compliant."
+      },
+      {
+        "id": "d",
+        "text": "D. Retain for 10 years."
+      },
+      {
+        "id": "e",
+        "text": "E. Store in Microsoft Dataverse."
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "topic": 1,
+    "text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nA company uses a Microsoft Excel sheet to manage its loan application process.\n\nThe company wants to optimize the process.\n\nYou need to discover inefficiencies in the process.\n\nSolution: Upload the activity data stored in the Excel sheet to the process advisor feature. Use process mining to discover inefficiencies in the process.\n\nDoes the solution meet the goal?",
+    "correctOptionId": "a",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Yes"
+      },
+      {
+        "id": "b",
+        "text": "B. No"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "topic": 1,
+    "text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nA company uses a Microsoft Excel sheet to manage its loan application process.\n\nThe company wants to optimize the process.\n\nYou need to discover inefficiencies in the process.\n\nSolution: Record the actions required to complete the loan application process in the process advisor feature. Use process mining to discover inefficiencies in the process.\n\nDoes the solution meet the goal?",
+    "correctOptionId": "b",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Yes"
+      },
+      {
+        "id": "b",
+        "text": "B. No"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "topic": 1,
+    "text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nA company uses a Microsoft Excel sheet to manage its loan application process.\n\nThe company wants to optimize the process.\n\nYou need to discover inefficiencies in the process.\n\nSolution: Record the actions required to complete the loan application process in the process advisor feature. Use task mining to discover inefficiencies in the process.\n\nDoes the solution meet the goal?",
+    "correctOptionId": "a",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Yes"
+      },
+      {
+        "id": "b",
+        "text": "B. No"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "topic": 1,
+    "text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nA company uses a Microsoft Excel sheet to manage its loan application process.\n\nThe company wants to optimize the process.\n\nYou need to discover inefficiencies in the process.\n\nSolution: Upload the activity data stored in the Excel sheet to the process advisor feature. Use task mining to discover inefficiencies in the process.\n\nDoes the solution meet the goal?",
+    "correctOptionId": "b",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Yes"
+      },
+      {
+        "id": "b",
+        "text": "B. No"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "topic": 1,
+    "text": "HOTSPOT -\nA company uses Dynamics 365 Field Service to manage onsite services provided by frontline workers.\n\nThe company has the following requirements:\n- Onsite inspectors must be able to collaborate with remote inspectors to carry out inspections.\n- Customer support teams must be able to easily manage and maintain knowledge articles based on customer questions and feedback.\n\nYou need to recommend a product that can be implemented for each requirement.\n\nWhich products should you recommend? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Enable collaboration between onsite inspectors and remote inspectors.",
+        "options": [
+          { "id": "opt1_1", "text": "Power Virtual Agents" },
+          { "id": "opt1_2", "text": "Dynamics 365 Remote Assist" },
+          { "id": "opt1_3", "text": "Dynamics 365 Customer Voice" },
+          { "id": "opt1_4", "text": "Dynamics 365 Customer Insights" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Enable management and maintenance of knowledge articles.",
+        "options": [
+          { "id": "opt2_1", "text": "AI Builder" },
+          { "id": "opt2_2", "text": "Dynamics 365 Customer Voice" },
+          { "id": "opt2_3", "text": "Dynamics 365 Customer Service" },
+          { "id": "opt2_4", "text": "Dynamics 365 Customer Insights" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_2",
+      "st2": "opt2_3"
+    }
+  },
+  {
+    "id": 54,
+    "topic": 1,
+    "text": "You design a Microsoft Power Platform solution for a company.\n\nThe company has an existing Azure SQL database with customer information that it wants to continue using. The company wants to share access to data that is held in Azure SQL with the following people:\n- internal company employees, using built-in process functionality\n- external customers to view their data\n\nYou need to recommend the appropriate components to use for the application.\n\nWhich two components should you recommend? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "d"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Power Pages"
+      },
+      {
+        "id": "b",
+        "text": "B. Custom pages"
+      },
+      {
+        "id": "c",
+        "text": "C. Canvas app"
+      },
+      {
+        "id": "d",
+        "text": "D. Model-driven app"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "topic": 1,
+    "text": "HOTSPOT -\nA food distribution terminal uses Microsoft Dynamics 365 Field Service and Microsoft Dynamics 365 Supply Chain Management to manage inventory and fulfill customer orders. Customers place custom orders through a Power Pages customer portal. Customers can enter different receiving times and dates on fresh produce order lines.\n\nThe terminal needs to expose fresh produce order details from Dynamics 365 to its customers in the portal. Customers can control how much detail they see in the portal.\n\nYou need to design a solution that meets the requirements.\n\nWhich mechanism should you use for each requirement?\n\nTo answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Retrieve data representing fresh produce details.",
+        "options": [
+          { "id": "opt1_1", "text": "Basic form" },
+          { "id": "opt1_2", "text": "Data gateway" },
+          { "id": "opt1_3", "text": "Advanced form" },
+          { "id": "opt1_4", "text": "Custom connector" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Expose the fresh produce details.",
+        "options": [
+          { "id": "opt2_1", "text": "Portal Management app" },
+          { "id": "opt2_2", "text": "Customer Service Insights" },
+          { "id": "opt2_3", "text": "Microsoft Power Platform admin center" },
+          { "id": "opt2_4", "text": "Microsoft 365 Apps admin center" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_3",
+      "st2": "opt2_1"
+    }
+  },
+  {
+    "id": 56,
+    "topic": 1,
+    "text": "DRAG DROP -\nA company has a call center that manages customer-related issues.\n\nThe company has the following customer experience improvement requirements:\n- Simulate a human conversation with a customer by providing a chat interface.\n- Ensure the initial conversation is passed to a live agent upon escalation.\n\nYou need to recommend a solution for each requirement.\n\nWhich solutions should you recommend? To answer, drag the appropriate solutions to the correct requirements. Each solution may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Power Virtual Agents"
+      },
+      {
+        "id": "opt2",
+        "text": "Dynamics 365 Remote Assist"
+      },
+      {
+        "id": "opt3",
+        "text": "Dynamics 365 Customer Service"
+      },
+      {
+        "id": "opt4",
+        "text": "Omnichannel for Customer Service"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Provide an automated chat interface."
+      },
+      {
+        "id": "req2",
+        "title": "Pass conversation to a live agent upon escalation."
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt1",
+      "req2": "opt4"
+    }
+  },
+  {
+    "id": 57,
+    "topic": 1,
+    "text": "A pharma company uses a proprietary system to manage its chemical experiments. The company uses Microsoft Dynamics 365 Project Operations to manage lab staff and resources.\n\nEmployees manually update Project Operations data with data from their proprietary system as needed. Employees are not able to provide a definite schema for their data.\n\nYou need to provide a solution that will allow employees to configure their own automatic updates.\n\nWhich component should you use?",
+    "correctOptionId": "d",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Dataflows"
+      },
+      {
+        "id": "b",
+        "text": "B. Custom connectors"
+      },
+      {
+        "id": "c",
+        "text": "C. Data gateways"
+      },
+      {
+        "id": "d",
+        "text": "D. Microsoft Power Automate flows"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "topic": 1,
+    "text": "DRAG DROP\n-\n\n\nCase study\n-\n\nThis is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.\n\nTo answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.\n\nAt the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.\n\n\nTo start the case study\n-\nTo display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.\n\n\nBackground\n-\n\nFirst Up Consulting recruits information technology (IT) workers for temporary or permanent positions at client companies. The company operates offices in multiple countries/regions.\n\nFirst Up has both full-time and part-time employees. The company has a team or worker support agents that respond to inquiries from current and prospective workers. Some of the worker support agents are multilingual.\n\nThe company does not have a standardized tool used for reporting purposes. The organization engages you to implement a new Microsoft Power Platform solution. Workers are managed by a dedicated team that includes one primary recruiter and a contract assistant. Many client companies live in areas that do not allow for mobile data connections.\n\n\nCurrent environment\n-\n\n\nExisting systems and processes\n-\n\n• First Up uses an on-premises system to manage current and historical patient data including medications and medical visits.\n• The company plans to reference historical data in the existing system. The records held in these systems will not be migrated to the new solution except for medication information.\n• Employee authentication with the existing system is provided by an on-premises Active Directory instance that is linked to Microsoft Entra ID.\n• An appointment record is created for each visit with a worker. The record includes worker contact information, preferred language, the date and time of the appointment, and other relevant data. This information is reviewed by the worker’s primary recruiter.\n• First Up has no current capabilities for forecasting future worker needs based on the data held.\n\n\nClient company visits\n-\n\nBefore First Up signs a contract to place workers at a client company, a member of the audit team visits the company and interviews company management. Audit members use different types of devices including Android and iOS devices. First Up has no plans to require the use of a single type of device. Audit team members currently record information about workers on paper forms. Team members enter information from paper forms into the system when they return to the office.\n\nFirst Up audits client companies at least once each year but may schedule additional visits based on feedback from workers that they place at a client company.\n\n\nRequirements\n-\n\n\nGeneral\n-\n\n• There is no standardized communication tool across the company, and this causes communication issues between different teams.\n• First up employees must be able to contact each other by using a secure system to ask and answer questions about jobs and potential workers.\n• Workers must be able to communicate in near real-time with worker support agents.\n• You must minimize development and administrative effort required to implement the solution.\n\n\nClient company visits\n-\n\n• Audit team records must be locked after they have been reviewed by a First Up manager. No further edits to the record can be carried out. This must be implemented using standard available system functionality.\n• Audit teams must be able to enter records of their visits to the companies where they have or may place workers. Audit teams must be able to update any necessary records with the latest information.\n• The solution must support tracking of security clearance information for a worker including the date, status, and certifying agency.\n• When a worker makes an appointment, the appointments must appear in the timeline for the worker’s contact record.\n\n\nJob history information\n-\n\n• The solution must provide a worker appointment booking system that can access worker historical job placement data.\n• The solution must allow employees to associate a primary recruiter with each worker. The solution must also allow multiple secondary recruiters to be associated with each worker.\n• Every worker assessment performed must be validated and countersigned by the primary recruiter for a worker.\n• Job posting data from previous work engagements must be accessible by the Microsoft Power Platform solution to ensure that new job postings are accurate.\n• First Up staff members must be able to view and update worker records. They must be able to see current and historical job placement data on the same form in the new solution.\n\n\nWorker access\n-\n\n• The solution must support workers that speak different languages. The solution must provide automatic translation capabilities.\n• The solution must support near real-time communications between workers and recruiters.\n• Workers must be able to view their records online. Workers must be able to enter any additional information that is required by or may be helpful to recruiters.\n• The solution must provide workers a way to search for general information about available positions.\n• Workers must be able to request copies of their records by using a chatbot. Workers must be able to provide information to a recruiter as needed.\n\n\nData platform\n-\n\n• Audit teams must have the ability to view worker information on their mobile devices.\n• Audit teams must be able to record data during visits to locations where workers are placed.\n• The solution must support the ability for a corporate governance auditing team to periodically audit the organization’s records, policies, and procedures.\n\n\nReporting and analytics\n-\n\n• The reporting and analytics team must be able to create reports that include data from all facilities and all workers.\n• Management reports must present an overview of the entire organization. Other reports may be limited to specific offices.\n• You must create dashboards that show the status across all groups of workers. The dashboards must be embedded into the Power Platform apps. Updates to data must be displayed in near real time.\n\n\nSecurity\n-\n\n• Authentication for all user types must be managed by a single platform. IT teams must use PowerShell to apply security permissions for users.\n• Worker records must only be viewed by the recruiting office that the worker visits.\n• Worker skill records must be archived after ten years and are then removed from the main system. Worker information must not be deleted from the system while skill and job placement history records for the worker exist in the system.\n• User security roles must be customized to ensure that users are able to interact only with the specific data in which they need access.\n• Workers must be able to sign into a portal by using their own email address. Workers must be required to use a secure method of authentication to be able to view their data.\n• Alerts regarding the number of recruited and placed at client companies must be updated as background processes.\n\n\nIssues\n-\n\nThe organization reports the following issues:\n\n• Recruiters report that they cannot see historical job placement data for workers.\n• API usage reports show that the number of API calls made exceeds limits. This causes delays saving data.\n• Users cannot view Power BI reports within the Power Platform apps.\n• Some security clearance information for workers not visible from within the Microsoft Power Platform solution.\n• Audit teams report that they cannot view or edit worker data when the device on which they access the solution does not have network connectivity.\n• The testing team reports that one of the canvas apps is not working as expected. An error message displays as specific pages load.\n\n\nYou need to recommend solutions to meet the organization’s communication needs.\n\nWhat should you recommend? To answer, drag the appropriate technologies to the correct groups of users. Each technology may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Microsoft Teams"
+      },
+      {
+        "id": "opt2",
+        "text": "Power Pages"
+      },
+      {
+        "id": "opt3",
+        "text": "Microsoft 365 Business Voice"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "First Up employees"
+      },
+      {
+        "id": "req2",
+        "title": "Workers"
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt1",
+      "req2": "opt2"
+    }
+  },
+  {
+    "id": 59,
+    "topic": 1,
+    "text": "A company has an expense approval process that allows expenses to be submitted in multiple currencies.\n\nAn accountant converts the expense amount to USD as part of the approval process.\n\nYou need to automate the conversion by using the RESTful API.\n\nWhat should you do?",
+    "correctOptionId": "a",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Create a desktop flow. Use an Invoke web service action to get the currency conversion rate."
+      },
+      {
+        "id": "b",
+        "text": "B. Create a desktop flow. Use an Azure action to get the currency conversion rate."
+      },
+      {
+        "id": "c",
+        "text": "C. Create a cloud flow. Use the Microsoft Graph API to get the currency conversion rate."
+      },
+      {
+        "id": "d",
+        "text": "D. Create a desktop flow. Use a browser automation action to get the currency conversion rate."
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "topic": 1,
+    "text": "You are assessing the capabilities of a project for a customer in the education sector.\n\nThe solution must meet the following requirements:\n\n• Include curriculum and student management capabilities.\n• Conform to on-going Microsoft platform upgrades.\n• Minimize custom coding and configuration.\n\nYou need to recommend a solution.\n\nWhat should you recommend?",
+    "correctOptionId": "d",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Microsoft Power Platform admin center"
+      },
+      {
+        "id": "b",
+        "text": "B. Microsoft 365 admin center"
+      },
+      {
+        "id": "c",
+        "text": "C. Power Pages"
+      },
+      {
+        "id": "d",
+        "text": "D. AppSource"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "topic": 1,
+    "text": "A company plans to implement robotic process automation (RPA).\n\nThe company wants to reuse existing online support content.\n\nYou need to recommend a component that uses the company's existing online support content.\n\nWhich component should you recommend?",
+    "correctOptionId": "b",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Questions"
+      },
+      {
+        "id": "b",
+        "text": "B. Topics"
+      },
+      {
+        "id": "c",
+        "text": "C. Variables"
+      },
+      {
+        "id": "d",
+        "text": "D. Conditions"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "topic": 1,
+    "text": "A company plans to use Microsoft Power Pages. The company gathers business requirements.\n\nYou need to identify the functional requirements.\n\nWhich two requirements should you gather? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["c", "e"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. A Power Pages site must be able to handle 100 concurrent external site visitors."
+      },
+      {
+        "id": "b",
+        "text": "B. Users must be able to control the use of their personal data in Microsoft Dataverse."
+      },
+      {
+        "id": "c",
+        "text": "C. Users must be able to log in to a Power Pages site by using single sign-on."
+      },
+      {
+        "id": "d",
+        "text": "D. Azure Front Door and Power Pages must be used to improve caching capabilities."
+      },
+      {
+        "id": "e",
+        "text": "E. Users must be able to submit a service request on a Power Pages site."
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "topic": 1,
+    "text": "You are designing a Microsoft Power Platform solution for a customer.\n\nThe customer is developing an application that needs to use an existing Microsoft SharePoint list. The application must be able to:\n\n• allow view access for external customers.\n• use out-of-the-box processes for access for employees.\n\nYou need to recommend components for the application.\n\nWhich two components should you recommend? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["b", "d"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Custom pages"
+      },
+      {
+        "id": "b",
+        "text": "B. Canvas app"
+      },
+      {
+        "id": "c",
+        "text": "C. Model-driven app"
+      },
+      {
+        "id": "d",
+        "text": "D. Power Pages"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "topic": 1,
+    "text": "DRAG DROP\n-\n\n\nCase study\n-\n\nThis is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.\n\nTo answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.\n\nAt the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.\n\n\nTo start the case study\n-\nTo display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.\n\n\nBackground\n-\n\nVanArsdel, Ltd. builds custom homes. The company has one Azure tenant and uses multiple systems to manage the sales, construction, and warranties of the homes.\n\nThe company has three departments: sales, construction, and warranty. Sales, contract, and warranty information is not shared among the departments.\n\nThe owner of VanArsdel, Ltd. requires a consolidated system that the company can use to track each home’s progress.\n\n\nSales\n-\n\n\nCurrent environment\n-\n\n• Company employees use Microsoft Outlook for all communications.\n• Company employees use Microsoft Word to create sales contracts.\n• Employees in the sales department are frequently in different locations and work different hours from each other.\n• Employees in the sales department use a Contracts team in Microsoft Teams to collaborate.\n• The company uses a third-party marketing tool to update contacts every day.\n\n\nRequirements\n-\n\n• Contacts’ names must be formatted before they are imported from the third-party marketing tool.\n• The company must retain contracts for five years.\n• The company requires that the sales department display the All Contracts view in Microsoft Teams.\n• All contract information must be stored in the All Contracts view.\n• Contracts must not be lost if a device is lost or stolen.\n\n\nIssues\n-\n\n• Employees in the sales department store contracts on their local computers.\n• The construction team receives a copy of a contract only when the sale of a home is complete.\n\n\nConstruction\n-\n\n\nCurrent environment\n-\n\n• Employees in the construction department use Project Online to manage schedules.\n• Employees in the construction department use Microsoft Excel to manage costs of projects.\n• The main supplier of construction materials provides an API to the company. The company uses the API to manage suppliers for projects in near real time.\n\n\nRequirements\n-\n\n• Employees in the construction department must be able to demonstrate how their work is performed rather than document their process.\n• The company requires that project schedules be created less than a week after a contract is signed.\n• A field must sum up the costs of the materials.\n\n\nIssues\n-\n\n• Employees in the construction department are unable to schedule resources because they are not informed of future projects.\n• Employees in the construction department currently enter basic project information manually for each software application.\n\n\nWarranty\n-\n\n\nCurrent environment\n-\n\n• Employees in the warranty department use Excel to track project issues and resolutions.\n• The company requires that employees in the warranty department meet with each other in person to discuss their job roles.\n\n\nRequirements\n-\n\n• The company requires that warranty claims be resolved in less than a month.\n• The company requires that all claims be entered in the system along with their related issues.\n• If a claim is found to be invalid, the company requires that the claim and its related issues be deleted.\n\n\nIssue\n-\n\n• Employees in the warranty department report that they are frequently sent to homes without knowledge of what is in scope for the project.\n\n\nRequirements\n-\n\n• The new system must use the development and production environments.\n• The development environment must be the master of all changes.\n• All table changes must be added ta solution. Changes to the solution must not be allowed to be made in the production environment.\n• Each department must have a custom app. Employees must be able to access only their department’s app.\n• All sales, contract, and warranty data must be shared among the departments.\n• The project manager must be solely responsible for creating and owning the deployment plan for projects.\n• All projects must run by using the Agile methodology.\n• The deployment plan must include the environment setup, training plan, rollout strategy, and deployment support.\n\n\nIssue\n-\n\nThe IT manager reports that the deployment plan is not complete.\n\n\nYou need to conduct discovery meetings to gather information for each job role.\n\nWhich type of meeting should you use for each department? To answer, move the appropriate meeting types to the correct departments. You may use each meeting type once, more than once, or not at all. You may need to move the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "job shadowing"
+      },
+      {
+        "id": "opt2",
+        "text": "surveys"
+      },
+      {
+        "id": "opt3",
+        "text": "workshops"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "construction"
+      },
+      {
+        "id": "req2",
+        "title": "sales"
+      },
+      {
+        "id": "req3",
+        "title": "warranty"
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt1",
+      "req2": "opt2",
+      "req3": "opt3"
+    }
+  },
+  {
+    "id": 65,
+    "topic": 1,
+    "text": "DRAG DROP\n-\n\n\nCase study\n-\n\nThis is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.\n\nTo answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.\n\nAt the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.\n\n\nTo start the case study\n-\nTo display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.\n\n\nBackground\n-\n\nVanArsdel, Ltd. builds custom homes. The company has one Azure tenant and uses multiple systems to manage the sales, construction, and warranties of the homes.\n\nThe company has three departments: sales, construction, and warranty. Sales, contract, and warranty information is not shared among the departments.\n\nThe owner of VanArsdel, Ltd. requires a consolidated system that the company can use to track each home’s progress.\n\n\nSales\n-\n\n\nCurrent environment\n-\n\n• Company employees use Microsoft Outlook for all communications.\n• Company employees use Microsoft Word to create sales contracts.\n• Employees in the sales department are frequently in different locations and work different hours from each other.\n• Employees in the sales department use a Contracts team in Microsoft Teams to collaborate.\n• The company uses a third-party marketing tool to update contacts every day.\n\n\nRequirements\n-\n\n• Contacts’ names must be formatted before they are imported from the third-party marketing tool.\n• The company must retain contracts for five years.\n• The company requires that the sales department display the All Contracts view in Microsoft Teams.\n• All contract information must be stored in the All Contracts view.\n• Contracts must not be lost if a device is lost or stolen.\n\n\nIssues\n-\n\n• Employees in the sales department store contracts on their local computers.\n• The construction team receives a copy of a contract only when the sale of a home is complete.\n\n\nConstruction\n-\n\n\nCurrent environment\n-\n\n• Employees in the construction department use Project Online to manage schedules.\n• Employees in the construction department use Microsoft Excel to manage costs of projects.\n• The main supplier of construction materials provides an API to the company. The company uses the API to manage suppliers for projects in near real time.\n\n\nRequirements\n-\n\n• Employees in the construction department must be able to demonstrate how their work is performed rather than document their process.\n• The company requires that project schedules be created less than a week after a contract is signed.\n• A field must sum up the costs of the materials.\n\n\nIssues\n-\n\n• Employees in the construction department are unable to schedule resources because they are not informed of future projects.\n• Employees in the construction department currently enter basic project information manually for each software application.\n\n\nWarranty\n-\n\n\nCurrent environment\n-\n\n• Employees in the warranty department use Excel to track project issues and resolutions.\n• The company requires that employees in the warranty department meet with each other in person to discuss their job roles.\n\n\nRequirements\n-\n\n• The company requires that warranty claims be resolved in less than a month.\n• The company requires that all claims be entered in the system along with their related issues.\n• If a claim is found to be invalid, the company requires that the claim and its related issues be deleted.\n\n\nIssue\n-\n\n• Employees in the warranty department report that they are frequently sent to homes without knowledge of what is in scope for the project.\n\n\nRequirements\n-\n\n• The new system must use the development and production environments.\n• The development environment must be the master of all changes.\n• All table changes must be added ta solution. Changes to the solution must not be allowed to be made in the production environment.\n• Each department must have a custom app. Employees must be able to access only their department’s app.\n• All sales, contract, and warranty data must be shared among the departments.\n• The project manager must be solely responsible for creating and owning the deployment plan for projects.\n• All projects must run by using the Agile methodology.\n• The deployment plan must include the environment setup, training plan, rollout strategy, and deployment support.\n\n\nIssue\n-\n\nThe IT manager reports that the deployment plan is not complete.\n\n\nYou need to configure Microsoft Dataverse to retrieve external data for the sales and construction departments.\n\nWhich connection methods should you use? To answer, move the appropriate connection methods to the correct requirements. You may use each connection method once, more than once, or not at all. You may need to move the spit bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "connector"
+      },
+      {
+        "id": "opt2",
+        "text": "dataflow"
+      },
+      {
+        "id": "opt3",
+        "text": "virtual table"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Retrieve data from the third-party marketing data source"
+      },
+      {
+        "id": "req2",
+        "title": "Retrieve fata from the supplier data source"
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt2",
+      "req2": "opt1"
+    }
+  },
+  {
+    "id": 66,
+    "topic": 1,
+    "text": "DRAG DROP\n-\n\n\nCase study\n-\n\nThis is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.\n\nTo answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.\n\nAt the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.\n\n\nTo start the case study\n-\nTo display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.\n\n\nBackground\n-\n\nVanArsdel, Ltd. builds custom homes. The company has one Azure tenant and uses multiple systems to manage the sales, construction, and warranties of the homes.\n\nThe company has three departments: sales, construction, and warranty. Sales, contract, and warranty information is not shared among the departments.\n\nThe owner of VanArsdel, Ltd. requires a consolidated system that the company can use to track each home’s progress.\n\n\nSales\n-\n\n\nCurrent environment\n-\n\n• Company employees use Microsoft Outlook for all communications.\n• Company employees use Microsoft Word to create sales contracts.\n• Employees in the sales department are frequently in different locations and work different hours from each other.\n• Employees in the sales department use a Contracts team in Microsoft Teams to collaborate.\n• The company uses a third-party marketing tool to update contacts every day.\n\n\nRequirements\n-\n\n• Contacts’ names must be formatted before they are imported from the third-party marketing tool.\n• The company must retain contracts for five years.\n• The company requires that the sales department display the All Contracts view in Microsoft Teams.\n• All contract information must be stored in the All Contracts view.\n• Contracts must not be lost if a device is lost or stolen.\n\n\nIssues\n-\n\n• Employees in the sales department store contracts on their local computers.\n• The construction team receives a copy of a contract only when the sale of a home is complete.\n\n\nConstruction\n-\n\n\nCurrent environment\n-\n\n• Employees in the construction department use Project Online to manage schedules.\n• Employees in the construction department use Microsoft Excel to manage costs of projects.\n• The main supplier of construction materials provides an API to the company. The company uses the API to manage suppliers for projects in near real time.\n\n\nRequirements\n-\n\n• Employees in the construction department must be able to demonstrate how their work is performed rather than document their process.\n• The company requires that project schedules be created less than a week after a contract is signed.\n• A field must sum up the costs of the materials.\n\n\nIssues\n-\n\n• Employees in the construction department are unable to schedule resources because they are not informed of future projects.\n• Employees in the construction department currently enter basic project information manually for each software application.\n\n\nWarranty\n-\n\n\nCurrent environment\n-\n\n• Employees in the warranty department use Excel to track project issues and resolutions.\n• The company requires that employees in the warranty department meet with each other in person to discuss their job roles.\n\n\nRequirements\n-\n\n• The company requires that warranty claims be resolved in less than a month.\n• The company requires that all claims be entered in the system along with their related issues.\n• If a claim is found to be invalid, the company requires that the claim and its related issues be deleted.\n\n\nIssue\n-\n\n• Employees in the warranty department report that they are frequently sent to homes without knowledge of what is in scope for the project.\n\n\nRequirements\n-\n\n• The new system must use the development and production environments.\n• The development environment must be the master of all changes.\n• All table changes must be added ta solution. Changes to the solution must not be allowed to be made in the production environment.\n• Each department must have a custom app. Employees must be able to access only their department’s app.\n• All sales, contract, and warranty data must be shared among the departments.\n• The project manager must be solely responsible for creating and owning the deployment plan for projects.\n• All projects must run by using the Agile methodology.\n• The deployment plan must include the environment setup, training plan, rollout strategy, and deployment support.\n\n\nIssue\n-\n\nThe IT manager reports that the deployment plan is not complete.\n\n\nYou need to configure Microsoft Dataverse to retrieve external data for the sales and construction departments.\n\nWhich connection methods should you use? To answer, move the appropriate connection methods to the correct requirements. You may use each connection method once, more than once, or not at all. You may need to move the spit bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionId": "b",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. the IT manager adds a data migration strategy"
+      },
+      {
+        "id": "b",
+        "text": "B. the project manager adds a testing plan"
+      },
+      {
+        "id": "c",
+        "text": "C. the IT manager adds a responsibility matrix"
+      },
+      {
+        "id": "d",
+        "text": "D. the project manager adds a risk assessment"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "topic": 1,
+    "text": "DRAG DROP\n-\n\n\nCase study\n-\n\nThis is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.\n\nTo answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.\n\nAt the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.\n\n\nTo start the case study\n-\nTo display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.\n\n\nBackground\n-\n\nVanArsdel, Ltd. builds custom homes. The company has one Azure tenant and uses multiple systems to manage the sales, construction, and warranties of the homes.\n\nThe company has three departments: sales, construction, and warranty. Sales, contract, and warranty information is not shared among the departments.\n\nThe owner of VanArsdel, Ltd. requires a consolidated system that the company can use to track each home’s progress.\n\n\nSales\n-\n\n\nCurrent environment\n-\n\n• Company employees use Microsoft Outlook for all communications.\n• Company employees use Microsoft Word to create sales contracts.\n• Employees in the sales department are frequently in different locations and work different hours from each other.\n• Employees in the sales department use a Contracts team in Microsoft Teams to collaborate.\n• The company uses a third-party marketing tool to update contacts every day.\n\n\nRequirements\n-\n\n• Contacts’ names must be formatted before they are imported from the third-party marketing tool.\n• The company must retain contracts for five years.\n• The company requires that the sales department display the All Contracts view in Microsoft Teams.\n• All contract information must be stored in the All Contracts view.\n• Contracts must not be lost if a device is lost or stolen.\n\n\nIssues\n-\n\n• Employees in the sales department store contracts on their local computers.\n• The construction team receives a copy of a contract only when the sale of a home is complete.\n\n\nConstruction\n-\n\n\nCurrent environment\n-\n\n• Employees in the construction department use Project Online to manage schedules.\n• Employees in the construction department use Microsoft Excel to manage costs of projects.\n• The main supplier of construction materials provides an API to the company. The company uses the API to manage suppliers for projects in near real time.\n\n\nRequirements\n-\n\n• Employees in the construction department must be able to demonstrate how their work is performed rather than document their process.\n• The company requires that project schedules be created less than a week after a contract is signed.\n• A field must sum up the costs of the materials.\n\n\nIssues\n-\n\n• Employees in the construction department are unable to schedule resources because they are not informed of future projects.\n• Employees in the construction department currently enter basic project information manually for each software application.\n\n\nWarranty\n-\n\n\nCurrent environment\n-\n\n• Employees in the warranty department use Excel to track project issues and resolutions.\n• The company requires that employees in the warranty department meet with each other in person to discuss their job roles.\n\n\nRequirements\n-\n\n• The company requires that warranty claims be resolved in less than a month.\n• The company requires that all claims be entered in the system along with their related issues.\n• If a claim is found to be invalid, the company requires that the claim and its related issues be deleted.\n\n\nIssue\n-\n\n• Employees in the warranty department report that they are frequently sent to homes without knowledge of what is in scope for the project.\n\n\nRequirements\n-\n\n• The new system must use the development and production environments.\n• The development environment must be the master of all changes.\n• All table changes must be added ta solution. Changes to the solution must not be allowed to be made in the production environment.\n• Each department must have a custom app. Employees must be able to access only their department’s app.\n• All sales, contract, and warranty data must be shared among the departments.\n• The project manager must be solely responsible for creating and owning the deployment plan for projects.\n• All projects must run by using the Agile methodology.\n• The deployment plan must include the environment setup, training plan, rollout strategy, and deployment support.\n\n\nIssue\n-\n\nThe IT manager reports that the deployment plan is not complete.\n\n\nYou need to configure Microsoft Dataverse to retrieve external data for the sales and construction departments.\n\nWhich connection methods should you use? To answer, move the appropriate connection methods to the correct requirements. You may use each connection method once, more than once, or not at all. You may need to move the spit bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionId": "d",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Dynamics 365 Customer Service"
+      },
+      {
+        "id": "b",
+        "text": "B. Power Apps with an industry accelerator"
+      },
+      {
+        "id": "c",
+        "text": "C. Power Apps canvas app with a Microsoft template"
+      },
+      {
+        "id": "d",
+        "text": "D. Dynamics 365 Project Operations"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "topic": 1,
+    "text": "DRAG DROP\n-\n\n\nCase study\n-\n\nThis is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.\n\nTo answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.\n\nAt the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.\n\n\nTo start the case study\n-\nTo display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.\n\n\nBackground\n-\n\nVanArsdel, Ltd. builds custom homes. The company has one Azure tenant and uses multiple systems to manage the sales, construction, and warranties of the homes.\n\nThe company has three departments: sales, construction, and warranty. Sales, contract, and warranty information is not shared among the departments.\n\nThe owner of VanArsdel, Ltd. requires a consolidated system that the company can use to track each home’s progress.\n\n\nSales\n-\n\n\nCurrent environment\n-\n\n• Company employees use Microsoft Outlook for all communications.\n• Company employees use Microsoft Word to create sales contracts.\n• Employees in the sales department are frequently in different locations and work different hours from each other.\n• Employees in the sales department use a Contracts team in Microsoft Teams to collaborate.\n• The company uses a third-party marketing tool to update contacts every day.\n\n\nRequirements\n-\n\n• Contacts’ names must be formatted before they are imported from the third-party marketing tool.\n• The company must retain contracts for five years.\n• The company requires that the sales department display the All Contracts view in Microsoft Teams.\n• All contract information must be stored in the All Contracts view.\n• Contracts must not be lost if a device is lost or stolen.\n\n\nIssues\n-\n\n• Employees in the sales department store contracts on their local computers.\n• The construction team receives a copy of a contract only when the sale of a home is complete.\n\n\nConstruction\n-\n\n\nCurrent environment\n-\n\n• Employees in the construction department use Project Online to manage schedules.\n• Employees in the construction department use Microsoft Excel to manage costs of projects.\n• The main supplier of construction materials provides an API to the company. The company uses the API to manage suppliers for projects in near real time.\n\n\nRequirements\n-\n\n• Employees in the construction department must be able to demonstrate how their work is performed rather than document their process.\n• The company requires that project schedules be created less than a week after a contract is signed.\n• A field must sum up the costs of the materials.\n\n\nIssues\n-\n\n• Employees in the construction department are unable to schedule resources because they are not informed of future projects.\n• Employees in the construction department currently enter basic project information manually for each software application.\n\n\nWarranty\n-\n\n\nCurrent environment\n-\n\n• Employees in the warranty department use Excel to track project issues and resolutions.\n• The company requires that employees in the warranty department meet with each other in person to discuss their job roles.\n\n\nRequirements\n-\n\n• The company requires that warranty claims be resolved in less than a month.\n• The company requires that all claims be entered in the system along with their related issues.\n• If a claim is found to be invalid, the company requires that the claim and its related issues be deleted.\n\n\nIssue\n-\n\n• Employees in the warranty department report that they are frequently sent to homes without knowledge of what is in scope for the project.\n\n\nRequirements\n-\n\n• The new system must use the development and production environments.\n• The development environment must be the master of all changes.\n• All table changes must be added ta solution. Changes to the solution must not be allowed to be made in the production environment.\n• Each department must have a custom app. Employees must be able to access only their department’s app.\n• All sales, contract, and warranty data must be shared among the departments.\n• The project manager must be solely responsible for creating and owning the deployment plan for projects.\n• All projects must run by using the Agile methodology.\n• The deployment plan must include the environment setup, training plan, rollout strategy, and deployment support.\n\n\nIssue\n-\n\nThe IT manager reports that the deployment plan is not complete.\n\n\nYou need to configure Microsoft Dataverse to retrieve external data for the sales and construction departments.\n\nWhich connection methods should you use? To answer, move the appropriate connection methods to the correct requirements. You may use each connection method once, more than once, or not at all. You may need to move the spit bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "sales",
+        "options": [
+          {
+            "id": "opt1_1",
+            "text": "Contracts must be retained for five years."
+          },
+          {
+            "id": "opt1_2",
+            "text": "Contracts should be accessible by everyone."
+          },
+          {
+            "id": "opt1_3",
+            "text": "As a salesperson, I store my contracts on my device so that I can access them easily."
+          },
+          {
+            "id": "opt1_4",
+            "text": "As a salesperson, I need to store my contracts in a shared location to reduce the risk of losing them if my device fails."
+          }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "construction",
+        "options": [
+          {
+            "id": "opt2_1",
+            "text": "Schedules should be viewed only by the construction team."
+          },
+          {
+            "id": "opt2_2",
+            "text": "Scheduled must be created within a week after a contract is signed."
+          },
+          {
+            "id": "opt2_3",
+            "text": "As a construction scheduler, I schedule resources based on the information provided by the sales team."
+          },
+          {
+            "id": "opt2_4",
+            "text": "As a construction scheduler, I need to be able to view potential contracts so that I can estimate required resources."
+          }
+        ]
+      },
+      {
+        "id": "st3",
+        "text": "warranty",
+        "options": [
+          {
+            "id": "opt3_1",
+            "text": "Warranty claims should be addressed within a month."
+          },
+          {
+            "id": "opt3_2",
+            "text": "Warranty claims must be submitted within the specified period outlined in a contract."
+          },
+          {
+            "id": "opt3_3",
+            "text": "As a warranty inspector, I inspect homes without knowing what the warranty includes."
+          },
+          {
+            "id": "opt3_4",
+            "text": "As a warranty inspector, I need to view a contract before I inspect a home so that I know what should be covered by the warranty."
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_4",
+      "st2": "opt2_4",
+      "st3": "opt3_4"
+    }
+  },
+  {
+    "id": 69,
+    "topic": 1,
+    "text": "DRAG DROP -\nA medium-size company is evaluating Microsoft Power Platform functionality to enhance its business processes. The company currently uses a mix of spreadsheet tools and an outdated CRM system.\n\nThe company requires the following business solutions:\n- bidirectional data sync between the outdated system and a new custom app\n- improved efficiency of data transfers\n- comprehensive real-time sales data displays\n\nYou need to configure the solution components for each requirement.\n\nWhich components should you configure? To answer, move the appropriate solution components to the correct requirements. You may use each solution component once, more than once, or not at all. You may need to move the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Power Apps"
+      },
+      {
+        "id": "opt2",
+        "text": "Power Automate"
+      },
+      {
+        "id": "opt3",
+        "text": "Power BI"
+      },
+      {
+        "id": "opt4",
+        "text": "Power Platform dataflows"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Bidirectional data sync between outdated system and new custom app"
+      },
+      {
+        "id": "req2",
+        "title": "Improved efficiency of data transfers"
+      },
+      {
+        "id": "req3",
+        "title": "Comprehensive real-time sales data displays"
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt2",
+      "req2": "opt4",
+      "req3": "opt3"
+    }
+  },
+  {
+    "id": 70,
+    "topic": 1,
+    "text": "DRAG DROP -\nYou are working on a project with a logistics company. The company plans to digitally transform its business by using Microsoft Power Platform.\n\nYou lead several requirements workshops with stakeholders.\n\nThe workshops result in the need for the following solutions:\n- Allow users to place orders, track order status, and receive notifications about order shipments.\n- Provide availability 24 hours a day, excluding scheduled maintenance windows.\n- Support real-time tracking of inventory levels.\n\nYou need to categorize each of the captured requirements.\n\nWhich category should you use for each requirement? To answer, move the appropriate categories to the correct requirements. You may use each category once, more than once, or not at all. You may need to move the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Functional"
+      },
+      {
+        "id": "opt1_1",
+        "text": "Functional"
+      },
+      {
+        "id": "opt2",
+        "text": "Non-functional"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Ability to place orders, track order status, and receive shipment notifications"
+      },
+      {
+        "id": "req2",
+        "title": "24-hour availability, excluding scheduled maintenance windows"
+      },
+      {
+        "id": "req3",
+        "title": "Real-time tracking of inventory levels"
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": ["opt1", "opt1_1"],
+      "req2": "opt2",
+      "req3": ["opt1", "opt1_1"]
+    }
+  }
+]
