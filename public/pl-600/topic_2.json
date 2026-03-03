@@ -137,5 +137,1467 @@
         "text": "D. Student --(many-to-one)--> Course"
       }
     ]
+  },
+  {
+    "id": 5,
+    "topic": 2,
+    "text": "HOTSPOT -\nA company plans to create a Power Apps portal to manage support cases for customers. The company has an account hierarchy for customers. The hierarchy supports accounts, cases, and contacts where both contacts and cases belong to their relevant account.\n\nThe company has the following requirements:\n- Portal users must only see the notes for the cases that they manage.\n- Portal users must only see cases that are submitted by their colleagues.\n\nYou need to design the security model for the portal.\n\nWhich entity permission scope should you use? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Portal users must only see the notes for the cases that they manage.",
+        "options": [
+          { "id": "opt1_1", "text": "Self" },
+          { "id": "opt1_2", "text": "Parent" },
+          { "id": "opt1_3", "text": "Contact" },
+          { "id": "opt1_4", "text": "Account" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Portal users must only see cases that are submitted by their colleagues.",
+        "options": [
+          { "id": "opt2_1", "text": "Self" },
+          { "id": "opt2_2", "text": "Global" },
+          { "id": "opt2_3", "text": "Contact" },
+          { "id": "opt2_4", "text": "Account" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_2",
+      "st2": "opt2_4"
+    }
+  },
+  {
+    "id": 6,
+    "topic": 2,
+    "text": "HOTSPOT -\nA company offers continuing education courses for medical professionals. Each time a course is offered, the company tracks that the session has taken place in an Excel workbook.\n\nThe company maintains a list of required qualifications for an educator to teach a course. Educator qualifications range from languages spoken to advanced degrees.\n\nThe company needs the following custom table relationships defined:\n- Associate educators with a list of their professional qualifications.\n- Assign a primary educator to each course that is held.\n- Collect information about every course that is held.\n\nYou need to determine the type of relationship that best fits the requirement.\n\nWhich type of table relationship should you use? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Educators must be associated with their qualifications.",
+        "options": [
+          {
+            "id": "opt1_1",
+            "text": "Many-to-many relationship that uses a system generated table"
+          },
+          {
+            "id": "opt1_2",
+            "text": "Many-to-many relationship that uses a custom table"
+          },
+          { "id": "opt1_3", "text": "One-to-many relationship" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "When a course is held there must be a primary educator assigned.",
+        "options": [
+          {
+            "id": "opt2_1",
+            "text": "Many-to-many relationship that uses a system generated table"
+          },
+          {
+            "id": "opt2_2",
+            "text": "Many-to-many relationship that uses a custom table"
+          },
+          { "id": "opt2_3", "text": "One-to-many relationship" }
+        ]
+      },
+      {
+        "id": "st3",
+        "text": "When a course is held, the company needs to collect information on that session.",
+        "options": [
+          {
+            "id": "opt3_1",
+            "text": "Many-to-many relationship that uses a system generated table"
+          },
+          {
+            "id": "opt3_2",
+            "text": "Many-to-many relationship that uses a custom table"
+          },
+          { "id": "opt3_3", "text": "One-to-many relationship" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_1",
+      "st2": "opt2_3",
+      "st3": "opt3_3"
+    }
+  },
+  {
+    "id": 7,
+    "topic": 2,
+    "text": "HOTSPOT -\nYou are designing the security model for a Power Platform solution.\n\nThe security model must meet the following requirements:\n- Restrict sharing of data between Power Automate connectors.\n- Ensure that environment administrators only see users who require access in the enabled user list.\n\nYou need to recommend security features for the solution.\n\nWhat should you recommend? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Restrict sharing of data between Power Automate connectors.",
+        "options": [
+          { "id": "opt1_1", "text": "Security group" },
+          { "id": "opt1_2", "text": "Data loss prevention policy" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Ensure that environment administrators only see users who require access in the enabled user list.",
+        "options": [
+          { "id": "opt2_1", "text": "Security group" },
+          { "id": "opt2_2", "text": "Data loss prevention policy" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_2",
+      "st2": "opt2_1"
+    }
+  },
+  {
+    "id": 8,
+    "topic": 2,
+    "text": "You are designing a database table for a client.\n\nYou have the following requirements:\n\n• Maintain a comprehensive list of colors and their corresponding RGB values and hexadecimal values.\n• Prevent the addition of duplicate colors based on the hexadecimal value for the color.\n\nYou need to recommend a design for the table.\n\nWhich two actions should the client perform after the table is created? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "c"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Mark the hex value column as business required."
+      },
+      {
+        "id": "b",
+        "text": "B. Configure and schedule a recurring bulk record deletion job."
+      },
+      {
+        "id": "c",
+        "text": "C. Create alternate keys for the table."
+      },
+      {
+        "id": "d",
+        "text": "D. Mark the RGB value column as business required."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "topic": 2,
+    "text": "HOTSPOT -\nA company uses Dynamics 365 Sales and Power BI.\n\nSales managers must be able to keep track of changes to their pipeline in the following ways:\n- Notify the sales managers when an Opportunity changes sales stage.\n- Notify the sales managers when the pipeline drops below 2.5M USD.\n- When reviewing the pipeline in Power BI, a sales executive must be able to add a Playbook to an Opportunity.\n\nYou need to recommend a solution that meets the company requirements.\n\nWhich combination of solutions should you recommend? To answer, select the appropriate option in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Notify the sales manager when an Opportunity changes sales stage.",
+        "options": [
+          {
+            "id": "opt1_1",
+            "text": "Microsoft Power Automate, Microsoft Dataverse connector, and Microsoft Office 365 Outlook connector"
+          },
+          {
+            "id": "opt1_2",
+            "text": "Microsoft Power Automate, Microsoft Dataverse connector, and Microsoft Office 365 users"
+          },
+          {
+            "id": "opt1_3",
+            "text": "Microsoft Power Automate, data alerts, and Microsoft Office 365 connector"
+          }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Notify the sales managers when the pipeline drops below 2.5M USD.",
+        "options": [
+          {
+            "id": "opt2_1",
+            "text": "Microsoft Power Automate, Microsoft Dataverse connector, and Microsoft Office 365 Outlook connector"
+          },
+          {
+            "id": "opt2_2",
+            "text": "Microsoft Power Automate, Power BI data alerts, and Microsoft Office 365 connector"
+          },
+          {
+            "id": "opt2_3",
+            "text": "Microsoft Power Automate, Power BI, Power Apps, and Microsoft Dataverse connector"
+          }
+        ]
+      },
+      {
+        "id": "st3",
+        "text": "When reviewing the pipeline in Power BI, a sales executive must be able to add a Playbook to an Opportunity.",
+        "options": [
+          {
+            "id": "opt3_1",
+            "text": "Power BI, Power Apps, Microsoft Dataverse connector, and Microsoft Office 365 Outlook connector"
+          },
+          {
+            "id": "opt3_2",
+            "text": "Microsoft Power Automate, Data alerts, Microsoft Dataverse connector, and Microsoft Office 365 users"
+          },
+          {
+            "id": "opt3_3",
+            "text": "Microsoft Power Automate, Data alerts, and Microsoft Office 365 connector"
+          },
+          {
+            "id": "opt3_4",
+            "text": "Microsoft Power Automate, Power BI, Power Apps, and Microsoft Dataverse connector"
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_1",
+      "st2": "opt2_2",
+      "st3": "opt3_4"
+    }
+  },
+  {
+    "id": 10,
+    "topic": 2,
+    "text": "A company is implementing Dynamics 365 Sales. The company has turned off out-of-the-box quote calculations in order to implement its own custom calculations.\n\nWhen users update a line item on a quote, they expect to see an updated total for the quote in real time. Users are reporting inconsistent behavior, with some aggregations taking up to two hours.\n\nYou review the system design and notice many asynchronous workflows.\n\nYou need to recommend a solution to enable the calculation in real time.\n\nWhich two options should you recommend? Each answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "d"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Consolidate asynchronous workflow into a single real-time workflow."
+      },
+      {
+        "id": "b",
+        "text": "B. Consolidate multiple asynchronous workflows into a single asynchronous workflow."
+      },
+      {
+        "id": "c",
+        "text": "C. Implement a business process flow to replace the existing workflows."
+      },
+      {
+        "id": "d",
+        "text": "D. Convert the asynchronous workflows to a synchronous plug-in."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "topic": 2,
+    "text": "You are designing a model-driven app that allows a company to manage sales opportunities.\n\nThe company has a complex security model that includes the following requirements:\n\n• The vice president of sales must be able to see opportunities for sales managers and sales representatives.\n• Sales managers must be able to see opportunities for all sales representatives.\n• Sales representatives must only see opportunities that they own.\n\nYou need to recommend security tools for controlling user access.\n\nWhich two tools should you recommend? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["c", "d"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Account hierarchy"
+      },
+      {
+        "id": "b",
+        "text": "B. Field security profile"
+      },
+      {
+        "id": "c",
+        "text": "C. Position hierarchy"
+      },
+      {
+        "id": "d",
+        "text": "D. Security roles"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "topic": 2,
+    "text": "A company sells antique books. The company stores data about book locations in an existing system by using the following database fields: Room, Shelf.\n\nThe company must import the data from the existing system into a Power Platform solution. Existing data into must be modified to match the design of the new solution.\n\nYou need to recommend a solution to combine the room and shelf fields into a single column during the import process.\n\nWhich tool should you recommend?",
+    "correctOptionId": "a",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Power Platform dataflows"
+      },
+      {
+        "id": "b",
+        "text": "B. Data Import Wizard"
+      },
+      {
+        "id": "c",
+        "text": "C. import from CSV"
+      },
+      {
+        "id": "d",
+        "text": "D. Microsoft Excel Online"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "topic": 2,
+    "text": "A company has a Power Platform environment that connects to a third-party marketing application.\n\nThe company reports that the data in the Power Platform lead table does not match data from the marketing application.\n\nIssues include:\n• The owner data in the lead table and the third-party application do not match.\n• The Topic column has more information than the related record from the marketing application.\n• There are differences in how telephone numbers are formatted.\n\nYou need to determine which processes are causing the issues.\n\nWhich three processes may be causing the differences observed? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "c", "d"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Dataflow"
+      },
+      {
+        "id": "b",
+        "text": "B. Business rule"
+      },
+      {
+        "id": "c",
+        "text": "C. Classic workflow"
+      },
+      {
+        "id": "d",
+        "text": "D. Power Automate cloud flow"
+      },
+      {
+        "id": "e",
+        "text": "E. Duplicate detection rule"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "topic": 2,
+    "text": "HOTSPOT -\nYou are supporting the go-live process for a company. The company is responsible for migrating data to the Power Platform by using a custom solution. \n\nThe company reports the following issues:\n- Migration processes fail due to operation timeouts.\n- Records that include lookup columns often fail to load.\n\nYou need to recommend a solution. To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Migration processes fail due to operation timeouts.",
+        "options": [
+          {
+            "id": "opt1_1",
+            "text": "Increase multithreading and/or batch size settings."
+          },
+          {
+            "id": "opt1_2",
+            "text": "Decrease multithreading and/or batch size settings."
+          },
+          {
+            "id": "opt1_3",
+            "text": "Ensure you are loading data into all tables at the same time."
+          },
+          {
+            "id": "opt1_4",
+            "text": "Ensure you are loading data into tables in a particular order."
+          }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Records that include lookup columns often fail to load.",
+        "options": [
+          {
+            "id": "opt2_1",
+            "text": "Increase multithreading and/or batch size settings."
+          },
+          {
+            "id": "opt2_2",
+            "text": "Decrease multithreading and/or batch size settings."
+          },
+          {
+            "id": "opt2_3",
+            "text": "Ensure you are loading data into all tables at the same time."
+          },
+          {
+            "id": "opt2_4",
+            "text": "Ensure you are loading data into tables in a specific order."
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_2",
+      "st2": "opt2_4"
+    }
+  },
+  {
+    "id": 15,
+    "topic": 2,
+    "text": "A company wants to add an interactive checklist to a Power Platform solution to ensure that salespeople are following the same steps when qualifying leads.\n\nYou need to recommend a solution that will incorporate this checklist.\n\nWhat should you recommend?",
+    "correctOptionId": "d",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Microsoft Customer Voice"
+      },
+      {
+        "id": "b",
+        "text": "B. Business Process Modeler task guide"
+      },
+      {
+        "id": "c",
+        "text": "C. Dashboards"
+      },
+      {
+        "id": "d",
+        "text": "D. Business Process Flow"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "topic": 2,
+    "text": "HOTSPOT -\nA company plans to create a Power Platform solution that integrates with Dynamics 365 Sales.\n\nThe solution must meet the following requirements:\n- Connect directly with a Microsoft Azure SQL database as an external data source at run time where specific data is available in the Dynamics 365 Sales solution without the need for data replication.\n- An external system needs to send data to the company's Dynamics 365 Sales solution.\n\nYou need to recommend the most suitable solution to integrate Dynamics 365 Sales with both systems.\n\nWhat should you recommend? To answer, select the appropriate option in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Have read-only visibility of data from an external Azure SQL database.",
+        "options": [
+          { "id": "opt1_1", "text": "Use virtual tables." },
+          { "id": "opt1_2", "text": "Use a custom plug-in." },
+          { "id": "opt1_3", "text": "Use Dynamics 365 Web API." },
+          { "id": "opt1_4", "text": "Use a web resource to display data." }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "External system sends data to Dynamics 365 Sales.",
+        "options": [
+          { "id": "opt2_1", "text": "Use a custom plug-in." },
+          { "id": "opt2_2", "text": "Use Dynamics 365 Web API." },
+          { "id": "opt2_3", "text": "Use a web resource to display data." }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_1",
+      "st2": "opt2_2"
+    }
+  },
+  {
+    "id": 17,
+    "topic": 2,
+    "text": "HOTSPOT -\nA company plans to transition from an existing proprietary solution to a Power Platform solution. The company is consolidating data from several sources.\n\nThe company reports the following data quality issues with the existing solution:\n- Users often encounter a character limit when entering data.\n- The database includes multiple instances of duplicate records.\n\nYou need to recommend solutions to ensure that the data quality issues are not present in the Power Platform solution.\n\nWhat should you recommend? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Users often encounter a character limit when entering data.",
+        "options": [
+          { "id": "opt1_1", "text": "Define a data mask." },
+          {
+            "id": "opt1_2",
+            "text": "Define and implement duplicate detection rules."
+          },
+          {
+            "id": "opt1_3",
+            "text": "Define the data type and format for each column."
+          }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "The database includes multiple instances of some records.",
+        "options": [
+          { "id": "opt2_1", "text": "Define requirements for data entry." },
+          {
+            "id": "opt2_2",
+            "text": "Define and implement duplicate detection rules."
+          },
+          {
+            "id": "opt2_3",
+            "text": "Define the data type and format for each column."
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_3",
+      "st2": "opt2_2"
+    }
+  },
+  {
+    "id": 18,
+    "topic": 2,
+    "text": "HOTSPOT -\nA company is creating a Power Platform solution to manage employees.\n\nThe company has the following requirements:\n- Allow only the human resource manager to change an employee's employment status when an employee is dismissed.\n- Allow only approved device types to access the solution and company data.\n\nYou need to recommend a solution that meets the requirements. To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Allow only the human resource manager to change an employee's employment status when an employee is dismissed.",
+        "options": [
+          { "id": "opt1_1", "text": "Team access" },
+          { "id": "opt1_2", "text": "Privacy preference" },
+          { "id": "opt1_3", "text": "Field security profile" },
+          { "id": "opt1_4", "text": "Hierarchy security profile" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Allow only approved device types to access the solution and company data.",
+        "options": [
+          { "id": "opt2_1", "text": "Endpoint security" },
+          { "id": "opt2_2", "text": "Compliancy policy" },
+          { "id": "opt2_3", "text": "Conditional access" },
+          { "id": "opt2_4", "text": "Mobile threat integration" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_3",
+      "st2": "opt2_3"
+    }
+  },
+  {
+    "id": 19,
+    "topic": 2,
+    "text": "You are designing tables and columns for a Power Platform solution.\n\nThe solution will contain an interactive experience dashboard.\n\nYou need to ensure that the columns you create can be used as global filters for the dashboard.\n\nWhich two data types can you use? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["b", "d"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Multiline Text"
+      },
+      {
+        "id": "b",
+        "text": "B. Choice"
+      },
+      {
+        "id": "c",
+        "text": "C. Text"
+      },
+      {
+        "id": "d",
+        "text": "D. Yes/No"
+      },
+      {
+        "id": "e",
+        "text": "E. Lookup"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "topic": 2,
+    "text": "You are designing a Power Platform solution for a company.\n\nUsers must be granted access only to data that is relevant to them.\n\nYou need to recommend actions to meet the requirements.\n\nWhich two recommendations should you make? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["b", "c"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Add column security profiles to applicable teams."
+      },
+      {
+        "id": "b",
+        "text": "B. Define and configure security roles."
+      },
+      {
+        "id": "c",
+        "text": "C. Create teams and assign security roles and users to the teams."
+      },
+      {
+        "id": "d",
+        "text": "D. Create business units and assign security roles to the business units."
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "topic": 2,
+    "text": "HOTSPOT -\nAn organization is optimizing its Microsoft Power Platform solution architecture.\n\nThe optimization needs to address the following:\n- Label names for option sets and multiselect option sets should be added as separate fields for reporting.\n- Users complain that when a case is assigned to another user, all the activities are also assigned.\n- Some Power BI reports based on Microsoft Dataverse data need near-real-time updating.\n\nYou need to recommend a design solution to meet these requirements. To answer, select the appropriate option in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Users report that when a case is assigned to another user, all activities are also assigned.",
+        "options": [
+          {
+            "id": "opt1_1",
+            "text": "For each activity entity relationship, set Cascading rules to Configurable Cascading and Assign to Cascade None"
+          },
+          {
+            "id": "opt1_2",
+            "text": "Do not implement, but train users on best practices for assigning cases."
+          },
+          {
+            "id": "opt1_3",
+            "text": "Create a 1:N relationship between the user entity/table and the Activities table."
+          }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Some Power BI reports based on Microsoft Dataverse data require near-real-time updates.",
+        "options": [
+          {
+            "id": "opt2_1",
+            "text": "Create Power BI reports using the Microsoft Dataverse connector."
+          },
+          {
+            "id": "opt2_2",
+            "text": "Implement the Data Export Service; create Power BI reports that point to Microsoft Azure SQL Database."
+          },
+          {
+            "id": "opt2_3",
+            "text": "Create Power BI dataflows based on the Microsoft Dataverse connector; point the Power BI report to the dataflows."
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_1",
+      "st2": "opt2_1"
+    }
+  },
+  {
+    "id": 22,
+    "topic": 2,
+    "text": "You are designing a Microsoft Power Platform solution for a company that has multiple Microsoft Dataverse environments.\n\nYou need to prevent specific users from accessing specific environments.\n\nWhat should you do?",
+    "correctOptionId": "a",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Remove all security roles from the users of the specific environments."
+      },
+      {
+        "id": "b",
+        "text": "B. Remove the user from the business unit."
+      },
+      {
+        "id": "c",
+        "text": "C. Remove the user from all security groups."
+      },
+      {
+        "id": "d",
+        "text": "D. Remove the user from all teams."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "topic": 2,
+    "text": "HOTSPOT -\nYou are designing a model-driven app for a hospital. The app will be used to track teams at the hospital including:\n\n| Team | Comments |\n| :--- | :--- |\n| Cleaning | There are three predetermined cleaning teams. Tasks are assigned to a team. Anyone on the team can complete an assigned task. |\n| Emergency room | These teams are formed as needed based on patient needs and staff availability. |\n| Billing | These teams are assigned to specific hospital departments. Team members must only see data for the hospital department to which they are assigned. |\n\nYou need to recommend the team types to use.\n\nWhich team types should you recommend? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Cleaning teams",
+        "options": [
+          { "id": "opt1_1", "text": "Access" },
+          { "id": "opt1_2", "text": "Owner" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Emergency room teams",
+        "options": [
+          { "id": "opt2_1", "text": "Access" },
+          { "id": "opt2_2", "text": "Owner" }
+        ]
+      },
+      {
+        "id": "st3",
+        "text": "Billing teams",
+        "options": [
+          { "id": "opt3_1", "text": "Access" },
+          { "id": "opt3_2", "text": "Owner" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_2",
+      "st2": "opt2_1",
+      "st3": "opt3_2"
+    }
+  },
+  {
+    "id": 24,
+    "topic": 2,
+    "text": "You are designing a Microsoft Power Platform solution for an automobile parts manufacturer. You create the following tables:\n\n| Table | Comments |\n| :--- | :--- |\n| Assemblies | For each assembly record, there will be one or more rows in the Parts table. When the ownership for an assembly record changes, the related parts records must be updated. |\n| Parts | Rows in the Parts table must not be deleted when an assembly is deleted. |\n\nYou need to recommend a relationship behavior.\n\nWhich relationship behavior should you recommend?",
+    "correctOptionId": "b",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Referential, Restrict Delete"
+      },
+      {
+        "id": "b",
+        "text": "B. Custom"
+      },
+      {
+        "id": "c",
+        "text": "C. Parental"
+      },
+      {
+        "id": "d",
+        "text": "D. Referential, Remove Link"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "topic": 2,
+    "text": "You are designing a Microsoft Power Platform solution that uses Microsoft Dataverse.\n\nYou need to recommend a way to update currency exchange rates within Microsoft Dataverse.\n\nWhat are two possible ways to achieve this goal? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "b"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Review AppSource for prebuilt solutions."
+      },
+      {
+        "id": "b",
+        "text": "B. Create a Power Automate flow that uses a custom connection or HTTP request to an outside source for exchange rates."
+      },
+      {
+        "id": "c",
+        "text": "C. Embed an iframe that points to a currency exchange service into a model-driven app."
+      },
+      {
+        "id": "d",
+        "text": "D. Use the Power BI connector to establish a link that updates Microsoft Dataverse with the current exchange rate."
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "topic": 2,
+    "text": "A company provides mobile diagnostic imaging services. You are designing a Power Apps solution to manage patient appointments and procedures. Patient records are stored within the company's cloud patient billing system. The patient ID must be the only information stored within the app. The patient name and date of birth must be visible to the technician to verify the patient's identity. You need to recommend a solution to display the patient information. What should you recommend?",
+    "correctOptionId": "a",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Virtual table"
+      },
+      {
+        "id": "b",
+        "text": "B. Business rule"
+      },
+      {
+        "id": "c",
+        "text": "C. Privacy preference"
+      },
+      {
+        "id": "d",
+        "text": "D. Data gateway"
+      },
+      {
+        "id": "e",
+        "text": "E. Custom dataflow"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "topic": 2,
+    "text": "HOTSPOT -\nA company plans to deploy multiple Microsoft Dataverse environments. You are supporting the go-live process.\n\nThe company reports the following access issues:\n- Users can access account records but cannot read a column in the table.\n- A licensed user receives an insufficient permission error when opening leads.\n- A licensed user does not appear in the list of users available for security assignment.\n\nYou need to resolve the issues.\n\nWhat should you do? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Users can access account records but cannot read a column in the table.",
+        "options": [
+          { "id": "opt1_1", "text": "Security role" },
+          { "id": "opt1_2", "text": "Security group" },
+          { "id": "opt1_3", "text": "Field security profile" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "A licensed user receives an insufficient permission error when opening leads.",
+        "options": [
+          { "id": "opt2_1", "text": "Security role" },
+          { "id": "opt2_2", "text": "Security group" },
+          { "id": "opt2_3", "text": "Field security profile" }
+        ]
+      },
+      {
+        "id": "st3",
+        "text": "A licensed user does not appear in the list of users available for security assignment.",
+        "options": [
+          { "id": "opt3_1", "text": "Security role" },
+          { "id": "opt3_2", "text": "Security group" },
+          { "id": "opt3_3", "text": "Field security profile" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_3",
+      "st2": "opt2_1",
+      "st3": "opt3_2"
+    }
+  },
+  {
+    "id": 28,
+    "topic": 2,
+    "text": "A company has a model-driven app. The app has forms with both Business Rules and JavaScript added to handle the business logic on the form.\n\nThe form contains logic that is enforced by using business rules. The company wants to apply the business rules to all forms in the app.\n\nYou need to recommend a simplified form setup so the form can be maintained moving forward.\n\nWhat should you recommend?",
+    "correctOptionId": "d",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Manage the business logic with a Power Apps Component Framework (PCF) control."
+      },
+      {
+        "id": "b",
+        "text": "B. Evaluate whether complex parts of the logic can be solved by using Power Apps Component Framework (PCF) control. Use Business Rules for the remaining functionality."
+      },
+      {
+        "id": "c",
+        "text": "C. Remove the Business Rules and use only JavaScript."
+      },
+      {
+        "id": "d",
+        "text": "D. Update logic to ensure Business Rules are optimized. Use JavaScript for the remaining functionality."
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "topic": 2,
+    "text": "A local bank uses Microsoft Power Platform apps to store customer data.\n\nThe bank IT director discovers that all employees can see the social security numbers of their customers. The IT team does not understand how field-level security works and needs help with the design.\n\nYou need to recommend a solution to the bank that meets the following requirements:\n\n• The system must restrict access to customer social security numbers to the vice president of finance only.\n• The vice president of finance must be able to read and update customer social security numbers.\n\nWhich two actions should you recommend? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["c", "d"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Set the values for the read permission and for the update permission for social security number to yes."
+      },
+      {
+        "id": "b",
+        "text": "B. Enable field-level security for the member table."
+      },
+      {
+        "id": "c",
+        "text": "C. Create a field-level security profile."
+      },
+      {
+        "id": "d",
+        "text": "D. Enable field-level security for the social security number column."
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "topic": 2,
+    "text": "HOTSPOT -\nYou are designing a Microsoft Power Platform solution for a national repair service. The service has a 24-hour call center for customers to call and schedule repairs. \n\nThe solution dispatches a technician to troubleshoot and repair customer issues. Customers sign into a customer portal to view and log information concerning the repairs. The repair service contracts with third party technicians for repair jobs.\n\nThe solution must meet the following requirements:\n- Dispatch technicians to troubleshoot and repair customer issues.\n- Call center must log customer issues.\n- Third-party technicians must be able to access assigned repair service jobs.\n\nYou need to recommend an authentication strategy.\n\nWhich authentication models should you use? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Call center employee",
+        "options": [
+          { "id": "opt1_1", "text": "Azure AD and a security role" },
+          { "id": "opt1_2", "text": "Azure AD and a web role" },
+          { "id": "opt1_3", "text": "Authenticated user and a security role" },
+          { "id": "opt1_4", "text": "Authenticated user and a web role" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Repair service customer",
+        "options": [
+          { "id": "opt2_1", "text": "Azure AD and a security role" },
+          { "id": "opt2_2", "text": "Azure AD and a web role" },
+          { "id": "opt2_3", "text": "Authenticated user and a security role" },
+          { "id": "opt2_4", "text": "Authenticated user and a web role" }
+        ]
+      },
+      {
+        "id": "st3",
+        "text": "Third-party technician",
+        "options": [
+          { "id": "opt3_1", "text": "Azure AD and a security role" },
+          { "id": "opt3_2", "text": "Azure AD and a web role" },
+          { "id": "opt3_3", "text": "Authenticated user and a security role" },
+          { "id": "opt3_4", "text": "Authenticated user and a web role" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_1",
+      "st2": "opt2_4",
+      "st3": "opt3_4"
+    }
+  },
+  {
+    "id": 31,
+    "topic": 2,
+    "text": "DRAG DROP -\nYou are designing a data model for a Microsoft Power Platform solution.\n\nThe data model must meet the following requirements:\n\n• When an account is assigned to a new salesperson, all opportunities that are associated with the account must be assigned to the new salesperson.\n• When a salesperson assigns a lead to another salesperson, all phone call activities related to the lead must be assigned to the new salesperson.\n\nYou need to recommend cascading strategies for the data model.\n\nWhich cascading strategy should you recommend? To answer, drag the appropriate cascading strategies to the correct requirements. Each cascading strategy may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Cascade All"
+      },
+      {
+        "id": "opt2",
+        "text": "Cascade Active"
+      },
+      {
+        "id": "opt3",
+        "text": "Cascade User Owned"
+      },
+      {
+        "id": "opt4",
+        "text": "Cascade None"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "When an account is assigned to a new salesperson, all opportunities that are associated with the account must be assigned to the new salesperson."
+      },
+      {
+        "id": "req2",
+        "title": "When a salesperson assigns a lead to another salesperson, all phone call activities related to the lead must be assigned to the new salesperson."
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt1",
+      "req2": "opt3"
+    }
+  },
+  {
+    "id": 32,
+    "topic": 2,
+    "text": "You are a Microsoft Power Platform architect designing a solution.\n\nYou must use a custom connector to integrate Power Automate with a data source.\n\nYou need to authenticate the connector with the data source.\n\nWhich three authentication methods can you use? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "b", "d"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Basic authentication"
+      },
+      {
+        "id": "b",
+        "text": "B. Generic OAuth 2.0"
+      },
+      {
+        "id": "c",
+        "text": "C. OpenID Connect (OIDC)"
+      },
+      {
+        "id": "d",
+        "text": "D. API Key"
+      },
+      {
+        "id": "e",
+        "text": "E. Pass-through"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "topic": 2,
+    "text": "HOTSPOT -\nYou are working with a customer to plan a go-live deployment to their production environment. The solution includes several apps and environment variables. The superuser team manages the production environment that is secured by using a specific environment Azure AD security group.\n\nThe following issues have been identified:\n- The superuser team cannot access make.powerapps.com to open and set the environment variables.\n- Users are added to the environment Azure AD security group and are not able to access the model-driven app.\n- Users are added to the environment Azure AD security group and are not able to access the canvas app.\n\nYou need to resolve the issues.\n\nWhat should you do? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "The superuser team cannot set the environment variables.",
+        "options": [
+          { "id": "opt1_1", "text": "Assign the System Customizer role." },
+          { "id": "opt1_2", "text": "Assign the Basic User role." },
+          { "id": "opt1_3", "text": "Assign the Service Reader role." },
+          { "id": "opt1_4", "text": "Assign the Office Collaborator role." }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Users cannot access the model-driven app.",
+        "options": [
+          { "id": "opt2_1", "text": "Assign the Basic User role." },
+          { "id": "opt2_2", "text": "Assign the Service Reader role." },
+          { "id": "opt2_3", "text": "Assign the Office Collaborator role." },
+          { "id": "opt2_4", "text": "Add the Azure AD Security Group." }
+        ]
+      },
+      {
+        "id": "st3",
+        "text": "Users cannot access the canvas app.",
+        "options": [
+          { "id": "opt3_1", "text": "Assign the System Customizer role." },
+          { "id": "opt3_2", "text": "Assign the Service Reader role." },
+          { "id": "opt3_3", "text": "Add users to the superuser team." },
+          { "id": "opt3_4", "text": "Add users to an Azure AD Security Group." }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_1",
+      "st2": "opt2_1",
+      "st3": "opt3_4"
+    }
+  },
+  {
+    "id": 34,
+    "topic": 2,
+    "text": "DRAG DROP -\nYou are designing a Microsoft Power Platform solution that will be deployed to two separate companies in the same Microsoft Office 365 tenant: Contoso, Ltd. and Contoso Pharmaceuticals.\n\nThe solution must meet the following security requirements:\n\n• Restrict Contoso, Ltd. users from seeing the Contoso Pharmaceuticals company.\n• Restrict access to specific forms.\n• Restrict access to specific tables.\n\nWhat should you recommend? To answer, drag the appropriate security types to the correct restrictions. Each security type may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Security role"
+      },
+      {
+        "id": "opt2",
+        "text": "Team"
+      },
+      {
+        "id": "opt3",
+        "text": "Security group"
+      },
+      {
+        "id": "opt4",
+        "text": "User profile"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Restrict Contoso, Ltd. users from seeing the Contoso Pharmaceuticals company."
+      },
+      {
+        "id": "req2",
+        "title": "Restrict access to specific forms."
+      },
+      {
+        "id": "req3",
+        "title": "Restrict access to specific tables."
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt2",
+      "req2": "opt3",
+      "req3": "opt1"
+    }
+  },
+  {
+    "id": 35,
+    "topic": 2,
+    "text": "DRAG DROP -\nYou are a Microsoft Power Platform architect. \n\nYou must identify and document your organization's business processes to identify opportunities for automation. \n\nYou need to run task mining in process advisor. \n\nIn which order should you perform the actions? To answer, move all actions from the list of actions to the answer area and arrange them in the correct order.",
+    "type": "dnd",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Visualize processes."
+      },
+      {
+        "id": "opt2",
+        "text": "Share processes."
+      },
+      {
+        "id": "opt3",
+        "text": "Identify automation recommendations."
+      },
+      {
+        "id": "opt4",
+        "text": "Analyze processes."
+      },
+      {
+        "id": "opt5",
+        "text": "Prepare processes and recordings."
+      }
+    ],
+    "correctOrder": ["opt5", "opt4", "opt1", "opt3", "opt2"]
+  },
+  {
+    "id": 36,
+    "topic": 2,
+    "text": "You are designing forms for a Microsoft Power Platform solution.\n\nEach person must see only the columns required for their department.\n\n| Department | Requirements |\n| :--- | :--- |\n| Inside sales | • Use only a browser-based app. <br> • Include fields for contact name, phone number, product, order date, and total amount owed. |\n| Fulfillment | • Use either a mobile or browser-based app. <br> • Include fields for contact name, product, and order date. |\n| Field sales | • Use only a mobile app. <br> • Include fields for contact name, address, phone number, and product. |\n\nYou need to ensure that the forms open correctly, display only the fields needed, and that data can be entered quickly.\n\nHow should you design the form?",
+    "correctOptionId": "c",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Create one form for each department. Add all columns needed for all departments. Use business rules to hide columns."
+      },
+      {
+        "id": "b",
+        "text": "B. Create a shared form for all departments. Add all the columns. Add column-level security to columns not needed for each department."
+      },
+      {
+        "id": "c",
+        "text": "C. Create one form for each department. Add only columns needed on the form for each department. Assign the appropriate security role to each form."
+      },
+      {
+        "id": "d",
+        "text": "D. Add new columns to an existing form. Grant all departments security roles for that form."
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "topic": 2,
+    "text": "You are designing an authentication strategy.\n\nYou must provide users multiple primary authentication options for Microsoft Power Platform app sign-in events.\n\nYou need to select the primary authentication methods.\n\nWhich two authentication methods can you use? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "c"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Windows Hello for Business"
+      },
+      {
+        "id": "b",
+        "text": "B. OAUTH software tokens"
+      },
+      {
+        "id": "c",
+        "text": "C. Microsoft Authenticator app"
+      },
+      {
+        "id": "d",
+        "text": "D. Voice call"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "topic": 2,
+    "text": "A company is creating a Microsoft Power Platform app to enable employees to log daily time entries. Employee user accounts are in multiple Azure AD tenants and are not located in the tenant that is running the app.\n\nEmployees must be added as Azure AD guest accounts within the tenant that will be running the app. Employees must access the model-driven app by being a member of a security team. The security team has been assigned the Employee Security role. Employees must create personal views of records to view within the system.\n\nYou need to implement a security solution.\n\nWhich privilege should you use?",
+    "correctOptionId": "c",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Direct basic level"
+      },
+      {
+        "id": "b",
+        "text": "B. Shared app access"
+      },
+      {
+        "id": "c",
+        "text": "C. Team"
+      },
+      {
+        "id": "d",
+        "text": "D. Azure AD security group"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "topic": 2,
+    "text": "HOTSPOT -\nYou are designing a solution to continually import data from several data sources into Microsoft Dataverse. \n\nThe solution must meet the following requirements:\n\n• Include integrated error handling for records that fail to import successfully into Dataverse.\n• Augment data with AI and machine learning models.\n\nYou need to select a component for each requirement.\n\nWhich components should you use? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Augment data with AI and machine learning models.",
+        "options": [
+          { "id": "opt1_1", "text": "Power Apps dataflow" },
+          { "id": "opt1_2", "text": "Logic Apps" },
+          { "id": "opt1_3", "text": "Analytical dataflow" },
+          { "id": "opt1_4", "text": "Azure Data Factory" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Include integrated error handling in place for records that fail to import.",
+        "options": [
+          { "id": "opt2_1", "text": "Power Apps dataflow" },
+          { "id": "opt2_2", "text": "Logic Apps" },
+          { "id": "opt2_3", "text": "Analytical dataflow" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_3",
+      "st2": "opt2_2"
+    }
+  },
+  {
+    "id": 40,
+    "topic": 2,
+    "text": "You design integration with an external data source that uses sequential integer values as primary keys for the records contained in it. Data synchronization will occur in Microsoft Dataverse so users can access data.\n\nData within Microsoft Dataverse must be accurate against the data in the external data source.\n\nYou need to ensure that the data from the external data source does not create duplicated rows in Microsoft Dataverse.\n\nWhich two features should you use? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["d", "e"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Webhook"
+      },
+      {
+        "id": "b",
+        "text": "B. Change tracking"
+      },
+      {
+        "id": "c",
+        "text": "C. Duplicate detection rules"
+      },
+      {
+        "id": "d",
+        "text": "D. Upsert method"
+      },
+      {
+        "id": "e",
+        "text": "E. Alternate key"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "topic": 2,
+    "text": "You are designing a new Microsoft Power Platform solution for a wedding organizer company.\n\nThe company uses a third-party application and plans to migrate the data into Microsoft Dataverse for the new solution. The third-party application has an API that can be connected to programmatically for data migration purposes.\n\nYou need to migrate the unique IDs belonging to the records from the third-party application.\n\nWhich two Microsoft Dataverse column types should you use to store this information?\n\nEach correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "d"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Plain Text"
+      },
+      {
+        "id": "b",
+        "text": "B. Text Area"
+      },
+      {
+        "id": "c",
+        "text": "C. Float"
+      },
+      {
+        "id": "d",
+        "text": "D. Unique Identifier"
+      },
+      {
+        "id": "e",
+        "text": "E. Rich Text"
+      },
+      {
+        "id": "f",
+        "text": "F. Lookup"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "topic": 2,
+    "text": "DRAG DROP -\nYou are designing a Microsoft Power Platform solution for a financial services company. Data from existing financial systems will be imported into Microsoft Dataverse and displayed to users as part of the app deployment.\n\nThe company has the following issues with data:\n\n• Phone numbers in records can contain letters in the record.\n• Security has not been applied to financial total values held in each record.\n• Users and managers can see all records.\n\nYou need to apply data quality standards to the solution.\n\nWhat should you recommend? To answer, drag the appropriate solutions to the correct data quality items. Each solution may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Masking rules"
+      },
+      {
+        "id": "opt2",
+        "text": "Field-level security"
+      },
+      {
+        "id": "opt3",
+        "text": "Hierarchical security"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Phone numbers must contain only numbers."
+      },
+      {
+        "id": "req2",
+        "title": "Account financial totals are secured for only authorized users to access."
+      },
+      {
+        "id": "req3",
+        "title": "Users must be able to view their records and managers must be able to view records for their team."
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt1",
+      "req2": "opt2",
+      "req3": "opt3"
+    }
+  },
+  {
+    "id": 43,
+    "topic": 2,
+    "text": "You are implementing a model-driven app for a national chain of retail stores.\n\nYou have the following requirements:\n\n• Store employees must be able to view data for their store only.\n• Regional managers must be able to view data for all stores in a region.\n• The reporting team must be able to view all data across all stores.\n\nYou need to configure system security.\n\nWhich three security methods should you use? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["c", "d", "e"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Account hierarchy"
+      },
+      {
+        "id": "b",
+        "text": "B. Azure AD security group"
+      },
+      {
+        "id": "c",
+        "text": "C. Manager hierarchy"
+      },
+      {
+        "id": "d",
+        "text": "D. Security roles"
+      },
+      {
+        "id": "e",
+        "text": "E. Owner teams"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "topic": 2,
+    "text": "DRAG DROP -\nA company is designing a data migration strategy with data from multiple sources.\n\nThe company performs a test migration and discovers issues with some of the data.\n\nYou need to identify the solution to each issue.\n\nWhich components should you use to solve each issue? To answer, drag the appropriate solutions to the correct issues. Each solution may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Power Query"
+      },
+      {
+        "id": "opt2",
+        "text": "Data Integrator"
+      },
+      {
+        "id": "opt3",
+        "text": "Data Import Wizard"
+      },
+      {
+        "id": "opt4",
+        "text": "Create alternate key"
+      },
+      {
+        "id": "opt5",
+        "text": "Import tables in correct order"
+      }
+    ],
+    "zones": [
+      {
+        "id": "issue1",
+        "title": "Duplicate records are being migrated."
+      },
+      {
+        "id": "issue2",
+        "title": "Orphaned data records are occurring."
+      }
+    ],
+    "correctZoneAnswers": {
+      "issue1": "opt4",
+      "issue2": "opt5"
+    }
+  },
+  {
+    "id": 45,
+    "topic": 2,
+    "text": "You are designing an integration between an Azure SQL database and a model-driven app.\n\nYou have the following requirements:\n\n• Audit updates to the data.\n• Assign security role access to tables at the user level.\n• Assign security role access to tables at the organization level.\n• Enable change tracking.\n• Add and update data.\n\nYou need to implement virtual tables.\n\nWhich two requirements can you meet by using virtual tables? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["c", "d"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Enable change tracking."
+      },
+      {
+        "id": "b",
+        "text": "B. Assign security role access to tables at the user level."
+      },
+      {
+        "id": "c",
+        "text": "C. Add and update data."
+      },
+      {
+        "id": "d",
+        "text": "D. Assign security role access to tables at the organization level."
+      },
+      {
+        "id": "e",
+        "text": "E. Audit updates to the data."
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "topic": 2,
+    "text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nA company plans to automate the expense approval process.\n\nUsers currently enter data into an on-premises SQL Server database.\n\nYou need to allow users to submit expenses from mobile devices.\n\nSolution: Create a canvas app for expense data entry. Install an on-premises gateway. Create a cloud flow for approval and to add data to the SQL Server database.\n\nDoes the solution meet the goal?",
+    "correctOptionId": "a",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Yes"
+      },
+      {
+        "id": "b",
+        "text": "B. No"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "topic": 2,
+    "text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nA company plans to automate the expense approval process.\n\nUsers currently enter data into an on-premises SQL Server database.\n\nYou need to allow users to submit expenses from mobile devices.\n\nSolution: Create a canvas app for expense data entry. Install the Power Automate app in Microsoft Teams. Create a cloud flow for approval to add data to the SQL Server database.\n\nDoes the solution meet the goal?",
+    "correctOptionId": "b",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Yes"
+      },
+      {
+        "id": "b",
+        "text": "B. No"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "topic": 2,
+    "text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nA company plans to automate the expense approval process.\n\nUsers currently enter data into an on-premises SQL Server database.\n\nYou need to allow users to submit expenses from mobile devices.\n\nSolution: Create a canvas app for expense data entry. Create a custom connector. Create a cloud flow for approval and use the custom connector to add data to the SQL Server database.\n\nDoes the solution meet the goal?",
+    "correctOptionId": "b",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Yes"
+      },
+      {
+        "id": "b",
+        "text": "B. No"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "topic": 2,
+    "text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nA company plans to automate the expense approval process.\n\nUsers currently enter data into an on-premises SQL Server database.\n\nYou need to allow users to submit expenses from mobile devices.\n\nSolution: Create a canvas app for expense data entry. Create a desktop flow. Create a cloud flow for approval and trigger the desktop flow to add data to the SQL Server database.\n\nDoes the solution meet the goal?",
+    "correctOptionId": "b",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Yes"
+      },
+      {
+        "id": "b",
+        "text": "B. No"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "topic": 2,
+    "text": "DRAG DROP -\nA sales team uses a dedicated mailbox and the assistant for Microsoft Dynamics 365 Sales in their sales process. Technical staff collaborate in a research and development Microsoft Teams channel. Sales reps have a custom insight card that pops up each time certain keywords appear in emails from prospective customers. The sales reps must engage with the technical team before answering the emails.\n\nThe technical team plans to streamline the email answering process. The technical team needs a similar card to be exposed in the technical channel immediately after an email arrives.\n\nYou need to provide a solution for the technical team.\n\nWhich three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+    "type": "dnd",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Install Microsoft Power Automate in the environment."
+      },
+      {
+        "id": "opt2",
+        "text": "Edit the existing sales flow."
+      },
+      {
+        "id": "opt3",
+        "text": "Parse the keywords from the sales emails."
+      },
+      {
+        "id": "opt4",
+        "text": "Create new flow in Microsoft Power Automate."
+      },
+      {
+        "id": "opt5",
+        "text": "Add a trigger to the flow when email arrives in the sales mailbox."
+      },
+      {
+        "id": "opt6",
+        "text": "Add a flow step to post adaptive card in the Teams technical channel."
+      },
+      {
+        "id": "opt7",
+        "text": "Create the JSON message for the adaptive card."
+      }
+    ],
+    "correctOrder": ["opt4", "opt5", "opt6"]
   }
 ]
