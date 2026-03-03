@@ -38,18 +38,28 @@ export const HintBox: React.FC<HintBoxProps> = ({ question }) => {
         return (
           <Box>
             {question.zones.map((zone) => {
-              // Дістаємо ID правильної опції напряму з об'єкта за ID зони
-              const correctOptionId = question.correctZoneAnswers?.[zone.id];
+              // Дістаємо відповідь (рядок, масив або undefined)
+              const answerValue = question.correctZoneAnswers?.[zone.id];
 
-              // Знаходимо текст цієї опції
-              const optionText = correctOptionId
-                ? question.dndOptions?.find((o) => o.id === correctOptionId)
-                    ?.text
-                : null;
+              // Нормалізуємо значення до масиву (щоб завжди працювати з масивом)
+              const correctOptionIds = Array.isArray(answerValue)
+                ? answerValue
+                : answerValue
+                  ? [answerValue]
+                  : [];
+
+              // Шукаємо текст для кожного ID, відкидаємо пусті і з'єднуємо через кому
+              const optionsText = correctOptionIds
+                .map(
+                  (optId) =>
+                    question.dndOptions?.find((o) => o.id === optId)?.text,
+                )
+                .filter(Boolean)
+                .join(", ");
 
               return (
                 <Typography key={zone.id} variant="body2">
-                  <strong>{zone.title}:</strong> {optionText || "Немає"}
+                  <strong>{zone.title}:</strong> {optionsText || "Немає"}
                 </Typography>
               );
             })}
