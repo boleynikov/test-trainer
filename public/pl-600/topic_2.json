@@ -1,0 +1,141 @@
+[
+  {
+    "id": 1,
+    "topic": 2,
+    "text": "DRAG DROP -\nYou are designing data loss policies for a Microsoft Power Platform implementation. \n\nYou have the following requirements:\n• Solutions that use the HTTP connector must not include any other connectors.\n• Prevent the use of the Microsoft Forms connector.\n• Allow the use of the Azure DevOps connector.\n\nYou need to determine in which data policy group to add each connector.\n\nTo which data policy group should you assign the connector? To answer, drag the appropriate setting to the correct drop targets. Each source may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Business"
+      },
+      {
+        "id": "opt2",
+        "text": "Non-business"
+      },
+      {
+        "id": "opt3",
+        "text": "Blocked"
+      }
+    ],
+    "zones": [
+      {
+        "id": "conn1",
+        "title": "HTTP connector"
+      },
+      {
+        "id": "conn2",
+        "title": "Azure DevOps connector"
+      },
+      {
+        "id": "conn3",
+        "title": "Microsoft Forms connector"
+      }
+    ],
+    "correctZoneAnswers": {
+      "conn1": "opt2",
+      "conn2": "opt1",
+      "conn3": "opt3"
+    }
+  },
+  {
+    "id": 2,
+    "topic": 2,
+    "text": "HOTSPOT -\nYou are designing a Microsoft Power Platform solution for a company.\n\nYou have the following requirements:\n- Users in the human resources department must be able to create tasks.\n- Users in the human resources department must be able to assign cases to other users.\n\nYou create a table for cases and tasks. You need to recommend security settings to the company.\n\nWhat should you recommend? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Users in the human resources department must be able to create tasks.",
+        "options": [
+          {
+            "id": "opt1_1",
+            "text": "Assign only Create rights to activities."
+          },
+          {
+            "id": "opt1_2",
+            "text": "Assign Create and Read rights to activities."
+          },
+          {
+            "id": "opt1_3",
+            "text": "Assign user-level assign rights to the human resources case table."
+          },
+          {
+            "id": "opt1_4",
+            "text": "Assign organization-level rights to the human resources case table."
+          }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Users in the human resources department must be able to assign cases to other users.",
+        "options": [
+          {
+            "id": "opt2_1",
+            "text": "Assign only Create rights to activities."
+          },
+          {
+            "id": "opt2_2",
+            "text": "Assign Create and Read rights to activities."
+          },
+          {
+            "id": "opt2_3",
+            "text": "Assign user-level assign rights to the human resources case table."
+          },
+          {
+            "id": "opt2_4",
+            "text": "Assign organization-level assign rights to the human resources case table."
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_1",
+      "st2": "opt2_4"
+    }
+  },
+  {
+    "id": 3,
+    "topic": 2,
+    "text": "A company has a list of contacts in a Microsoft Excel file. The company wants to load the contact information into a Microsoft Power Platform solution.\n\nYou need to recommend a data-loading solution.\n\nWhat should you recommend?",
+    "correctOptionId": "c",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Use the Excel Template feature."
+      },
+      {
+        "id": "b",
+        "text": "B. Add the contacts to a static worksheet."
+      },
+      {
+        "id": "c",
+        "text": "C. Use the Import from Excel feature."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "topic": 2,
+    "text": "You are designing the data model for a school. The school wants to track students' enrollments in courses.\n\nThe system must meet the following requirements:\n\n• Track the courses in which each student is enrolled.\n• Track the students that are enrolled in each course.\n• Track dates when each student enrolled in each course and the person who approved the enrollment.\n• Allow users to create a report that details which students are enrolled in which courses.\n\nYou need to recommend a data model that will fit the school's requirements.\n\nWhich logical model should you recommend?",
+    "correctOptionId": "a",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Student --(one-to-many)--> Enrollment <--(one-to-many)-- Course"
+      },
+      {
+        "id": "b",
+        "text": "B. Student --(many-to-many)--> Course"
+      },
+      {
+        "id": "c",
+        "text": "C. Student --(one-to-many)--> Course"
+      },
+      {
+        "id": "d",
+        "text": "D. Student --(many-to-one)--> Course"
+      }
+    ]
+  }
+]

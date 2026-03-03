@@ -2312,5 +2312,676 @@
       "req2": "opt2",
       "req3": ["opt1", "opt1_1"]
     }
+  },
+  {
+    "id": 71,
+    "topic": 1,
+    "text": "HOTSPOT -\nYou are implementing a Microsoft Power Platform project for a company.\n\nThe company has the following requirements for the project:\n- Employees must be able to connect to the Microsoft cloud environment from their on-premises network by using a private connection.\n- Employees must be able to create controls for applications that can be reused in applications and projects.\n\nYou need to implement the appropriate solutions.\n\nWhich should you use? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Connect from the on-premises network to the Microsoft cloud environment.",
+        "options": [
+          { "id": "opt1_1", "text": "Azure Event Hub" },
+          { "id": "opt1_2", "text": "Azure ExpressRoute" },
+          { "id": "opt1_3", "text": "Custom connector" },
+          { "id": "opt1_4", "text": "On-premises data gateway" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Create controls that can be reused.",
+        "options": [
+          {
+            "id": "opt2_1",
+            "text": "Center of Excellence Developer Compliance Center"
+          },
+          { "id": "opt2_2", "text": "Center of Excellence nurture components" },
+          { "id": "opt2_3", "text": "Center of Excellence theming components" },
+          { "id": "opt2_4", "text": "Creator Kit" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_4",
+      "st2": "opt2_4"
+    }
+  },
+  {
+    "id": 72,
+    "topic": 1,
+    "text": "DRAG DROP\n-\n\n\nCase study\n-\n\nThis is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.\n\nTo answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.\n\nAt the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.\n\n\nTo start the case study\n-\nTo display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.\n\n\nBackground\n-\n\nFirst Up Consulting recruits information technology (IT) workers for temporary or permanent positions at client companies. The company operates offices in multiple countries/regions.\n\nFirst Up has both full-time and part-time employees. The company has a team or worker support agents that respond to inquiries from current and prospective workers. Some of the worker support agents are multilingual.\n\nThe company does not have a standardized tool used for reporting purposes. The organization engages you to implement a new Microsoft Power Platform solution. Workers are managed by a dedicated team that includes one primary recruiter and a contract assistant. Many client companies live in areas that do not allow for mobile data connections.\n\n\nCurrent environment\n-\n\n\nExisting systems and processes\n-\n\n• First Up uses an on-premises system to manage current and historical patient data including medications and medical visits.\n• The company plans to reference historical data in the existing system. The records held in these systems will not be migrated to the new solution except for medication information.\n• Employee authentication with the existing system is provided by an on-premises Active Directory instance that is linked to Microsoft Entra ID.\n• An appointment record is created for each visit with a worker. The record includes worker contact information, preferred language, the date and time of the appointment, and other relevant data. This information is reviewed by the worker’s primary recruiter.\n• First Up has no current capabilities for forecasting future worker needs based on the data held.\n\n\nClient company visits\n-\n\nBefore First Up signs a contract to place workers at a client company, a member of the audit team visits the company and interviews company management. Audit members use different types of devices including Android and iOS devices. First Up has no plans to require the use of a single type of device. Audit team members currently record information about workers on paper forms. Team members enter information from paper forms into the system when they return to the office.\n\nFirst Up audits client companies at least once each year but may schedule additional visits based on feedback from workers that they place at a client company.\n\n\nRequirements\n-\n\n\nGeneral\n-\n\n• There is no standardized communication tool across the company, and this causes communication issues between different teams.\n• First up employees must be able to contact each other by using a secure system to ask and answer questions about jobs and potential workers.\n• Workers must be able to communicate in near real-time with worker support agents.\n• You must minimize development and administrative effort required to implement the solution.\n\n\nClient company visits\n-\n\n• Audit team records must be locked after they have been reviewed by a First Up manager. No further edits to the record can be carried out. This must be implemented using standard available system functionality.\n• Audit teams must be able to enter records of their visits to the companies where they have or may place workers. Audit teams must be able to update any necessary records with the latest information.\n• The solution must support tracking of security clearance information for a worker including the date, status, and certifying agency.\n• When a worker makes an appointment, the appointments must appear in the timeline for the worker’s contact record.\n\n\nJob history information\n-\n\n• The solution must provide a worker appointment booking system that can access worker historical job placement data.\n• The solution must allow employees to associate a primary recruiter with each worker. The solution must also allow multiple secondary recruiters to be associated with each worker.\n• Every worker assessment performed must be validated and countersigned by the primary recruiter for a worker.\n• Job posting data from previous work engagements must be accessible by the Microsoft Power Platform solution to ensure that new job postings are accurate.\n• First Up staff members must be able to view and update worker records. They must be able to see current and historical job placement data on the same form in the new solution.\n\n\nWorker access\n-\n\n• The solution must support workers that speak different languages.\n• The solution must provide automatic translation capabilities.\n• The solution must support near real-time communications between workers and recruiters.\n• Workers must be able to view their records online.\n• Workers must be able to enter any additional information that is required by or may be helpful to recruiters.\n• The solution must provide workers a way to search for general information about available positions.\n• Workers must be able to request copies of their records by using a chatbot.\n• Workers must be able to provide information to a recruiter as needed.\n\n\nData platform\n-\n\n• Audit teams must have the ability to view worker information on their mobile devices.\n• Audit teams must be able to record data during visits to locations where workers are placed.\n• The solution must support the ability for a corporate governance auditing team to periodically audit the organization’s records, policies, and procedures.\n\n\nReporting and analytics\n-\n\n• The reporting and analytics team must be able to create reports that include data from all facilities and all workers.\n• Management reports must present an overview of the entire organization. Other reports may be limited to specific offices.\n• You must create dashboards that show the status across all groups of workers. The dashboards must be embedded into the Power Platform apps. Updates to data must be displayed in near real time.\n\n\nSecurity\n-\n\n• Authentication for all user types must be managed by a single platform. IT teams must use PowerShell to apply security permissions for users.\n• Worker records must only be viewed by the recruiting office that the worker visits.\n• Worker skill records must be archived after ten years and are then removed from the main system. Worker information must not be deleted from the system while skill and job placement history records for the worker exist in the system.\n• User security roles must be customized to ensure that users are able to interact only with the specific data in which they need access.\n• Workers must be able to sign into a portal by using their own email address. Workers must be required to use a secure method of authentication to be able to view their data.\n• Alerts regarding the number of recruited and placed at client companies must be updated as background processes.\n\n\nDeployment\n-\n\n• Application development work should be completed in the development environment and follow lifecycle management best practices.\n• Solutions need to be able to be checked for issues before deploying from the development environment to other environments.\n\n\nIssues\n-\n\nThe organization reports the following issues:\n\n• Recruiters report that they cannot see historical job placement data for workers.\n• API usage reports show that the number of API calls made exceeds limits. This causes delays saving data.\n• Users cannot view Power BI reports within the Power Platform apps.\n• Some security clearance information for workers not visible from within the Microsoft Power Platform solution.\n• Audit teams report that they cannot view or edit worker data when the device on which they access the solution does not have network connectivity.\n• The testing team reports that one of the canvas apps is not working as expected. An error message displays as specific pages load.\n• Currently all route planning for the audit team is done manually. This does not always result in the best route for the mobile audit teams, especially when many appointments are scheduled. Lack of optimization can lead to missed visits with companies.\n\n\nYou need to recommend solutions to meet the organization's communication needs.\n\nWhat should you recommend? To answer, drag the appropriate technologies to the correct groups of users. Each technology may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Microsoft Teams"
+      },
+      {
+        "id": "opt2",
+        "text": "Power Pages"
+      },
+      {
+        "id": "opt3",
+        "text": "Microsoft 365 Copilot"
+      }
+    ],
+    "zones": [
+      {
+        "id": "group1",
+        "title": "First Up employees"
+      },
+      {
+        "id": "group2",
+        "title": "Workers"
+      }
+    ],
+    "correctZoneAnswers": {
+      "group1": "opt1",
+      "group2": "opt2"
+    }
+  },
+  {
+    "id": 73,
+    "topic": 1,
+    "text": "DRAG DROP -\nA national retail company has multiple data sources, including the following:\n\n• online e-commerce platform\n• CRM system\n• HR system\n• customer support system\n\nThe company requires a unified view that includes all relevant data for the following data source requirements:\n\n• include certification information for employees\n• understand purchasing behavior and preferences\n• enhance customer service\n\nYou need to configure the solutions.\n\nWhich data source should you configure for each requirement? To answer, move the appropriate data sources to the correct requirements. You may use each data source once, more than once, or not at all. You may need to move the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "HR system"
+      },
+      {
+        "id": "opt2",
+        "text": "E-commerce platform"
+      },
+      {
+        "id": "opt3",
+        "text": "Customer support system"
+      },
+      {
+        "id": "opt4",
+        "text": "Social media engagement"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Certification information for employees"
+      },
+      {
+        "id": "req2",
+        "title": "Purchasing behavior dataset"
+      },
+      {
+        "id": "req3",
+        "title": "Customer service dataset"
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt1",
+      "req2": "opt2",
+      "req3": "opt3"
+    }
+  },
+  {
+    "id": 74,
+    "topic": 1,
+    "text": "You are meeting with a user at a financial institution to gather app requirements.\n\nThe app must meet the following requirements:\n\n• Be enabled for mobile use.\n• Respond in less than five seconds.\n• All data transmitted over the network must be encrypted.\n\nYou need to categorize the type of requirements you captured.\n\nWhich two requirement types are captured? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "e"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. non-functional"
+      },
+      {
+        "id": "b",
+        "text": "B. feasibility"
+      },
+      {
+        "id": "c",
+        "text": "C. functional"
+      },
+      {
+        "id": "d",
+        "text": "D. exception"
+      },
+      {
+        "id": "e",
+        "text": "E. compliance"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "topic": 1,
+    "text": "A company uses Microsoft Power Platform. The company plans to expand to other countries/regions. The chief operating officer (COO) must assess compliance risks related to the planned expansion.\n\nYou need to direct the COO to the compliance information.\n\nWhere should you direct the COO?",
+    "correctOptionId": "c",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Microsoft Defender"
+      },
+      {
+        "id": "b",
+        "text": "B. Microsoft Power Platform admin center"
+      },
+      {
+        "id": "c",
+        "text": "C. Microsoft Trust Center"
+      },
+      {
+        "id": "d",
+        "text": "D. Microsoft 365 admin center"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "topic": 1,
+    "text": "You are documenting a company's current enterprise architecture.\n\nYou need to evaluate the architecture of the data to identify its influences.\n\nWhich three data influences should you ask the company about? Each correct answer presents a complete solution. (Choose three.)\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["b", "d", "e"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. user access"
+      },
+      {
+        "id": "b",
+        "text": "B. quality"
+      },
+      {
+        "id": "c",
+        "text": "C. pain points"
+      },
+      {
+        "id": "d",
+        "text": "D. location"
+      },
+      {
+        "id": "e",
+        "text": "E. history"
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "topic": 1,
+    "text": "HOTSPOT -\nA company plans to use Microsoft Dynamics 365 and Microsoft Power Platform.\n\nThe company has the following requirements:\n- Schedule onsite visits for customers per availability.\n- Generate invoices based on services delivered to customers.\n\nYou need to recommend a solution to meet the requirements.\n\nWhich solutions should you recommend? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Schedule onsite visits.",
+        "options": [
+          { "id": "opt1_1", "text": "Dynamics 365 Field Service" },
+          { "id": "opt1_2", "text": "Dynamics 365 Customer Service" },
+          { "id": "opt1_3", "text": "Dynamics 365 Customer Insights" },
+          { "id": "opt1_4", "text": "Omnichannel for Customer Service" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Generate invoices.",
+        "options": [
+          { "id": "opt2_1", "text": "Dynamics 365 Marketing" },
+          { "id": "opt2_2", "text": "Dynamics 365 Field Service" },
+          { "id": "opt2_3", "text": "Dynamics 365 Remote Assist" },
+          { "id": "opt2_4", "text": "Dynamics 365 Customer Service" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_2",
+      "st2": "opt2_2"
+    }
+  },
+  {
+    "id": 78,
+    "topic": 1,
+    "text": "HOTSPOT -\nA customer requires information about how to ensure key success criteria will be met at the end of a project.\n\nYou need to describe how the key success criteria will be managed.\n\nWhich actions should you describe? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Define how the key success criteria will be met.",
+        "options": [
+          {
+            "id": "opt1_1",
+            "text": "Manage activity in the presales and initiation phase."
+          },
+          {
+            "id": "opt1_2",
+            "text": "Manage activity in the implementation phase."
+          },
+          { "id": "opt1_3", "text": "Manage activity in the operation phase." }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Manage adjustments to scope to meet key success criteria.",
+        "options": [
+          { "id": "opt2_1", "text": "Update the project charter." },
+          { "id": "opt2_2", "text": "Perform change management." },
+          { "id": "opt2_3", "text": "Communicate variance to stakeholders." }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_1",
+      "st2": "opt2_2"
+    }
+  },
+  {
+    "id": 79,
+    "topic": 1,
+    "text": "You conduct an initial discovery meeting with a manufacturer. The manufacturer plans to modernize its current sales order system by using Microsoft Power Platform and AI-generated product suggestions. Data architecture is a top concern for the company.\n\nThe company requires assistance to identify risk factors related to the use of data with AI-generated product suggestions.\n\nYou need to ask follow-up questions to assess the risk factors.\n\nWhich two questions should you ask? Each correct answer presents a complete solution. (Choose two.)\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["c", "d"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Which type of access will users require for the application?"
+      },
+      {
+        "id": "b",
+        "text": "B. What is the budget for implementing and maintaining the solution?"
+      },
+      {
+        "id": "c",
+        "text": "C. Which data do you plan to use to train and use with AI?"
+      },
+      {
+        "id": "d",
+        "text": "D. Which privacy or residency concerns does the company have?"
+      },
+      {
+        "id": "e",
+        "text": "E. How will the company capture feedback to improve accuracy of the AI model?"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "topic": 1,
+    "text": "A company processes a large volume of customer service requests daily. The company manages customer service requests through a combination of email, a CRM system, and manual processes.\n\nThe company requires streamlined customer service operations. The improved processes must provide the following solution:\n\n• Reduce response times.\n• Improve customer satisfaction.\n• Include the use of AI to prioritize cases based on specific keywords used by the customer.\n\nYou need to design a solution that includes AI Builder.\n\nWhich feature should you use in addition to AI Builder?",
+    "correctOptionId": "a",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Power Automate"
+      },
+      {
+        "id": "b",
+        "text": "B. Exchange server-side sync"
+      },
+      {
+        "id": "c",
+        "text": "C. Logic app"
+      },
+      {
+        "id": "d",
+        "text": "D. Dataflows"
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "topic": 1,
+    "text": "A large retail chain plans to add a chatbot to its website for customer support operations.\n\nThe company has the following requirements for the chatbot integration:\n\n• The chatbot must integrate with the existing knowledge base.\n• Agents must participate in the chat when there is a customer escalation.\n• The chatbot must adhere to all relevant regulatory and compliance requirements.\n• The chatbot must generate accurate and relevant responses to common customer queries.\n• The solution must scale to handle high volumes of customer interactions.\n\nYou need to identify the non-functional chatbot requirements.\n\nWhich two requirements are non-functional? Each correct answer presents a complete solution. (Choose two.)\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "e"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Scale to handle high volumes of customer interactions."
+      },
+      {
+        "id": "b",
+        "text": "B. Require agent participation in the chat when there is a customer escalation."
+      },
+      {
+        "id": "c",
+        "text": "C. Generate accurate and relevant responses to common customer queries."
+      },
+      {
+        "id": "d",
+        "text": "D. Integrate with the existing knowledge base."
+      },
+      {
+        "id": "e",
+        "text": "E. Adhere to all relevant regulatory and compliance requirements."
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "topic": 1,
+    "text": "You are performing a fit gap analysis for a bank based in the United States.\n\nThe bank requires a solution to monitor and disclose all financial transactions where money laundering is suspected.\n\nYou know that this requirement may not be feasible because banks and other financial institutions must adhere to established laws, rules, and guidelines.\n\nYou need to verify the feasibility of the requirement.\n\nWhich feasibility analysis should you check for the requirement?",
+    "correctOptionId": "d",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Requirement is technically feasible"
+      },
+      {
+        "id": "b",
+        "text": "B. Level of effort is unfeasible"
+      },
+      {
+        "id": "c",
+        "text": "C. Requirement will be adopted in the solution"
+      },
+      {
+        "id": "d",
+        "text": "D. Requirement aligns with compliance standards"
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "topic": 1,
+    "text": "DRAG DROP -\nA company plans to simplify its environment by replacing its current applications with a Microsoft Power Platform solution.\n\nYou need to guide the company through the activities required during each project phase.\n\nWhen should you recommend the company perform each activity? To answer, move the appropriate phases to the correct activities. You may use each phase once, more than once, or not at all. You may need to move the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Presales"
+      },
+      {
+        "id": "opt2",
+        "text": "Initiation"
+      },
+      {
+        "id": "opt3",
+        "text": "Analysis/design"
+      }
+    ],
+    "zones": [
+      {
+        "id": "act1",
+        "title": "Create a proof of concept."
+      },
+      {
+        "id": "act2",
+        "title": "Use a workshop to document current processes."
+      },
+      {
+        "id": "act3",
+        "title": "Assist with project team creation."
+      }
+    ],
+    "correctZoneAnswers": {
+      "act1": "opt1",
+      "act2": "opt3",
+      "act3": "opt2"
+    }
+  },
+  {
+    "id": 84,
+    "topic": 1,
+    "text": "A company plans to adopt Microsoft Power Platform.\n\nYou need to document the current enterprise architecture of the company.\n\nWhich two components should you incorporate? Each correct answer presents a complete solution. (Choose two.)\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "e"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. data locations"
+      },
+      {
+        "id": "b",
+        "text": "B. organizational structure"
+      },
+      {
+        "id": "c",
+        "text": "C. process diagrams"
+      },
+      {
+        "id": "d",
+        "text": "D. functional requirements"
+      },
+      {
+        "id": "e",
+        "text": "E. applications used"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "topic": 1,
+    "text": "HOTSPOT -\nA company is implementing a Microsoft Power Platform solution.\n\nYou need to define the requirements.\n\nWhich requirement should you use for each topic? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Data",
+        "options": [
+          {
+            "id": "opt1_1",
+            "text": "Managers need the sales team to be accountable."
+          },
+          {
+            "id": "opt1_2",
+            "text": "Managers must be able to support their sales team."
+          },
+          {
+            "id": "opt1_3",
+            "text": "The sales team must make their clients happy."
+          },
+          {
+            "id": "opt1_4",
+            "text": "The sales team must be able to view current month sales."
+          }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Compliance",
+        "options": [
+          {
+            "id": "opt2_1",
+            "text": "The Microsoft Power Platform solution must comply with the General Data Protection Regulation (GDRP)."
+          },
+          {
+            "id": "opt2_2",
+            "text": "The Microsoft Power Platform solution must comply with local regulations."
+          }
+        ]
+      },
+      {
+        "id": "st3",
+        "text": "People",
+        "options": [
+          {
+            "id": "opt3_1",
+            "text": "New processes must make the users happier."
+          },
+          {
+            "id": "opt3_2",
+            "text": "Users must use the app to perform their work better."
+          },
+          {
+            "id": "opt3_3",
+            "text": "New processes must make users more efficient."
+          },
+          {
+            "id": "opt3_4",
+            "text": "Users must be able to use both their mobile device and desktop to access the company app."
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_4",
+      "st2": "opt2_1",
+      "st3": "opt3_4"
+    }
+  },
+  {
+    "id": 91,
+    "topic": 1,
+    "text": "You are assisting a retail chain with a digital transformation project. The company plans to implement Microsoft Power Platform solutions.\n\nThe retail chain observes that its checkout processes are inefficient.\n\nThe company requires a solution that implements a new checkout system that all workers can operate.\n\nYou need to define the key success criterion.\n\nWhich criterion should you define?",
+    "correctOptionId": "b",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. reduced operational costs"
+      },
+      {
+        "id": "b",
+        "text": "B. employee adoption"
+      },
+      {
+        "id": "c",
+        "text": "C. increased foot traffic"
+      },
+      {
+        "id": "d",
+        "text": "D. reduced employee absences"
+      },
+      {
+        "id": "e",
+        "text": "E. sales targets met"
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "topic": 1,
+    "text": "All salespeople at a company manually send meeting summaries to the meeting attendees after a customer meeting.\n\nMeeting summaries are sent in a variety of ways.\n\nThe company requires standardized processes.\n\nYou need to learn the existing processes to determine whether opportunities for automation exist.\n\nWhat should you do?",
+    "correctOptionId": "b",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Interview the director of each department."
+      },
+      {
+        "id": "b",
+        "text": "B. Job shadow salespeople from each department."
+      },
+      {
+        "id": "c",
+        "text": "C. Review the request for proposal."
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "topic": 1,
+    "text": "A bank is transforming its operations by using Microsoft Power Platform.\n\nYou lead a requirements workshop for the bank. Several users request Microsoft Teams dialing capabilities in a canvas app so that they can call clients and record and transcribe client conversations.\n\nYou need to determine the feasibility of this requirement.\n\nWhich feasibility challenge should you identify for this requirement?",
+    "correctOptionId": "d",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. priority"
+      },
+      {
+        "id": "b",
+        "text": "B. level of effort"
+      },
+      {
+        "id": "c",
+        "text": "C. technical"
+      },
+      {
+        "id": "d",
+        "text": "D. regulatory"
+      },
+      {
+        "id": "e",
+        "text": "E. usage of the feature"
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "topic": 1,
+    "text": "DRAG DROP -\nYou are assisting an engineering company with a project that will digitally transform the business with a new inspection app. You complete several requirements workshops with technicians and are in the process of confirming the requirements.\n\nYou need to classify the functional and non-functional requirements for the client.\n\nHow should you classify each requirement? To answer, move the appropriate classifications to the correct requirements. You may use each classification once, more than once, or not at all. You may need to move the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Non-functional"
+      },
+      {
+        "id": "opt1_1",
+        "text": "Non-functional"
+      },
+      {
+        "id": "opt2",
+        "text": "Functional"
+      },
+      {
+        "id": "opt2_1",
+        "text": "Functional"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Automatically back up data for disaster recovery."
+      },
+      {
+        "id": "req2",
+        "title": "Attach photos and videos to the current job."
+      },
+      {
+        "id": "req3",
+        "title": "Clear job tasks in an inspection record as they are completed."
+      },
+      {
+        "id": "req4",
+        "title": "Maintain a response time of less than two seconds."
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": ["opt1", "opt1_1"],
+      "req2": ["opt2", "opt2_1"],
+      "req3": ["opt2", "opt2_1"],
+      "req4": ["opt1", "opt1_1"]
+    }
+  },
+  {
+    "id": 95,
+    "topic": 1,
+    "text": "DRAG DROP -\nYou are leading the discovery process with a new client who is implementing a customer support solution by using Microsoft Power Platform.\n\nThe company has the following requests for the discovery process:\n\n• You must use sticky notes to collect information from stakeholders.\n• You must ensure that support reps who cannot attend the in-person meeting are able to provide feedback.\n• You must get detailed information on the call escalation process from a support rep who noted several pain points.\n\nYou need to select which types of discovery to use to meet the requests.\n\nWhich discovery types should you use? To answer, move the appropriate discovery types to the correct requests. You may use each discovery type once, more than once, or not at all. You may need to move the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Use sticky notes to collect information from stakeholders.",
+        "options": [
+          { "id": "opt1", "text": "Survey" },
+          { "id": "opt2", "text": "Job shadowing" },
+          { "id": "opt3", "text": "Workshop" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Capture feedback from support reps who cannot attend the meeting.",
+        "options": [
+          { "id": "opt1", "text": "Survey" },
+          { "id": "opt2", "text": "Job shadowing" },
+          { "id": "opt3", "text": "Workshop" }
+        ]
+      },
+      {
+        "id": "st3",
+        "text": "Get detailed information on the call escalation process.",
+        "options": [
+          { "id": "opt1", "text": "Survey" },
+          { "id": "opt2", "text": "Job shadowing" },
+          { "id": "opt3", "text": "Workshop" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt3",
+      "st2": "opt1",
+      "st3": "opt2"
+    }
   }
 ]
