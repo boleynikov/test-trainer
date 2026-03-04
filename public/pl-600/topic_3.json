@@ -1,0 +1,1208 @@
+[
+  {
+    "id": 1,
+    "topic": 3,
+    "text": "A company has a Microsoft Power Platform solution that integrates with a third-party system. \nThe client reports that unexpected updates are being made to the Accounts table.\n\nYou need to determine the root cause of the issue. \nIn which three locations should you investigate? Each correct answer presents a complete solution. \n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "d", "e"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Audit summary view"
+      },
+      {
+        "id": "b",
+        "text": "B. Solution history"
+      },
+      {
+        "id": "c",
+        "text": "C. SDK Message Processing Steps"
+      },
+      {
+        "id": "d",
+        "text": "D. Plug-in trace log"
+      },
+      {
+        "id": "e",
+        "text": "E. System job run history"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "topic": 3,
+    "text": "You are designing a Power Platform solution.\nDuring quality assurance testing the API limits are reached.\nYou need to identify and resolve the issue.\nWhich two actions should you recommend? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "c"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Allocate Microsoft Dataverse capacity add-on subscriptions."
+      },
+      {
+        "id": "b",
+        "text": "B. Use the out-of-the-box User Summary report from the Reports section of the solution's model-driven app."
+      },
+      {
+        "id": "c",
+        "text": "C. In the Power Platform admin center, review the Home tab Dataverse analytics dashboard."
+      },
+      {
+        "id": "d",
+        "text": "D. In the Power Platform admin center, review the Usage section of the Power Apps analytics dashboard."
+      },
+      {
+        "id": "e",
+        "text": "E. In the Power Platform admin center, review the Runs section of the Power Automate analytics dashboard."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "topic": 3,
+    "text": "HOTSPOT -\nYou design a Power Platform solution for a customer. The solution uses Microsoft Dataverse as the data store. You are managing the go-live process for the solution. \nThe customer reports the following performance issues:\n\n• Form load time is much slower than it was during testing.\n• Overall system performance has been significantly slower than it was during testing.\n\nYou need to recommend how to troubleshoot system performance.\nWhich actions should you recommend? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Slow form load times",
+        "options": [
+          {
+            "id": "opt1_1",
+            "text": "Review workflows associated with the form events."
+          },
+          {
+            "id": "opt1_2",
+            "text": "Review QuickFind properties for the fields on the form."
+          },
+          { "id": "opt1_3", "text": "Review the fields that are on the form." }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Overall slow system performance",
+        "options": [
+          {
+            "id": "opt2_1",
+            "text": "Change all security roles from global read permissions to business unit permissions."
+          },
+          {
+            "id": "opt2_2",
+            "text": "Review one to many relationships to verify whether cascade settings are necessary."
+          },
+          {
+            "id": "opt2_3",
+            "text": "Change security roles from global read access to business unit to provide better performance."
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_3",
+      "st2": "opt2_2"
+    }
+  },
+  {
+    "id": 4,
+    "topic": 3,
+    "text": "You are a Power Apps architect for a company. The IT administrator designs a Power Apps app that is ready to be tested. The company uses application lifecycle management (ALM).\n\nEach version and solution component must be tracked as it is tested.\n\nYou need to recommend a strategy to deploy solutions for the user acceptance testing environment.\n\nWhat should you recommend?",
+    "correctOptionId": "c",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Use Package Deployer and deploy a managed solution."
+      },
+      {
+        "id": "b",
+        "text": "B. Use Package Deployer and deploy an unmanaged solution."
+      },
+      {
+        "id": "c",
+        "text": "C. Use Solution Packager and deploy a managed solution."
+      },
+      {
+        "id": "d",
+        "text": "D. Use Solution Packager and deploy an unmanaged solution."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "topic": 3,
+    "text": "HOTSPOT -\nYou are supporting a recent go-live for a model-driven app that includes mobile offline functionality. Users report the following issues:\n\n• The process of downloading initial metadata for the app takes hours to complete.\n• Some account views are unavailable when the app is offline.\n• Changes to users' security privileges are not reflected in the mobile app.\n• Contact data is not available when the app is offline.\n\nYou need to resolve the mobile app performance issues. What should you review? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "The process of downloading initial metadata for the app takes hours to complete.",
+        "options": [
+          { "id": "opt1_1", "text": "Synchronize the mobile app." },
+          { "id": "opt1_2", "text": "Remove organization data filters." },
+          {
+            "id": "opt1_3",
+            "text": "Reduce records included in the profile filter."
+          }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Changes to users' security privileges are not reflected in the mobile app.",
+        "options": [
+          { "id": "opt2_1", "text": "Synchronize the mobile app." },
+          {
+            "id": "opt2_2",
+            "text": "Reduce records included in the profile filter."
+          },
+          {
+            "id": "opt2_3",
+            "text": "Remove reference to tables not included in mobile profile."
+          }
+        ]
+      },
+      {
+        "id": "st3",
+        "text": "Some account views are unavailable when the app is offline.",
+        "options": [
+          { "id": "opt3_1", "text": "Synchronize the mobile app." },
+          {
+            "id": "opt3_2",
+            "text": "Reduce records included in the profile filter."
+          },
+          {
+            "id": "opt3_3",
+            "text": "Remove reference to tables not included in mobile profile."
+          }
+        ]
+      },
+      {
+        "id": "st4",
+        "text": "Contact data is not available when the app is offline.",
+        "options": [
+          {
+            "id": "opt4_1",
+            "text": "Reduce records included in the profile filter."
+          },
+          {
+            "id": "opt4_2",
+            "text": "Update mobile profile to include contact information."
+          },
+          {
+            "id": "opt4_3",
+            "text": "Remove reference to tables not included in mobile profile."
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_3",
+      "st2": "opt2_1",
+      "st3": "opt3_3",
+      "st4": "opt4_2"
+    }
+  },
+  {
+    "id": 6,
+    "topic": 3,
+    "text": "A company wants to create a Power Automate flow that posts marketing events to social media.\nThe company must ensure that the postings adhere to regulatory requirements for handling of personally identifiable information (PII) data. The company will not post events to unauthorized social media platforms.\nYou need to ensure that the requirement is met.\nWhich two actions should you perform? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["d", "e"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Configure the relevant connector so that is part of the Non-Business data group category."
+      },
+      {
+        "id": "b",
+        "text": "B. Create a security role to prevent data export."
+      },
+      {
+        "id": "c",
+        "text": "C. Configure an Azure Active Directory (AAD) security role for the maker to the environment."
+      },
+      {
+        "id": "d",
+        "text": "D. Create a Data Loss Protection (DLP) policy."
+      },
+      {
+        "id": "e",
+        "text": "E. Configure the relevant connector so that it is part of the Blocked data group category."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "topic": 3,
+    "text": "HOTSPOT -\nYou are conducting performance testing for a Microsoft Power Platform solution. The solution uses Power Automate cloud flows to query and synchronize data across 10 different tables based on various criteria. You make the following observations:\n\n• Internet speed during testing is fast (500 Mbps).\n• There are 50 Dynamics real-time workflows in use.\n• There are 63 Dynamics asynchronous workflows in use.\n• There are 76 Power Automate cloud flows in use.\n\nYou identify the following performance issues:\n\n• Data changes are slow to save.\n• Background processes often take hours to complete.\n\nYou need to recommend steps to resolve the performance issues. What should you recommend? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Data changes are slow to save.",
+        "options": [
+          {
+            "id": "opt1_1",
+            "text": "Reduce usage of near real-time workflows."
+          },
+          {
+            "id": "opt1_2",
+            "text": "Convert all Dynamics 365 workflows to Power Automate cloud flows."
+          },
+          {
+            "id": "opt1_3",
+            "text": "Review and revise filters in cloud flow queries and conditional logic."
+          }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Background processes often take hours to complete.",
+        "options": [
+          {
+            "id": "opt2_1",
+            "text": "Reduce usage of near real-time workflows."
+          },
+          {
+            "id": "opt2_2",
+            "text": "Convert all Dynamics 365 workflows to Power Automate cloud flows."
+          },
+          {
+            "id": "opt2_3",
+            "text": "Review and revise filters in cloud flow queries and conditional logic."
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_1",
+      "st2": "opt2_3"
+    }
+  },
+  {
+    "id": 8,
+    "topic": 3,
+    "text": "DRAG DROP -\nYou are overseeing the data migration for a Microsoft Power Platform solution.\nThe migration team is performing a test migration with a subset of data. The migration team reports the following findings:\n\n• Users who own account rows are receiving system generated emails.\n• Data that is not part of the migration is being added to the Contact and Appointment tables.\n• The size of the log listed on the Power Platform admin center Capacity page has increased significantly.\n\nYou need to recommend strategies to resolve the reported issues.\nWhat should you recommend? To answer, drag the appropriate resolution to the correct migration problem. Each resolution may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Disable auditing."
+      },
+      {
+        "id": "opt2",
+        "text": "Disable duplicate detection."
+      },
+      {
+        "id": "opt3",
+        "text": "Disable all custom JavaScript functions."
+      },
+      {
+        "id": "opt4",
+        "text": "Disable all workflows, plug-ins, and Power Platform admin center"
+      },
+      {
+        "id": "opt4_1",
+        "text": "Disable all workflows, plug-ins, and Power Platform admin center"
+      }
+    ],
+    "zones": [
+      {
+        "id": "issue1",
+        "title": "Users who own account rows are receiving system generated emails."
+      },
+      {
+        "id": "issue2",
+        "title": "Data that is not part of the migration is being added to the Contact and Appointment tables."
+      },
+      {
+        "id": "issue3",
+        "title": "The size of the log listed on the Power Platform admin center Capacity page has increased significantly."
+      }
+    ],
+    "correctZoneAnswers": {
+      "issue1": ["opt4", "opt4_1"],
+      "issue2": ["opt4", "opt4_1"],
+      "issue3": "opt1"
+    }
+  },
+  {
+    "id": 9,
+    "topic": 3,
+    "text": "You are a Microsoft Power Platform solution architect working on a project. API calls are being sent between external applications and a Microsoft Power Platform solution.\n\nThe number of requests per user within a given time frame varies. Some users may be exceeding the service protection API limits.\n\nYou need to ensure that the API conforms to service protection limits.\n\nWhich three metrics should you review? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "c", "e"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. The number of requests that a user can make each day."
+      },
+      {
+        "id": "b",
+        "text": "B. The total number of requests that can be processed each day."
+      },
+      {
+        "id": "c",
+        "text": "C. The number of concurrent requests that a user can make."
+      },
+      {
+        "id": "d",
+        "text": "D. The total execution time for requests by all users."
+      },
+      {
+        "id": "e",
+        "text": "E. The combined execution time required to process requests from a user."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "topic": 3,
+    "text": "You are evaluating a solution design for a model-driven app that will have a large number of complex forms. \nMany of the forms take up to 10 seconds to load.\nYou need to recommend solution to speed up loading times for the forms.\nWhich two solutions should you recommend? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "d"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Consolidate and reduce scripts."
+      },
+      {
+        "id": "b",
+        "text": "B. Use synchronous JavaScript requests."
+      },
+      {
+        "id": "c",
+        "text": "C. Move scripts into the OnLoad event."
+      },
+      {
+        "id": "d",
+        "text": "D. Remove unnecessary fields."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "topic": 3,
+    "text": "A company uses a third-party cloud-based app to make real-time business decisions. The app has a RESTful API.\n\nYou must design a Microsoft Power Platform solution that interacts with the third-party app. Changes made in the Microsoft Power Platform solution must be reflected in the cloud app.\n\nYou need to recommend technologies to integrate the Microsoft Power Platform solution with the cloud app.\n\nWhich two technologies should you recommend? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "isMultiSelect": true,
+    "correctOptionIds": ["a", "c"],
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Scheduled Power Automate cloud flow with a custom connector to the cloud app"
+      },
+      {
+        "id": "b",
+        "text": "B. Power Virtual Agents"
+      },
+      {
+        "id": "c",
+        "text": "C. Custom plug-on registered with Microsoft Dataverse"
+      },
+      {
+        "id": "d",
+        "text": "D. Model-driven app"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "topic": 3,
+    "text": "You are implementing a customer solution that includes the robotic process automation (RPA) capability in Power Automate and a legacy desktop financial software package. The customer has several Azure virtual machines deployed and imaged with the financial software package. \n\nYou need to select a connector to integrate with the Azure virtual machines. \n\nWhat are two possible ways to achieve this goal? Each correct answer presents a complete solution. \n\nNOTE: Each correct selection is worth one point.",
+    "isMultiSelect": true,
+    "correctOptionIds": ["b", "d"],
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Connection reference and log in information"
+      },
+      {
+        "id": "b",
+        "text": "B. Machine registration and desktop flows"
+      },
+      {
+        "id": "c",
+        "text": "C. Data gateway and web service endpoints"
+      },
+      {
+        "id": "d",
+        "text": "D. Azure VM connector and administrative rights"
+      },
+      {
+        "id": "e",
+        "text": "E. Dataflow and Power BI workspace"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "topic": 3,
+    "text": "You are a Microsoft Power Platform architect developing a solution for a car retailer. Your solution includes reference data that relates to car colors, car types, and car models. Automation has been developed and deployed to notify account managers based on the car color, car make, and car model selected by potential buyers.\n\nNotifications are failing to send to account managers due to different record identifiers between environments.\n\nYou need to update the reference data across all environments.\n\nWhat are two possible ways to achieve this goal? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "isMultiSelect": true,
+    "correctOptionIds": ["c", "d"],
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Power Automate flows"
+      },
+      {
+        "id": "b",
+        "text": "B. Logic Apps"
+      },
+      {
+        "id": "c",
+        "text": "C. Configuration Migration tool"
+      },
+      {
+        "id": "d",
+        "text": "D. Import Data Wizard"
+      },
+      {
+        "id": "e",
+        "text": "E. Azure Data Factory"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "topic": 3,
+    "text": "You are implementing a customer service solution that uses Power Automate flows to automate business processes. \nA flow sends order status update emails to customers. Customers report not receiving order status update emails during peak order times. \nYou need to troubleshoot the issue by examining flow executions. \nWhat should you use?",
+    "correctOptionId": "a",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Flow information page in flow.microsoft.com"
+      },
+      {
+        "id": "b",
+        "text": "B. Solution history information page"
+      },
+      {
+        "id": "c",
+        "text": "C. Microsoft Power Platform admin center"
+      },
+      {
+        "id": "d",
+        "text": "D. Flow information page in make.powerapps.com"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "topic": 3,
+    "text": "DRAG DROP -\nYou are designing a solution to automate the following processes:\n\n• Import data into Microsoft Dataverse from systems that have an API available.\n• Import data into Microsoft Dataverse from systems that do not have an API available.\n• Validate that users enter data into Microsoft Dataverse forms in a specified order.\n\nYou need to implement automation methods.\n\nWhich components should you use? To answer, drag the appropriate components to the correct requirements. Each component may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Cloud flow"
+      },
+      {
+        "id": "opt2",
+        "text": "Business process flow"
+      },
+      {
+        "id": "opt3",
+        "text": "Robotic process automation"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Interact with applications that do not have an API."
+      },
+      {
+        "id": "req2",
+        "title": "Guide users through business steps in a specific order."
+      },
+      {
+        "id": "req3",
+        "title": "Interact with applications that have an API."
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt3",
+      "req2": "opt2",
+      "req3": "opt1"
+    }
+  },
+  {
+    "id": 16,
+    "topic": 3,
+    "text": "You are a Microsoft Power Platform architect supporting the go live phase of a canvas app. The canvas app accesses data on premises and in the cloud.\n\nUsers are reporting the app is very slow to respond, especially upon initial launch.\n\nYou need to optimize the performance of the app.\n\nWhich three actions should you complete? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": ["a", "d", "e"],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Move data calls from the OnStart event to the OnLoad event."
+      },
+      {
+        "id": "b",
+        "text": "B. Move data calls from the OnLoad event to the OnStart event."
+      },
+      {
+        "id": "c",
+        "text": "C. Increase data row limits."
+      },
+      {
+        "id": "d",
+        "text": "D. Review the settings of the data gateway for on-premises data sources."
+      },
+      {
+        "id": "e",
+        "text": "E. Reduce data row limits."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "topic": 3,
+    "text": "DRAG DROP -\nYou are a Microsoft Power Platform architect.\n\nYou need to design a process to transport configuration and test data from one environment to a separate environment.\n\nWhich four actions should you recommend be performed in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+    "type": "dnd",
+    "dndOptions": [
+      { "id": "opt1", "text": "Import the ZIP file data." },
+      { "id": "opt2", "text": "Import the CSV file data." },
+      {
+        "id": "opt3",
+        "text": "Define the schema of the source data to be exported."
+      },
+      { "id": "opt4", "text": "Use the schema to export data." },
+      {
+        "id": "opt5",
+        "text": "Download the Configuration Migration tool from NuGet."
+      },
+      {
+        "id": "opt6",
+        "text": "Create personal views to define the source data to be exported."
+      },
+      {
+        "id": "opt7",
+        "text": "Download the schema of the source data to be exported."
+      },
+      {
+        "id": "opt8",
+        "text": "Download the Configuration Migration tool from AppSource."
+      }
+    ],
+    "correctOrder": ["opt5", "opt3", "opt4", "opt1"]
+  },
+  {
+    "id": 18,
+    "topic": 3,
+    "text": "You are designing a Microsoft Power Platform solution to include several canvas apps. You are using Azure DevOps for solution management and deployment. You deploy managed solutions into production.\n\nYou need to update the solution number when the solution is exported from the development environment.\n\nWhat are two possible ways to achieve this goal? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "isMultiSelect": true,
+    "correctOptionIds": ["b", "c"],
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Set the solution version number by using Solution Packager."
+      },
+      {
+        "id": "b",
+        "text": "B. Set the solution version number when exporting the solution from the solutions page in the make.powerapps.com portal."
+      },
+      {
+        "id": "c",
+        "text": "C. Set the solution version number in the Azure DevOps build pipeline."
+      },
+      {
+        "id": "d",
+        "text": "D. Set the canvas app version number in Power Apps Studio."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "topic": 3,
+    "text": "DRAG DROP -\nA company plans to import one million records of legacy data into Microsoft Power Platform. You configure the solution in a test environment by using custom tables modeled to new business processes. You load the legacy data into the custom tables.\n\nYou monitor the test environment during the test uploads and sequence the data loads only outside of business hours.\n\nYou need to determine how to deploy all the components and legacy data into production.\n\nWhich three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+    "type": "dnd",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Import the solution in the production environment."
+      },
+      { "id": "opt2", "text": "Create an incremental refresh schedule." },
+      { "id": "opt3", "text": "Update the production connection information." },
+      { "id": "opt4", "text": "Add dataflows to the solution." },
+      { "id": "opt5", "text": "Create a data integration project." }
+    ],
+    "correctOrder": ["opt4", "opt1", "opt3"]
+  },
+  {
+    "id": 20,
+    "topic": 3,
+    "text": "DRAG DROP -\nA company uses Microsoft Power Platform solutions. \n\nThe company plans to set up application lifecycle management (ALM) capabilities to store the solutions in source control, which will be used to automate the release process.\n\nYou need to set up the initial ALM infrastructure to store the solutions in source control.\nWhich four actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+    "type": "dnd",
+    "dndOptions": [
+      { "id": "opt1", "text": "Create a Release pipeline." },
+      { "id": "opt2", "text": "Run the pipeline." },
+      { "id": "opt3", "text": "Create an Export pipeline." },
+      {
+        "id": "opt4",
+        "text": "Add a task for Microsoft Power Platform Import Solution."
+      },
+      {
+        "id": "opt5",
+        "text": "Install the Microsoft Power Platform Build Tools."
+      },
+      { "id": "opt6", "text": "Create an Azure DevOps Project." }
+    ],
+    "correctOrder": ["opt6", "opt5", "opt3", "opt2"]
+  },
+  {
+    "id": 21,
+    "topic": 3,
+    "text": "HOTSPOT -\nYou are evaluating a solution design.\nYou need to test the following scenarios:\n\n• Mimic a user using an app.\n• Obtain formal approval that an app meets customer-provided criteria.\n• Confirmation that an app can manage expected peak loads.\n\nWhich test types should you use? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Mimic a user using an app.",
+        "options": [
+          { "id": "opt1_1", "text": "UI testing" },
+          { "id": "opt1_2", "text": "Acceptance testing" },
+          { "id": "opt1_3", "text": "Performance testing" },
+          { "id": "opt1_4", "text": "Load testing" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Obtain formal approval that an app meets customer-provided criteria.",
+        "options": [
+          { "id": "opt2_1", "text": "Migration testing" },
+          { "id": "opt2_2", "text": "Acceptance testing" },
+          { "id": "opt2_3", "text": "Performance testing" },
+          { "id": "opt2_4", "text": "UI testing" }
+        ]
+      },
+      {
+        "id": "st3",
+        "text": "Confirmation that an app can manage expected peak loads.",
+        "options": [
+          { "id": "opt3_1", "text": "Unit testing" },
+          { "id": "opt3_2", "text": "Acceptance testing" },
+          { "id": "opt3_3", "text": "Performance testing" },
+          { "id": "opt3_4", "text": "Integration testing" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_1",
+      "st2": "opt2_2",
+      "st3": "opt3_3"
+    }
+  },
+  {
+    "id": 22,
+    "topic": 3,
+    "text": "DRAG DROP -\nA company plans to integrate a model-driven app with external data sources. The company has the following requirements:\n\n• Consume data in its data warehouse from Microsoft Dataverse.\n• Use a plug-in to retrieve information from an external service.\n\nYou need to recommend a Microsoft Azure component for each requirement.\n\nWhich Azure components should you recommend? To answer, drag the appropriate Azure components to the correct requirements. Each Azure component may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      { "id": "opt1", "text": "Azure Event Hub" },
+      { "id": "opt2", "text": "Azure Service Bus" },
+      { "id": "opt3", "text": "Azure Data Factory" },
+      { "id": "opt4", "text": "Azure Synapse Link" }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Consume data in a data warehouse."
+      },
+      {
+        "id": "req2",
+        "title": "Consume data from an external source."
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt4",
+      "req2": "opt2"
+    }
+  },
+  {
+    "id": 23,
+    "topic": 3,
+    "text": "HOTSPOT -\nA company plans to use Microsoft Power Platform. \n\nThe company needs to understand how API requests are used so that its solution can be designed within the API limits granted by Microsoft. The company requires the following information:\n\n• How API limits are allocated\n• Which Microsoft Power Platform components count toward its API limits\n• Which Power Automate flow steps count toward API limits\n\nYou need to describe the API allocation for each design consideration.\n\nWhich API allocations should you identify? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "How API limits are allocated",
+        "options": [
+          { "id": "opt1_1", "text": "By app" },
+          { "id": "opt1_2", "text": "By tenant" },
+          { "id": "opt1_3", "text": "By license" },
+          { "id": "opt1_4", "text": "By environment" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Which Microsoft Power Platform components count toward its API limits",
+        "options": [
+          { "id": "opt2_1", "text": "Dataverse, Power Apps, and Power BI" },
+          { "id": "opt2_2", "text": "Power Apps, Power BI, and Power Pages" },
+          {
+            "id": "opt2_3",
+            "text": "Dataverse, Power Apps, and Power Automate"
+          }
+        ]
+      },
+      {
+        "id": "st3",
+        "text": "Which Power Automate flow steps count toward API limits",
+        "options": [
+          { "id": "opt3_1", "text": "Each step counts as one API request." },
+          {
+            "id": "opt3_2",
+            "text": "Each flow run counts as one API request."
+          },
+          {
+            "id": "opt3_3",
+            "text": "Only successful steps count as one API request."
+          },
+          {
+            "id": "opt3_4",
+            "text": "Only successful flows count as one API request."
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_3",
+      "st2": "opt2_3",
+      "st3": "opt3_1"
+    }
+  },
+  {
+    "id": 24,
+    "topic": 3,
+    "text": "A company uses Microsoft Power Platform and Microsoft Dataverse.\n\nThe company enables auditing in the environment tables, and at column level for all eligible tables and columns.\n\nYou need to ensure audit history is available for all users.\n\nWhat should you do?",
+    "correctOptionId": "c",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Remove auditing from the required tables, and then re-enable it."
+      },
+      {
+        "id": "b",
+        "text": "B. Enable log access in the Microsoft Power Platform admin center."
+      },
+      {
+        "id": "c",
+        "text": "C. Add the View audit history privilege to the user's security role."
+      },
+      {
+        "id": "d",
+        "text": "D. Add the View audit partitions privilege to the user's security role."
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "topic": 3,
+    "text": "HOTSPOT -\nYou are implementing a Microsoft Power Platform solution for a customer to include data migration from multiple legacy systems. The data includes lead and contact data. The environment includes an assigned security group.\n\nThe following issues have occurred during a go-live deployment attempt:\n\n• Lookup values are not populated when data migration is complete.\n• Data is being added to the contacts table that is not part of the data migration.\n• Various users do not appear in the list of users available for record assignment.\n\nYou need to resolve the go-live deployment issues. How should you resolve the issue? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Lookup values are not populated when data migration is complete.",
+        "options": [
+          {
+            "id": "opt1_1",
+            "text": "Import the data by using an application user."
+          },
+          {
+            "id": "opt1_2",
+            "text": "Split the import data into smaller import batches."
+          },
+          {
+            "id": "opt1_3",
+            "text": "Disable all Power Automate flows, plug-ins, and workflows."
+          },
+          { "id": "opt1_4", "text": "Run data migration in a specific order." }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Data is being added to the contacts table that is not part of the data migration.",
+        "options": [
+          { "id": "opt2_1", "text": "Disable auditing." },
+          {
+            "id": "opt2_2",
+            "text": "Import the data by using an application user."
+          },
+          {
+            "id": "opt2_3",
+            "text": "Disable all Power Automate flows, plug-ins, and workflows."
+          },
+          {
+            "id": "opt2_4",
+            "text": "Split the import data into smaller import batches."
+          }
+        ]
+      },
+      {
+        "id": "st3",
+        "text": "Various users do not appear in the list of users available for record assignment.",
+        "options": [
+          { "id": "opt3_1", "text": "Add to a security group." },
+          { "id": "opt3_2", "text": "Add a security role." },
+          { "id": "opt3_3", "text": "Add a Microsoft 365 role." },
+          { "id": "opt3_4", "text": "Add a field security profile." }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_4",
+      "st2": "opt2_3",
+      "st3": "opt3_1"
+    }
+  },
+  {
+    "id": 26,
+    "topic": 3,
+    "text": "A company plans to import 2.5 million data rows into Microsoft Dataverse during a go-live process. The import job will run as a single import job.\n\nYou run a test on the import and observe that some of the rows did not import.\n\nYou need to identify which rows did not import.\n\nWhich tool should you use?",
+    "correctOptionId": "b",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Azure Event Hub"
+      },
+      {
+        "id": "b",
+        "text": "B. Import Data Wizard"
+      },
+      {
+        "id": "c",
+        "text": "C. Microsoft Power Platform dataflows"
+      },
+      {
+        "id": "d",
+        "text": "D. Azure Service Bus"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "topic": 3,
+    "text": "HOTSPOT\n-\n\n\nCase study\n-\n\nThis is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.\n\nTo answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.\n\nAt the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.\n\n\nTo start the case study\n-\nTo display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.\n\n\nBackground\n-\n\nVanArsdel, Ltd. builds custom homes. The company has one Azure tenant and uses multiple systems to manage the sales, construction, and warranties of the homes.\n\nThe company has three departments: sales, construction, and warranty. Sales, contract, and warranty information is not shared among the departments.\n\nThe owner of VanArsdel, Ltd. requires a consolidated system that the company can use to track each home’s progress.\n\n\nSales\n-\n\n\nCurrent environment\n-\n\n• Company employees use Microsoft Outlook for all communications.\n• Company employees use Microsoft Word to create sales contracts.\n• Employees in the sales department are frequently in different locations and work different hours from each other.\n• Employees in the sales department use a Contracts team in Microsoft Teams to collaborate.\n• The company uses a third-party marketing tool to update contacts every day.\n\n\nRequirements\n-\n\n• Contacts’ names must be formatted before they are imported from the third-party marketing tool.\n• The company must retain contracts for five years.\n• The company requires that the sales department display the All Contracts view in Microsoft Teams.\n• All contract information must be stored in the All Contracts view.\n• Contracts must not be lost if a device is lost or stolen.\n\n\nIssues\n-\n\n• Employees in the sales department store contracts on their local computers.\n• The construction team receives a copy of a contract only when the sale of a home is complete.\n\n\nConstruction\n-\n\n\nCurrent environment\n-\n\n• Employees in the construction department use Project Online to manage schedules.\n• Employees in the construction department use Microsoft Excel to manage costs of projects.\n• The main supplier of construction materials provides an API to the company. The company uses the API to manage suppliers for projects in near real time.\n\n\nRequirements\n-\n\n• Employees in the construction department must be able to demonstrate how their work is performed rather than document their process.\n• The company requires that project schedules be created less than a week after a contract is signed.\n• A field must sum up the costs of the materials.\n\n\nIssues\n-\n\n• Employees in the construction department are unable to schedule resources because they are not informed of future projects.\n• Employees in the construction department currently enter basic project information manually for each software application.\n\n\nWarranty\n-\n\n\nCurrent environment\n-\n\n• Employees in the warranty department use Excel to track project issues and resolutions.\n• The company requires that employees in the warranty department meet with each other in person to discuss their job roles.\n\n\nRequirements\n-\n\n• The company requires that warranty claims be resolved in less than a month.\n• The company requires that all claims be entered in the system along with their related issues.\n• If a claim is found to be invalid, the company requires that the claim and its related issues be deleted.\n\n\nIssue\n-\n\n• Employees in the warranty department report that they are frequently sent to homes without knowledge of what is in scope for the project.\n\n\nRequirements\n-\n\n• The new system must use the development and production environments.\n• The development environment must be the master of all changes.\n• All table changes must be added ta solution. Changes to the solution must not be allowed to be made in the production environment.\n• Each department must have a custom app. Employees must be able to access only their department’s app.\n• All sales, contract, and warranty data must be shared among the departments.\n• The project manager must be solely responsible for creating and owning the deployment plan for projects.\n• All projects must run by using the Agile methodology.\n• The deployment plan must include the environment setup, training plan, rollout strategy, and deployment support.\n\n\nIssue\n-\n\nThe IT manager reports that the deployment plan is not complete.\n\n\nYou need to add a new column to the production environment.\n\nWhat should you do in each environment? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "development",
+        "options": [
+          { "id": "opt1_1", "text": "Deploy the pipeline step." },
+          { "id": "opt1_2", "text": "Export the solution as managed." },
+          { "id": "opt1_3", "text": "Export the solution as unmanaged." }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "production",
+        "options": [
+          { "id": "opt2_1", "text": "Import the solution as managed." },
+          { "id": "opt2_2", "text": "Import the solution as unmanaged." },
+          { "id": "opt2_3", "text": "Monitor the pipeline deployment." }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_2",
+      "st2": "opt2_1"
+    }
+  },
+  {
+    "id": 28,
+    "topic": 3,
+    "text": "A company uses Microsoft Power Platform with assets that include solution files, flat files, custom code, HTML files, and data.\n\nYou need to use application lifecycle management (ALM) to deploy the assets to Microsoft Dataverse.\n\nWhich tool should you use?",
+    "correctOptionId": "d",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Package deployer"
+      },
+      {
+        "id": "b",
+        "text": "B. Solution packager"
+      },
+      {
+        "id": "c",
+        "text": "C. Configuration Migration tool"
+      },
+      {
+        "id": "d",
+        "text": "D. Microsoft Power Platform Build Tools"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "topic": 3,
+    "text": "A customer plans to use Microsoft Power Platform integration capabilities to migrate its on-premises sales database to Microsoft Dataverse. The database has more than 10 years of sales data with complex table relationships. The data is used to generate real-time sales reports and predictive analytics.\n\nThe customer requires a data migration strategy that implements the following:\n\n• ensures minimal downtime\n• maintains data integrity\n• allows for validation of migrated data before switching to the new system\n• ensures that the historical data is preserved accurately in the Dataverse environment\n\nWhich two strategies should you use? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "isMultiSelect": true,
+    "correctOptionIds": ["c", "d"],
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Perform a full migration and start using Dataverse after migration."
+      },
+      {
+        "id": "b",
+        "text": "B. Perform a full migration and perform a test run on Dataverse to simulate real-time activity."
+      },
+      {
+        "id": "c",
+        "text": "C. Develop a phased migration plan in which data is moved in chunks based on years."
+      },
+      {
+        "id": "d",
+        "text": "D. Map the data schema to Dataverse and validate integrity through trial loads."
+      },
+      {
+        "id": "e",
+        "text": "E. Migrate historical data to Azure Data Lake to reduce migration complexity."
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "topic": 3,
+    "text": "HOTSPOT\n-\n\n\nCase study\n-\n\nThis is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.\n\nTo answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.\n\nAt the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.\n\n\nTo start the case study\n-\nTo display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.\n\n\nBackground\n-\n\nFirst Up Consulting recruits information technology (IT) workers for temporary or permanent positions at client companies. The company operates offices in multiple countries/regions.\n\nFirst Up has both full-time and part-time employees. The company has a team or worker support agents that respond to inquiries from current and prospective workers. Some of the worker support agents are multilingual.\n\nThe company does not have a standardized tool used for reporting purposes. The organization engages you to implement a new Microsoft Power Platform solution. Workers are managed by a dedicated team that includes one primary recruiter and a contract assistant. Many client companies live in areas that do not allow for mobile data connections.\n\n\nCurrent environment\n-\n\n\nExisting systems and processes\n-\n\n• First Up uses an on-premises system to manage current and historical patient data including medications and medical visits.\n• The company plans to reference historical data in the existing system. The records held in these systems will not be migrated to the new solution except for medication information.\n• Employee authentication with the existing system is provided by an on-premises Active Directory instance that is linked to Microsoft Entra ID.\n• An appointment record is created for each visit with a worker. The record includes worker contact information, preferred language, the date and time of the appointment, and other relevant data. This information is reviewed by the worker’s primary recruiter.\n• First Up has no current capabilities for forecasting future worker needs based on the data held.\n\n\nClient company visits\n-\n\nBefore First Up signs a contract to place workers at a client company, a member of the audit team visits the company and interviews company management. Audit members use different types of devices including Android and iOS devices. First Up has no plans to require the use of a single type of device. Audit team members currently record information about workers on paper forms. Team members enter information from paper forms into the system when they return to the office.\n\nFirst Up audits client companies at least once each year but may schedule additional visits based on feedback from workers that they place at a client company.\n\n\nRequirements\n-\n\n\nGeneral\n-\n\n• There is no standardized communication tool across the company, and this causes communication issues between different teams.\n• First up employees must be able to contact each other by using a secure system to ask and answer questions about jobs and potential workers.\n• Workers must be able to communicate in near real-time with worker support agents.\n• You must minimize development and administrative effort required to implement the solution.\n\n\nClient company visits\n-\n\n• Audit team records must be locked after they have been reviewed by a First Up manager. No further edits to the record can be carried out. This must be implemented using standard available system functionality.\n• Audit teams must be able to enter records of their visits to the companies where they have or may place workers. Audit teams must be able to update any necessary records with the latest information.\n• The solution must support tracking of security clearance information for a worker including the date, status, and certifying agency.\n• When a worker makes an appointment, the appointments must appear in the timeline for the worker’s contact record.\n\n\nJob history information\n-\n\n• The solution must provide a worker appointment booking system that can access worker historical job placement data.\n• The solution must allow employees to associate a primary recruiter with each worker. The solution must also allow multiple secondary recruiters to be associated with each worker.\n• Every worker assessment performed must be validated and countersigned by the primary recruiter for a worker.\n• Job posting data from previous work engagements must be accessible by the Microsoft Power Platform solution to ensure that new job postings are accurate.\n• First Up staff members must be able to view and update worker records. They must be able to see current and historical job placement data on the same form in the new solution.\n\n\nWorker access\n-\n\n• The solution must support workers that speak different languages.\n• The solution must provide automatic translation capabilities.\n• The solution must support near real-time communications between workers and recruiters.\n• Workers must be able to view their records online.\n• Workers must be able to enter any additional information that is required by or may be helpful to recruiters.\n• The solution must provide workers a way to search for general information about available positions.\n• Workers must be able to request copies of their records by using a chatbot.\n• Workers must be able to provide information to a recruiter as needed.\n\n\nData platform\n-\n\n• Audit teams must have the ability to view worker information on their mobile devices.\n• Audit teams must be able to record data during visits to locations where workers are placed.\n• The solution must support the ability for a corporate governance auditing team to periodically audit the organization’s records, policies, and procedures.\n\n\nReporting and analytics\n-\n\n• The reporting and analytics team must be able to create reports that include data from all facilities and all workers.\n• Management reports must present an overview of the entire organization. Other reports may be limited to specific offices.\n• You must create dashboards that show the status across all groups of workers. The dashboards must be embedded into the Power Platform apps. Updates to data must be displayed in near real time.\n\n\nSecurity\n-\n\n• Authentication for all user types must be managed by a single platform. IT teams must use PowerShell to apply security permissions for users.\n• Worker records must only be viewed by the recruiting office that the worker visits.\n• Worker skill records must be archived after ten years and are then removed from the main system. Worker information must not be deleted from the system while skill and job placement history records for the worker exist in the system.\n• User security roles must be customized to ensure that users are able to interact only with the specific data in which they need access.\n• Workers must be able to sign into a portal by using their own email address. Workers must be required to use a secure method of authentication to be able to view their data.\n• Alerts regarding the number of recruited and placed at client companies must be updated as background processes.\n\n\nDeployment\n-\n\n• Application development work should be completed in the development environment and follow lifecycle management best practices.\n• Solutions need to be able to be checked for issues before deploying from the development environment to other environments.\n\n\nIssues\n-\n\nThe organization reports the following issues:\n\n• Recruiters report that they cannot see historical job placement data for workers.\n• API usage reports show that the number of API calls made exceeds limits. This causes delays saving data.\n• Users cannot view Power BI reports within the Power Platform apps.\n• Some security clearance information for workers not visible from within the Microsoft Power Platform solution.\n• Audit teams report that they cannot view or edit worker data when the device on which they access the solution does not have network connectivity.\n• The testing team reports that one of the canvas apps is not working as expected. An error message displays as specific pages load.\n• Currently all route planning for the audit team is done manually. This does not always result in the best route for the mobile audit teams, especially when many appointments are scheduled. Lack of optimization can lead to missed visits with companies.\n\n\nYou need to design tables for the solution.\n\nWhat should you recommend? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Site visit record",
+        "options": [
+          { "id": "opt1_1", "text": "Custom table" },
+          { "id": "opt1_2", "text": "Activity table" },
+          { "id": "opt1_3", "text": "Virtual table" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Security clearance record",
+        "options": [
+          { "id": "opt2_1", "text": "Lookup (N:1)" },
+          { "id": "opt2_2", "text": "Choice" },
+          { "id": "opt2_3", "text": "Lookup (N:N)" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_1",
+      "st2": "opt2_1"
+    }
+  },
+  {
+    "id": 31,
+    "topic": 3,
+    "text": "HOTSPOT -\nA nationwide retailer is streamlining its warehouse operations by using a custom Microsoft Power Platform solution. The retailer plans to migrate its existing data to Microsoft Dataverse.\n\nThe retailer provides the following data solution requirements:\n\n• The floor manager requires a consolidated view of the total order revenue for each order.\n• The remaining inventory on hand must be available on each order line for the shipped product.\n• All staff must take photos if they observe a hazard in a warehouse. These photos must be added to a folder and shared with regional managers.\n\nYou need to design the data solution. Which data solution component should you use for each requirement? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Total order revenue",
+        "options": [
+          { "id": "opt1_1", "text": "Calculated column" },
+          { "id": "opt1_2", "text": "Choice column" },
+          { "id": "opt1_3", "text": "Rollup column" },
+          { "id": "opt1_4", "text": "Whole number column" }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Inventory on hand",
+        "options": [
+          { "id": "opt2_1", "text": "Autonumber column" },
+          { "id": "opt2_2", "text": "Key column" },
+          { "id": "opt2_3", "text": "Rollup column" },
+          { "id": "opt2_4", "text": "Whole number column" }
+        ]
+      },
+      {
+        "id": "st3",
+        "text": "Photos of hazards",
+        "options": [
+          { "id": "opt3_1", "text": "File column" },
+          { "id": "opt3_2", "text": "Rollup column" },
+          { "id": "opt3_3", "text": "Text Area column" },
+          { "id": "opt3_4", "text": "SharePoint document library" }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_3",
+      "st2": "opt2_4",
+      "st3": "opt3_4"
+    }
+  },
+  {
+    "id": 32,
+    "topic": 3,
+    "text": "A company plans to auto-populate the Name column on a row based on other text columns on the row. The company requires this to happen immediately and without needing to refresh the form.\n\nYou need to recommend a solution.\n\nWhat should you recommend that the company use?",
+    "correctOptionId": "b",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Background classic workflow"
+      },
+      {
+        "id": "b",
+        "text": "B. Business rule"
+      },
+      {
+        "id": "c",
+        "text": "C. Power Automate flow"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "topic": 3,
+    "text": "DRAG DROP -\nA company is preparing to launch a new Microsoft Power Apps app.\n\nThe company must import data for the launch. The company requests a review of the documented testing process that will be used to validate the data import.\n\nYou need to provide the steps for the testing process.\n\nWhich four steps should you recommend be performed in sequence? To answer, move the appropriate steps from the list of steps to the answer area and arrange them in the correct order.",
+    "type": "dnd",
+    "dndOptions": [
+      { "id": "opt1", "text": "Customize the solution." },
+      { "id": "opt2", "text": "Create a test plan." },
+      { "id": "opt3", "text": "Run test scripts." },
+      { "id": "opt4", "text": "Complete UI validation." },
+      { "id": "opt5", "text": "Complete data mapping." },
+      { "id": "opt6", "text": "Prepare a test report." },
+      { "id": "opt7", "text": "Prepare the environment." }
+    ],
+    "correctOrder": ["opt2", "opt7", "opt3", "opt6"]
+  },
+  {
+    "id": 34,
+    "topic": 3,
+    "text": "A multinational corporation is deploying a Microsoft Power Platform solution to manage its sales processes across the following regions: North America, Europe, and Asia.\n\nEach region operates independently but reports to a global headquarters. The company has several business units that correspond to each region. Within each business unit are multiple teams based on countries/regions.\n\nCompany employees have the following requirements:\n\n• Sales representatives must have access only to data relevant to their specific country/region.\n• Regional managers must be able to view and manage data across all areas within their region.\n• Some global analysts require read-only access to sales data across the corporation by using third-party tools.\n• External contractors need limited access to the system to input their progress.\n\nYou need to design a solution for the company.\n\nWhat should you do?",
+    "correctOptionId": "a",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Implement row-level security."
+      },
+      {
+        "id": "b",
+        "text": "B. Implement a DLP policy to restrict data that will be shared from Microsoft Dataverse."
+      },
+      {
+        "id": "c",
+        "text": "C. Use a global security role with organization-level access for sales representatives."
+      },
+      {
+        "id": "d",
+        "text": "D. Use a single default business unit and manage data access through security roles."
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "topic": 3,
+    "text": "A retail company runs a Microsoft Power Automate flow that notifies customers when their orders are shipped.\n\nThe flow runs under a service account that experienced much higher API transaction volumes over the last 12 hours due to a sales promotion.\n\nAn administrator reports that the flow is often delayed and sometimes fails to send the customer notification.\n\nYou need to validate the platform limit the flow is encountering.\n\nWhich platform limit is disrupting the flow?",
+    "correctOptionId": "e",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Microsoft Power Apps API Request limit"
+      },
+      {
+        "id": "b",
+        "text": "B. User entitlement limit"
+      },
+      {
+        "id": "c",
+        "text": "C. Microsoft Dataverse storage capacity limit"
+      },
+      {
+        "id": "d",
+        "text": "D. Microsoft Power Automate API Request limit"
+      },
+      {
+        "id": "e",
+        "text": "E. Service protection API limit"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "topic": 3,
+    "text": "DRAG DROP -\nYou are implementing a Microsoft Power Platform solution for an insurance company to help onboard new employees.\n\nThe implementation requires that the project team as well as additional employees conduct several rounds of testing. The testing rounds must follow these guidelines:\n\n• Testers must ensure that the existing onboarding solution remains intact after any system updates.\n• Developers must test all individual components as part of the deployment.\n• The project team must conduct a dry run of the complete onboarding process by using real data and scenarios.\n• A small team of new employees must provide confirmation that the solution simplifies the onboarding process.\n\nYou need to evaluate the test requirements for the implementation.\n\nWhich four testing actions should you recommend be performed in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.\n\nNOTE: More than one order of answer choices is correct. You will receive credit for any of the correct orders you select.",
+    "type": "dnd",
+    "dndOptions": [
+      { "id": "opt1", "text": "go-live" },
+      { "id": "opt2", "text": "unit" },
+      { "id": "opt3", "text": "performance" },
+      { "id": "opt4", "text": "integration" },
+      { "id": "opt5", "text": "disaster recovery" },
+      { "id": "opt6", "text": "regression" },
+      { "id": "opt7", "text": "acceptance" }
+    ],
+    "correctOrder": ["opt2", "opt4", "opt6", "opt7"]
+  },
+  {
+    "id": 37,
+    "topic": 3,
+    "text": "A multinational corporation is deploying a Microsoft Power Platform solution to manage its sales processes across the following regions: North America, Europe, and Asia.\n\nEach region operates independently but reports to a global headquarters. The company has several business units that correspond to each region. Within each business unit are multiple teams based on countries/regions.\n\nCompany employees have the following requirements:\n\n• Sales representatives must have access only to data relevant to their specific country/region.\n• Regional managers must be able to view and manage data across all areas within their region.\n• Some global analysts require read-only access to sales data across the corporation by using third-party tools.\n• External contractors need limited access to the system to input their progress.\n\nYou need to design a solution for the company.\n\nWhat should you do?",
+    "correctOptionId": "a",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Use business units and child business units."
+      },
+      {
+        "id": "b",
+        "text": "B. Use Microsoft Entra ID groups to manage external access and app registrations for external applications."
+      },
+      {
+        "id": "c",
+        "text": "C. Use a global security role with organization-level access for sales representatives."
+      },
+      {
+        "id": "d",
+        "text": "D. Use a single security role with deep privileges and manually share records as needed."
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "topic": 3,
+    "text": "HOTSPOT -\nA company is implementing Microsoft Power Platform. The company deploys a solution by using Azure DevOps application lifecycle management (ALM).\n\nIssues are reported after data migration.\n\nYou need to recommend a resolution for each issue.\n\nWhich resolutions should you recommend? To answer, select the appropriate options in the answer area.\n\nNOTE: Each correct selection is worth one point.",
+    "type": "statements-match",
+    "statements": [
+      {
+        "id": "st1",
+        "text": "Account lookup column values in related records are blank.",
+        "options": [
+          { "id": "opt1_1", "text": "Import data in a specific order." },
+          { "id": "opt1_2", "text": "Change column-level security." },
+          {
+            "id": "opt1_3",
+            "text": "Change record ownership to organization."
+          },
+          {
+            "id": "opt1_4",
+            "text": "Modify account privileges for security roles."
+          }
+        ]
+      },
+      {
+        "id": "st2",
+        "text": "Power BI dashboard in the model-driven app is not visible to users.",
+        "options": [
+          { "id": "opt2_1", "text": "Share the Power BI semantic model." },
+          { "id": "opt2_2", "text": "Share the Power BI dashboard." },
+          { "id": "opt2_3", "text": "Assign Power BI licenses to users." },
+          {
+            "id": "opt2_4",
+            "text": "Modify reporting privileges for security roles."
+          }
+        ]
+      }
+    ],
+    "correctStatementAnswers": {
+      "st1": "opt1_1",
+      "st2": "opt2_2"
+    }
+  }
+]
