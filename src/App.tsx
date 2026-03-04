@@ -26,7 +26,7 @@ const App: React.FC = () => {
     try {
       const savedMode = localStorage.getItem("themeMode") as Mode;
       return savedMode ? savedMode : ("light" as Mode);
-    } catch (error) {
+    } catch {
       return "light" as Mode;
     }
   });
@@ -35,7 +35,7 @@ const App: React.FC = () => {
   const [showHints, setShowHints] = useState(false);
 
   const theme = useMemo(() => {
-    let themeObj = createTheme(getDesignTokens(mode));
+    const themeObj = createTheme(getDesignTokens(mode));
     return responsiveFontSizes(themeObj);
   }, [mode]);
 
@@ -107,7 +107,10 @@ const App: React.FC = () => {
         </AppBar>
 
         {/* Main Content */}
-        <Box component="main" sx={{ flexGrow: 1, py: 3 }}>
+        <Box
+          component="main"
+          sx={{ flexGrow: 1, py: 3, pb: showHints ? 6 : "inherit" }}
+        >
           <ExamSimulator showHints={showHints} />
         </Box>
 
