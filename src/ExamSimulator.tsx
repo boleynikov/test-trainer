@@ -93,6 +93,7 @@ const ExamSimulator: React.FC<ExamSimulatorProps> = ({ showHints = false }) => {
   useEffect(() => {
     const storedQuestions = localStorage.getItem("questions");
     if (!storedQuestions) {
+      //eslint-disable-next-line react-hooks/set-state-in-effect
       setIsDataLoadModalOpen(true);
       return; // No questions, wait for user to upload
     }
@@ -326,6 +327,7 @@ const ExamSimulator: React.FC<ExamSimulatorProps> = ({ showHints = false }) => {
         />
       ) : currentQuestion.type === "statements-match" ? (
         <SeveralStatementsQuestion
+          key={currentQuestion.id}
           question={currentQuestion}
           onSubmitAnswer={handleQuestionSubmit}
           showSubmit={showSubmit}

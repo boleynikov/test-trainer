@@ -48,11 +48,13 @@ const App: React.FC = () => {
   };
 
   const handleOpenUpload = () => setOpenUpload(true);
-  const handleCloseUpload = () => setOpenUpload(false);
+  const handleCloseUpload = () => {
+    setOpenUpload(false);
+    window.location.reload();
+  };
 
   return (
     <ThemeProvider theme={theme}>
-      {/* CssBaseline запускає normalize.css і фарбує body у колір background.default */}
       <CssBaseline />
 
       {/* Простий Layout додатку */}
