@@ -12,6 +12,7 @@ import { HintBox } from "./components/HintBox";
 
 interface ExamSimulatorProps {
   showHints?: boolean;
+  maxWidth?: "sm" | "md" | "lg" | "xl";
 }
 
 // --- UTILS ---
@@ -41,7 +42,10 @@ const shuffleQuestionsAndOptions = (
   }
 };
 
-const ExamSimulator: React.FC<ExamSimulatorProps> = ({ showHints = false }) => {
+const ExamSimulator: React.FC<ExamSimulatorProps> = ({
+  showHints = false,
+  maxWidth = "md",
+}) => {
   // Core state
   const [originalQuestions, setOriginalQuestions] = useState<Question[]>([]);
   const [questions, setQuestions] = useState<Question[]>([]); // The shuffled/sorted list in use
@@ -308,7 +312,7 @@ const ExamSimulator: React.FC<ExamSimulatorProps> = ({ showHints = false }) => {
   const isLastQuestion = currentQIndex === questions.length - 1;
 
   return (
-    <Container maxWidth="md" sx={{ mt: 4 }}>
+    <Container maxWidth={maxWidth} sx={{ mt: 4 }}>
       <QuizHeader
         currentQuestionIndex={currentQIndex}
         totalQuestions={questions.length}

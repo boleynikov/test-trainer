@@ -18,7 +18,14 @@ import {
 
 import { getDesignTokens, type Mode } from "./theme"; // Імпортуємо нашу тему
 import ExamSimulator from "./ExamSimulator"; // Ваш основний компонент
-import { IconButton, Tooltip, Switch, FormControlLabel } from "@mui/material";
+import {
+  IconButton,
+  Tooltip,
+  Switch,
+  FormControlLabel,
+  RadioGroup,
+  Radio,
+} from "@mui/material";
 import { DataLoadModal } from "./components/DataLoadModal";
 
 const App: React.FC = () => {
@@ -33,6 +40,22 @@ const App: React.FC = () => {
 
   const [openUpload, setOpenUpload] = useState(false);
   const [showHints, setShowHints] = useState(false);
+  const [containerMaxWidth, setContainerMaxWidth] = useState<
+    "sm" | "md" | "lg" | "xl"
+  >(() => {
+    try {
+      const savedWidth = localStorage.getItem("containerMaxWidth");
+      return (savedWidth as "sm" | "md" | "lg" | "xl") || "md";
+    } catch {
+      return "md";
+    }
+  });
+
+  const handleMaxWidthChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = e.target.value as "sm" | "md" | "lg" | "xl";
+    setContainerMaxWidth(val);
+    localStorage.setItem("containerMaxWidth", val);
+  };
 
   const theme = useMemo(() => {
     const themeObj = createTheme(getDesignTokens(mode));
@@ -90,6 +113,37 @@ const App: React.FC = () => {
               sx={{ color: "text.primary", mr: 2 }}
             />
 
+            <Box display="flex" alignItems="center" sx={{ mr: 2 }}>
+              <Typography
+                variant="body2"
+                color="text.primary"
+                sx={{ mr: 1, display: { xs: "none", md: "block" } }}
+              >
+                Ширина:
+              </Typography>
+              <RadioGroup
+                row
+                value={containerMaxWidth}
+                onChange={handleMaxWidthChange}
+              >
+                <FormControlLabel
+                  value="md"
+                  control={<Radio size="small" />}
+                  label={<Typography variant="body2">MD</Typography>}
+                />
+                <FormControlLabel
+                  value="lg"
+                  control={<Radio size="small" />}
+                  label={<Typography variant="body2">LG</Typography>}
+                />
+                <FormControlLabel
+                  value="xl"
+                  control={<Radio size="small" />}
+                  label={<Typography variant="body2">XL</Typography>}
+                />
+              </RadioGroup>
+            </Box>
+
             <Tooltip title="Завантажити JSON з питаннями">
               <IconButton
                 onClick={handleOpenUpload}
@@ -113,7 +167,7 @@ const App: React.FC = () => {
           component="main"
           sx={{ flexGrow: 1, py: 3, pb: showHints ? 6 : "inherit" }}
         >
-          <ExamSimulator showHints={showHints} />
+          <ExamSimulator showHints={showHints} maxWidth={containerMaxWidth} />
         </Box>
 
         {/* Footer */}
