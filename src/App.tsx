@@ -25,6 +25,7 @@ import {
   FormControlLabel,
   RadioGroup,
   Radio,
+  useMediaQuery,
 } from "@mui/material";
 import { DataLoadModal } from "./components/DataLoadModal";
 
@@ -37,6 +38,8 @@ const App: React.FC = () => {
       return "light" as Mode;
     }
   });
+
+  const isMobile = useMediaQuery("(max-width: 600px)");
 
   const [openUpload, setOpenUpload] = useState(false);
   const [showHints, setShowHints] = useState(false);
@@ -113,36 +116,38 @@ const App: React.FC = () => {
               sx={{ color: "text.primary", mr: 2 }}
             />
 
-            <Box display="flex" alignItems="center" sx={{ mr: 2 }}>
-              <Typography
-                variant="body2"
-                color="text.primary"
-                sx={{ mr: 1, display: { xs: "none", md: "block" } }}
-              >
-                Ширина:
-              </Typography>
-              <RadioGroup
-                row
-                value={containerMaxWidth}
-                onChange={handleMaxWidthChange}
-              >
-                <FormControlLabel
-                  value="md"
-                  control={<Radio size="small" />}
-                  label={<Typography variant="body2">MD</Typography>}
-                />
-                <FormControlLabel
-                  value="lg"
-                  control={<Radio size="small" />}
-                  label={<Typography variant="body2">LG</Typography>}
-                />
-                <FormControlLabel
-                  value="xl"
-                  control={<Radio size="small" />}
-                  label={<Typography variant="body2">XL</Typography>}
-                />
-              </RadioGroup>
-            </Box>
+            {!isMobile && (
+              <Box display="flex" alignItems="center" sx={{ mr: 2 }}>
+                <Typography
+                  variant="body2"
+                  color="text.primary"
+                  sx={{ mr: 1, display: { xs: "none", md: "block" } }}
+                >
+                  Ширина:
+                </Typography>
+                <RadioGroup
+                  row
+                  value={containerMaxWidth}
+                  onChange={handleMaxWidthChange}
+                >
+                  <FormControlLabel
+                    value="md"
+                    control={<Radio size="small" />}
+                    label={<Typography variant="body2">MD</Typography>}
+                  />
+                  <FormControlLabel
+                    value="lg"
+                    control={<Radio size="small" />}
+                    label={<Typography variant="body2">LG</Typography>}
+                  />
+                  <FormControlLabel
+                    value="xl"
+                    control={<Radio size="small" />}
+                    label={<Typography variant="body2">XL</Typography>}
+                  />
+                </RadioGroup>
+              </Box>
+            )}
 
             <Tooltip title="Завантажити JSON з питаннями">
               <IconButton
