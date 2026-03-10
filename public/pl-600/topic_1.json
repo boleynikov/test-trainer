@@ -3,7 +3,11 @@
     "id": 1,
     "topic": 1,
     "text": "A company uses two separate unlinked apps to manage sales leads; a Power Apps app and a third-party application.\n\nThe client has the following requirements:\n- Manage all leads by using the Power Apps app.\n- Create a lead in the Power Apps app when a user creates a lead in the third-party application.\n- Update leads in the Power Apps app when a user updates a lead in the third-party application.\n- Connect to the third-party application by using an API.\n\nYou need to recommend strategies to integrate the Power Apps app and the third-party application.\n\nWhich three options can you use to achieve the goal? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["b", "d", "e"],
+    "correctOptionIds": [
+      "b",
+      "d",
+      "e"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -55,7 +59,12 @@
         "text": "The application redirects calls to an on-premises server."
       }
     ],
-    "correctOrder": ["opt2", "opt3", "opt4", "opt1"]
+    "correctOrder": [
+      "opt2",
+      "opt3",
+      "opt4",
+      "opt1"
+    ]
   },
   {
     "id": 3,
@@ -217,7 +226,11 @@
     "id": 7,
     "topic": 1,
     "text": "A company uses manual processes to track interactions with customers. The company wants to use Power Platform to improve productivity.\n\nThe company has the following requirements:\n- Provide customers with an online portal where they can submit and review cases.\n- Ensure that customers can chat online with a customer service representative at any time.\n- Route chats to customer service representatives based on skill and availability.\n\nYou need to recommend a solution to the company.\n\nWhich three components should you recommend? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["a", "b", "e"],
+    "correctOptionIds": [
+      "a",
+      "b",
+      "e"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -246,7 +259,10 @@
     "id": 8,
     "topic": 1,
     "text": "A client uses Dynamics 365 Sales, Power BI datasets, and Power BI dataflows. The Dynamics 365 Sales implementation has security roles that restrict data export. You need to ensure that data has the same restrictions in Power BI as it does in Dynamics 365 Sales.\n\nYou need to design the security to avoid sensitive data from being seen.\n\nWhich two actions should you recommend? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["a", "d"],
+    "correctOptionIds": [
+      "a",
+      "d"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -302,15 +318,24 @@
     ],
     "correctZoneAnswers": {
       "req1": "opt1",
-      "req2": ["opt2", "opt2_1"],
-      "req3": ["opt2", "opt2_1"]
+      "req2": [
+        "opt2",
+        "opt2_1"
+      ],
+      "req3": [
+        "opt2",
+        "opt2_1"
+      ]
     }
   },
   {
     "id": 10,
     "topic": 1,
     "text": "You are a Power Platform consultant for an internet support company.\n\nThe company lacks a budget to buy third-party ISVs or add-ons.\n\nThe company requires a new system that achieves the following:\n- All support issues must come in by email, need to be logged, and assigned to the support group.\n- Accounts must synchronize with the parent company Oracle database.\n- Reports must be sent to the executives on a weekly basis.\n- No custom code will be used in the system.\n\nYou need to recommend the components that should be configured.\n\nWhich two components should you recommend? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["b", "c"],
+    "correctOptionIds": [
+      "b",
+      "c"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -373,10 +398,22 @@
       }
     ],
     "correctZoneAnswers": {
-      "req1": ["opt2", "opt2_1"],
-      "req2": ["opt1", "opt1_1"],
-      "req3": ["opt1", "opt1_1"],
-      "req4": ["opt2", "opt2_1"]
+      "req1": [
+        "opt2",
+        "opt2_1"
+      ],
+      "req2": [
+        "opt1",
+        "opt1_1"
+      ],
+      "req3": [
+        "opt1",
+        "opt1_1"
+      ],
+      "req4": [
+        "opt2",
+        "opt2_1"
+      ]
     }
   },
   {
@@ -413,16 +450,28 @@
         "id": "st1",
         "text": "Capture data from a row during deletion to be used in an automated process.",
         "options": [
-          { "id": "yes", "text": "Yes" },
-          { "id": "no", "text": "No" }
+          {
+            "id": "yes",
+            "text": "Yes"
+          },
+          {
+            "id": "no",
+            "text": "No"
+          }
         ]
       },
       {
         "id": "st2",
         "text": "Use AI to process forms and automate data entry from paper-based forms.",
         "options": [
-          { "id": "yes", "text": "Yes" },
-          { "id": "no", "text": "No" }
+          {
+            "id": "yes",
+            "text": "Yes"
+          },
+          {
+            "id": "no",
+            "text": "No"
+          }
         ]
       }
     ],
@@ -459,7 +508,11 @@
     "id": 15,
     "topic": 1,
     "text": "You are designing a self-service portal for a company. The portal must meet the following requirements:\n- Customers must be able to submit and review cases.\n- Customers must be able to chat with service representatives in near real time.\n- Allow service representatives to select cases from queues and use knowledge articles to resolve customer concerns.\n\nYou need to recommend solutions for the company that do not require custom development.\n\nWhich three apps or services should you recommend? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["b", "c", "e"],
+    "correctOptionIds": [
+      "b",
+      "c",
+      "e"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -700,9 +753,21 @@
       }
     ],
     "correctZoneAnswers": {
-      "req1": ["opt1", "opt1_1", "opt1_2"],
-      "req2": ["opt1", "opt1_1", "opt1_2"],
-      "req3": ["opt1", "opt1_1", "opt1_2"]
+      "req1": [
+        "opt1",
+        "opt1_1",
+        "opt1_2"
+      ],
+      "req2": [
+        "opt1",
+        "opt1_1",
+        "opt1_2"
+      ],
+      "req3": [
+        "opt1",
+        "opt1_1",
+        "opt1_2"
+      ]
     }
   },
   {
@@ -733,7 +798,11 @@
     "id": 21,
     "topic": 1,
     "text": "You are designing a Power Platform solution for a company. The company issues each employee a tablet device.\n\nThe company wants to simplify the opportunity management processes and automate when possible. The company identifies the following requirements:\n- Users must have a visual guide to know which data to enter in each step of the opportunity management process.\n- The system must automatically assign the opportunity to a manager for approval once all data is entered.\n- The system must notify an assignee each time an opportunity is assigned to them by using push notifications.\n- When a user selects a push notification, the associated opportunity must display.\n\nYou need to recommend the Power Platform components that will meet their requirements.\n\nWhich three Power Platform components should you recommend? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["a", "b", "e"],
+    "correctOptionIds": [
+      "a",
+      "b",
+      "e"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -762,7 +831,10 @@
     "id": 22,
     "topic": 1,
     "text": "A company is struggling to gather insights from won and lost opportunities.\nUsers must be able to access the company's solution from mobile and desktop devices. The solution must meet the following requirements:\n- Track opportunities and reasons for the win or loss of opportunities in the context of other related data.\n- Display data to users as charts and tables and provide drill-through capabilities.\n\nYou need to recommend a Power Platform tool to help the client visualize the data.\nWhich two technologies should you recommend? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["a", "d"],
+    "correctOptionIds": [
+      "a",
+      "d"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -787,7 +859,11 @@
     "id": 23,
     "topic": 1,
     "text": "You are designing a Power Platform solution.\n\nYou need to identify the non-functional requirements for the organization.\n\nWhich three non-functional requirements should you identify? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["b", "d", "e"],
+    "correctOptionIds": [
+      "b",
+      "d",
+      "e"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -1000,7 +1076,10 @@
     "id": 29,
     "topic": 1,
     "text": "You are creating a scope of work document for a solution. You have the following requirements:\n- Track support cases, first response time, and resolution time.\n- Include a chat-like interface that allows managers to check the status of cases with minimal manual searching.\n- Allow cases to have multiple different priority levels.\n\nYou need to include the required Dynamics 365 and Microsoft Power Platform components.\n\nWhich two components should you include? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["a", "b"],
+    "correctOptionIds": [
+      "a",
+      "b"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -1025,7 +1104,10 @@
     "id": 30,
     "topic": 1,
     "text": "A car dealership has a custom financing table. You are working with a developer to add a button to a ribbon that displays a hidden section of a form when specific criteria are met.\n\nYou need to recommend tools and technologies for the developer.\n\nWhich two tools or technologies should you recommend? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["b", "c"],
+    "correctOptionIds": [
+      "b",
+      "c"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -1056,20 +1138,40 @@
         "id": "st1",
         "text": "Third-party marketing system",
         "options": [
-          { "id": "opt1_1", "text": "Power BI connector" },
-          { "id": "opt1_2", "text": "Sharepoint connector" },
-          { "id": "opt1_3", "text": "Custom connectoor" },
-          { "id": "opt1_4", "text": "Microsoft Forms connector" }
+          {
+            "id": "opt1_1",
+            "text": "Power BI connector"
+          },
+          {
+            "id": "opt1_2",
+            "text": "Sharepoint connector"
+          },
+          {
+            "id": "opt1_3",
+            "text": "Custom connectoor"
+          },
+          {
+            "id": "opt1_4",
+            "text": "Microsoft Forms connector"
+          }
         ]
       },
-
       {
         "id": "st2",
         "text": "Microsoft Dataverse environment",
         "options": [
-          { "id": "opt2_1", "text": "Sharepoint" },
-          { "id": "opt2_2", "text": "Azure Data Factory" },
-          { "id": "opt2_3", "text": "Microsoft Dataverse" }
+          {
+            "id": "opt2_1",
+            "text": "Sharepoint"
+          },
+          {
+            "id": "opt2_2",
+            "text": "Azure Data Factory"
+          },
+          {
+            "id": "opt2_3",
+            "text": "Microsoft Dataverse"
+          }
         ]
       }
     ],
@@ -1082,7 +1184,10 @@
     "id": 32,
     "topic": 1,
     "text": "You are designing a solution for a national vehicle repair company. You have the following requirements:\n- Customers must search for vehicle issues by using natural language expressions.\n- Customers must contact a customer service agent as required.\n\nYou need to recommend a solution.\n\nWhich two features should you include? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["a", "b"],
+    "correctOptionIds": [
+      "a",
+      "b"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -1107,7 +1212,11 @@
     "id": 33,
     "topic": 1,
     "text": "You are implementing a solution that includes applications which perform high-volume Microsoft Dataverse operations.\n\nThe applications must not experience a loss of functionality or loss of performance due to service protection API limits.\n\nYou need to evaluate metrics for the service protection API limits.\n\nWhich three metrics should you evaluate? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["c", "d", "e"],
+    "correctOptionIds": [
+      "c",
+      "d",
+      "e"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -1181,38 +1290,80 @@
         "id": "st1",
         "text": "Post requests to a system that is not always available and limited in its ability to process high volumes of messages.",
         "options": [
-          { "id": "opt1_1", "text": "Azure Service Bus" },
-          { "id": "opt1_2", "text": "Azure Notification Hub" },
-          { "id": "opt1_3", "text": "Azure Active Directory" },
-          { "id": "opt1_4", "text": "Azure ExpressRoute" }
+          {
+            "id": "opt1_1",
+            "text": "Azure Service Bus"
+          },
+          {
+            "id": "opt1_2",
+            "text": "Azure Notification Hub"
+          },
+          {
+            "id": "opt1_3",
+            "text": "Azure Active Directory"
+          },
+          {
+            "id": "opt1_4",
+            "text": "Azure ExpressRoute"
+          }
         ]
       },
       {
         "id": "st2",
         "text": "Allow peer-to-peer communication between on-premises services and cloud-based model-driven Microsoft Power Platform apps.",
         "options": [
-          { "id": "opt2_1", "text": "Azure Relay" },
-          { "id": "opt2_2", "text": "Azure SQL" },
-          { "id": "opt2_3", "text": "Azure Cognitive Services" },
-          { "id": "opt2_4", "text": "Azure API Management" }
+          {
+            "id": "opt2_1",
+            "text": "Azure Relay"
+          },
+          {
+            "id": "opt2_2",
+            "text": "Azure SQL"
+          },
+          {
+            "id": "opt2_3",
+            "text": "Azure Cognitive Services"
+          },
+          {
+            "id": "opt2_4",
+            "text": "Azure API Management"
+          }
         ]
       },
       {
         "id": "st3",
         "text": "Stream large volumes of data from the company's website to a live Power BI dashboard.",
         "options": [
-          { "id": "opt3_1", "text": "Azure Event Hubs" },
-          { "id": "opt3_2", "text": "Azure Service Bus" },
-          { "id": "opt3_3", "text": "Azure SQL" }
+          {
+            "id": "opt3_1",
+            "text": "Azure Event Hubs"
+          },
+          {
+            "id": "opt3_2",
+            "text": "Azure Service Bus"
+          },
+          {
+            "id": "opt3_3",
+            "text": "Azure SQL"
+          }
         ]
       },
       {
         "id": "st4",
         "text": "Support enterprise-level integrations with Dynamics 365 that can be billed on a consumption basis.",
         "options": [
-          { "id": "opt4_1", "text": "Azure Logic Apps" },
-          { "id": "opt4_2", "text": "Azure Functions" },
-          { "id": "opt4_3", "text": "Azure Service Bus" }
+          {
+            "id": "opt4_1",
+            "text": "Azure Logic Apps"
+          },
+          {
+            "id": "opt4_2",
+            "text": "Azure Functions"
+          },
+          {
+            "id": "opt4_3",
+            "text": "Azure Service Bus"
+          }
         ]
       }
     ],
@@ -1257,7 +1408,11 @@
     "id": 37,
     "topic": 1,
     "text": "You are designing a Microsoft Power Platform solution.\n\nThe solution requires Microsoft Power Platform components and custom coding.\n\nYou need to describe the benefits of using Microsoft AppSource.\n\nWhich are three benefits of AppSource? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["a", "b", "e"],
+    "correctOptionIds": [
+      "a",
+      "b",
+      "e"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -1324,10 +1479,22 @@
       }
     ],
     "correctZoneAnswers": {
-      "req1": ["opt1", "opt1_1"],
-      "req2": ["opt1", "opt1_1"],
-      "req3": ["opt2", "opt2_1"],
-      "req4": ["opt2", "opt2_1"]
+      "req1": [
+        "opt1",
+        "opt1_1"
+      ],
+      "req2": [
+        "opt1",
+        "opt1_1"
+      ],
+      "req3": [
+        "opt2",
+        "opt2_1"
+      ],
+      "req4": [
+        "opt2",
+        "opt2_1"
+      ]
     }
   },
   {
@@ -1364,20 +1531,44 @@
         "id": "st1",
         "text": "Enable sales representatives to locate assets in less time",
         "options": [
-          { "id": "opt1_1", "text": "Time Consumer" },
-          { "id": "opt1_2", "text": "Non-functional" },
-          { "id": "opt1_3", "text": "Functional" },
-          { "id": "opt1_4", "text": "Quick Win" }
+          {
+            "id": "opt1_1",
+            "text": "Time Consumer"
+          },
+          {
+            "id": "opt1_2",
+            "text": "Non-functional"
+          },
+          {
+            "id": "opt1_3",
+            "text": "Functional"
+          },
+          {
+            "id": "opt1_4",
+            "text": "Quick Win"
+          }
         ]
       },
       {
         "id": "st2",
         "text": "Enable management to view inventory and asset details",
         "options": [
-          { "id": "opt2_1", "text": "Big Investment" },
-          { "id": "opt2_2", "text": "Non-functional" },
-          { "id": "opt2_3", "text": "Budget" },
-          { "id": "opt2_4", "text": "Functional" }
+          {
+            "id": "opt2_1",
+            "text": "Big Investment"
+          },
+          {
+            "id": "opt2_2",
+            "text": "Non-functional"
+          },
+          {
+            "id": "opt2_3",
+            "text": "Budget"
+          },
+          {
+            "id": "opt2_4",
+            "text": "Functional"
+          }
         ]
       }
     ],
@@ -1433,7 +1624,11 @@
     "id": 42,
     "topic": 1,
     "text": "You are designing a Microsoft Power Platform solution that will include multiple applications.\n\nYou have the following requirements:\n- Support agents managing cases.\n- Project managers reviewing and updating their projects.\n- Stock managers managing warehouses.\n- New site visitors self-registering.\n- Employees tracking time entries.\n\nWhich three requirements can you meet by implementing role-based applications? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["b", "c", "e"],
+    "correctOptionIds": [
+      "b",
+      "c",
+      "e"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -1498,8 +1693,14 @@
         "id": "st1",
         "text": "Lawyer app",
         "options": [
-          { "id": "opt1_1", "text": "Canvas app" },
-          { "id": "opt1_2", "text": "Model-driven app" },
+          {
+            "id": "opt1_1",
+            "text": "Canvas app"
+          },
+          {
+            "id": "opt1_2",
+            "text": "Model-driven app"
+          },
           {
             "id": "opt1_3",
             "text": "Microsoft Teams channel app for lawyers only"
@@ -1514,10 +1715,22 @@
         "id": "st2",
         "text": "Paralegal app",
         "options": [
-          { "id": "opt2_1", "text": "Canvas app" },
-          { "id": "opt2_2", "text": "Custom page" },
-          { "id": "opt2_3", "text": "SharePoint app" },
-          { "id": "opt2_4", "text": "Microsoft Teams channel app" }
+          {
+            "id": "opt2_1",
+            "text": "Canvas app"
+          },
+          {
+            "id": "opt2_2",
+            "text": "Custom page"
+          },
+          {
+            "id": "opt2_3",
+            "text": "SharePoint app"
+          },
+          {
+            "id": "opt2_4",
+            "text": "Microsoft Teams channel app"
+          }
         ]
       }
     ],
@@ -1575,27 +1788,54 @@
         "id": "st1",
         "text": "Coordinate long-term end-to-end delivery of financial counseling services to farmers.",
         "options": [
-          { "id": "opt1_1", "text": "Model-driven app" },
-          { "id": "opt1_2", "text": "Power Virtual Agents" },
-          { "id": "opt1_3", "text": "Dynamics 365 Customer Voice" }
+          {
+            "id": "opt1_1",
+            "text": "Model-driven app"
+          },
+          {
+            "id": "opt1_2",
+            "text": "Power Virtual Agents"
+          },
+          {
+            "id": "opt1_3",
+            "text": "Dynamics 365 Customer Voice"
+          }
         ]
       },
       {
         "id": "st2",
         "text": "Manage project accounting and recognize revenue compliant with international financial reporting standards.",
         "options": [
-          { "id": "opt2_1", "text": "Dynamics 365 Project Operations" },
-          { "id": "opt2_2", "text": "Dynamics 365 Field Service" },
-          { "id": "opt2_3", "text": "Dynamics 365 Finance" }
+          {
+            "id": "opt2_1",
+            "text": "Dynamics 365 Project Operations"
+          },
+          {
+            "id": "opt2_2",
+            "text": "Dynamics 365 Field Service"
+          },
+          {
+            "id": "opt2_3",
+            "text": "Dynamics 365 Finance"
+          }
         ]
       },
       {
         "id": "st3",
         "text": "Notify users of their overdue tasks on a daily basis.",
         "options": [
-          { "id": "opt3_1", "text": "Power Automate" },
-          { "id": "opt3_2", "text": "Power Virtual Agents" },
-          { "id": "opt3_3", "text": "AppSource" }
+          {
+            "id": "opt3_1",
+            "text": "Power Automate"
+          },
+          {
+            "id": "opt3_2",
+            "text": "Power Virtual Agents"
+          },
+          {
+            "id": "opt3_3",
+            "text": "AppSource"
+          }
         ]
       }
     ],
@@ -1633,7 +1873,10 @@
     "id": 48,
     "topic": 1,
     "text": "A company plans to use Microsoft Power Platform. The company gathers business requirements about data.\n\nYou need to identify the functional requirements.\n\nWhich two requirements about data should you gather? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["a", "b"],
+    "correctOptionIds": [
+      "a",
+      "b"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -1732,20 +1975,44 @@
         "id": "st1",
         "text": "Enable collaboration between onsite inspectors and remote inspectors.",
         "options": [
-          { "id": "opt1_1", "text": "Power Virtual Agents" },
-          { "id": "opt1_2", "text": "Dynamics 365 Remote Assist" },
-          { "id": "opt1_3", "text": "Dynamics 365 Customer Voice" },
-          { "id": "opt1_4", "text": "Dynamics 365 Customer Insights" }
+          {
+            "id": "opt1_1",
+            "text": "Power Virtual Agents"
+          },
+          {
+            "id": "opt1_2",
+            "text": "Dynamics 365 Remote Assist"
+          },
+          {
+            "id": "opt1_3",
+            "text": "Dynamics 365 Customer Voice"
+          },
+          {
+            "id": "opt1_4",
+            "text": "Dynamics 365 Customer Insights"
+          }
         ]
       },
       {
         "id": "st2",
         "text": "Enable management and maintenance of knowledge articles.",
         "options": [
-          { "id": "opt2_1", "text": "AI Builder" },
-          { "id": "opt2_2", "text": "Dynamics 365 Customer Voice" },
-          { "id": "opt2_3", "text": "Dynamics 365 Customer Service" },
-          { "id": "opt2_4", "text": "Dynamics 365 Customer Insights" }
+          {
+            "id": "opt2_1",
+            "text": "AI Builder"
+          },
+          {
+            "id": "opt2_2",
+            "text": "Dynamics 365 Customer Voice"
+          },
+          {
+            "id": "opt2_3",
+            "text": "Dynamics 365 Customer Service"
+          },
+          {
+            "id": "opt2_4",
+            "text": "Dynamics 365 Customer Insights"
+          }
         ]
       }
     ],
@@ -1758,7 +2025,10 @@
     "id": 54,
     "topic": 1,
     "text": "You design a Microsoft Power Platform solution for a company.\n\nThe company has an existing Azure SQL database with customer information that it wants to continue using. The company wants to share access to data that is held in Azure SQL with the following people:\n- internal company employees, using built-in process functionality\n- external customers to view their data\n\nYou need to recommend the appropriate components to use for the application.\n\nWhich two components should you recommend? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["a", "d"],
+    "correctOptionIds": [
+      "a",
+      "d"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -1789,20 +2059,44 @@
         "id": "st1",
         "text": "Retrieve data representing fresh produce details.",
         "options": [
-          { "id": "opt1_1", "text": "Basic form" },
-          { "id": "opt1_2", "text": "Data gateway" },
-          { "id": "opt1_3", "text": "Advanced form" },
-          { "id": "opt1_4", "text": "Custom connector" }
+          {
+            "id": "opt1_1",
+            "text": "Basic form"
+          },
+          {
+            "id": "opt1_2",
+            "text": "Data gateway"
+          },
+          {
+            "id": "opt1_3",
+            "text": "Advanced form"
+          },
+          {
+            "id": "opt1_4",
+            "text": "Custom connector"
+          }
         ]
       },
       {
         "id": "st2",
         "text": "Expose the fresh produce details.",
         "options": [
-          { "id": "opt2_1", "text": "Portal Management app" },
-          { "id": "opt2_2", "text": "Customer Service Insights" },
-          { "id": "opt2_3", "text": "Microsoft Power Platform admin center" },
-          { "id": "opt2_4", "text": "Microsoft 365 Apps admin center" }
+          {
+            "id": "opt2_1",
+            "text": "Portal Management app"
+          },
+          {
+            "id": "opt2_2",
+            "text": "Customer Service Insights"
+          },
+          {
+            "id": "opt2_3",
+            "text": "Microsoft Power Platform admin center"
+          },
+          {
+            "id": "opt2_4",
+            "text": "Microsoft 365 Apps admin center"
+          }
         ]
       }
     ],
@@ -1983,7 +2277,10 @@
     "id": 62,
     "topic": 1,
     "text": "A company plans to use Microsoft Power Pages. The company gathers business requirements.\n\nYou need to identify the functional requirements.\n\nWhich two requirements should you gather? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["c", "e"],
+    "correctOptionIds": [
+      "c",
+      "e"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -2012,7 +2309,10 @@
     "id": 63,
     "topic": 1,
     "text": "You are designing a Microsoft Power Platform solution for a customer.\n\nThe customer is developing an application that needs to use an existing Microsoft SharePoint list. The application must be able to:\n\n• allow view access for external customers.\n• use out-of-the-box processes for access for employees.\n\nYou need to recommend components for the application.\n\nWhich two components should you recommend? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["b", "d"],
+    "correctOptionIds": [
+      "b",
+      "d"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -2310,9 +2610,15 @@
       }
     ],
     "correctZoneAnswers": {
-      "req1": ["opt1", "opt1_1"],
+      "req1": [
+        "opt1",
+        "opt1_1"
+      ],
       "req2": "opt2",
-      "req3": ["opt1", "opt1_1"]
+      "req3": [
+        "opt1",
+        "opt1_1"
+      ]
     }
   },
   {
@@ -2325,10 +2631,22 @@
         "id": "st1",
         "text": "Connect from the on-premises network to the Microsoft cloud environment.",
         "options": [
-          { "id": "opt1_1", "text": "Azure Event Hub" },
-          { "id": "opt1_2", "text": "Azure ExpressRoute" },
-          { "id": "opt1_3", "text": "Custom connector" },
-          { "id": "opt1_4", "text": "On-premises data gateway" }
+          {
+            "id": "opt1_1",
+            "text": "Azure Event Hub"
+          },
+          {
+            "id": "opt1_2",
+            "text": "Azure ExpressRoute"
+          },
+          {
+            "id": "opt1_3",
+            "text": "Custom connector"
+          },
+          {
+            "id": "opt1_4",
+            "text": "On-premises data gateway"
+          }
         ]
       },
       {
@@ -2339,9 +2657,18 @@
             "id": "opt2_1",
             "text": "Center of Excellence Developer Compliance Center"
           },
-          { "id": "opt2_2", "text": "Center of Excellence nurture components" },
-          { "id": "opt2_3", "text": "Center of Excellence theming components" },
-          { "id": "opt2_4", "text": "Creator Kit" }
+          {
+            "id": "opt2_2",
+            "text": "Center of Excellence nurture components"
+          },
+          {
+            "id": "opt2_3",
+            "text": "Center of Excellence theming components"
+          },
+          {
+            "id": "opt2_4",
+            "text": "Creator Kit"
+          }
         ]
       }
     ],
@@ -2431,7 +2758,10 @@
     "id": 74,
     "topic": 1,
     "text": "You are meeting with a user at a financial institution to gather app requirements.\n\nThe app must meet the following requirements:\n\n• Be enabled for mobile use.\n• Respond in less than five seconds.\n• All data transmitted over the network must be encrypted.\n\nYou need to categorize the type of requirements you captured.\n\nWhich two requirement types are captured? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["a", "e"],
+    "correctOptionIds": [
+      "a",
+      "e"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -2484,7 +2814,11 @@
     "id": 76,
     "topic": 1,
     "text": "You are documenting a company's current enterprise architecture.\n\nYou need to evaluate the architecture of the data to identify its influences.\n\nWhich three data influences should you ask the company about? Each correct answer presents a complete solution. (Choose three.)\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["b", "d", "e"],
+    "correctOptionIds": [
+      "b",
+      "d",
+      "e"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -2519,20 +2853,44 @@
         "id": "st1",
         "text": "Schedule onsite visits.",
         "options": [
-          { "id": "opt1_1", "text": "Dynamics 365 Field Service" },
-          { "id": "opt1_2", "text": "Dynamics 365 Customer Service" },
-          { "id": "opt1_3", "text": "Dynamics 365 Customer Insights" },
-          { "id": "opt1_4", "text": "Omnichannel for Customer Service" }
+          {
+            "id": "opt1_1",
+            "text": "Dynamics 365 Field Service"
+          },
+          {
+            "id": "opt1_2",
+            "text": "Dynamics 365 Customer Service"
+          },
+          {
+            "id": "opt1_3",
+            "text": "Dynamics 365 Customer Insights"
+          },
+          {
+            "id": "opt1_4",
+            "text": "Omnichannel for Customer Service"
+          }
         ]
       },
       {
         "id": "st2",
         "text": "Generate invoices.",
         "options": [
-          { "id": "opt2_1", "text": "Dynamics 365 Marketing" },
-          { "id": "opt2_2", "text": "Dynamics 365 Field Service" },
-          { "id": "opt2_3", "text": "Dynamics 365 Remote Assist" },
-          { "id": "opt2_4", "text": "Dynamics 365 Customer Service" }
+          {
+            "id": "opt2_1",
+            "text": "Dynamics 365 Marketing"
+          },
+          {
+            "id": "opt2_2",
+            "text": "Dynamics 365 Field Service"
+          },
+          {
+            "id": "opt2_3",
+            "text": "Dynamics 365 Remote Assist"
+          },
+          {
+            "id": "opt2_4",
+            "text": "Dynamics 365 Customer Service"
+          }
         ]
       }
     ],
@@ -2559,16 +2917,28 @@
             "id": "opt1_2",
             "text": "Manage activity in the implementation phase."
           },
-          { "id": "opt1_3", "text": "Manage activity in the operation phase." }
+          {
+            "id": "opt1_3",
+            "text": "Manage activity in the operation phase."
+          }
         ]
       },
       {
         "id": "st2",
         "text": "Manage adjustments to scope to meet key success criteria.",
         "options": [
-          { "id": "opt2_1", "text": "Update the project charter." },
-          { "id": "opt2_2", "text": "Perform change management." },
-          { "id": "opt2_3", "text": "Communicate variance to stakeholders." }
+          {
+            "id": "opt2_1",
+            "text": "Update the project charter."
+          },
+          {
+            "id": "opt2_2",
+            "text": "Perform change management."
+          },
+          {
+            "id": "opt2_3",
+            "text": "Communicate variance to stakeholders."
+          }
         ]
       }
     ],
@@ -2581,7 +2951,10 @@
     "id": 79,
     "topic": 1,
     "text": "You conduct an initial discovery meeting with a manufacturer. The manufacturer plans to modernize its current sales order system by using Microsoft Power Platform and AI-generated product suggestions. Data architecture is a top concern for the company.\n\nThe company requires assistance to identify risk factors related to the use of data with AI-generated product suggestions.\n\nYou need to ask follow-up questions to assess the risk factors.\n\nWhich two questions should you ask? Each correct answer presents a complete solution. (Choose two.)\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["c", "d"],
+    "correctOptionIds": [
+      "c",
+      "d"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -2634,7 +3007,10 @@
     "id": 81,
     "topic": 1,
     "text": "A large retail chain plans to add a chatbot to its website for customer support operations.\n\nThe company has the following requirements for the chatbot integration:\n\n• The chatbot must integrate with the existing knowledge base.\n• Agents must participate in the chat when there is a customer escalation.\n• The chatbot must adhere to all relevant regulatory and compliance requirements.\n• The chatbot must generate accurate and relevant responses to common customer queries.\n• The solution must scale to handle high volumes of customer interactions.\n\nYou need to identify the non-functional chatbot requirements.\n\nWhich two requirements are non-functional? Each correct answer presents a complete solution. (Choose two.)\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["a", "e"],
+    "correctOptionIds": [
+      "a",
+      "e"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -2726,7 +3102,10 @@
     "id": 84,
     "topic": 1,
     "text": "A company plans to adopt Microsoft Power Platform.\n\nYou need to document the current enterprise architecture of the company.\n\nWhich two components should you incorporate? Each correct answer presents a complete solution. (Choose two.)\n\nNOTE: Each correct selection is worth one point.",
-    "correctOptionIds": ["a", "e"],
+    "correctOptionIds": [
+      "a",
+      "e"
+    ],
     "isMultiSelect": true,
     "options": [
       {
@@ -2821,6 +3200,161 @@
       "st2": "opt2_1",
       "st3": "opt3_4"
     }
+  },
+  {
+    "id": 86,
+    "topic": 1,
+    "text": "A company is undergoing digital transformation.\n\nYou must conduct an in-person workshop with several business stakeholders to learn more about the company and its solution requirements. You have limited time to get the information from the stakeholders.\n\nYou need to ensure that the workshop is set up for success.\n\nWhich two actions should you perform? Each correct answer presents a complete solution. (Choose two.)",
+    "correctOptionIds": [
+      "b",
+      "c"
+    ],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Present the proposed solution as part of the workshop."
+      },
+      {
+        "id": "b",
+        "text": "B. Publish the agenda in advance of the workshop."
+      },
+      {
+        "id": "c",
+        "text": "C. Keep to the agenda by minimizing side conversations."
+      },
+      {
+        "id": "d",
+        "text": "D. Explain the technical aspects of the solution to the stakeholders."
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "topic": 1,
+    "text": "A healthcare provider plans to use its data sources to help diagnose patient health.\n\nYou need to define the data sources for the company.\n\nWhich two data sources should you use? Each correct answer presents part of the solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": [
+      "a",
+      "b"
+    ],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. electronic health records"
+      },
+      {
+        "id": "b",
+        "text": "B. wearable health device"
+      },
+      {
+        "id": "c",
+        "text": "C. patient scheduling"
+      },
+      {
+        "id": "d",
+        "text": "D. financial transactions"
+      },
+      {
+        "id": "e",
+        "text": "E. patient feedback surveys"
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "topic": 1,
+    "text": "A company plans to use Microsoft Power Platform.\n\nThe company requires information from an Oracle database to be displayed in a Dynamics 365 model-driven app without transferring data.\n\nYou need to make the information visible by using built-in features.\n\nWhich Microsoft Power Platform component should you use?",
+    "correctOptionId": "d",
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Dataflows"
+      },
+      {
+        "id": "b",
+        "text": "B. AI Builder"
+      },
+      {
+        "id": "c",
+        "text": "C. Power Automate"
+      },
+      {
+        "id": "d",
+        "text": "D. Canvas app"
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "topic": 1,
+    "text": "DRAG DROP -\nYou collaborate with a customer to identity requirements.\n\nYou identity the following requirements as not feasible:\n\n• Dashboards must be updated in real time with data from third-party providers.\n• All parts of the solution must be General Data Protection Regulation (GDPR) compliant.\n\nYou need to specify the feasibility challenge.\n\nWhich feasibility challenge does each requirement pose? To answer, move the appropriate challenges to the correct requirements. You may use each challenge once, more than once, or not at all. You may need to move the split bar between panes or scroll to view content.",
+    "type": "dnd-zones",
+    "dndOptions": [
+      {
+        "id": "opt1",
+        "text": "Process"
+      },
+      {
+        "id": "opt2",
+        "text": "Adoption"
+      },
+      {
+        "id": "opt3",
+        "text": "Technical"
+      },
+      {
+        "id": "opt4",
+        "text": "Regulatory"
+      }
+    ],
+    "zones": [
+      {
+        "id": "req1",
+        "title": "Dashboards must be updated in real time with data from third-party providers."
+      },
+      {
+        "id": "req2",
+        "title": "All parts of the solution must be General Data Protection Regulation (GDPR) compliant."
+      }
+    ],
+    "correctZoneAnswers": {
+      "req1": "opt3",
+      "req2": "opt4"
+    }
+  },
+  {
+    "id": 90,
+    "topic": 1,
+    "text": "You are going to have a discovery meeting with a new client who is undergoing digital transformation.\n\nYou need to prepare for the meeting.\n\nWhich three sources of discovery information should you reference before meeting with the client? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+    "correctOptionIds": [
+      "a",
+      "d",
+      "e"
+    ],
+    "isMultiSelect": true,
+    "options": [
+      {
+        "id": "a",
+        "text": "A. Company website"
+      },
+      {
+        "id": "b",
+        "text": "B. Blog posts"
+      },
+      {
+        "id": "c",
+        "text": "C. Microsoft 365 Copilot"
+      },
+      {
+        "id": "d",
+        "text": "D. News outlets"
+      },
+      {
+        "id": "e",
+        "text": "E. Social media"
+      }
+    ]
   },
   {
     "id": 91,
@@ -2940,10 +3474,22 @@
       }
     ],
     "correctZoneAnswers": {
-      "req1": ["opt1", "opt1_1"],
-      "req2": ["opt2", "opt2_1"],
-      "req3": ["opt2", "opt2_1"],
-      "req4": ["opt1", "opt1_1"]
+      "req1": [
+        "opt1",
+        "opt1_1"
+      ],
+      "req2": [
+        "opt2",
+        "opt2_1"
+      ],
+      "req3": [
+        "opt2",
+        "opt2_1"
+      ],
+      "req4": [
+        "opt1",
+        "opt1_1"
+      ]
     }
   },
   {
@@ -2956,27 +3502,54 @@
         "id": "st1",
         "text": "Use sticky notes to collect information from stakeholders.",
         "options": [
-          { "id": "opt1", "text": "Survey" },
-          { "id": "opt2", "text": "Job shadowing" },
-          { "id": "opt3", "text": "Workshop" }
+          {
+            "id": "opt1",
+            "text": "Survey"
+          },
+          {
+            "id": "opt2",
+            "text": "Job shadowing"
+          },
+          {
+            "id": "opt3",
+            "text": "Workshop"
+          }
         ]
       },
       {
         "id": "st2",
         "text": "Capture feedback from support reps who cannot attend the meeting.",
         "options": [
-          { "id": "opt1", "text": "Survey" },
-          { "id": "opt2", "text": "Job shadowing" },
-          { "id": "opt3", "text": "Workshop" }
+          {
+            "id": "opt1",
+            "text": "Survey"
+          },
+          {
+            "id": "opt2",
+            "text": "Job shadowing"
+          },
+          {
+            "id": "opt3",
+            "text": "Workshop"
+          }
         ]
       },
       {
         "id": "st3",
         "text": "Get detailed information on the call escalation process.",
         "options": [
-          { "id": "opt1", "text": "Survey" },
-          { "id": "opt2", "text": "Job shadowing" },
-          { "id": "opt3", "text": "Workshop" }
+          {
+            "id": "opt1",
+            "text": "Survey"
+          },
+          {
+            "id": "opt2",
+            "text": "Job shadowing"
+          },
+          {
+            "id": "opt3",
+            "text": "Workshop"
+          }
         ]
       }
     ],
