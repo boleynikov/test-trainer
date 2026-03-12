@@ -2270,6 +2270,14 @@
         "text": "Tenant"
       },
       {
+        "id": "opt1_1",
+        "text": "Tenant"
+      },
+      {
+        "id": "opt1_2",
+        "text": "Tenant"
+      },
+      {
         "id": "opt2",
         "text": "Environment"
       }
@@ -2294,9 +2302,9 @@
     ],
     "correctZoneAnswers": {
       "role1": "opt2",
-      "role2": "opt1",
-      "role3": "opt1",
-      "role4": "opt1"
+      "role2": ["opt1", "opt1_1", "opt1_2"],
+      "role3": ["opt1", "opt1_1", "opt1_2"],
+      "role4": ["opt1", "opt1_1", "opt1_2"]
     }
   },
   {
@@ -2338,7 +2346,7 @@
     ],
     "correctStatementAnswers": {
       "st1": "opt1_1",
-      "st2": "opt2_2"
+      "st2": "opt2_3"
     }
   },
   {
