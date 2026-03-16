@@ -235,6 +235,16 @@ const ExamSimulator: React.FC<ExamSimulatorProps> = ({
     }
   };
 
+  const handleJumpToQuestion = (index: number) => {
+    if (index >= 0 && index < questions.length) {
+      setCurrentQIndex(index);
+      setSelectedOptionIds([]);
+      setTempSelectedOptionIds([]);
+      setIsAnswered(false);
+      setShowSubmit(true);
+    }
+  };
+
   // 3. Handle toggling random mode (user action)
   const handleToggleRandom = (newIsRandom: boolean) => {
     setIsRandomMode(newIsRandom);
@@ -320,6 +330,7 @@ const ExamSimulator: React.FC<ExamSimulatorProps> = ({
         answeredQuestions={answeredQuestions}
         isRandomMode={isRandomMode}
         onToggleRandom={handleToggleRandom}
+        onJumpToQuestion={handleJumpToQuestion}
       />
 
       {currentQuestion.type === "dnd" ||
